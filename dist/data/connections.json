@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "systems": {
+    "lien-thong": {
+      "name": "Dịch vụ công liên thông",
+      "origins": ["https://lienthong.dichvucong.gov.vn"]
+    },
+    "quoc-gia": {
+      "name": "Cổng Dịch vụ công Quốc gia",
+      "origins": ["https://dichvucong.gov.vn"]
+    }
+  },
+  "connections": {
+    "lien-thong-khai-sinh": {
+      "systemId": "lien-thong",
+      "mode": "portal-link",
+      "title": "Giấy tờ cho con mới sinh",
+      "destinationLabel": "Nhóm liên thông khai sinh",
+      "entryUrl": "https://lienthong.dichvucong.gov.vn/#/?vneid=1",
+      "buttonLabel": "Mở cổng làm giấy tờ cho bé",
+      "localityNote": "Bạn sẽ chọn cơ quan có thẩm quyền trên cổng theo trường hợp cư trú. Đường dẫn này chưa chọn sẵn phường Pleiku.",
+      "nextSteps": [
+        {"title": "Chọn ô đăng ký khai sinh", "text": "Tìm ô có chữ “đăng ký khai sinh, đăng ký thường trú” và bảo hiểm y tế cho trẻ dưới 6 tuổi. Bấm vào ô đó."},
+        {"title": "Đăng nhập bằng VNeID", "text": "Nếu cổng yêu cầu, dùng tài khoản của người đứng tên làm thủ tục. Trên máy tính có thể quét QR bằng VNeID trên điện thoại; trên một điện thoại có thể dùng số định danh và mật khẩu."},
+        {"title": "Kiểm tra nơi tiếp nhận rồi kê khai", "text": "Đối chiếu cơ quan giải quyết phù hợp với trường hợp của bé. Khi thuộc thẩm quyền phường Pleiku, chọn đúng Gia Lai và phường Pleiku trong các mục tương ứng. Kiểm tra dữ liệu có sẵn trước khi bổ sung thông tin."}
+      ],
+      "fallback": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Mở từ Cổng Dịch vụ công Quốc gia",
+        "instruction": "Tại trang chủ, chọn “Dịch vụ công liên thông: Khai sinh, Khai tử”, rồi chọn nhóm khai sinh. Đây là đường vào khác; nếu hệ thống liên thông đang bảo trì, đường này cũng có thể chưa dùng được."
+      },
+      "tracking": {
+        "systemId": "lien-thong",
+        "url": "https://lienthong.dichvucong.gov.vn/",
+        "label": "Mở cổng liên thông để tra cứu",
+        "instruction": "Trên cổng, chọn “Hồ sơ của tôi” và đăng nhập khi được yêu cầu, hoặc chọn “TRA CỨU HỒ SƠ” rồi làm theo các ô cổng hiển thị. Đối chiếu mã với thông báo bạn đã nhận."
+      },
+      "verifiedAt": "2026-09-23",
+      "evidenceUrl": "https://dichvucong.gov.vn/"
+    },
+    "lien-thong-khai-tu": {
+      "systemId": "lien-thong",
+      "mode": "portal-link",
+      "title": "Thủ tục khi người thân qua đời",
+      "destinationLabel": "Nhóm liên thông khai tử",
+      "entryUrl": "https://lienthong.dichvucong.gov.vn/#/?vneid=1",
+      "buttonLabel": "Mở cổng làm thủ tục khai tử",
+      "localityNote": "Chọn cơ quan giải quyết theo trường hợp của người đã mất. Đường dẫn này chưa chọn sẵn phường Pleiku; các phần chế độ có thể do cơ quan khác giải quyết.",
+      "nextSteps": [
+        {"title": "Chọn ô đăng ký khai tử", "text": "Tìm ô có chữ “đăng ký khai tử, xóa đăng ký thường trú” và các chế độ mai táng, tử tuất. Bấm vào ô này, không chọn ô khai sinh."},
+        {"title": "Đăng nhập tài khoản người làm thủ tục", "text": "Dùng VNeID của người đứng tên yêu cầu, không dùng tài khoản của người đã mất. Nếu chưa biết đăng nhập, quay lại hướng dẫn tại Cẩm Nang Số."},
+        {"title": "Chọn cơ quan và phạm vi cần làm", "text": "Kiểm tra đúng cơ quan hộ tịch có thẩm quyền. Chỉ chọn phần mai táng/tử tuất phù hợp với chế độ đã được hướng dẫn. Đọc danh sách giấy tờ của chính nhánh đã chọn trước khi kê khai."}
+      ],
+      "fallback": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Mở từ Cổng Dịch vụ công Quốc gia",
+        "instruction": "Tại trang chủ, chọn “Dịch vụ công liên thông: Khai sinh, Khai tử”, rồi chọn nhóm khai tử. Đường vào này vẫn sử dụng hệ thống liên thông; nếu hệ thống đang bảo trì, hãy quay lại sau hoặc liên hệ hỗ trợ."
+      },
+      "tracking": {
+        "systemId": "lien-thong",
+        "url": "https://lienthong.dichvucong.gov.vn/",
+        "label": "Mở cổng liên thông để tra cứu",
+        "instruction": "Chọn “Hồ sơ của tôi” trên cổng và đăng nhập khi được yêu cầu, hoặc dùng “TRA CỨU HỒ SƠ”. Xem thông báo của từng phần hộ tịch, cư trú và chế độ; không mặc định các phần hoàn thành cùng lúc."
+      },
+      "verifiedAt": "2026-09-23",
+      "evidenceUrl": "https://dichvucong.gov.vn/"
+    },
+    "ket-hon-pleiku": {
+      "systemId": "quoc-gia",
+      "mode": "locality-link",
+      "title": "Đăng ký kết hôn",
+      "shortcut": true,
+      "description": "Mở dịch vụ chính thức đã chọn Gia Lai và phường Pleiku.",
+      "procedureCode": "1.000894",
+      "destinationLabel": "UBND phường Pleiku",
+      "entryUrl": "https://dichvucong.gov.vn/tim-kiem-thu-tuc-hanh-chinh?formalityId=019d2bfd-3fac-7489-b53b-a15eb239a6fe&province=019bad30-cd8f-722b-a3c5-d131d484376c&ministry=&ward=019bad30-cd8f-722b-a3c6-b9084ef9c85b&searchType=PROVINCE&commune=WARD&provinceCode=52&wardCode=23575",
+      "buttonLabel": "Mở dịch vụ tại phường Pleiku",
+      "localityNote": "Đường dẫn chọn sẵn địa bàn để bạn dễ tìm dịch vụ. Hãy kiểm tra thẩm quyền và trường hợp của mình trên cổng trước khi nộp. Chưa xác minh việc giữ lựa chọn sau đăng nhập.",
+      "selectedLocality": {"province": "Gia Lai", "ward": "Phường Pleiku"},
+      "nextSteps": [
+        {"title": "Kiểm tra đúng thủ tục và cơ quan", "text": "Trang mở ra cần ghi “Thủ tục đăng ký kết hôn” và “Cơ quan thực hiện: UBND phường Pleiku”. Nếu khác, kiểm tra lại lựa chọn tỉnh/phường trước khi tiếp tục."},
+        {"title": "Bấm Nộp trực tuyến và đăng nhập", "text": "Bấm nút “Nộp trực tuyến” tại dịch vụ phù hợp. Khi chuyển sang VNeID, tự đăng nhập tài khoản của người thực hiện trên cổng chính thức."},
+        {"title": "Đọc yêu cầu hồ sơ trước khi gửi", "text": "Sau đăng nhập, kiểm tra lại dịch vụ và cơ quan. Làm theo tờ khai, danh sách giấy tờ và hình thức nhận kết quả mà cổng hướng dẫn. Liên kết này giúp tìm nơi nộp; chưa thay thế bộ hướng dẫn hồ sơ riêng theo trường hợp."}
+      ],
+      "fallback": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Tìm lại trên Cổng Dịch vụ công Quốc gia",
+        "instruction": "Tìm “Đăng ký kết hôn”, chọn thủ tục phù hợp, chọn Tỉnh Gia Lai và Phường Pleiku tại “Chọn cơ quan thực hiện”, rồi bấm “Nộp hồ sơ” để xem dịch vụ. Nếu trường hợp có yếu tố nước ngoài, tìm đúng thủ tục tương ứng."
+      },
+      "tracking": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/tra-cuu-ho-so",
+        "label": "Mở trang tra cứu hồ sơ",
+        "instruction": "Dùng mã hồ sơ và thông tin được yêu cầu trên cổng chính thức. Khi chưa có mã hoặc thông báo tiếp nhận, kiểm tra lại hồ sơ đã gửi trong tài khoản."
+      },
+      "verifiedAt": "2026-09-23",
+      "evidenceUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-3fac-7489-b53b-a15eb239a6fe"
+    }
+  }
+}

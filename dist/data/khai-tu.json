@@ -1,0 +1,576 @@
+{
+  "id": "khai-tu",
+  "version": 1,
+  "title": "Thủ tục khi người thân qua đời",
+  "shortTitle": "Thủ tục cho người thân",
+  "description": "Khai tử, xóa thường trú và tìm hiểu hỗ trợ mai táng, tử tuất.",
+  "category": "Hộ tịch & an sinh",
+  "icon": "document",
+  "keywords": [
+    "khai tử",
+    "qua đời",
+    "mất",
+    "chết",
+    "mai táng",
+    "tử tuất",
+    "xóa thường trú",
+    "trợ cấp"
+  ],
+  "officialName": "Liên thông đăng ký khai tử, xóa đăng ký thường trú, giải quyết mai táng phí, tử tuất",
+  "intro": "Chúng tôi sẽ hướng dẫn từng việc để gia đình dễ chuẩn bị. Bạn có thể chọn “Chưa rõ” khi cần được hỗ trợ.",
+  "reviewedAt": "2026-09-23",
+  "connectionRef": "lien-thong-khai-tu",
+  "sources": [
+    {
+      "label": "Văn bản hợp nhất · Quy trình và mẫu khai tử",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/8/03-vbhn-btp.signed.pdf"
+    },
+    {
+      "label": "Nghị định 301/2026/NĐ-CP · Quy trình hiện hành",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-dinh-301-2026-nd-cp-ve-dang-ky-khai-sinh-thuong-tru-cap-the-bhyt-dang-ky-khai-tu-giai-quyet-mai-tang-phi-tu-tuat-1192609011059423.htm"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "death-document",
+      "stage": "chuan-bi",
+      "src": "assets/guides/mau-giay-bao-tu-2025.png",
+      "title": "Mẫu giấy báo tử của cơ sở khám, chữa bệnh",
+      "alt": "Mẫu giấy báo tử của cơ sở khám, chữa bệnh: Giấy báo tử. Trang 11 của PDF gốc.",
+      "caption": "Mẫu số 05, Phụ lục II của Thông tư 25/2025/TT-BYT. Dùng để nhận biết giấy do cơ sở khám, chữa bệnh cấp; không tự điền mẫu này thay bản được cấp. Trường hợp qua đời ngoài cơ sở y tế có thể dùng giấy tờ khác theo hướng dẫn của cơ quan tiếp nhận.",
+      "kind": "official-template",
+      "readingTip": "Tìm dòng “GIẤY BÁO TỬ”, họ tên người tử vong, dòng “Đã tử vong vào lúc” và chữ ký, dấu của cơ sở cấp. Giấy này khác trích lục khai tử.",
+      "pages": [
+        {
+          "src": "assets/guides/mau-giay-bao-tu-2025.png",
+          "sourcePage": 11,
+          "width": 1241,
+          "height": 1755,
+          "label": "Giấy báo tử",
+          "note": "Đối chiếu thông tin người đã mất và thời điểm qua đời. Số, ngày Thông tư để trống là nội dung có sẵn trong phụ lục gốc.",
+          "alt": "Mẫu giấy báo tử của cơ sở khám, chữa bệnh: Giấy báo tử. Trang 11 của PDF gốc."
+        }
+      ],
+      "originalPdf": "assets/forms/tt-25-2025-byt-phu-luc.pdf",
+      "source": {
+        "label": "Sở Y tế Gia Lai · Phụ lục Thông tư 25/2025/TT-BYT",
+        "url": "https://syt.gialai.gov.vn/vi/van-ban-chi-dao-dieu-hanh/detail/V-v-trien-khai-Thong-tu-so-25-2025-TT-BYT-ngay-30-6-2025-cua-Bo-Y-te-ve-viec-quy-dinh-chi-tiet-thi-hanh-Luat-Bao-hiem-xa-hoi-Luat-An-toan-ve-sinh-lao-dong-ve-linh-vuc-y-te-va-mot-so-dieu-cua-Luat-Kham-benh-chua-benh-3160/?download=1&id=2"
+      },
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "death-form",
+      "stage": "cach-dien",
+      "src": "assets/guides/mau-lien-thong-khai-tu-01.png",
+      "title": "Xem mẫu tờ khai liên thông khi người thân qua đời",
+      "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Người đứng tên làm thủ tục. Trang 33 của PDF gốc.",
+      "caption": "Mẫu số 02 trong Văn bản hợp nhất 03/VBHN-BTP năm 2026, gồm các lựa chọn chế độ. Không phải gia đình nào cũng phải kê khai toàn bộ mẫu. Khi nộp trực tuyến, chỉ nhập phần cổng yêu cầu theo trường hợp đã chọn; không tự in hoặc đính kèm bản trống.",
+      "kind": "official-template",
+      "readingTip": "Trang 1 là người làm thủ tục; trang 2 là người đã mất. Các phần thân nhân và người nhận trợ cấp chỉ dùng khi hồ sơ có yêu cầu giải quyết chế độ.",
+      "pages": [
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-01.png",
+          "sourcePage": 33,
+          "width": 1241,
+          "height": 1755,
+          "label": "Người đứng tên làm thủ tục",
+          "note": "Mẫu khai tử bắt đầu ở phần dưới, từ dòng “Mẫu số 02”. Phần phía trên là ghi chú của mẫu khai sinh, được giữ nguyên theo trang PDF gốc.",
+          "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Người đứng tên làm thủ tục. Trang 33 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-02.png",
+          "sourcePage": 34,
+          "width": 1241,
+          "height": 1755,
+          "label": "Người đã mất và lựa chọn chế độ",
+          "note": "Mục 1 dùng thông tin người đã mất. Mục 2 dành cho yêu cầu mai táng phí, tử tuất theo trường hợp; không tự chọn chế độ khi chưa rõ.",
+          "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Người đã mất và lựa chọn chế độ. Trang 34 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-03.png",
+          "sourcePage": 35,
+          "width": 1241,
+          "height": 1755,
+          "label": "Thân nhân, người nhận thay",
+          "note": "Bảng thân nhân và người nhận thay phục vụ giải quyết chế độ. Không dùng thông tin người đã mất để điền thay thông tin thân nhân.",
+          "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Thân nhân, người nhận thay. Trang 35 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-04.png",
+          "sourcePage": 36,
+          "width": 1241,
+          "height": 1755,
+          "label": "Người nhận trợ cấp",
+          "note": "Phân biệt người lo mai táng, người nhận trợ cấp và đại diện thân nhân. Chỉ khai phần áp dụng và được cổng yêu cầu.",
+          "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Người nhận trợ cấp. Trang 36 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-05.png",
+          "sourcePage": 37,
+          "width": 1241,
+          "height": 1755,
+          "label": "Nhận kết quả và ghi chú",
+          "note": "Kiểm tra hình thức nhận kết quả, nhận tiền nếu có và đọc các ghi chú tương ứng với số chú thích trong mẫu.",
+          "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Nhận kết quả và ghi chú. Trang 37 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-06.png",
+          "sourcePage": 38,
+          "width": 1241,
+          "height": 1755,
+          "label": "Ghi chú tiếp theo",
+          "note": "Đây là phần ghi chú tiếp theo. Chữ ký, con dấu phía dưới xác thực văn bản hợp nhất, không phải giấy xác nhận hồ sơ của gia đình.",
+          "alt": "Xem mẫu tờ khai liên thông khi người thân qua đời: Ghi chú tiếp theo. Trang 38 của PDF gốc."
+        }
+      ],
+      "originalPdf": "assets/forms/03-vbhn-btp-2026.pdf",
+      "source": {
+        "label": "Cổng Thông tin điện tử Chính phủ · 03/VBHN-BTP",
+        "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/8/03-vbhn-btp.signed.pdf"
+      },
+      "reviewedAt": "2026-09-23"
+    }
+  ],
+  "questions": [
+    {
+      "id": "registered",
+      "title": "Người thân đã được đăng ký khai tử chưa?",
+      "hint": "Giấy báo tử khác với trích lục khai tử do cơ quan hộ tịch cấp.",
+      "options": [
+        {
+          "value": "no",
+          "label": "Chưa đăng ký khai tử"
+        },
+        {
+          "value": "yes",
+          "label": "Đã đăng ký khai tử"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ],
+      "help": {
+        "title": "Tôi chưa phân biệt được hai loại giấy",
+        "text": "Giấy báo tử dùng để làm thủ tục khai tử. Trích lục khai tử là kết quả sau khi đăng ký khai tử. Đọc dòng tên giấy đang giữ; hình dưới minh họa giấy báo tử. Nếu chưa chắc, chọn “Tôi chưa rõ” để nhờ kiểm tra.",
+        "visualId": "death-document"
+      }
+    },
+    {
+      "id": "deathPaper",
+      "title": "Gia đình có giấy báo tử chưa?",
+      "hint": "Nếu chưa có, hướng dẫn sẽ giúp bạn xác định bước cần làm tiếp.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Đã có giấy báo tử hoặc giấy tờ thay thế"
+        },
+        {
+          "value": "no",
+          "label": "Chưa có"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ]
+    },
+    {
+      "id": "need",
+      "title": "Gia đình muốn làm những thủ tục nào?",
+      "hint": "Bạn có thể tìm hiểu chế độ trước khi quyết định trên cổng chính thức.",
+      "options": [
+        {
+          "value": "basic",
+          "label": "Khai tử và xóa thường trú"
+        },
+        {
+          "value": "funeral",
+          "label": "Làm thêm thủ tục hỗ trợ / trợ cấp mai táng"
+        },
+        {
+          "value": "survivor",
+          "label": "Làm thêm thủ tục mai táng và tử tuất"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi muốn được hướng dẫn xác định"
+        }
+      ],
+      "help": {
+        "title": "Mai táng và tử tuất là gì?",
+        "text": "Phần mai táng liên quan hỗ trợ hoặc trợ cấp chi phí lo tang lễ. Phần tử tuất liên quan chế độ cho thân nhân theo trường hợp. Không phải mọi gia đình đều được hưởng. Chưa biết nên chọn mục nào, chọn “Tôi muốn được hướng dẫn xác định”."
+      }
+    },
+    {
+      "id": "benefit",
+      "type": "multiple",
+      "when": {
+        "question": "need",
+        "values": [
+          "funeral",
+          "survivor",
+          "unsure"
+        ]
+      },
+      "title": "Người thân có tham gia hoặc hưởng chế độ nào sau đây?",
+      "hint": "Có thể chọn nhiều mục. Đây là bước tìm hướng dẫn, chưa phải kết luận đủ điều kiện hưởng.",
+      "options": [
+        {
+          "value": "insurance",
+          "label": "Bảo hiểm xã hội / lương hưu / trợ cấp BHXH"
+        },
+        {
+          "value": "social",
+          "label": "Trợ giúp xã hội / trợ cấp hưu trí xã hội"
+        },
+        {
+          "value": "merit",
+          "label": "Chính sách người có công"
+        },
+        {
+          "value": "unsure",
+          "label": "Chưa rõ hoặc trường hợp khác",
+          "exclusive": true
+        }
+      ],
+      "help": {
+        "title": "Tôi không biết người thân hưởng chế độ nào",
+        "text": "Tìm quyết định hưởng, giấy bảo hiểm hoặc thông báo chi trả đang có. Đọc tên chế độ và cơ quan trên giấy; không đoán chỉ dựa vào số tiền đã nhận. Không tìm thấy hoặc không hiểu tên giấy thì chọn “Chưa rõ hoặc trường hợp khác”."
+      }
+    }
+  ],
+  "notices": [
+    {
+      "when": {
+        "question": "registered",
+        "values": [
+          "yes"
+        ]
+      },
+      "blocking": true,
+      "title": "Không cần đăng ký khai tử lần nữa",
+      "text": "Hãy chuẩn bị trích lục khai tử đã có và liên hệ đầu mối phường hoặc cơ quan giải quyết chế độ để làm những phần còn thiếu. Bộ hướng dẫn nộp mới liên thông không áp dụng nguyên trạng."
+    },
+    {
+      "when": {
+        "question": "registered",
+        "values": [
+          "unsure"
+        ]
+      },
+      "blocking": true,
+      "title": "Kiểm tra việc đăng ký khai tử trước",
+      "text": "Tìm trích lục khai tử trong giấy tờ của gia đình hoặc nhờ cán bộ hộ tịch kiểm tra. Không nộp đăng ký mới khi chưa rõ tình trạng."
+    },
+    {
+      "when": {
+        "question": "need",
+        "values": [
+          "funeral",
+          "survivor",
+          "unsure"
+        ]
+      },
+      "title": "Mỗi chế độ có điều kiện và hồ sơ riêng",
+      "text": "Phần dưới giúp gia đình chuẩn bị thông tin ban đầu. Cơ quan tiếp nhận sẽ xác định điều kiện, hồ sơ và quyền lợi phù hợp; không mặc định mọi gia đình đều được hưởng trợ cấp."
+    },
+    {
+      "when": {
+        "question": "benefit",
+        "values": [
+          "social"
+        ]
+      },
+      "title": "Xác định chính xác loại trợ cấp xã hội",
+      "text": "Mang thông tin hoặc quyết định hưởng đang có để cán bộ kiểm tra. Trợ giúp xã hội và trợ cấp hưu trí xã hội có thể có quy trình, thành phần hồ sơ khác nhau."
+    }
+  ],
+  "checklist": [
+    {
+      "id": "login",
+      "kind": "Chuẩn bị thao tác",
+      "title": "Tài khoản đăng nhập và điện thoại liên hệ",
+      "help": "Kiểm tra đăng nhập Cổng Dịch vụ công hoặc VNeID của người thực hiện. Dùng số điện thoại có thể nhận thông báo trong quá trình xử lý.",
+      "missing": "Nhờ đầu mối phường hỗ trợ thao tác nếu chưa đăng nhập được. Giữ riêng mật khẩu và mã OTP.",
+      "guideRef": "dang-nhap",
+      "summary": "Xem cách đăng nhập bằng tài khoản của người làm thủ tục. Bạn có thể chuẩn bị giấy tờ trước."
+    },
+    {
+      "id": "death-paper",
+      "visualId": "death-document",
+      "kind": "Giấy tờ",
+      "title": "Giấy báo tử hoặc giấy tờ thay thế hợp lệ",
+      "when": {
+        "question": "deathPaper",
+        "values": [
+          "yes"
+        ]
+      },
+      "help": "Đối chiếu thông tin người đã mất, thời điểm và nơi mất. Kiểm tra dữ liệu điện tử hoặc tài liệu cổng yêu cầu đính kèm theo trường hợp.",
+      "missing": "Nếu giấy tờ không rõ hoặc thông tin sai, liên hệ nơi cấp hoặc cán bộ hộ tịch trước khi kê khai.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Lấy giấy báo tử/giấy thay thế đang có",
+            "action": "Tìm bản giấy do cơ quan có thẩm quyền cấp mà gia đình dự định dùng để khai tử. Đọc tên giấy, cơ quan cấp, số và ngày cấp. Giấy báo tử khác trích lục khai tử; nếu đã có trích lục khai tử, quay lại chọn lại trường hợp để tránh đăng ký lần nữa."
+          },
+          {
+            "title": "Đối chiếu thông tin người đã mất",
+            "action": "Kiểm tra họ tên, ngày sinh, số định danh nếu có; thời điểm và nơi qua đời. So với giấy tờ định danh đang có. Với giờ/ngày qua đời, dùng nội dung giấy hợp lệ, không lấy ngày cấp giấy thay cho ngày mất."
+          },
+          {
+            "title": "Sẵn sàng đối chiếu khi kê khai",
+            "action": "Giữ giấy ở cạnh thiết bị. Khi cổng hiển thị dữ liệu có sẵn, kiểm tra trước khi tiếp tục. Nếu yêu cầu tệp đính kèm, xem hướng dẫn chụp bên dưới; kiểm tra đủ trang và đọc rõ.",
+            "expected": "Bạn biết giấy dùng cho hồ sơ, thông tin cần nhập và chỗ phải hỏi lại nếu có khác biệt."
+          }
+        ],
+        "ready": "Có giấy phù hợp, đọc rõ và đã kiểm tra thông tin. Với giấy thay thế chưa rõ có phù hợp không, hỏi hộ tịch trước khi đánh dấu.",
+        "troubleshooting": [
+          {
+            "problem": "Thông tin sai hoặc không biết giấy này có được dùng không",
+            "solution": "Liên hệ nơi cấp hoặc bộ phận hộ tịch, nói rõ tên giấy, nơi cấp và chỗ chưa rõ. Hỏi cách điều chỉnh hoặc giấy cần dùng theo hoàn cảnh qua đời. Không tự sửa ngày mất trên ảnh."
+          }
+        ],
+        "relatedGuide": "chup-tai-giay-to"
+      },
+      "summary": "Lấy giấy báo tử hoặc giấy thay thế đã có; đối chiếu tên người mất và thời điểm qua đời."
+    },
+    {
+      "id": "death-alternative",
+      "visualId": "death-document",
+      "kind": "Cần hướng dẫn thêm",
+      "title": "Liên hệ để xác định giấy tờ báo tử",
+      "when": {
+        "question": "deathPaper",
+        "values": [
+          "no",
+          "unsure"
+        ]
+      },
+      "help": "Giấy tờ phù hợp phụ thuộc hoàn cảnh và nơi người thân qua đời. Không phải trường hợp nào cũng có giấy do bệnh viện cấp.",
+      "missing": "Liên hệ cán bộ hộ tịch phường, trình bày nơi và hoàn cảnh qua đời để được chỉ đúng nơi cấp hoặc giấy tờ thay thế.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Ghi lại nơi và hoàn cảnh qua đời",
+            "action": "Chuẩn bị thông tin người đã mất, ngày/nơi qua đời, mất tại cơ sở y tế hay ở nơi khác; gia đình đang giữ những giấy tờ liên quan nào. Không tự kết luận một giấy bất kỳ có thể thay báo tử."
+          },
+          {
+            "title": "Liên hệ nơi có thể hướng dẫn cấp giấy",
+            "action": "Nếu qua đời tại cơ sở y tế, hỏi cơ sở đó về giấy báo tử. Với trường hợp khác hoặc chưa rõ thẩm quyền, liên hệ bộ phận hộ tịch để được chỉ đúng nơi cấp/giấy thay thế; trình bày đầy đủ hoàn cảnh thay vì chỉ hỏi “cần giấy gì”."
+          },
+          {
+            "title": "Hỏi và ghi lại bốn điều trước khi đi",
+            "action": "Hỏi tên giấy cần xin; ai cấp/xác nhận; gia đình mang theo giấy tờ gì; đến địa điểm nào. Làm theo danh sách được hướng dẫn, rồi kiểm tra họ tên và thời điểm qua đời trên giấy nhận được."
+          }
+        ],
+        "ready": "Đã xác định và chuẩn bị được giấy báo tử hoặc giấy thay thế phù hợp theo hướng dẫn của cơ quan tiếp nhận.",
+        "troubleshooting": [
+          {
+            "problem": "Không biết liên hệ đâu ở Pleiku",
+            "solution": "Gọi 0269 3828 313 để xin đầu mối hộ tịch. Có thể nói: “Gia đình cần khai tử, người thân mất tại …, hiện có … và chưa có giấy báo tử. Nhờ hướng dẫn nơi cấp giấy”. Xác nhận địa điểm trước khi đến."
+          }
+        ]
+      },
+      "summary": "Ghi nơi, hoàn cảnh qua đời và giấy đang có để hỏi đúng nơi cấp giấy báo tử."
+    },
+    {
+      "id": "person-info",
+      "kind": "Thông tin để điền",
+      "title": "Thông tin người đã mất và người yêu cầu",
+      "help": "Chuẩn bị thông tin định danh, nơi cư trú cuối cùng của người đã mất; họ tên, liên hệ và quan hệ của người yêu cầu với người đã mất.",
+      "missing": "Nếu thiếu số định danh hoặc thông tin không khớp, nhờ cán bộ kiểm tra; không nhập số hay ngày tháng suy đoán.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Tách thông tin thành hai nhóm",
+            "action": "Để giấy tờ người đã mất và giấy tờ người đứng tên yêu cầu thành hai nhóm riêng. Người yêu cầu là người đang thực hiện hồ sơ; tài khoản đăng nhập không phải tài khoản của người đã mất."
+          },
+          {
+            "title": "Kiểm tra nhóm của người đã mất",
+            "action": "Chuẩn bị họ tên, ngày sinh, số định danh nếu có, nơi cư trú cuối cùng và các thông tin được hỏi trong tờ khai. Đối chiếu giấy tờ sẵn có; không dùng địa chỉ hiện tại của người đi làm thủ tục thay nơi cư trú cuối cùng."
+          },
+          {
+            "title": "Kiểm tra nhóm của người yêu cầu",
+            "action": "Chuẩn bị căn cước/thông tin định danh, số điện thoại đang dùng và quan hệ với người đã mất. Nếu được hỏi về đại diện hoặc ủy quyền, xác định giấy tờ phù hợp với cơ quan tiếp nhận."
+          },
+          {
+            "title": "Đối chiếu với giấy báo tử trước khi nhập",
+            "action": "Đọc lại họ tên và ngày tháng giữa hai nhóm giấy. Ghi những nội dung còn thiếu để hỏi cán bộ; không nhập số 0, ngày 01/01 hoặc số căn cước của người khác để vượt qua ô bắt buộc.",
+            "expected": "Bạn biết mỗi ô sẽ lấy thông tin của ai và thông tin nào cần được xác minh."
+          }
+        ],
+        "ready": "Đã chuẩn bị thông tin hai người và xác định được các chỗ chưa rõ cần hỏi trước khi gửi.",
+        "troubleshooting": [
+          {
+            "problem": "Không tìm thấy căn cước hoặc số định danh người đã mất",
+            "solution": "Tìm trong giấy tờ gia đình đang giữ hoặc thông tin hồ sơ đã có. Nếu vẫn thiếu, đề nghị cán bộ hộ tịch/cơ quan cư trú kiểm tra bằng thông tin xác định người đã mất; không tự đoán số định danh."
+          }
+        ]
+      },
+      "summary": "Để riêng thông tin người đã mất và người đang đứng tên làm thủ tục."
+    },
+    {
+      "id": "benefit-info",
+      "kind": "Thông tin để xác định chế độ",
+      "title": "Thông tin bảo hiểm hoặc chế độ đang hưởng",
+      "when": {
+        "question": "need",
+        "values": [
+          "funeral",
+          "survivor",
+          "unsure"
+        ]
+      },
+      "help": "Tìm mã BHXH, thông tin lương hưu hoặc quyết định hưởng trợ cấp đang có. Đây là thông tin giúp xác định hướng xử lý, không phải yêu cầu mặc định nộp tất cả giấy tờ này.",
+      "missing": "Nếu không biết chế độ, liên hệ cơ quan chi trả hoặc đầu mối phường với thông tin người đã mất.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Tìm dấu vết chế độ đang hưởng",
+            "action": "Kiểm tra giấy tờ gia đình đang có: mã BHXH, thông tin hưởng lương hưu/trợ cấp, quyết định hưởng trợ giúp xã hội hoặc chính sách người có công. Chỉ lấy thông tin đang có để xác định hướng giải quyết, không phải đi xin đủ mọi loại giấy trong danh sách này."
+          },
+          {
+            "title": "Ghi lại tên chế độ và cơ quan chi trả",
+            "action": "Đọc tên trên quyết định/thông báo chi trả; ghi cơ quan ban hành hoặc đơn vị đang chi trả. Nếu có nhiều chế độ, liệt kê từng chế độ riêng để hỏi. Đừng gộp tất cả thành “trợ cấp”."
+          },
+          {
+            "title": "Hỏi đúng hồ sơ cần nộp cho chế độ đó",
+            "action": "Liên hệ cơ quan chi trả/giải quyết hoặc đầu mối phường. Nói rõ người thân đã mất, chế độ đang có, gia đình muốn làm mai táng/tử tuất; hỏi nhánh thủ tục, mẫu kê khai, giấy tờ và người đứng tên phù hợp."
+          },
+          {
+            "title": "Đối chiếu danh sách rồi mới chọn nhánh trên cổng",
+            "action": "Chuẩn bị từng giấy được hướng dẫn. Nếu thông tin đã có trong dữ liệu điện tử, làm theo thông báo của cổng/cơ quan tiếp nhận về việc có cần nộp lại không. Đánh dấu câu hỏi còn vướng để hỏi trước khi gửi.",
+            "expected": "Bạn biết chế độ cần đề nghị giải quyết và danh sách hồ sơ cho đúng nhánh; đây chưa phải kết luận đủ điều kiện hưởng."
+          }
+        ],
+        "ready": "Đã xác định được chế độ/đầu mối giải quyết và chuẩn bị thông tin, giấy tờ được hướng dẫn cho nhánh cần làm.",
+        "troubleshooting": [
+          {
+            "problem": "Gia đình không biết có BHXH hay chế độ nào",
+            "solution": "Hỏi người thân giữ hồ sơ hoặc đơn vị từng chi trả. Nếu chưa rõ, giữ lựa chọn “Chưa rõ” và đề nghị đầu mối phường hướng dẫn kiểm tra với thông tin người đã mất. Không chọn đại một chế độ; không lấy số tiền từng nhận làm căn cứ duy nhất."
+          }
+        ]
+      },
+      "summary": "Tìm giấy hoặc quyết định về bảo hiểm, lương hưu, trợ cấp để xác định đúng chế độ."
+    },
+    {
+      "id": "survivor-info",
+      "kind": "Theo trường hợp",
+      "title": "Thông tin thân nhân và người đại diện",
+      "when": {
+        "question": "need",
+        "values": [
+          "survivor"
+        ]
+      },
+      "help": "Chuẩn bị thông tin thân nhân liên quan. Giấy tờ chứng minh điều kiện hưởng và việc cử đại diện phụ thuộc chế độ, hình thức trợ cấp được xác định.",
+      "missing": "Hỏi cơ quan giải quyết chế độ về giấy tờ và cách xác nhận. Không tự chọn hưởng một lần hoặc hằng tháng khi chưa hiểu điều kiện.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Xác định yêu cầu kê khai thân nhân",
+            "action": "Sau khi xác định chế độ, lấy mẫu/hướng dẫn từ cơ quan giải quyết hoặc cổng chính thức. Đọc mẫu yêu cầu thông tin những thân nhân nào và ai đứng tên đại diện."
+          },
+          {
+            "title": "Chuẩn bị thông tin riêng từng thân nhân",
+            "action": "Đối chiếu họ tên, ngày sinh, quan hệ với người đã mất và thông tin định danh theo từng mục mẫu yêu cầu. Chỉ chuẩn bị giấy chứng minh điều kiện tương ứng khi được yêu cầu cho đúng chế độ."
+          },
+          {
+            "title": "Làm rõ người đại diện và cách nhận",
+            "action": "Hỏi cơ quan giải quyết việc cử đại diện hoặc giấy tờ xác nhận nếu cần. Nếu kê khai nhận qua tài khoản, đối chiếu tên chủ tài khoản, số tài khoản và ngân hàng của đúng người được xác định nhận/đại diện; không tự dùng tài khoản của người đang giúp nhập."
+          },
+          {
+            "title": "Hỏi rõ trước khi chọn hình thức hưởng",
+            "action": "Nếu tờ khai có lựa chọn trợ cấp một lần hoặc hằng tháng, đề nghị cơ quan giải quyết giải thích điều kiện áp dụng và hồ sơ cho gia đình. Chỉ chọn sau khi hiểu rõ; giữ lại hướng dẫn để đối chiếu khi kê khai."
+          }
+        ],
+        "ready": "Đã chuẩn bị thông tin thân nhân, người đại diện và các giấy tờ theo chế độ đã được hướng dẫn; đã hiểu lựa chọn hình thức hưởng trước khi kê khai.",
+        "troubleshooting": [
+          {
+            "problem": "Gia đình chưa thống nhất người đại diện hoặc còn thiếu thông tin",
+            "solution": "Liệt kê chỗ chưa thống nhất/thiếu và hỏi cơ quan giải quyết cần văn bản, chữ ký hay xác nhận nào. Không tự xác nhận thay thân nhân hoặc đánh dấu đã đồng ý khi chưa có căn cứ."
+          }
+        ]
+      },
+      "summary": "Sau khi xác định chế độ, chuẩn bị thông tin thân nhân và người đại diện theo hướng dẫn."
+    }
+  ],
+  "fields": [
+    {
+      "title": "Phân biệt ba người trong hồ sơ",
+      "body": "Người đã mất là người được đăng ký khai tử. Người yêu cầu là người đứng tên làm thủ tục. Người nhận trợ cấp hoặc người đại diện nhận có thể là người khác; không tự sao chép thông tin giữa các phần.",
+      "source": "Đặt riêng giấy tờ người đã mất, người đứng tên yêu cầu và người nhận trợ cấp nếu có.",
+      "example": "Ví dụ: con đứng tên làm thủ tục cho mẹ đã mất thì “người yêu cầu” là người con, “người được khai tử” là người mẹ.",
+      "check": "Đọc tên của từng phần trước khi nhập; không sao chép số định danh giữa hai người."
+    },
+    {
+      "title": "Thông tin về việc qua đời",
+      "body": "Đối chiếu thời điểm, nơi mất và các nội dung được yêu cầu với giấy báo tử hoặc giấy tờ thay thế. Nếu thiếu hoặc mâu thuẫn, hỏi cán bộ hộ tịch trước khi gửi.",
+      "source": "Giấy báo tử hoặc giấy thay thế phù hợp với trường hợp của gia đình.",
+      "check": "Phân biệt ngày qua đời và ngày cấp giấy. Nếu các giấy không khớp, hỏi nơi cấp hoặc cán bộ tiếp nhận."
+    },
+    {
+      "title": "Nơi cư trú cuối cùng",
+      "body": "Chuẩn bị thông tin cư trú cuối cùng của người đã mất. Không tự dùng địa chỉ của người đang đi làm thủ tục thay cho mục này."
+    },
+    {
+      "title": "Chọn phần mai táng, tử tuất",
+      "when": {
+        "question": "need",
+        "values": [
+          "funeral",
+          "survivor",
+          "unsure"
+        ]
+      },
+      "body": "Chọn phạm vi liên thông phù hợp sau khi xác định chế độ. Đọc phần hồ sơ được cổng yêu cầu cho đúng nhánh; nếu người đã mất liên quan nhiều chính sách, cần hỏi cơ quan giải quyết để xác định quyền lợi đúng."
+    },
+    {
+      "title": "Thông tin nhận tiền trợ cấp",
+      "when": {
+        "question": "need",
+        "values": [
+          "funeral",
+          "survivor"
+        ]
+      },
+      "body": "Chỉ kê khai khi thủ tục tương ứng yêu cầu. Đối chiếu người nhận hoặc người đại diện, hình thức nhận và thông tin tài khoản nếu lựa chọn chuyển khoản. Việc Cẩm Nang Số hướng dẫn không đồng nghĩa hồ sơ đã được duyệt trợ cấp."
+    }
+  ],
+  "submission": [
+    "Mở cổng chính thức và đăng nhập theo hướng dẫn.",
+    "Chọn nhóm liên thông khai tử; kiểm tra đúng cơ quan hộ tịch có thẩm quyền theo trường hợp của người đã mất.",
+    "Chọn các phần thủ tục cần thực hiện; kê khai thông tin và đính kèm giấy tờ đúng nhánh được cổng yêu cầu.",
+    "Rà soát người yêu cầu, người đã mất, thân nhân và người nhận trợ cấp (nếu có); gửi hồ sơ theo hướng dẫn.",
+    "Lưu mã hồ sơ và thông báo tiếp nhận. Theo dõi riêng kết quả hộ tịch, cư trú và chế độ nếu thực hiện cùng nhau."
+  ],
+  "duration": "Thời hạn phụ thuộc những thủ tục và chế độ gia đình lựa chọn. Xem ngày hẹn của từng phần trên thông báo tiếp nhận; không áp dụng một số ngày chung cho mọi hồ sơ.",
+  "fees": "Kiểm tra phí, lệ phí và trường hợp miễn theo thông báo trên cổng chính thức. Chi phí bản sao hoặc chuyển phát (nếu chọn) cần xem riêng. Cẩm Nang Số không thu phí nộp hồ sơ.",
+  "results": [
+    "Trích lục khai tử khi đăng ký được giải quyết.",
+    "Kết quả xóa đăng ký thường trú.",
+    "Quyết định hoặc thông báo giải quyết chế độ nếu có yêu cầu và đủ điều kiện."
+  ],
+  "followUp": "Lưu mã hồ sơ; kiểm tra Cổng Dịch vụ công hoặc VNeID. Nếu có yêu cầu bổ sung, thực hiện đúng nội dung và thời hạn trong thông báo. Liên hệ đơn vị đang giải quyết khi cần làm rõ.",
+  "resultItems": [
+    {
+      "text": "Trích lục khai tử khi đăng ký được giải quyết."
+    },
+    {
+      "text": "Kết quả xóa đăng ký thường trú."
+    },
+    {
+      "text": "Quyết định hoặc thông báo giải quyết chế độ nếu có yêu cầu và đủ điều kiện.",
+      "when": {
+        "question": "need",
+        "values": [
+          "funeral",
+          "survivor",
+          "unsure"
+        ]
+      }
+    }
+  ]
+}

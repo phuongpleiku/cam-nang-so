@@ -1,0 +1,10 @@
+.sites-runtime/
+node_modules/
+*.tar.gz
+*.log
+.env
+qa-output/
+.openai/
+tmp/
+.env.*
+!.env.example

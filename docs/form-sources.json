@@ -1,0 +1,100 @@
+[
+  {
+    "pdf": "assets/forms/tt-22-2025-byt.pdf",
+    "url": "https://syt.quangngai.gov.vn/upload/2006968/20250806/TT_22_2025_eb40e.pdf",
+    "sha256": "71da771e382e7444a682a119406b5e07dc92a5cc4f5c5ca0739ce893abddb534",
+    "pageCount": 17,
+    "groups": {
+      "mau-giay-chung-sinh-2025": [
+        {
+          "src": "assets/guides/mau-giay-chung-sinh-2025.png",
+          "sourcePage": 5,
+          "width": 1241,
+          "height": 1755
+        }
+      ]
+    }
+  },
+  {
+    "pdf": "assets/forms/tt-25-2025-byt-phu-luc.pdf",
+    "url": "https://syt.gialai.gov.vn/vi/van-ban-chi-dao-dieu-hanh/detail/V-v-trien-khai-Thong-tu-so-25-2025-TT-BYT-ngay-30-6-2025-cua-Bo-Y-te-ve-viec-quy-dinh-chi-tiet-thi-hanh-Luat-Bao-hiem-xa-hoi-Luat-An-toan-ve-sinh-lao-dong-ve-linh-vuc-y-te-va-mot-so-dieu-cua-Luat-Kham-benh-chua-benh-3160/?download=1&id=2",
+    "sha256": "627c969c74cbfc65d661d275594b5889ad94bc8189f72388a613f8f8545b23c1",
+    "pageCount": 29,
+    "groups": {
+      "mau-giay-bao-tu-2025": [
+        {
+          "src": "assets/guides/mau-giay-bao-tu-2025.png",
+          "sourcePage": 11,
+          "width": 1241,
+          "height": 1755
+        }
+      ]
+    }
+  },
+  {
+    "pdf": "assets/forms/03-vbhn-btp-2026.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/8/03-vbhn-btp.signed.pdf",
+    "sha256": "0295b29dcde0f8cc36d732c24c7b6f964174bd3a76d84318506fbd0b63a908e8",
+    "pageCount": 38,
+    "groups": {
+      "mau-lien-thong-khai-sinh": [
+        {
+          "src": "assets/guides/mau-lien-thong-khai-sinh-01.png",
+          "sourcePage": 31,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-sinh-02.png",
+          "sourcePage": 32,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-sinh-03.png",
+          "sourcePage": 33,
+          "width": 1241,
+          "height": 1755
+        }
+      ],
+      "mau-lien-thong-khai-tu": [
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-01.png",
+          "sourcePage": 33,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-02.png",
+          "sourcePage": 34,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-03.png",
+          "sourcePage": 35,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-04.png",
+          "sourcePage": 36,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-05.png",
+          "sourcePage": 37,
+          "width": 1241,
+          "height": 1755
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-tu-06.png",
+          "sourcePage": 38,
+          "width": 1241,
+          "height": 1755
+        }
+      ]
+    }
+  }
+]

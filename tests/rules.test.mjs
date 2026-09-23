@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {visibleQuestions,noticesFor,isComplete,setAnswer,checklistFor,searchProcedures} from '../dist/rules.js';
+const birth=JSON.parse(await readFile(new URL('../dist/data/khai-sinh.json',import.meta.url),'utf8'));
+const death=JSON.parse(await readFile(new URL('../dist/data/khai-tu.json',import.meta.url),'utf8'));
+test('Không hướng dẫn đăng ký khai sinh lại khi đã có khai sinh',()=>{const a={registered:'yes'};assert.equal(noticesFor(birth,a).some(n=>n.blocking),true);assert.equal(isComplete(birth,a),false);});
+test('Nhánh khai sinh thông thường đủ điều kiện xem danh sách, không ép căn cước',()=>{const a={registered:'no',role:'parent',birthPaper:'yes',residence:'mother',nationality:'no',identity:'no'};assert.equal(isComplete(birth,a),true);assert.equal(checklistFor(birth,a).some(i=>i.id==='birth-alternative'),false);assert.equal(noticesFor(birth,a).some(n=>n.title.includes('Căn cước')),false);});
+test('Thiếu giấy chứng sinh chỉ hiện hướng dẫn thay thế',()=>{const items=checklistFor(birth,{birthPaper:'no'});assert(items.some(i=>i.id==='birth-alternative'));assert(!items.some(i=>i.id==='birth-paper'));});
+test('Khai tử cơ bản không bắt trả lời về trợ cấp',()=>{const a={registered:'no',deathPaper:'yes',need:'basic'};assert.equal(visibleQuestions(death,a).length,3);assert.equal(isComplete(death,a),true);assert(!checklistFor(death,a).some(i=>i.id==='benefit-info'));});
+test('Đổi phạm vi khai tử xóa câu trả lời của nhánh không còn áp dụng',()=>{const a=setAnswer(death,{registered:'no',deathPaper:'yes',need:'survivor',benefit:['insurance','merit']},'need','basic');assert(!Object.hasOwn(a,'benefit'));assert.equal(isComplete(death,a),true);});
+test('Cho chọn nhiều chế độ nhưng Chưa rõ không kết hợp lựa chọn khác',()=>{const a={registered:'no',deathPaper:'yes',need:'survivor'};assert.deepEqual(setAnswer(death,a,'benefit',['insurance','merit']).benefit,['insurance','merit']);assert.throws(()=>setAnswer(death,a,'benefit',['insurance','unsure']));assert.throws(()=>setAnswer(death,a,'benefit',['unknown']));});
+test('Không cho bỏ qua câu hỏi bắt buộc và không nhận giá trị giả',()=>{assert.equal(isComplete(birth,{registered:'no'}),false);assert.throws(()=>setAnswer(birth,{},'registered','invalid'));assert.throws(()=>setAnswer(death,{need:'basic'},'benefit',['insurance']));});
+test('Tìm không dấu và tìm theo từ đồng nghĩa',()=>{assert.equal(searchProcedures([birth,death],'bao hiem')[0].id,'khai-sinh');assert.equal(searchProcedures([birth,death],'mai tang')[0].id,'khai-tu');assert.equal(searchProcedures([birth,death],'khong co thu tuc').length,0);});

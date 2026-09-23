@@ -1,0 +1,614 @@
+{
+  "id": "khai-sinh",
+  "version": 1,
+  "title": "Làm giấy tờ cho con mới sinh",
+  "shortTitle": "Giấy tờ cho bé",
+  "description": "Khai sinh, thường trú và bảo hiểm y tế cho bé. Căn cước nếu gia đình có nhu cầu.",
+  "category": "Gia đình & trẻ em",
+  "icon": "baby",
+  "keywords": [
+    "khai sinh",
+    "em bé",
+    "con",
+    "nhập khẩu",
+    "thường trú",
+    "bảo hiểm y tế",
+    "BHYT",
+    "căn cước"
+  ],
+  "officialName": "Liên thông đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế và cấp thẻ căn cước cho trẻ em dưới 6 tuổi",
+  "intro": "Trả lời vài câu để xem những việc phù hợp với gia đình bạn. Không cần nhập thông tin cá nhân ở đây.",
+  "reviewedAt": "2026-09-23",
+  "connectionRef": "lien-thong-khai-sinh",
+  "sources": [
+    {
+      "label": "Nghị định 301/2026/NĐ-CP · Quy trình liên thông mới",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-dinh-301-2026-nd-cp-ve-dang-ky-khai-sinh-thuong-tru-cap-the-bhyt-dang-ky-khai-tu-giai-quyet-mai-tang-phi-tu-tuat-1192609011059423.htm"
+    },
+    {
+      "label": "Văn bản hợp nhất · Hồ sơ và mẫu tờ khai",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/8/03-vbhn-btp.signed.pdf"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "birth-document",
+      "stage": "chuan-bi",
+      "src": "assets/guides/mau-giay-chung-sinh-2025.png",
+      "title": "Mẫu giấy chứng sinh do cơ sở y tế cấp",
+      "alt": "Mẫu giấy chứng sinh do cơ sở y tế cấp: Giấy chứng sinh. Trang 5 của PDF gốc.",
+      "caption": "Mẫu số 01 trong Thông tư 22/2025/TT-BYT. Dùng để nhận biết giấy đã được cấp; không tự điền mẫu trống để thay giấy do cơ quan cấp. Giấy đã cấp trước đây có thể có bố cục khác.",
+      "kind": "official-template",
+      "readingTip": "Tìm dòng “GIẤY CHỨNG SINH”, thông tin người mẹ, thời điểm sinh và phần ký của cơ sở cấp. Đây chưa phải giấy khai sinh.",
+      "pages": [
+        {
+          "src": "assets/guides/mau-giay-chung-sinh-2025.png",
+          "sourcePage": 5,
+          "width": 1241,
+          "height": 1755,
+          "label": "Giấy chứng sinh",
+          "note": "Đối chiếu họ tên mẹ, ngày giờ sinh và cơ sở cấp trên giấy của gia đình. Các ô số, ngày của Thông tư được để trống trong phụ lục gốc.",
+          "alt": "Mẫu giấy chứng sinh do cơ sở y tế cấp: Giấy chứng sinh. Trang 5 của PDF gốc."
+        }
+      ],
+      "originalPdf": "assets/forms/tt-22-2025-byt.pdf",
+      "source": {
+        "label": "Sở Y tế Quảng Ngãi · Thông tư 22/2025/TT-BYT",
+        "url": "https://syt.quangngai.gov.vn/upload/2006968/20250806/TT_22_2025_eb40e.pdf"
+      },
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "birth-form",
+      "stage": "cach-dien",
+      "src": "assets/guides/mau-lien-thong-khai-sinh-01.png",
+      "title": "Xem mẫu tờ khai liên thông cho bé",
+      "alt": "Xem mẫu tờ khai liên thông cho bé: Người làm thủ tục, bé và cha mẹ. Trang 31 của PDF gốc.",
+      "caption": "Mẫu số 01 trong Văn bản hợp nhất 03/VBHN-BTP năm 2026. Xem để biết cần thông tin gì; khi nộp trực tuyến, nhập trên cổng theo những mục được yêu cầu. Không cần in, ký hoặc tải mẫu này lên chỉ để làm theo hướng dẫn ở đây.",
+      "kind": "official-template",
+      "readingTip": "Trang 1 phân biệt người làm thủ tục, bé, mẹ và cha. Trang 2 có bảo hiểm y tế, lựa chọn căn cước và nhận kết quả. Trang 3 giải thích cách ghi.",
+      "pages": [
+        {
+          "src": "assets/guides/mau-lien-thong-khai-sinh-01.png",
+          "sourcePage": 31,
+          "width": 1241,
+          "height": 1755,
+          "label": "Người làm thủ tục, bé và cha mẹ",
+          "note": "Phần “người yêu cầu” là người đứng tên làm thủ tục. Phần “người được khai sinh” dùng thông tin của bé. Xem hướng dẫn điền bên dưới mẫu để biết lấy thông tin từ đâu.",
+          "alt": "Xem mẫu tờ khai liên thông cho bé: Người làm thủ tục, bé và cha mẹ. Trang 31 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-sinh-02.png",
+          "sourcePage": 32,
+          "width": 1241,
+          "height": 1755,
+          "label": "Bảo hiểm y tế, căn cước, nhận kết quả",
+          "note": "Chỉ kê khai các mục áp dụng cho gia đình và được cổng yêu cầu. Mục hỗ trợ kinh phí không có nghĩa mọi gia đình đều được hưởng.",
+          "alt": "Xem mẫu tờ khai liên thông cho bé: Bảo hiểm y tế, căn cước, nhận kết quả. Trang 32 của PDF gốc."
+        },
+        {
+          "src": "assets/guides/mau-lien-thong-khai-sinh-03.png",
+          "sourcePage": 33,
+          "width": 1241,
+          "height": 1755,
+          "label": "Ghi chú cách kê khai",
+          "note": "Đọc phần Ghi chú ở phía trên. Phía dưới trang gốc bắt đầu Mẫu số 02 về khai tử; bỏ qua phần đó khi làm khai sinh.",
+          "alt": "Xem mẫu tờ khai liên thông cho bé: Ghi chú cách kê khai. Trang 33 của PDF gốc."
+        }
+      ],
+      "originalPdf": "assets/forms/03-vbhn-btp-2026.pdf",
+      "source": {
+        "label": "Cổng Thông tin điện tử Chính phủ · 03/VBHN-BTP",
+        "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/8/03-vbhn-btp.signed.pdf"
+      },
+      "reviewedAt": "2026-09-23"
+    }
+  ],
+  "questions": [
+    {
+      "id": "registered",
+      "title": "Bé đã có giấy khai sinh chưa?",
+      "hint": "Giấy chứng sinh do cơ sở y tế cấp khác với giấy khai sinh do cơ quan hộ tịch cấp.",
+      "options": [
+        {
+          "value": "no",
+          "label": "Chưa có giấy khai sinh"
+        },
+        {
+          "value": "yes",
+          "label": "Đã có giấy khai sinh"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ],
+      "help": {
+        "title": "Tôi chưa phân biệt được hai loại giấy",
+        "text": "Giấy chứng sinh thường do cơ sở y tế cấp khi bé chào đời. Giấy khai sinh là kết quả sau khi đăng ký khai sinh. Hãy đọc dòng tên giấy gia đình đang giữ; hình bên dưới minh họa giấy chứng sinh. Nếu vẫn không rõ, chọn “Tôi chưa rõ” để nhờ kiểm tra.",
+        "visualId": "birth-document"
+      }
+    },
+    {
+      "id": "role",
+      "title": "Bạn là ai đối với bé?",
+      "hint": "Giúp xác định hướng dẫn cho người đứng tên yêu cầu.",
+      "options": [
+        {
+          "value": "parent",
+          "label": "Cha hoặc mẹ"
+        },
+        {
+          "value": "other",
+          "label": "Người giám hộ hoặc người làm thay"
+        }
+      ]
+    },
+    {
+      "id": "birthPaper",
+      "title": "Gia đình đã có giấy chứng sinh chưa?",
+      "hint": "Thường được cấp tại bệnh viện hoặc cơ sở y tế nơi bé chào đời.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Đã có giấy chứng sinh"
+        },
+        {
+          "value": "no",
+          "label": "Chưa có hoặc bị mất"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ],
+      "help": {
+        "title": "Giấy chứng sinh trông như thế nào?",
+        "text": "Tìm dòng “Giấy chứng sinh” trên tập giấy cơ sở y tế giao. Hình chỉ giúp tìm thông tin, không xác nhận giấy tờ hợp lệ.",
+        "visualId": "birth-document"
+      }
+    },
+    {
+      "id": "residence",
+      "title": "Bạn muốn đăng ký thường trú cho bé ở đâu?",
+      "hint": "Chọn theo nơi thường trú dự định đăng ký cho bé.",
+      "options": [
+        {
+          "value": "mother",
+          "label": "Cùng nơi thường trú của mẹ"
+        },
+        {
+          "value": "father",
+          "label": "Cùng nơi thường trú của cha"
+        },
+        {
+          "value": "other",
+          "label": "Ở nơi khác"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa quyết định"
+        }
+      ],
+      "help": {
+        "title": "Tôi chưa hiểu nơi thường trú và chủ hộ",
+        "text": "Bạn đang chọn địa chỉ dự định đăng ký cho bé, không phải địa chỉ bệnh viện. Chủ hộ là người đứng tên chủ hộ trong thông tin cư trú; có thể khác người sở hữu nhà. Nếu chưa quyết định, chọn mục tương ứng để được hướng dẫn thêm."
+      }
+    },
+    {
+      "id": "nationality",
+      "title": "Cha hoặc mẹ có quốc tịch nước ngoài không?",
+      "hint": "Một số trường hợp cần hướng dẫn hộ tịch riêng.",
+      "options": [
+        {
+          "value": "no",
+          "label": "Cha và mẹ đều là công dân Việt Nam"
+        },
+        {
+          "value": "yes",
+          "label": "Có người mang quốc tịch nước ngoài"
+        },
+        {
+          "value": "unsure",
+          "label": "Trường hợp khác / chưa rõ"
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "title": "Bạn có muốn làm căn cước cho bé trong lần này?",
+      "hint": "Đây là lựa chọn theo nhu cầu của người đại diện hợp pháp.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Có, tôi muốn đề nghị cấp căn cước"
+        },
+        {
+          "value": "no",
+          "label": "Chưa có nhu cầu"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi muốn tìm hiểu thêm"
+        }
+      ]
+    }
+  ],
+  "notices": [
+    {
+      "when": {
+        "question": "registered",
+        "values": [
+          "yes"
+        ]
+      },
+      "blocking": true,
+      "title": "Bé đã có khai sinh: cần hướng dẫn phần còn thiếu",
+      "text": "Không đăng ký khai sinh lần nữa. Hãy liên hệ đầu mối phường để xác định thủ tục thường trú, bảo hiểm y tế hoặc căn cước riêng cho bé. Danh sách liên thông dành cho trẻ chưa đăng ký khai sinh không áp dụng nguyên trạng."
+    },
+    {
+      "when": {
+        "question": "registered",
+        "values": [
+          "unsure"
+        ]
+      },
+      "blocking": true,
+      "title": "Hãy kiểm tra giấy tờ của bé trước",
+      "text": "Tìm dòng tên giấy tờ: “Giấy chứng sinh” hay “Giấy khai sinh”. Nếu vẫn chưa rõ, liên hệ cán bộ hộ tịch để kiểm tra trước khi nộp mới."
+    },
+    {
+      "when": {
+        "question": "nationality",
+        "values": [
+          "yes",
+          "unsure"
+        ]
+      },
+      "blocking": true,
+      "title": "Gia đình cần hướng dẫn hộ tịch riêng",
+      "text": "Yếu tố quốc tịch có thể làm thay đổi hồ sơ và cách kê khai. Hãy xác nhận với cán bộ hộ tịch phường trước khi dùng bộ hướng dẫn thông thường này."
+    },
+    {
+      "when": {
+        "question": "role",
+        "values": [
+          "other"
+        ]
+      },
+      "title": "Kiểm tra tư cách người làm thủ tục",
+      "text": "Nhờ cán bộ hộ tịch hướng dẫn giấy tờ về đại diện, giám hộ hoặc ủy quyền phù hợp với trường hợp của bạn trước khi nộp."
+    },
+    {
+      "when": {
+        "question": "residence",
+        "values": [
+          "other",
+          "unsure"
+        ]
+      },
+      "title": "Phần thường trú cần được kiểm tra thêm",
+      "text": "Hồ sơ cư trú phụ thuộc nơi đăng ký và quan hệ với chủ hộ, chủ sở hữu chỗ ở. Xác nhận điều kiện và giấy tờ cụ thể với cơ quan đăng ký cư trú."
+    },
+    {
+      "when": {
+        "question": "identity",
+        "values": [
+          "yes",
+          "unsure"
+        ]
+      },
+      "title": "Căn cước cho trẻ dưới 6 tuổi",
+      "text": "Chỉ thực hiện trong quy trình liên thông khi người đại diện hợp pháp đề nghị. Trẻ dưới 6 tuổi không phải thu nhận thông tin nhân dạng, sinh trắc học trong thủ tục này."
+    }
+  ],
+  "checklist": [
+    {
+      "id": "login",
+      "kind": "Chuẩn bị thao tác",
+      "title": "Kiểm tra việc đăng nhập cổng chính thức",
+      "help": "Chuẩn bị điện thoại có thể nhận thông báo và tài khoản định danh dùng để đăng nhập theo hướng dẫn trên Cổng Dịch vụ công. Chỉ đăng nhập tại cổng hoặc VNeID.",
+      "missing": "Nếu không đăng nhập được, dùng mục hỗ trợ của cổng hoặc liên hệ đầu mối phường. Không gửi mật khẩu hay mã OTP cho người khác.",
+      "guideRef": "dang-nhap",
+      "summary": "Xem cách đăng nhập bằng tài khoản của người làm thủ tục. Bạn có thể chuẩn bị giấy tờ trước."
+    },
+    {
+      "id": "birth-paper",
+      "visualId": "birth-document",
+      "kind": "Giấy tờ",
+      "title": "Giấy chứng sinh của bé",
+      "when": {
+        "question": "birthPaper",
+        "values": [
+          "yes"
+        ]
+      },
+      "help": "Kiểm tra họ tên mẹ, ngày sinh và thông tin cơ sở y tế. Giấy chứng sinh có thể được chia sẻ điện tử; nếu cổng yêu cầu đính kèm, làm theo định dạng hiển thị tại đó.",
+      "missing": "Nếu có giấy nhưng dữ liệu chưa hiện trên cổng, kiểm tra số giấy, ngày cấp và cơ sở cấp; liên hệ nơi cấp hoặc cán bộ tiếp nhận để được hướng dẫn.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Tìm đúng giấy của cơ sở y tế",
+            "action": "Lấy tập giấy bệnh viện/cơ sở y tế giao khi mẹ và bé ra viện. Tìm tờ có tên “Giấy chứng sinh”. Đặt bên cạnh căn cước của mẹ để đối chiếu; giấy ra viện không mặc nhiên thay cho giấy chứng sinh.",
+            "expected": "Tên giấy là Giấy chứng sinh; mẫu chính thức phía trên giúp nhận biết và tìm thông tin trên giấy của gia đình."
+          },
+          {
+            "title": "Đọc và đối chiếu từng nhóm thông tin",
+            "action": "Kiểm tra họ tên mẹ; ngày, giờ sinh, giới tính và nơi sinh của bé; số giấy, ngày cấp, cơ sở cấp. Nếu có điểm khác với giấy tờ của mẹ hoặc thực tế, ghi lại điểm khác để hỏi nơi cấp, không tự sửa chữ trên giấy."
+          },
+          {
+            "title": "Chuẩn bị dùng khi kê khai",
+            "action": "Đặt bản giấy ở nơi dễ lấy lúc điền hồ sơ. Nếu cổng tìm thấy giấy chứng sinh điện tử, đối chiếu dữ liệu đó với giấy của gia đình. Nếu cổng yêu cầu tệp, mở hướng dẫn chụp và đính kèm bên dưới.",
+            "expected": "Bạn biết lấy từng thông tin từ chỗ nào trên giấy, hoặc biết nội dung đang cần nơi cấp kiểm tra."
+          }
+        ],
+        "ready": "Đã có giấy, đã đọc được thông tin và kiểm tra các chỗ cần đối chiếu. Chỉ chuẩn bị tệp đính kèm khi cổng yêu cầu.",
+        "troubleshooting": [
+          {
+            "problem": "Giấy bị sai hoặc cổng không tìm thấy dữ liệu",
+            "solution": "Liên hệ nơi cấp giấy, nêu họ tên mẹ, ngày sinh của bé, số/ngày cấp giấy và chính xác chỗ sai hoặc thông báo không tìm thấy. Hỏi cách điều chỉnh/kiểm tra dữ liệu. Không tự tạo một giấy chứng sinh khác."
+          }
+        ],
+        "relatedGuide": "chup-tai-giay-to"
+      },
+      "summary": "Lấy giấy cơ sở y tế giao khi bé chào đời; đối chiếu tên mẹ và thông tin sinh của bé."
+    },
+    {
+      "id": "birth-alternative",
+      "visualId": "birth-document",
+      "kind": "Cần hướng dẫn thêm",
+      "title": "Xác định giấy tờ thay giấy chứng sinh",
+      "when": {
+        "question": "birthPaper",
+        "values": [
+          "no",
+          "unsure"
+        ]
+      },
+      "help": "Trường hợp không có giấy chứng sinh có thể dùng giấy tờ thay thế theo pháp luật hộ tịch. Cần xác định đúng trường hợp sinh và tình trạng giấy tờ.",
+      "missing": "Liên hệ cơ sở y tế đã cấp giấy nếu bị mất, hoặc cán bộ hộ tịch phường nếu chưa từng được cấp. Không tự tạo giấy chứng sinh.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Phân biệt chưa được cấp hay đã mất",
+            "action": "Kiểm tra lại tập giấy ra viện và hỏi người trong gia đình giữ hồ sơ. Ghi riêng: bé sinh ở đâu, ngày nào, giấy đã từng được cấp hay chưa. Nếu chưa rõ tên giấy, so với mẫu giấy chứng sinh phía trên."
+          },
+          {
+            "title": "Liên hệ đúng nơi để hỏi",
+            "action": "Đã sinh tại cơ sở y tế nhưng chưa nhận hoặc bị mất giấy: liên hệ cơ sở đó và nói “Tôi cần giấy chứng sinh để khai sinh cho bé, giấy hiện chưa có/bị mất”. Nếu sinh ngoài cơ sở y tế hoặc không rõ giấy thay thế: hỏi bộ phận hộ tịch phường và trình bày hoàn cảnh sinh."
+          },
+          {
+            "title": "Ghi lại giấy tờ được hướng dẫn cho trường hợp này",
+            "action": "Hỏi rõ tên giấy cần chuẩn bị, ai cấp/xác nhận, mang theo gì, làm tại đâu và có cần bản gốc không. Chuẩn bị thông tin mẹ, thời điểm/nơi sinh để cơ quan kiểm tra; chỉ điền đơn hoặc giấy thay thế đúng hướng dẫn được xác nhận.",
+            "expected": "Bạn có một danh sách cụ thể cho trường hợp của bé, thay vì tự chọn giấy thay thế trên mạng."
+          }
+        ],
+        "ready": "Đã được hướng dẫn đúng trường hợp và chuẩn bị giấy tờ tương ứng. Nếu mới hỏi mà chưa có giấy cần thiết, giữ mục này chưa đánh dấu.",
+        "troubleshooting": [
+          {
+            "problem": "Tôi chưa biết gọi bộ phận nào",
+            "solution": "Gọi đầu mối phường Pleiku 0269 3828 313, đề nghị chỉ dẫn bộ phận hộ tịch: “Gia đình chưa có giấy chứng sinh, bé sinh tại …, nhờ hướng dẫn giấy tờ để khai sinh”. Xác nhận nơi tiếp nhận trước khi đến."
+          }
+        ]
+      },
+      "summary": "Kiểm tra lại giấy ra viện; xem cách hỏi nơi cấp hoặc hộ tịch khi chưa có giấy chứng sinh."
+    },
+    {
+      "id": "family-info",
+      "kind": "Thông tin để điền",
+      "title": "Thông tin của bé, cha mẹ và người yêu cầu",
+      "help": "Chuẩn bị họ tên dự định đăng ký cho bé; thông tin định danh, nơi cư trú và liên hệ của người yêu cầu, cha mẹ. Đối chiếu giấy tờ đang có trước khi điền.",
+      "missing": "Nếu thông tin không khớp hoặc chưa xác định thông tin cha/mẹ, nhờ cán bộ hộ tịch hướng dẫn cách kê khai. Không điền thông tin suy đoán.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Chuẩn bị thông tin của bé",
+            "action": "Gia đình thống nhất họ, chữ đệm, tên muốn đăng ký; viết đầy đủ dấu tiếng Việt ra giấy riêng. Đối chiếu ngày, giờ, nơi sinh và giới tính với giấy chứng sinh/giấy thay thế. Không dùng tên gọi ở nhà thay tên muốn đăng ký."
+          },
+          {
+            "title": "Để thông tin cha, mẹ riêng từng người",
+            "action": "Lấy căn cước/thông tin định danh của cha, mẹ; đối chiếu họ tên, ngày sinh, số định danh và nơi cư trú. Nếu có đăng ký kết hôn, tìm thông tin giấy chứng nhận để tra khi tờ khai yêu cầu. Không mặc định phải tải bản chụp tất cả giấy tờ này."
+          },
+          {
+            "title": "Xác định người đứng tên yêu cầu",
+            "action": "Chọn đúng người thực hiện thủ tục; chuẩn bị họ tên, số định danh, số điện thoại đang sử dụng và quan hệ với bé. Cha/mẹ đứng tên thì dùng thông tin của chính cha/mẹ. Người làm thay cần kiểm tra tư cách đại diện/ủy quyền với hộ tịch."
+          },
+          {
+            "title": "So lại ba nhóm trước khi nhập",
+            "action": "Đọc lại từng nhóm: bé — cha mẹ — người yêu cầu. Giữ giấy tờ để đối chiếu cạnh thiết bị. Chỉ nhập thông tin thật vào đúng phần trên cổng chính thức.",
+            "expected": "Bạn phân biệt được thông tin thuộc về ai, không dùng số định danh của mẹ cho mục của bé."
+          }
+        ],
+        "ready": "Đã thống nhất tên bé, có thông tin để đối chiếu của cha mẹ/người yêu cầu và biết mục nào cần cán bộ làm rõ.",
+        "troubleshooting": [
+          {
+            "problem": "Thiếu thông tin cha/mẹ hoặc các giấy tờ không khớp",
+            "solution": "Ghi lại đúng trường đang thiếu hoặc khác nhau, ví dụ họ tên mẹ giữa căn cước và giấy chứng sinh. Hỏi bộ phận hộ tịch cách kê khai trong trường hợp đó trước khi gửi; không đoán số định danh, ngày sinh hay thông tin cha/mẹ."
+          }
+        ]
+      },
+      "summary": "Thống nhất tên bé; để riêng thông tin của bé, cha mẹ và người đứng tên yêu cầu."
+    },
+    {
+      "id": "household",
+      "kind": "Thông tin để điền",
+      "title": "Địa chỉ thường trú và thông tin chủ hộ",
+      "help": "Chuẩn bị địa chỉ đăng ký cho bé, họ tên và số định danh của chủ hộ, quan hệ của bé với chủ hộ. Người liên quan thực hiện xác nhận khi có thông báo chính thức.",
+      "missing": "Trao đổi với chủ hộ và cơ quan đăng ký cư trú để biết phần xác nhận, giấy tờ cần bổ sung đúng trường hợp.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Chốt nơi định đăng ký thường trú cho bé",
+            "action": "Hỏi cha/mẹ về địa chỉ thường trú muốn đăng ký cho bé. Ghi địa chỉ đầy đủ theo các ô cổng yêu cầu. Với địa chỉ tại phường Pleiku hiện nay, đối chiếu tên tỉnh Gia Lai và phường Pleiku; không tự chọn đơn vị gần giống khi không tìm thấy."
+          },
+          {
+            "title": "Hỏi đúng thông tin chủ hộ",
+            "action": "Nhờ chủ hộ kiểm tra họ tên, số định danh và thông tin hộ hiện có. Chủ hộ và chủ sở hữu chỗ ở có thể là hai người khác nhau. Chuẩn bị thông tin đúng vai trò mà tờ khai hỏi."
+          },
+          {
+            "title": "Xác định quan hệ của bé với chủ hộ",
+            "action": "Đọc ô “Quan hệ với chủ hộ” theo góc nhìn của bé. Ví dụ: nếu ông nội là chủ hộ thì bé có quan hệ cháu; không chọn “con” chỉ vì bạn là cha/mẹ đang điền. Chọn nhãn phù hợp trong danh sách cổng."
+          },
+          {
+            "title": "Thống nhất cách theo dõi xác nhận",
+            "action": "Báo cho chủ hộ/chủ sở hữu biết gia đình dự định đăng ký cho bé. Khi cổng hoặc cơ quan cư trú yêu cầu ý kiến/xác nhận, người liên quan thực hiện theo thông báo chính thức. Hỏi cơ quan cư trú nếu chưa rõ ai phải xác nhận.",
+            "expected": "Bạn biết địa chỉ, chủ hộ và quan hệ cần kê khai; người liên quan biết để theo dõi thông báo."
+          }
+        ],
+        "ready": "Đã kiểm tra địa chỉ, thông tin chủ hộ, quan hệ và cách phối hợp xác nhận khi được yêu cầu.",
+        "troubleshooting": [
+          {
+            "problem": "Tôi không biết chủ hộ hoặc địa chỉ hiện trên cổng khác",
+            "solution": "Nhờ người trong hộ kiểm tra thông tin cư trú hiện có. Nếu vẫn không xác định được hoặc địa chỉ chưa cập nhật, liên hệ cơ quan đăng ký cư trú với địa chỉ cụ thể và nội dung cổng hiển thị; không dùng sổ hộ khẩu cũ làm căn cứ duy nhất."
+          }
+        ]
+      },
+      "summary": "Hỏi địa chỉ đăng ký cho bé, ai là chủ hộ và bé có quan hệ gì với chủ hộ."
+    },
+    {
+      "id": "residence-extra",
+      "kind": "Theo trường hợp",
+      "title": "Giấy tờ cư trú khi bé đăng ký ở nơi khác",
+      "when": {
+        "question": "residence",
+        "values": [
+          "other"
+        ]
+      },
+      "help": "Đăng ký khác nơi thường trú của cha, mẹ cần thành phần hồ sơ theo quy định cư trú. Danh sách cụ thể cần được cơ quan cư trú xác nhận.",
+      "missing": "Liên hệ cơ quan đăng ký cư trú nơi dự định đăng ký cho bé trước khi nộp.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Ghi rõ nơi khác là nơi nào",
+            "action": "Chuẩn bị địa chỉ muốn đăng ký, bé sẽ ở với ai, quan hệ với người đó và vì sao không đăng ký cùng nơi thường trú của cha/mẹ. Đây là thông tin để cán bộ xác định trường hợp."
+          },
+          {
+            "title": "Hỏi cơ quan cư trú tại nơi định đăng ký",
+            "action": "Nói rõ “Tôi muốn đăng ký thường trú cho con mới sinh khác nơi thường trú của cha/mẹ”. Hỏi điều kiện áp dụng, giấy tờ chứng minh và người cần đồng ý/xác nhận cho đúng hoàn cảnh của bé."
+          },
+          {
+            "title": "Chuẩn bị theo danh sách đã được xác nhận",
+            "action": "Với từng giấy được yêu cầu, ghi tên giấy, người cung cấp, nơi lấy và cách nộp. Nếu cần sự đồng ý của người liên quan, hỏi rõ làm trực tiếp hay xác nhận điện tử. Sau đó đối chiếu danh sách với mục hồ sơ trên cổng."
+          }
+        ],
+        "ready": "Đã xác định điều kiện và đủ giấy tờ/xác nhận theo hướng dẫn cho địa chỉ này. Chưa coi danh sách thông thường là đủ cho trường hợp ở nơi khác.",
+        "troubleshooting": [
+          {
+            "problem": "Cổng yêu cầu giấy tôi chưa được hướng dẫn",
+            "solution": "Ghi chính xác tên mục giấy tờ và liên hệ cơ quan cư trú đang tiếp nhận để hỏi có áp dụng cho trường hợp của bé không, ai cấp và nộp bằng cách nào. Không tải một giấy khác vào chỉ để bỏ qua ô bắt buộc."
+          }
+        ]
+      },
+      "summary": "Nếu bé đăng ký khác nơi cha/mẹ thường trú, cần hỏi cơ quan cư trú về trường hợp này."
+    },
+    {
+      "id": "health",
+      "kind": "Thông tin để điền",
+      "title": "Nơi khám, chữa bệnh ban đầu cho bé",
+      "help": "Tìm hiểu cơ sở phù hợp, thuận tiện cho gia đình; khi nộp chọn trong danh sách cơ sở được cổng chính thức cho phép.",
+      "missing": "Nếu chưa biết chọn nơi nào hoặc không thấy cơ sở muốn chọn, hỏi cơ quan bảo hiểm xã hội hoặc cán bộ tiếp nhận.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Chọn trước cơ sở gia đình muốn đăng ký",
+            "action": "Ghi tên đầy đủ một cơ sở khám chữa bệnh thuận tiện cho bé. Đây là mong muốn ban đầu; cần kiểm tra cơ sở có được lựa chọn trên cổng cho trường hợp của bé hay không."
+          },
+          {
+            "title": "Tìm trong phần bảo hiểm y tế của tờ khai",
+            "action": "Khi đến bước điền, mở danh sách nơi khám chữa bệnh ban đầu. Nếu có ô tìm kiếm, nhập một phần tên cơ sở; nếu có bộ lọc địa bàn, chọn đúng địa bàn trước. Đọc cả tên và địa chỉ để tránh cơ sở trùng tên."
+          },
+          {
+            "title": "Kiểm tra lại lựa chọn",
+            "action": "Chọn cơ sở đúng trong danh sách cổng cho phép, rồi đọc lại tên đã xuất hiện trên tờ khai. Không gõ một tên tự do vào ô khác để thay lựa chọn bị thiếu.",
+            "expected": "Cơ sở muốn đăng ký xuất hiện ở đúng mục nơi khám chữa bệnh ban đầu, hoặc bạn biết cần hỏi cơ quan BHXH trước."
+          }
+        ],
+        "ready": "Đã chuẩn bị tên cơ sở mong muốn để đối chiếu khi kê khai. Nếu cơ sở không có trong danh sách, cần hỏi lại trước khi gửi.",
+        "troubleshooting": [
+          {
+            "problem": "Không thấy cơ sở hoặc không biết chọn cơ sở nào",
+            "solution": "Hỏi cơ quan BHXH/cán bộ tiếp nhận: “Gia đình ở …, muốn đăng ký khám chữa bệnh ban đầu cho trẻ dưới 6 tuổi tại …; cơ sở nào được đăng ký hiện nay?”. Không tự chọn đại một cơ sở để qua bước."
+          }
+        ]
+      },
+      "summary": "Chuẩn bị tên nơi khám chữa bệnh mong muốn; đối chiếu danh sách được chọn trên cổng."
+    }
+  ],
+  "fields": [
+    {
+      "title": "Người yêu cầu là ai?",
+      "body": "Đây là người đứng tên yêu cầu giải quyết thủ tục. Đối chiếu họ tên, số định danh và số điện thoại của chính người đó.",
+      "example": "Ví dụ: mẹ làm thủ tục thì phần người yêu cầu là thông tin của mẹ.",
+      "source": "Lấy từ giấy tờ định danh của người đứng tên yêu cầu, không lấy thông tin của bé.",
+      "check": "Đọc lại tên người yêu cầu và số điện thoại liên hệ trước khi sang phần thông tin của bé."
+    },
+    {
+      "title": "Điền thông tin của bé như thế nào?",
+      "body": "Nhập họ tên dự định đăng ký, kiểm tra kỹ dấu tiếng Việt. Đối chiếu ngày sinh, nơi sinh với giấy chứng sinh hoặc giấy tờ thay thế hợp lệ.",
+      "example": "Ví dụ minh họa tên: Nguyễn Minh An. Không dùng tên ví dụ để nộp hồ sơ.",
+      "source": "Ngày sinh, nơi sinh: đối chiếu giấy chứng sinh hoặc giấy thay thế đã được xác định phù hợp. Tên bé: dùng tên gia đình đã thống nhất.",
+      "check": "So lại dấu tiếng Việt và ngày tháng; không sao chép tên ví dụ vào hồ sơ thật."
+    },
+    {
+      "title": "Nơi sinh, quê quán và thường trú có giống nhau không?",
+      "body": "Đây là các mục khác nhau. Nơi sinh đối chiếu giấy chứng sinh; nơi thường trú là địa chỉ đề nghị đăng ký cư trú. Với quê quán, làm theo hướng dẫn của tờ khai hoặc cán bộ hộ tịch, không tự sao chép địa chỉ bệnh viện."
+    },
+    {
+      "title": "Thông tin cha, mẹ và việc đăng ký kết hôn",
+      "body": "Đối chiếu giấy tờ định danh và thông tin hộ tịch của cha, mẹ. Nếu có đăng ký kết hôn, chuẩn bị thông tin giấy chứng nhận khi tờ khai yêu cầu. Trường hợp chưa đăng ký kết hôn hoặc chưa xác định cha/mẹ cần hướng dẫn riêng; không tự điền thay thông tin còn thiếu."
+    },
+    {
+      "title": "Phần đăng ký thường trú",
+      "body": "Nhập đúng địa chỉ, thông tin chủ hộ và quan hệ với chủ hộ. Theo dõi yêu cầu xác nhận qua VNeID hoặc hướng dẫn của cơ quan cư trú. Đừng bỏ qua thông báo cần người liên quan xác nhận."
+    },
+    {
+      "title": "Phần bảo hiểm y tế",
+      "body": "Chọn cơ sở khám, chữa bệnh ban đầu từ danh sách hiện trên cổng. Kiểm tra lại tên cơ sở và địa bàn trước khi gửi."
+    },
+    {
+      "title": "Phần đề nghị cấp căn cước",
+      "when": {
+        "question": "identity",
+        "values": [
+          "yes",
+          "unsure"
+        ]
+      },
+      "body": "Tại mục cấp căn cước, người đại diện hợp pháp chọn có hoặc không đề nghị. Chỉ chọn có khi gia đình có nhu cầu; kiểm tra cách nhận thẻ được cổng cho phép."
+    }
+  ],
+  "submission": [
+    "Mở cổng chính thức và đăng nhập theo hướng dẫn.",
+    "Chọn nhóm liên thông khai sinh; chọn đúng tỉnh Gia Lai và cơ quan có thẩm quyền theo trường hợp cư trú.",
+    "Điền tờ khai, kiểm tra dữ liệu đã được điền sẵn và đính kèm đúng tài liệu mà cổng yêu cầu.",
+    "Kiểm tra toàn bộ thông tin, chọn cách nhận kết quả được cung cấp, thanh toán nếu có thông báo rồi gửi hồ sơ.",
+    "Lưu mã hồ sơ và thông báo tiếp nhận. Việc mở cổng hoặc điền nháp chưa có nghĩa là hồ sơ đã được tiếp nhận."
+  ],
+  "duration": "Nhóm khai sinh, thường trú và BHYT: không quá 3 ngày làm việc khi nhận đủ hồ sơ; trường hợp xác minh không quá 5 ngày. Căn cước có thời hạn riêng: không quá 5 ngày làm việc từ khi cơ quan có thẩm quyền nhận hồ sơ điện tử. Xem ngày hẹn trên thông báo chính thức.",
+  "fees": "Xem thông báo phí, lệ phí áp dụng tại Gia Lai trên cổng chính thức. Bản sao và chuyển phát (nếu chọn) có thể có chi phí riêng; Cẩm Nang Số không thu phí nộp hồ sơ.",
+  "results": [
+    "Giấy khai sinh và kết quả điện tử tương ứng.",
+    "Thông báo kết quả đăng ký thường trú và thẻ bảo hiểm y tế.",
+    "Thẻ căn cước nếu có đề nghị và hồ sơ được giải quyết."
+  ],
+  "followUp": "Kiểm tra thông báo trên Cổng Dịch vụ công hoặc VNeID. Nếu cần bổ sung, đọc rõ giấy tờ, nội dung và thời hạn được yêu cầu; bổ sung vào hồ sơ đang xử lý theo hướng dẫn.",
+  "resultItems": [
+    {
+      "text": "Giấy khai sinh và kết quả điện tử tương ứng."
+    },
+    {
+      "text": "Thông báo kết quả đăng ký thường trú và thẻ bảo hiểm y tế."
+    },
+    {
+      "text": "Thẻ căn cước nếu có đề nghị và hồ sơ được giải quyết.",
+      "when": {
+        "question": "identity",
+        "values": [
+          "yes",
+          "unsure"
+        ]
+      }
+    }
+  ]
+}

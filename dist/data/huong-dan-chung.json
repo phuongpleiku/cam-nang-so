@@ -1,0 +1,208 @@
+{
+  "dang-nhap": {
+    "reviewedAt": "2026-09-23",
+    "sources": [
+      {
+        "label": "Cổng liên thông · màn hình đăng nhập VNeID và mục xem hướng dẫn",
+        "url": "https://lienthong.dichvucong.gov.vn/"
+      },
+      {
+        "label": "Bộ Công an · sử dụng tài khoản định danh trên dịch vụ công",
+        "url": "https://dhannd.bocongan.gov.vn/dien-dan-trao-doi/huong-dan-su-dung-tai-khoan-dinh-danh-dien-tu-tren-cong-dich-vu-cong-quoc-gia-va-cong-dich-vu-cong-cua-dia-phuong-bo-nganh-a-2540"
+      },
+      {
+        "label": "Bộ Công an · đăng ký và kích hoạt VNeID",
+        "url": "https://bocongan.gov.vn/phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so/thong-tin-huong-dan-nguoi-dan-su-dung-ung-dung-vneid-hieu-qua-d131-t33342.html"
+      },
+      {
+        "label": "Bộ Công an · cấp tài khoản định danh mức độ 2",
+        "url": "https://bocongan.gov.vn/bai-viet/nghi-dinh-quy-dinh-ve-dinh-danh-va-xac-thuc-dien-tu-d1-t1418"
+      }
+    ],
+    "paths": [
+      {
+        "label": "Nhập tài khoản · điện thoại hoặc máy tính",
+        "intro": "Để điện thoại có mạng và tài khoản VNeID của người đứng tên làm thủ tục sẵn sàng. Bạn chỉ nhập thông tin đăng nhập trên cổng chính thức. Trang hướng dẫn này sẽ được giữ lại ở tab hiện tại.",
+        "steps": [
+          {
+            "title": "Mở cổng liên thông",
+            "action": "Bấm liên kết dưới đây. Trình duyệt mở một tab mới; kiểm tra thanh địa chỉ có lienthong.dichvucong.gov.vn.",
+            "links": [
+              {
+                "label": "Mở cổng liên thông",
+                "url": "https://lienthong.dichvucong.gov.vn/"
+              }
+            ],
+            "expected": "Trang có hai nhóm thủ tục: khai sinh và khai tử."
+          },
+          {
+            "title": "Chọn đúng nhóm thủ tục",
+            "action": "Làm giấy tờ cho bé: bấm ô có chữ “đăng ký khai sinh”. Làm thủ tục cho người đã mất: bấm ô có chữ “đăng ký khai tử”. Nếu chưa đăng nhập, cổng chuyển sang VNeID.",
+            "expected": "Màn hình “Đăng nhập VNeID”, có ô số định danh và mật khẩu. Nếu đã vào tờ khai, bạn có thể bỏ qua bước đăng nhập."
+          },
+          {
+            "title": "Điền tài khoản của người làm thủ tục",
+            "action": "Chạm ô “Số định danh cá nhân” và nhập 12 số trên căn cước của người đứng tên yêu cầu. Chạm ô “Mật khẩu”, nhập mật khẩu đăng nhập VNeID của người đó. Không điền số điện thoại, số của bé hoặc số của người đã mất vào ô số định danh. Bấm “Đăng nhập”.",
+            "expected": "Cổng chuyển sang bước xác thực hoặc thông báo chỗ cần sửa. Mật khẩu hiện thành dấu chấm là bình thường."
+          },
+          {
+            "title": "Thực hiện xác thực nếu được yêu cầu",
+            "action": "Đọc thông báo trên màn hình để biết nhận mã ở đâu. Nếu yêu cầu OTP gửi SMS, mở Tin nhắn trên điện thoại đăng ký VNeID, xem mã mới nhất rồi trở lại tab đăng nhập để nhập mã. Nếu yêu cầu xác nhận trong VNeID, mở ứng dụng và làm theo yêu cầu đang hiển thị. Giữ riêng mật khẩu và mã xác thực.",
+            "expected": "Xác thực thành công và trình duyệt trở lại cổng liên thông."
+          },
+          {
+            "title": "Kiểm tra đã vào đúng tài khoản",
+            "action": "Đối chiếu tên tài khoản hoặc phần thông tin người yêu cầu trên cổng với người đứng tên làm thủ tục. Đến được tờ khai chưa có nghĩa đã gửi hồ sơ. Nếu sai tài khoản, đăng xuất trên cổng rồi đăng nhập lại bằng đúng tài khoản.",
+            "expected": "Cổng cho mở tờ khai của nhóm bạn đã chọn, không tiếp tục yêu cầu đăng nhập."
+          },
+          {
+            "title": "Quay lại danh sách chuẩn bị",
+            "action": "Mở danh sách tab của trình duyệt (biểu tượng các ô hoặc ô có số), chọn tab “Cẩm Nang Số”. Giữ tab cổng để tiếp tục sau khi chuẩn bị xong.",
+            "expected": "Bạn vẫn thấy danh sách giấy tờ và tiến độ đã đánh dấu ở đây."
+          }
+        ],
+        "ready": "Bạn đã vào được cổng bằng đúng tài khoản và biết cách trở lại tab hướng dẫn. Đăng nhập thành công không đồng nghĩa hồ sơ đã được gửi."
+      },
+      {
+        "label": "Quét QR · cần hai thiết bị",
+        "intro": "Dùng điện thoại đã đăng nhập VNeID để quét mã trên máy tính. Nếu chỉ có một thiết bị hoặc không dùng QR, chọn “Nhập tài khoản”.",
+        "steps": [
+          {
+            "title": "Mở thủ tục trên máy tính",
+            "action": "Bấm liên kết, chọn ô khai sinh hoặc khai tử đúng nhu cầu. Khi chưa đăng nhập, cổng mở màn hình VNeID.",
+            "links": [
+              {
+                "label": "Mở cổng liên thông",
+                "url": "https://lienthong.dichvucong.gov.vn/"
+              }
+            ],
+            "expected": "Có ô tài khoản ở bên trái và mã QR đăng nhập ở bên phải."
+          },
+          {
+            "title": "Mở VNeID trên điện thoại",
+            "action": "Đăng nhập ứng dụng bằng tài khoản của người đứng tên yêu cầu. Chọn chức năng quét mã QR trong ứng dụng VNeID; hướng camera vào mã QR đang hiển thị trên màn hình máy tính.",
+            "expected": "VNeID nhận mã và hiện yêu cầu xác nhận đăng nhập. Đây là quét bằng VNeID, không phải bằng ứng dụng Camera thông thường."
+          },
+          {
+            "title": "Xác nhận yêu cầu vừa tạo",
+            "action": "Đọc thông tin yêu cầu trong VNeID. Chỉ xác nhận yêu cầu đăng nhập bạn vừa tạo trên máy tính; thực hiện bước xác thực ứng dụng yêu cầu. Nếu mã trên máy tính hết hạn, tải lại trang đăng nhập rồi quét mã mới.",
+            "expected": "Màn hình máy tính chuyển trở lại cổng liên thông sau khi xác thực thành công."
+          },
+          {
+            "title": "Kiểm tra tên và trở lại hướng dẫn",
+            "action": "Kiểm tra đúng tên người đứng tên làm thủ tục ở tài khoản hoặc phần người yêu cầu. Bấm tab “Cẩm Nang Số” trên thanh tab của trình duyệt để tiếp tục chuẩn bị. Chưa bấm gửi hồ sơ ở bước này.",
+            "expected": "Bạn có hai tab: cổng để kê khai và Cẩm Nang Số để xem hướng dẫn."
+          }
+        ],
+        "ready": "Cổng đã cho mở tờ khai bằng đúng tài khoản. Bạn giữ được tab hướng dẫn bên cạnh tab cổng."
+      },
+      {
+        "label": "Chưa có / chưa kích hoạt VNeID",
+        "intro": "Cài ứng dụng và có tài khoản định danh là hai việc khác nhau. Trước hết hãy kiểm tra mình đã được cấp, kích hoạt tài khoản hay chưa.",
+        "steps": [
+          {
+            "title": "Kiểm tra điện thoại đã có VNeID chưa",
+            "action": "Tìm biểu tượng VNeID trên điện thoại và mở ứng dụng. Nếu chưa cài, chọn đúng kho ứng dụng của điện thoại qua các liên kết do trang đăng nhập VNeID công bố dưới đây.",
+            "links": [
+              {
+                "label": "VNeID cho iPhone · App Store",
+                "url": "https://apps.apple.com/vn/app/vneid/id1582750372?l=vi"
+              },
+              {
+                "label": "VNeID cho Android · Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.vnid"
+              }
+            ],
+            "expected": "Bạn mở được ứng dụng VNeID."
+          },
+          {
+            "title": "Nếu đã được cấp tài khoản nhưng chưa kích hoạt",
+            "action": "Trên ứng dụng, tìm “Kích hoạt” hoặc “Kích hoạt tài khoản định danh điện tử”. Nhập số định danh và số điện thoại đã đăng ký; gửi yêu cầu, nhập mã xác thực khi ứng dụng yêu cầu rồi tự thiết lập mật khẩu và thông tin bảo vệ tài khoản theo màn hình. Nếu ứng dụng báo chưa được cấp tài khoản định danh, chuyển sang bước tiếp theo.",
+            "expected": "Sau khi hoàn tất các bước kích hoạt, bạn đăng nhập được ứng dụng."
+          },
+          {
+            "title": "Nếu chưa được cấp mức 2 hoặc không rõ tình trạng",
+            "action": "Liên hệ Công an phường hoặc điểm cấp căn cước để hỏi việc cấp/kích hoạt tài khoản định danh mức 2. Chuẩn bị căn cước còn giá trị và điện thoại dùng số đã đăng ký; xác nhận nơi, thời gian tiếp nhận trước khi đến. Có thể nói: “Tôi cần dùng VNeID để nộp hồ sơ liên thông, nhờ kiểm tra tài khoản và hướng dẫn kích hoạt”.",
+            "expected": "Cán bộ xác định việc cần làm theo tình trạng tài khoản của bạn; cài ứng dụng riêng lẻ chưa xác nhận đã có mức 2."
+          },
+          {
+            "title": "Thử đăng nhập cổng sau khi hoàn tất",
+            "action": "Khi đăng nhập được VNeID và tài khoản đáp ứng yêu cầu của cổng, trở lại đây, chọn “Nhập tài khoản” hoặc “Quét QR” và làm từ bước 1.",
+            "expected": "Bạn mở được tờ khai trên cổng bằng tài khoản của người đứng tên yêu cầu."
+          }
+        ],
+        "ready": "Bạn đã thử đăng nhập cổng thành công. Chỉ cài ứng dụng hoặc đặt lịch hỗ trợ thì chưa đánh dấu mục này."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Tôi quên mật khẩu VNeID",
+        "solution": "Mở ứng dụng VNeID, tại màn hình đăng nhập chọn “Quên mật khẩu” nếu có. Làm theo các bước khôi phục mà ứng dụng hiển thị và tự đặt lại mật khẩu. Sau đó quay lại cổng để đăng nhập. Nếu không khôi phục được hoặc đã đổi số điện thoại, liên hệ hỗ trợ VNeID 1900 0368 hoặc Công an phường; không thử đoán liên tục."
+      },
+      {
+        "problem": "Mã OTP chưa về hoặc đã hết hạn",
+        "solution": "Kiểm tra đúng điện thoại gắn với tài khoản và nơi nhận mã được ghi trên màn hình. Đợi hết thời gian đếm ngược rồi dùng nút gửi lại nếu có; chỉ nhập mã mới nhất. Nếu đang dùng máy tính và VNeID trên điện thoại đã đăng nhập, chuyển sang cách quét QR. Chưa nhận được mã thì không thể coi là đăng nhập xong."
+      },
+      {
+        "problem": "Tôi chỉ có một điện thoại, không quét được QR trên chính nó",
+        "solution": "Dùng các ô số định danh và mật khẩu trên trang đăng nhập thay cho QR. Xem mục “Nhập tài khoản”. QR là cách tiện dùng khi mã nằm trên một màn hình khác."
+      },
+      {
+        "problem": "Cổng báo sai tài khoản, mật khẩu hoặc yêu cầu mức 2",
+        "solution": "Kiểm tra ô số định danh có đúng 12 số của người làm thủ tục, không có khoảng trắng. Mật khẩu là mật khẩu đăng nhập VNeID, khác mã khóa điện thoại hoặc mã passcode trong ứng dụng. Nếu cổng yêu cầu mức 2, xem nhánh “Chưa có / chưa kích hoạt VNeID” để được hướng dẫn kiểm tra."
+      },
+      {
+        "problem": "Bấm vào nhưng trang trắng hoặc quay lại đăng nhập",
+        "solution": "Kiểm tra mạng rồi tải lại trang. Trên máy tính có thể dùng Ctrl + F5 theo hướng dẫn của trang đăng nhập. Nếu vẫn lỗi, ghi lại nội dung thông báo và thời điểm gặp lỗi để hỏi hỗ trợ 1900 0368. Không cần gửi mật khẩu, OTP hoặc ảnh đầy đủ thông tin cá nhân khi hỏi lỗi thao tác."
+      }
+    ]
+  },
+  "chup-tai-giay-to": {
+    "intro": "Chỉ làm phần đính kèm nếu cổng yêu cầu. Giấy tờ đã được cổng khai thác từ dữ liệu điện tử thì làm theo thông báo tại đó. Đây là hướng dẫn thao tác chụp và chọn tệp, không bổ sung thành phần hồ sơ.",
+    "steps": [
+      {
+        "title": "Đặt giấy và chụp từng trang",
+        "action": "Đặt giấy phẳng ở nơi đủ sáng. Mở Camera, giữ điện thoại song song với mặt giấy, chụp đủ bốn góc, tránh bóng tay và ánh đèn lóa. Chụp từng trang/mặt có nội dung mà cổng yêu cầu.",
+        "expected": "Ảnh có trọn trang, không mất số giấy, chữ ký hoặc dấu đang có trên bản gốc."
+      },
+      {
+        "title": "Mở ảnh để kiểm tra chữ",
+        "action": "Mở Ảnh/Thư viện, phóng to và đọc thử họ tên, ngày tháng, số giấy. Nếu nhòe hoặc lóa, chụp lại. Giữ nguyên nội dung; không dùng bộ lọc hoặc sửa chữ trên giấy.",
+        "expected": "Bạn đọc được rõ các thông tin cần kê khai."
+      },
+      {
+        "title": "Chọn tệp ở đúng dòng giấy tờ trên cổng",
+        "action": "Tại mục tài liệu cần đính kèm trên cổng, bấm nút chọn/tải tệp theo tên hiển thị. Điện thoại: chọn Ảnh/Thư viện hoặc Tệp rồi chọn ảnh đã chụp. Máy tính: chọn tệp đã lưu trong thư mục của bạn, bấm Mở/Open. Đọc định dạng và giới hạn dung lượng ngay cạnh ô đính kèm trước khi chọn.",
+        "expected": "Tên tệp hoặc ảnh xem trước xuất hiện ở đúng dòng giấy tờ, tải xong và không có thông báo lỗi."
+      },
+      {
+        "title": "Mở lại tệp đã đính kèm",
+        "action": "Nếu cổng có nút xem trước, mở tệp để kiểm tra đúng người, đúng giấy và đủ trang. Nếu chọn nhầm, dùng nút xóa/thay tệp tại dòng đó rồi chọn lại. Tệp quá lớn hoặc sai định dạng: dùng cách lưu/quét thành định dạng cổng chấp nhận; kiểm tra lại độ rõ trước khi tải.",
+        "expected": "Tệp đúng nội dung đã gắn vào hồ sơ. Tải tệp thành công vẫn chưa phải là gửi hồ sơ."
+      }
+    ],
+    "ready": "Đã có ảnh/tệp đọc rõ để dùng khi cổng yêu cầu. Không cần tải giấy tờ lên Cẩm Nang Số.",
+    "troubleshooting": [
+      {
+        "problem": "Tôi không tìm thấy ảnh vừa chụp",
+        "solution": "Mở Ảnh/Thư viện trên điện thoại và tìm ảnh mới nhất trước. Nếu có ảnh ở đó, quay lại ô đính kèm, chọn Ảnh/Thư viện và chọn lại. Nếu đang làm trên máy tính nhưng ảnh còn trên điện thoại, ảnh chưa nằm trong thư mục máy tính; cần chuyển ảnh bằng cách bạn tin cậy hoặc nhờ người hướng dẫn. Không chọn ảnh khác chỉ để vượt qua bước này."
+      },
+      {
+        "problem": "Ảnh mờ, lóa hoặc bị mất góc",
+        "solution": "Đặt giấy phẳng gần nguồn sáng, tránh đèn phản chiếu. Lau ống kính, giữ máy song song với giấy và chụp lại đủ bốn góc. Mở ảnh, phóng to để đọc thử họ tên và số giấy trước khi đính kèm lại."
+      },
+      {
+        "problem": "Cổng báo sai định dạng tệp",
+        "solution": "Đọc loại tệp cổng chấp nhận ngay cạnh nút đính kèm hoặc trong thông báo lỗi. Tên tệp thường có phần cuối như .jpg hoặc .pdf. Chỉ đổi đuôi tên không chuyển được định dạng. Nếu bạn chưa biết tạo loại tệp được yêu cầu, giữ nguyên bản gốc và nhờ đầu mối hỗ trợ chỉ cách trên thiết bị đang dùng; nêu chính xác thông báo lỗi."
+      },
+      {
+        "problem": "Cổng báo tệp quá lớn",
+        "solution": "Ghi giới hạn dung lượng cổng nêu (thường kèm MB). Mở thông tin/chi tiết của ảnh hoặc tệp để đối chiếu kích thước nếu thiết bị có mục đó. Không xóa trang cần thiết hoặc làm mờ chữ để giảm dung lượng. Nếu chưa biết cách tạo bản nhỏ hơn, nhờ hướng dẫn trên thiết bị của bạn và cho biết loại tệp cùng giới hạn cổng yêu cầu."
+      },
+      {
+        "problem": "Tôi đã chọn ảnh nhưng chưa biết tải xong chưa",
+        "solution": "Chờ biểu tượng đang tải kết thúc. Kiểm tra tên tệp hoặc ảnh xem trước ở đúng dòng giấy tờ và đọc thông báo lỗi nếu có. Nếu có Xem trước, mở để đối chiếu. Chọn ảnh/tải xong vẫn chưa phải gửi hồ sơ."
+      }
+    ]
+  }
+}

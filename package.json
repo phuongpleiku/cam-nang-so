@@ -1,0 +1,11 @@
+{
+  "name": "cam-nang-so-pleiku",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/validate.mjs && node --test tests/rules.test.mjs tests/content.test.mjs tests/connections.test.mjs tests/usability.test.mjs",
+    "procedure:add": "node scripts/add-procedure.mjs"
+  }
+}
