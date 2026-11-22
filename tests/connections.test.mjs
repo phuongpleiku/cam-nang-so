@@ -4,7 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {destinationUrl,connectionErrors,getConnection,renderConnection,renderTracking,shortcutEntries} from '../dist/connections.js';
 const registry=JSON.parse(await readFile(new URL('../dist/data/connections.json',import.meta.url),'utf8'));
 
-test('Cấu hình ba nơi nộp hợp lệ; hai thủ tục dẫn đúng nhóm liên thông',async()=>{
+test('Các nơi nộp hợp lệ; hai thủ tục liên thông vẫn dẫn đúng nhóm',async()=>{
  for(const id of Object.keys(registry.connections))assert.deepEqual(connectionErrors(registry,id),[],id);
  for(const id of ['khai-sinh','khai-tu']){
   const p=JSON.parse(await readFile(new URL(`../dist/data/${id}.json`,import.meta.url),'utf8'));

@@ -1,0 +1,624 @@
+{
+  "id": "chung-thuc-ban-sao",
+  "version": 1,
+  "title": "Chứng thực bản sao từ bản chính",
+  "shortTitle": "Chứng thực bản sao",
+  "description": "Chuẩn bị bản chính, tải giấy tờ và chọn nhận bản giấy hoặc bản điện tử. Có ảnh hướng dẫn từng thao tác tại Pleiku.",
+  "category": "Giấy tờ & chứng thực",
+  "icon": "document",
+  "keywords": [
+    "chứng thực",
+    "sao y",
+    "sao y bản chính",
+    "bản sao",
+    "công chứng giấy tờ",
+    "photo",
+    "bằng tốt nghiệp",
+    "giấy khai sinh",
+    "2.000815"
+  ],
+  "officialName": "Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan, tổ chức có thẩm quyền của Việt Nam; cơ quan, tổ chức có thẩm quyền của nước ngoài; cơ quan, tổ chức có thẩm quyền của Việt Nam liên kết với cơ quan, tổ chức có thẩm quyền của nước ngoài cấp hoặc chứng nhận",
+  "procedureCode": "2.000815",
+  "intro": "Chọn vài câu để biết cần chuẩn bị gì. Không nhập căn cước hay tải giấy tờ cá nhân lên Cẩm Nang Số.",
+  "reviewedAt": "2026-11-22",
+  "connectionRef": "chung-thuc-ban-sao-pleiku",
+  "sources": [
+    {
+      "label": "Danh mục thủ tục của phường Pleiku · Mã 2.000815, dịch vụ một phần",
+      "url": "https://pleiku.gialai.gov.vn/danh-muc-phai-tren/danh-muc-tthc"
+    },
+    {
+      "label": "Cổng Dịch vụ công Quốc gia · Thành phần hồ sơ, thời hạn và phí",
+      "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2630&open_popup=1"
+    },
+    {
+      "label": "Trang thủ tục trong ảnh hướng dẫn · Chọn cơ quan trước khi nộp",
+      "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-8e22-77ef-819f-e49460350904"
+    },
+    {
+      "label": "Thông tư 226/2016/TT-BTC · Phí chứng thực",
+      "url": "https://vanban.chinhphu.vn/?docid=188026&pageid=27160"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "ct-chon-thu-tuc",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-chon-thu-tuc.jpg",
+      "width": 1353,
+      "height": 725,
+      "title": "Chọn thủ tục và phường Pleiku",
+      "alt": "Chọn thủ tục và phường Pleiku. Bên phải trang: chọn Tỉnh Gia Lai, Phường Pleiku, rồi bấm Nộp hồ sơ.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "Bên phải trang: chọn Tỉnh Gia Lai, Phường Pleiku, rồi bấm Nộp hồ sơ.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-8e22-77ef-819f-e49460350904"
+      }
+    },
+    {
+      "id": "ct-thanh-phan",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-thanh-phan.jpg",
+      "width": 1363,
+      "height": 729,
+      "title": "Mở phần Thành phần hồ sơ",
+      "alt": "Mở phần Thành phần hồ sơ. Tìm dòng bản chính giấy tờ và nút Chọn tệp đính kèm. Trên điện thoại có thể cần cuộn trong bảng.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "Tìm dòng bản chính giấy tờ và nút Chọn tệp đính kèm. Trên điện thoại có thể cần cuộn trong bảng.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucongnganhtuphap.moj.gov.vn/"
+      }
+    },
+    {
+      "id": "ct-vi-tai-lieu",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-vi-tai-lieu.jpg",
+      "width": 1365,
+      "height": 733,
+      "title": "Danh sách tài liệu điện tử",
+      "alt": "Danh sách tài liệu điện tử. Ví cá nhân có thể trống. Bấm Tải lên từ thiết bị để chọn giấy tờ đã chuẩn bị.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "Ví cá nhân có thể trống. Bấm Tải lên từ thiết bị để chọn giấy tờ đã chuẩn bị.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucongnganhtuphap.moj.gov.vn/"
+      }
+    },
+    {
+      "id": "ct-tai-tu-thiet-bi",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-tai-tu-thiet-bi.jpg",
+      "width": 1365,
+      "height": 733,
+      "title": "Hai cách tải giấy tờ",
+      "alt": "Hai cách tải giấy tờ. Có sẵn tệp thì chọn Tải lên từ thiết bị. Nếu có nhiều ảnh, có thể dùng Tạo tệp đính kèm từ nhiều hình ảnh khi cổng cung cấp.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "Có sẵn tệp thì chọn Tải lên từ thiết bị. Nếu có nhiều ảnh, có thể dùng Tạo tệp đính kèm từ nhiều hình ảnh khi cổng cung cấp.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucongnganhtuphap.moj.gov.vn/"
+      }
+    },
+    {
+      "id": "ct-kiem-tra-tep",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-kiem-tra-tep.jpg",
+      "width": 1366,
+      "height": 722,
+      "title": "Kiểm tra tệp đã gắn vào hồ sơ",
+      "alt": "Kiểm tra tệp đã gắn vào hồ sơ. Cần thấy tên tệp ở đúng dòng, kiểm tra Loại chứng thực và xem lại nội dung bằng nút hình con mắt. Tên tệp trong ảnh chỉ là ví dụ.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "Cần thấy tên tệp ở đúng dòng, kiểm tra Loại chứng thực và xem lại nội dung bằng nút hình con mắt. Tên tệp trong ảnh chỉ là ví dụ.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucongnganhtuphap.moj.gov.vn/"
+      }
+    },
+    {
+      "id": "ct-nhan-ket-qua",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-nhan-ket-qua.jpg",
+      "width": 1364,
+      "height": 729,
+      "title": "Chọn nơi và cách nhận kết quả",
+      "alt": "Chọn nơi và cách nhận kết quả. Chỉ bật cách nhận bạn cần và cổng cho phép. Không mặc định mọi lựa chọn trong ảnh đều áp dụng cho hồ sơ của bạn.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "Chỉ bật cách nhận bạn cần và cổng cho phép. Không mặc định mọi lựa chọn trong ảnh đều áp dụng cho hồ sơ của bạn.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucongnganhtuphap.moj.gov.vn/"
+      }
+    },
+    {
+      "id": "ct-phi-va-gui",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/ct-phi-va-gui.jpg",
+      "width": 1366,
+      "height": 730,
+      "title": "Đọc thông tin phí trước khi gửi",
+      "alt": "Đọc thông tin phí trước khi gửi. 0 VNĐ kèm thông báo chưa xác định không có nghĩa được miễn phí. Kiểm tra hồ sơ trước khi bấm Gửi hồ sơ.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; bố cục trên điện thoại có thể khác.",
+      "readingTip": "0 VNĐ kèm thông báo chưa xác định không có nghĩa được miễn phí. Kiểm tra hồ sơ trước khi bấm Gửi hồ sơ.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia / hệ thống ngành Tư pháp; ảnh do người biên soạn cung cấp",
+        "url": "https://dichvucongnganhtuphap.moj.gov.vn/"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "purpose",
+      "title": "Bạn cần chứng thực việc gì?",
+      "hint": "Hướng dẫn này dành cho việc xác nhận bản sao đúng với bản chính, thường gọi là “sao y”.",
+      "options": [
+        {
+          "value": "copy",
+          "label": "Chứng thực bản sao của giấy tờ"
+        },
+        {
+          "value": "signature",
+          "label": "Chứng thực chữ ký hoặc hợp đồng"
+        },
+        {
+          "value": "translation",
+          "label": "Chứng thực chữ ký người dịch / bản dịch"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ],
+      "help": {
+        "title": "Tôi chưa rõ “chứng thực bản sao” là gì",
+        "text": "Cơ quan có thẩm quyền đối chiếu bản sao với bản chính và chứng thực bản sao đúng với bản chính. Hướng dẫn này không dùng cho xác nhận chữ ký hay hợp đồng."
+      }
+    },
+    {
+      "id": "original",
+      "title": "Bạn đang có bản chính giấy tờ chưa?",
+      "hint": "Bản chụp trong điện thoại và bản photocopy không tự thay thế bản chính để đối chiếu.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Đã có bản chính"
+        },
+        {
+          "value": "no",
+          "label": "Chỉ có ảnh hoặc bản photo"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa phân biệt được"
+        }
+      ],
+      "help": {
+        "title": "Phân biệt bản chính với ảnh/photo",
+        "text": "Bản chính là giấy tờ được cơ quan có thẩm quyền cấp hoặc chứng nhận theo quy định. Một ảnh chụp, bản photo hoặc tệp bạn tự scan chưa tự trở thành bản chính hay bản sao đã chứng thực. Nếu chưa rõ giấy đang có là loại nào, hỏi nơi tiếp nhận."
+      }
+    },
+    {
+      "id": "issuer",
+      "title": "Giấy tờ do cơ quan nào cấp?",
+      "hint": "Nếu có cơ quan nước ngoài hoặc liên kết nước ngoài, cần hỏi thêm về giấy tờ được chấp nhận.",
+      "options": [
+        {
+          "value": "domestic",
+          "label": "Cơ quan, tổ chức của Việt Nam"
+        },
+        {
+          "value": "foreign",
+          "label": "Cơ quan nước ngoài hoặc liên kết nước ngoài"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ]
+    },
+    {
+      "id": "format",
+      "title": "Bạn cần nhận bản chứng thực theo cách nào?",
+      "hint": "Có thể xem lại lựa chọn này khi cổng hiển thị các hình thức nhận kết quả.",
+      "options": [
+        {
+          "value": "paper",
+          "label": "Bản giấy có chứng thực"
+        },
+        {
+          "value": "electronic",
+          "label": "Bản điện tử có chứng thực"
+        },
+        {
+          "value": "both",
+          "label": "Cả bản giấy và bản điện tử"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa biết nơi yêu cầu cần loại nào"
+        }
+      ]
+    }
+  ],
+  "notices": [
+    {
+      "title": "Bạn đang cần một thủ tục khác",
+      "text": "Chứng thực chữ ký, hợp đồng và chữ ký người dịch có yêu cầu riêng. Không nộp theo mã 2.000815. Hãy hỏi đầu mối phường tên thủ tục phù hợp trước khi chuẩn bị.",
+      "blocking": true,
+      "when": {
+        "question": "purpose",
+        "values": [
+          "signature",
+          "translation"
+        ]
+      }
+    },
+    {
+      "title": "Phân biệt sao y và chứng thực chữ ký",
+      "text": "Nếu nơi nhận yêu cầu bản sao bằng cấp, giấy khai sinh… có chứng thực, thường là chứng thực bản sao. Nếu họ yêu cầu xác nhận chữ ký, hợp đồng hoặc bản dịch, hãy hỏi lại đúng tên thủ tục trước khi chọn.",
+      "blocking": true,
+      "when": {
+        "question": "purpose",
+        "values": [
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Cần làm rõ bản chính trước khi nộp",
+      "text": "Bạn vẫn có thể đọc hướng dẫn chuẩn bị. Hãy tìm bản chính hoặc hỏi cơ quan cấp/tiếp nhận cách xử lý khi thiếu; ảnh chụp không tự trở thành bản chính.",
+      "when": {
+        "question": "original",
+        "values": [
+          "no",
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Hỏi trước về giấy tờ có yếu tố nước ngoài",
+      "text": "Cho cán bộ biết tên giấy và cơ quan cấp; hỏi về hợp pháp hóa lãnh sự, bản dịch hoặc trường hợp được miễn trước khi nộp. Không tự suy ra mọi giấy nước ngoài đều dùng cùng một cách.",
+      "when": {
+        "question": "issuer",
+        "values": [
+          "foreign",
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Nộp trực tuyến vẫn cần giữ bản chính",
+      "text": "Phường Pleiku công bố thủ tục này là dịch vụ trực tuyến một phần. Chuẩn bị bản chính để xuất trình, đối chiếu theo hướng dẫn của nơi tiếp nhận; gửi ảnh lên cổng chưa phải đã hoàn thành chứng thực."
+    }
+  ],
+  "checklist": [
+    {
+      "id": "login",
+      "title": "Tài khoản VNeID và điện thoại để đăng nhập",
+      "kind": "Tài khoản dùng trên cổng chính thức",
+      "help": "Dùng tài khoản của người thực hiện phù hợp với hồ sơ. Bạn chưa cần đăng nhập để đọc hướng dẫn này.",
+      "missing": "Mở hướng dẫn đăng nhập; nếu chưa có hoặc chưa kích hoạt VNeID, xem nhánh tương ứng.",
+      "guideRef": "dang-nhap"
+    },
+    {
+      "id": "original",
+      "title": "Bản chính giấy tờ cần sao",
+      "kind": "Giấy tờ để đối chiếu",
+      "help": "Giữ bản chính đầy đủ, đọc rõ và không tự sửa thông tin trên giấy.",
+      "summary": "Giữ bản chính đầy đủ, đọc rõ và không tự sửa thông tin trên giấy.",
+      "missing": "Nếu chỉ có ảnh/photo hoặc giấy hỏng, hỏi cơ quan cấp và nơi tiếp nhận trước khi nộp.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Lấy đúng giấy gốc",
+            "action": "Lấy giấy do cơ quan, tổ chức có thẩm quyền cấp hoặc chứng nhận. Không lấy bản photo hay ảnh trong điện thoại làm bản chính."
+          },
+          {
+            "title": "Kiểm tra đủ các mặt, các trang",
+            "action": "Mở hết các trang có nội dung, dấu, chữ ký hoặc ghi chú. Nếu giấy bị rách, mờ hay sửa chữa, ghi lại để hỏi cán bộ; không tự tô lại hoặc chỉnh sửa."
+          },
+          {
+            "title": "Giữ giấy để xuất trình",
+            "action": "Đặt bản chính vào bìa riêng. Khi nhận yêu cầu đối chiếu hoặc lịch hẹn, mang đúng giấy đã dùng để lập hồ sơ."
+          }
+        ],
+        "ready": "Bạn xác định được bản chính và có thể xuất trình khi cơ quan tiếp nhận yêu cầu."
+      }
+    },
+    {
+      "id": "copies",
+      "title": "Bản sao và số lượng cần chứng thực",
+      "kind": "Giấy tờ / thông tin nhu cầu",
+      "help": "Hỏi nơi cần sử dụng giấy tờ về loại bản và số lượng; bản sao cần đủ các trang có thông tin.",
+      "summary": "Hỏi nơi cần sử dụng giấy tờ về loại bản và số lượng; bản sao cần đủ các trang có thông tin.",
+      "missing": "Nếu chưa có bản photo, hỏi nơi tiếp nhận có hỗ trợ sao chụp và chi phí sao chụp không.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Hỏi cần mấy bản",
+            "action": "Xác định mỗi loại giấy cần bao nhiêu bản và dùng ở đâu. Ghi ra một danh sách ngắn để tránh nhầm."
+          },
+          {
+            "title": "Sao đủ nội dung",
+            "action": "Nếu chuẩn bị bản photo, sao đủ các mặt và các trang có ghi thông tin của bản chính. Đừng chỉ photo trang đầu khi phía sau còn nội dung."
+          },
+          {
+            "title": "Nếu chưa photo được",
+            "action": "Cơ quan thực hiện có thể sao chụp từ bản chính nếu có phương tiện. Hỏi trước khả năng hỗ trợ và chi phí; vẫn phải có bản chính."
+          }
+        ],
+        "ready": "Bạn biết loại giấy, số bản cần dùng và cách chuẩn bị bản sao."
+      }
+    },
+    {
+      "id": "files",
+      "title": "Ảnh hoặc tệp giấy tờ để đính kèm",
+      "kind": "Tệp dùng trên cổng ngành Tư pháp",
+      "help": "Chuẩn bị ảnh rõ, đủ trang; chỉ tải lên cổng chính thức khi được yêu cầu.",
+      "summary": "Chuẩn bị ảnh rõ, đủ trang; chỉ tải lên cổng chính thức khi được yêu cầu.",
+      "missing": "Nếu cổng báo lỗi định dạng/dung lượng, đọc đúng giới hạn đang hiển thị; không đoán dung lượng cho mọi hồ sơ.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Chụp đủ trang",
+            "action": "Đặt giấy trên nền phẳng, đủ sáng; chụp trọn bốn góc, rõ chữ và dấu. Chụp tất cả mặt, trang có nội dung."
+          },
+          {
+            "title": "Kiểm tra rồi đặt tên dễ tìm",
+            "action": "Mở từng ảnh để so với giấy gốc. Dùng tên như Bang-tot-nghiep-mat-truoc; tránh tên chứa số căn cước hoặc số điện thoại."
+          },
+          {
+            "title": "Ghi nhớ chỗ lưu",
+            "action": "Trên điện thoại: tìm trong Ảnh, Tệp hoặc Tải xuống. Trên máy tính: nhớ thư mục chứa tệp. Khi sang cổng, chỉ chọn đúng tệp giấy cần chứng thực."
+          }
+        ],
+        "ready": "Bạn mở được tệp, đọc rõ và đã có đủ trang cần đính kèm.",
+        "relatedGuide": "chup-tai-giay-to"
+      }
+    },
+    {
+      "id": "contact",
+      "title": "Thông tin liên hệ và giấy tờ định danh để đối chiếu",
+      "kind": "Thông tin để kê khai",
+      "help": "Chuẩn bị số điện thoại đang dùng, địa chỉ và thông tin ngày cấp/nơi cấp nếu cổng yêu cầu. Đây không phải yêu cầu tự tải thêm bản căn cước.",
+      "summary": "Chuẩn bị số điện thoại đang dùng, địa chỉ và thông tin ngày cấp/nơi cấp nếu cổng yêu cầu. Đây không phải yêu cầu tự tải thêm bản căn cước.",
+      "missing": "Nếu thông tin tự điền sai hoặc thiếu, hỏi cơ quan tiếp nhận cách sửa trước khi gửi.",
+      "guide": {
+        "steps": [
+          {
+            "title": "So thông tin người làm thủ tục",
+            "action": "Khi đăng nhập, so tên, ngày sinh, số định danh và các thông tin có sẵn với giấy tờ của chính người làm thủ tục. Không dùng dữ liệu trong ảnh ví dụ."
+          },
+          {
+            "title": "Tìm ngày cấp và nơi cấp",
+            "action": "Xem thông tin trên giấy tờ hoặc dữ liệu định danh hợp lệ. Nhập đúng trường cổng đang yêu cầu; không đoán ngày hoặc chọn nơi cấp chỉ vì ảnh hướng dẫn hiển thị như vậy."
+          },
+          {
+            "title": "Chuẩn bị số liên hệ và địa chỉ",
+            "action": "Dùng số điện thoại bạn đang nhận cuộc gọi/tin nhắn được. Ghi địa chỉ thực tế theo ô yêu cầu. Email không có dấu sao thì có thể để trống nếu cổng cho phép."
+          }
+        ],
+        "ready": "Thông tin người làm thủ tục đã được đối chiếu và số điện thoại có thể liên hệ."
+      }
+    },
+    {
+      "id": "foreign-paper",
+      "title": "Hỏi cách xử lý giấy tờ nước ngoài",
+      "kind": "Cần xác định trước khi nộp",
+      "help": "Nêu rõ giấy gì, do cơ quan nào cấp và dùng để làm gì để được hướng dẫn phù hợp.",
+      "summary": "Nêu rõ giấy gì, do cơ quan nào cấp và dùng để làm gì để được hướng dẫn phù hợp.",
+      "missing": "Liên hệ nơi tiếp nhận để biết có cần hợp pháp hóa lãnh sự, bản dịch hoặc thủ tục khác hay không.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Ghi tên giấy và cơ quan cấp",
+            "action": "Ghi quốc gia, cơ quan cấp, ngôn ngữ và mục đích sử dụng của giấy tờ. Không suy ra yêu cầu chỉ từ việc giấy có chữ nước ngoài."
+          },
+          {
+            "title": "Hỏi cơ quan tiếp nhận",
+            "action": "Hỏi: giấy này có được chứng thực bản sao không, cần thêm giấy gì, có thuộc trường hợp được miễn yêu cầu nào không?"
+          },
+          {
+            "title": "Chuẩn bị theo hướng dẫn đã xác định",
+            "action": "Chỉ chuẩn bị các giấy bổ sung được hướng dẫn cho đúng trường hợp. Nếu nhu cầu thực sự là chứng thực chữ ký người dịch, quay lại chọn đúng thủ tục."
+          }
+        ],
+        "ready": "Bạn đã được làm rõ cách xử lý giấy của mình."
+      },
+      "when": {
+        "question": "issuer",
+        "values": [
+          "foreign",
+          "unsure"
+        ]
+      }
+    }
+  ],
+  "fields": [
+    {
+      "title": "Cơ quan và đơn vị tiếp nhận",
+      "body": "Chọn Cấp xã → Tỉnh Gia Lai → UBND phường Pleiku, Tỉnh Gia Lai. Đơn vị tiếp nhận trong ảnh là Trung tâm phục vụ hành chính công UBND phường Pleiku, Tỉnh Gia Lai.",
+      "source": "Màn hình chọn nơi nộp trên hệ thống ngành Tư pháp.",
+      "check": "Đúng mã 2.000815 và đúng phường trước khi bấm Xác nhận."
+    },
+    {
+      "title": "Đối tượng thực hiện",
+      "body": "Chọn Làm thủ tục cho bản thân khi đúng trường hợp. Nếu làm thay hoặc cho tổ chức, chọn đúng lựa chọn cổng cung cấp và xem yêu cầu tương ứng; nếu chưa rõ thì hỏi nơi tiếp nhận.",
+      "source": "Vai trò thực tế của người đang làm hồ sơ.",
+      "check": "Không chọn cho bản thân chỉ vì ảnh hướng dẫn đang chọn mục đó."
+    },
+    {
+      "title": "Thông tin chủ hồ sơ",
+      "body": "Đối chiếu dữ liệu tự điền. Ngày cấp, Nơi cấp, Số điện thoại và Địa chỉ chi tiết có dấu * trong ảnh nên phải kiểm tra đầy đủ.",
+      "source": "Thông tin định danh, giấy tờ và thông tin liên hệ của người làm thủ tục.",
+      "check": "Dấu tiếng Việt, ngày tháng và số điện thoại chính xác; không chép dữ liệu của người khác."
+    },
+    {
+      "title": "Kê khai thông tin",
+      "body": "Điền các mục thực tế xuất hiện khi cổng chuyển sang bước này. Bộ ảnh cung cấp không có màn hình chi tiết của bước Kê khai thông tin, vì vậy hướng dẫn không giả định tên ô hoặc giá trị phải nhập.",
+      "source": "Giấy tờ gốc, nhu cầu của bạn và chỉ dẫn ngay cạnh ô trên cổng.",
+      "check": "Đọc tên ô, dấu * và thông báo lỗi; chưa rõ thì hỏi trước khi tiếp tục."
+    },
+    {
+      "title": "Thành phần hồ sơ và loại chứng thực",
+      "body": "Gắn đúng tệp ở dòng giấy tờ cần chứng thực. Xem lựa chọn Loại chứng thực; chọn loại đáp ứng nhu cầu và được cổng hỗ trợ, không giữ mặc định nếu không phù hợp.",
+      "source": "Giấy cần chứng thực và yêu cầu của nơi sẽ sử dụng bản sao.",
+      "check": "Tên tệp xuất hiện, mở xem được, đủ trang. Ghi chú không thay thế tệp đính kèm."
+    },
+    {
+      "title": "Nhận kết quả và phí",
+      "body": "Chọn nơi nhận và bật hình thức nhận phù hợp. Nếu màn hình ghi phí chưa xác định, chờ thông báo từ cơ quan tiếp nhận.",
+      "source": "Nhu cầu bản giấy/bản điện tử và thông báo của cổng.",
+      "check": "0 VNĐ lúc gửi chưa khẳng định được miễn phí. Không suy ra bưu chính luôn được hỗ trợ chỉ vì có công tắc trên màn hình."
+    }
+  ],
+  "submission": [
+    "Đăng nhập cổng, tìm mã 2.000815 và chọn đúng Gia Lai / phường Pleiku.",
+    "Kiểm tra cơ quan, đơn vị tiếp nhận và đối tượng thực hiện; đối chiếu thông tin chủ hồ sơ.",
+    "Kê khai theo ô thực tế trên cổng; gắn đủ tệp, kiểm tra loại chứng thực và hình thức nhận.",
+    "Đọc thông báo phí, kiểm tra lần cuối rồi tự bấm Gửi hồ sơ trên cổng chính thức.",
+    "Khi cổng báo gửi thành công, lưu mã hồ sơ; theo dõi việc tiếp nhận, yêu cầu đối chiếu bản chính, phí và ngày hẹn."
+  ],
+  "duration": "Thông thường giải quyết trong ngày tiếp nhận yêu cầu; nếu tiếp nhận sau 15 giờ thì ngày làm việc tiếp theo. Hồ sơ nhiều loại giấy, nhiều trang/bản hoặc phức tạp có thể kéo dài thêm không quá 02 ngày làm việc, hoặc lâu hơn theo thỏa thuận bằng văn bản. Xem thông báo tiếp nhận và phiếu hẹn; không tính chắc thời hạn từ lúc vừa tải tệp lên.",
+  "fees": "Mức phí chứng thực bản sao được công bố: 2.000 đồng/trang cho hai trang đầu; từ trang thứ 3 là 1.000 đồng/trang, tối đa 200.000 đồng/bản. Trang tính phí theo bản chính. Số tiền phải nộp và trường hợp miễn, giảm thực hiện theo thông báo áp dụng cho hồ sơ; chi phí sao chụp/chuyển phát nếu có cần hỏi riêng. Cổng hiển thị 0 VNĐ và “chưa xác định” chưa có nghĩa là miễn phí.",
+  "results": [
+    "Bản sao giấy đã được chứng thực nếu chọn và được giải quyết theo hình thức này.",
+    "Bản sao điện tử đã được chứng thực nếu chọn và được giải quyết theo hình thức này."
+  ],
+  "resultItems": [
+    {
+      "text": "Bản giấy đã được chứng thực, theo số lượng và hình thức nhận được xác nhận.",
+      "when": {
+        "question": "format",
+        "values": [
+          "paper",
+          "both",
+          "unsure"
+        ]
+      }
+    },
+    {
+      "text": "Bản sao điện tử đã được chứng thực; kiểm tra thông tin xác thực/ký số và lưu tệp kết quả gốc, không chỉ chụp màn hình.",
+      "when": {
+        "question": "format",
+        "values": [
+          "electronic",
+          "both",
+          "unsure"
+        ]
+      }
+    }
+  ],
+  "followUp": "Mở Hồ sơ của tôi trên hệ thống ngành Tư pháp bằng tài khoản đã nộp hoặc chọn Tra cứu hồ sơ. Dùng mã của chính hồ sơ bạn vừa gửi. Gửi thành công chưa đồng nghĩa đã được tiếp nhận hợp lệ hoặc đã chứng thực xong. Đọc yêu cầu bổ sung, lịch xuất trình bản chính, thông báo phí và ngày nhận; nếu quá hẹn, liên hệ cơ quan ghi trên phiếu tiếp nhận.",
+  "submissionGuide": {
+    "steps": [
+      {
+        "title": "Đăng nhập và tìm đúng mã thủ tục",
+        "action": "Mở Cổng Dịch vụ công Quốc gia. Nếu chưa đăng nhập, dùng VNeID theo hướng dẫn ở mục Chuẩn bị. Nhập 2.000815 vào ô tìm kiếm rồi chọn thủ tục Chứng thực bản sao từ bản chính.",
+        "expected": "Tên thủ tục và mã 2.000815. Nếu không tìm thấy, tìm bằng cụm “Chứng thực bản sao từ bản chính”."
+      },
+      {
+        "title": "Chọn Gia Lai và phường Pleiku",
+        "action": "Tại Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku. Bấm Nộp hồ sơ. Trên điện thoại, phần chọn cơ quan có thể nằm dưới nội dung thủ tục.",
+        "expected": "Cổng chuyển sang hệ thống ngành Tư pháp; kiểm tra tên miền dichvucongnganhtuphap.moj.gov.vn.",
+        "visualId": "ct-chon-thu-tuc"
+      },
+      {
+        "title": "Xác nhận nơi tiếp nhận và người thực hiện",
+        "action": "Trong hộp chọn, kiểm tra Cấp Xã, Tỉnh Gia Lai, đúng tên thủ tục, UBND phường Pleiku, Tỉnh Gia Lai và đơn vị Trung tâm phục vụ hành chính công UBND phường Pleiku, Tỉnh Gia Lai. Chọn đúng Đối tượng thực hiện; nếu làm cho mình thì chọn Làm thủ tục cho bản thân. Sau đó bấm Xác nhận.",
+        "expected": "Mở biểu mẫu nộp hồ sơ. Nếu cổng yêu cầu đăng nhập thêm, hoàn tất trên trang chính thức rồi kiểm tra lại cơ quan."
+      },
+      {
+        "title": "Kiểm tra Thông tin chủ hồ sơ",
+        "action": "Đọc lại các thông tin được điền sẵn. Bổ sung Ngày cấp, Nơi cấp, Số điện thoại, Địa chỉ chi tiết theo dữ liệu của chính người làm thủ tục. Email: chỉ nhập nếu có và cổng yêu cầu. Bấm Bước tiếp theo khi thông tin đúng.",
+        "expected": "Các ô bắt buộc không còn báo thiếu. Nếu dữ liệu tự điền sai và không sửa được, dừng để hỏi nơi tiếp nhận."
+      },
+      {
+        "title": "Điền bước Kê khai thông tin",
+        "action": "Làm theo các ô thực tế trên cổng; dùng giấy tờ gốc và nhu cầu chứng thực của bạn. Bộ ảnh không có nội dung chi tiết của bước này, nên không sao chép giá trị giả định. Đọc lỗi ngay dưới ô nếu cổng chưa cho tiếp tục.",
+        "expected": "Khi hoàn thành, cổng chuyển sang Thành phần hồ sơ."
+      },
+      {
+        "title": "Bấm Chọn tệp đính kèm",
+        "action": "Tại Thành phần hồ sơ, tìm dòng bản chính giấy tờ và bản sao cần chứng thực. Bấm Chọn tệp đính kèm. Nếu nút nằm ngoài màn hình điện thoại, cuộn trong bảng hoặc phóng to trang để tìm.",
+        "expected": "Cửa sổ Danh sách tài liệu điện tử.",
+        "visualId": "ct-thanh-phan"
+      },
+      {
+        "title": "Mở chỗ tải giấy tờ từ thiết bị",
+        "action": "Trong Ví cá nhân → Tài liệu tải lên, bấm Tải lên từ thiết bị. Nếu đã có đúng tài liệu trong ví, kiểm tra nội dung và chọn theo nút cổng hiển thị. Ví trống không có nghĩa hồ sơ bị lỗi.",
+        "expected": "Cổng mở chỗ chọn tệp hoặc màn hình lựa chọn tải lên.",
+        "visualId": "ct-vi-tai-lieu"
+      },
+      {
+        "title": "Chọn đúng tệp hoặc tạo tệp từ nhiều ảnh",
+        "action": "Nếu có sẵn PDF/ảnh phù hợp, chọn Tải lên từ thiết bị và tìm tệp đã chuẩn bị. Nếu cổng hiển thị Tạo tệp đính kèm từ nhiều hình ảnh, có thể dùng để ghép đủ các trang theo đúng thứ tự. Làm theo nút xác nhận thực tế; đọc giới hạn định dạng/dung lượng trên cổng.",
+        "expected": "Chọn xong phải trở lại hồ sơ để kiểm tra tệp đã được gắn. Tải vào ví chưa chắc đã gắn vào hồ sơ.",
+        "visualId": "ct-tai-tu-thiet-bi"
+      },
+      {
+        "title": "So tệp và loại chứng thực trước khi đi tiếp",
+        "action": "Kiểm tra tên tệp hiện ở đúng dòng. Bấm biểu tượng con mắt để xem lại đủ trang, rõ chữ và đúng giấy; nếu sai, dùng nút xóa cạnh tệp rồi chọn lại. Chọn Loại chứng thực theo nhu cầu. Ghi chú là nội dung bổ sung, không thay tệp. Chỉ thêm thành phần khi có nhu cầu/yêu cầu phù hợp. Bấm Bước tiếp theo.",
+        "expected": "Tệp vẫn hiển thị ở dòng hồ sơ và chuyển sang Thông tin nhận kết quả.",
+        "visualId": "ct-kiem-tra-tep"
+      },
+      {
+        "title": "Chọn nơi và hình thức nhận kết quả",
+        "action": "Kiểm tra nơi nhận tại Trung tâm phục vụ hành chính công của phường. Bật bản giấy, trực tuyến hoặc các hình thức cần thiết mà cổng cho phép. Nếu chọn bưu chính, kiểm tra địa chỉ, điều kiện áp dụng và chi phí; không mặc định công tắc này luôn dùng được.",
+        "expected": "Lựa chọn nhận kết quả phù hợp nhu cầu, khớp loại chứng thực đã chọn.",
+        "visualId": "ct-nhan-ket-qua"
+      },
+      {
+        "title": "Đọc phí và kiểm tra trước khi gửi",
+        "action": "Đọc cả thông báo phía dưới số tiền. Nếu ghi 0 VNĐ và phí chưa xác định, chờ cán bộ thông báo số tiền; không hiểu là miễn phí. Ô Số lượng phiếu sao trích lục không mặc nhiên là số bản chứng thực bạn cần; nếu không rõ, hỏi nơi tiếp nhận. So lại cơ quan, người nộp, tệp và cách nhận rồi tự bấm Gửi hồ sơ một lần.",
+        "expected": "Chờ cổng phản hồi. Nếu lỗi hoặc quay vòng lâu, kiểm tra Hồ sơ của tôi trước khi gửi lại để tránh trùng hồ sơ.",
+        "visualId": "ct-phi-va-gui"
+      },
+      {
+        "title": "Lưu mã hồ sơ và theo dõi",
+        "action": "Khi trang chính thức báo Gửi hồ sơ thành công, chụp/lưu thông báo và mã hồ sơ của bạn. Chọn Hồ sơ của tôi để xem tình trạng. Không sao chép mã trong ảnh của người khác. Nếu còn phí chưa xác định, theo dõi thông báo tiếp theo.",
+        "expected": "Có mã để tra cứu. Sau đó còn việc tiếp nhận, đối chiếu bản chính, bổ sung hoặc thanh toán nếu có và nhận kết quả."
+      }
+    ],
+    "ready": "Bạn đã biết cách tự kiểm tra thông báo và mã hồ sơ trên cổng. Cẩm Nang Số không tự xác nhận hồ sơ đã nộp hoặc đã được giải quyết.",
+    "readyLabel": "Sau thao tác cuối, kiểm tra trên cổng",
+    "intro": "Mỗi lần xem một thao tác. Chỉ bấm các nút nộp thật trên cổng chính thức; ảnh ở đây dùng để đối chiếu vị trí. Ảnh do người biên soạn cung cấp, đối chiếu ngày 22/11/2026.",
+    "troubleshooting": [
+      {
+        "problem": "Không thấy UBND phường Pleiku",
+        "solution": "Kiểm tra lại tỉnh Gia Lai, cấp xã, tên thủ tục và mã 2.000815. Nếu không có đơn vị cần tìm, hỏi đầu mối phường; không chọn cơ quan khác để đi tiếp."
+      },
+      {
+        "problem": "Tải tệp rồi nhưng hồ sơ vẫn báo thiếu",
+        "solution": "Quay lại Thành phần hồ sơ. Cần thấy tên tệp ở đúng dòng, không chỉ thấy tệp trong Ví cá nhân. Chọn/gắn lại và mở xem để kiểm tra."
+      },
+      {
+        "problem": "Cổng báo lỗi tệp hoặc không mở được ảnh",
+        "solution": "Mở tệp trên thiết bị để kiểm tra. Đọc định dạng và dung lượng cổng chấp nhận; nếu cần chuyển đổi, nhờ hỗ trợ tại nơi tin cậy. Không tự sửa nội dung giấy tờ."
+      },
+      {
+        "problem": "Không thấy mã sau khi bấm Gửi hồ sơ",
+        "solution": "Kiểm tra thông báo trên trang và Hồ sơ của tôi trước khi gửi lại. Nếu vẫn chưa rõ, ghi nội dung lỗi và thời điểm thực hiện để hỏi nơi tiếp nhận."
+      },
+      {
+        "problem": "Tôi chưa có bản chính hoặc không dùng được điện thoại",
+        "solution": "Liên hệ Trung tâm phục vụ hành chính công phường để được hướng dẫn trường hợp thiếu giấy hoặc hỗ trợ thực hiện. Mang giấy tờ đang có để cán bộ xác định cách xử lý."
+      }
+    ]
+  }
+}

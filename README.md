@@ -22,7 +22,7 @@ npm run procedure:add -- dang-ky-ket-hon "Đăng ký kết hôn"
 ```
 
 1. Lệnh tạo một tệp JSON UTF-8 trong `dist/data/`, đồng thời thêm bản nháp vào danh mục. Tệp hiện hữu không bị ghi đè.
-2. Mở tệp vừa tạo, thay các dòng `CẦN BIÊN SOẠN` bằng nội dung đã đối chiếu nguồn chính thức. Dùng hai thủ tục sẵn có làm ví dụ. Khai báo nơi nộp trong `dist/data/connections.json` rồi điền `connectionRef` vào thủ tục. Xem `docs/CONTENT.md` để hiểu từng trường dữ liệu.
+2. Mở tệp vừa tạo, thay các dòng `CẦN BIÊN SOẠN` bằng nội dung đã đối chiếu nguồn chính thức. Dùng các thủ tục sẵn có làm ví dụ. Khai báo nơi nộp trong `dist/data/connections.json` rồi điền `connectionRef` vào thủ tục. Xem `docs/CONTENT.md` để hiểu từng trường dữ liệu.
 3. Chạy `npm run check`. Khi nội dung đã được duyệt, đổi `published` của thủ tục thành `true` trong `dist/data/index.json`, chạy kiểm tra lần nữa và tải lại trang trên máy.
 
 Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước tự sinh từ dữ liệu. Không cần tạo trang hay viết nhánh `if` riêng trong giao diện. Sửa thủ tục cũng chỉ sửa JSON; tăng `version` nếu thay đổi luồng để không dùng lại câu trả lời cũ.
@@ -30,7 +30,7 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 ## Cấu trúc
 
 - `dist/data/index.json`: đăng ký và bật/tắt thủ tục; bản nháp không được nạp vào giao diện.
-- `dist/data/khai-sinh.json`, `dist/data/khai-tu.json`: nội dung hai bộ thủ tục; mỗi thủ tục mới có tệp riêng.
+- `dist/data/khai-sinh.json`, `dist/data/khai-tu.json`, `dist/data/chung-thuc-ban-sao.json`: nội dung ba bộ thủ tục; mỗi thủ tục mới có tệp riêng.
 - `dist/data/connections.json`: hệ thống, nơi nộp, hướng dẫn chuyển sang cổng, tra cứu và đường dự phòng; tham chiếu bằng `connectionRef`.
 - `dist/data/huong-dan-chung.json`: hướng dẫn đăng nhập và chụp/đính kèm giấy tờ dùng lại.
 - `dist/connections.js`, `dist/connections.css`: kiểm tra và hiển thị nơi nộp dùng chung.
@@ -45,11 +45,12 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 
 ## Kiểm tra
 
-`npm run check` kiểm tra cấu trúc dữ liệu, mã trùng, điều kiện tham chiếu, URL HTTPS, cú pháp JavaScript, tài nguyên và UTF-8; sau đó chạy kiểm thử các nhánh sinh/khai tử.
+`npm run check` kiểm tra cấu trúc dữ liệu, mã trùng, điều kiện tham chiếu, URL HTTPS, cú pháp JavaScript, tài nguyên và UTF-8; sau đó chạy kiểm thử các nhánh khai sinh, khai tử và chứng thực bản sao.
 
-## Phạm vi bản đầu
+## Phạm vi hiện tại
 
-- Hai bộ hướng dẫn: khai sinh và khai tử liên thông, nguồn đối chiếu ngày 23/09/2026.
+- Ba bộ hướng dẫn: khai sinh và khai tử liên thông (đối chiếu 23/09/2026); chứng thực bản sao từ bản chính, mã 2.000815 (đối chiếu 22/11/2026).
+- Chứng thực bản sao có 12 thao tác nộp hồ sơ và 7 ảnh chụp cổng thật đã chọn để không đưa thông tin cá nhân lên website. Xem `docs/CHUNG-THUC-BAN-SAO.md` về nguồn, giới hạn và cách bảo trì.
 - Tìm kiếm có dấu/không dấu, lọc nhóm, hỏi từng câu, danh sách đánh dấu, in/lưu PDF, hướng dẫn điền, liên kết nộp và tra cứu.
 - Nơi nộp của từng thủ tục có các bước bắt đầu, liên kết dự phòng và nguồn/ngày kiểm chứng. Lối mở nhanh Đăng ký kết hôn đã chọn Gia Lai/phường Pleiku; chưa có bộ hướng dẫn hồ sơ đầy đủ cho thủ tục này.
 - Bốn mẫu giấy/tờ khai từ văn bản chính thức, tại bước chuẩn bị và hướng dẫn điền. Có phóng to/thu nhỏ, chọn trang, nguồn đối chiếu và tải PDF gốc. Thêm mẫu qua `visuals` trong tệp thủ tục; xem `docs/CONTENT.md` và `docs/FORM-SOURCES.md`.
@@ -62,6 +63,6 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 
 ## Xuất bản
 
-Đã chuẩn bị GitHub Pages theo yêu cầu tìm cách đưa website lên GitHub. **Chưa tạo repository, đẩy mã nguồn hoặc xuất bản.** Làm theo [hướng dẫn từng bước](docs/GITHUB-PAGES.md). Workflow `.github/workflows/pages.yml` kiểm tra dự án rồi xuất bản `dist` khi push vào `main` hoặc chạy thủ công; cần bật Source → GitHub Actions trong Settings → Pages.
+Website sử dụng GitHub Pages. Để cấu hình hoặc cập nhật, làm theo [hướng dẫn từng bước](docs/GITHUB-PAGES.md). Workflow `.github/workflows/pages.yml` kiểm tra dự án rồi xuất bản `dist` khi push vào `main` hoặc chạy thủ công; cần bật Source → GitHub Actions trong Settings → Pages.
 
 Tài nguyên website nằm trọn trong `dist/`. Không cần bước build. `.gitignore` loại trừ cấu hình Sites cũ, tệp tạm và tệp môi trường khỏi Git. Nguồn và công cụ biên tập nằm ngoài `dist/` không được đưa vào website, nhưng vẫn công khai trong kho mã nếu chọn repository Public. Mọi tệp phải được giữ nguyên UTF-8.

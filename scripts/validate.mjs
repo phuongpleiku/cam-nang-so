@@ -56,6 +56,10 @@ for(const entry of entries){
   if(item.visualId&&!(p.visuals||[]).some(v=>v.id===item.visualId&&v.stage==='chuan-bi'))errors.push(`${label}.${item.id}: không tìm thấy hình minh họa chuẩn bị.`);
  }
  for(const item of p.fields||[]){required(item.title,'field.title');required(item.body,'field.body');condition(item.when,`${label}.field`);}
+ if(p.submissionGuide){
+  tutorial(p.submissionGuide,`${label}.submissionGuide`);
+  for(const g of p.submissionGuide.paths||[p.submissionGuide])for(const step of g.steps||[])if(step.visualId&&!(p.visuals||[]).some(v=>v.id===step.visualId&&v.stage==='nop-ho-so'))errors.push(`${label}: hình trong thao tác nộp không tồn tại.`);
+ }
  if(p.resultItems){if(!Array.isArray(p.resultItems))errors.push(`${label}.resultItems: cần danh sách.`);else for(const item of p.resultItems){required(item.text,'result.text');condition(item.when,`${label}.resultItems`);}}
  for(const item of p.notices||[]){required(item.title,'notice.title');required(item.text,'notice.text');condition(item.when,`${label}.notice`);}
  for(const s of p.sources||[]){required(s.label,'source.label');url(s.url,'source.url');}
@@ -63,9 +67,14 @@ for(const entry of entries){
  unique((p.visuals||[]).map(v=>v.id),`${label}.visuals`);
  for(const v of p.visuals||[]){
   for(const key of ['id','title','alt','caption'])required(v[key],`${label}.visuals.${key}`);
-  if(!['chuan-bi','cach-dien'].includes(v.stage))errors.push(`${label}.visuals.stage: chỉ hỗ trợ chuan-bi hoặc cach-dien.`);
+  if(!['chuan-bi','cach-dien','nop-ho-so'].includes(v.stage))errors.push(`${label}.visuals.stage: bước hiển thị không hợp lệ.`);
   if(!localImagePath(v.src))errors.push(`${label}.visuals.src: đường dẫn hình không hợp lệ.`);
   else try{await readFile(new URL('dist/'+v.src,root));}catch{errors.push(`${label}: thiếu hình ${v.src}`);}
+  if(v.kind==='portal-screenshot'){
+   if(!officialSourceUrl(v.source?.url))errors.push(`${label}.${v.id}: thiếu nguồn cổng chính thức.`);
+   required(v.readingTip,`${label}.${v.id}.readingTip`);required(v.reviewedAt,`${label}.${v.id}.reviewedAt`);
+   for(const key of ['width','height'])if(!Number.isInteger(v[key])||v[key]<1)errors.push(`${label}.${v.id}.${key}: kích thước ảnh không hợp lệ.`);
+  }
   if(v.kind==='official-template'){
    if(!officialSourceUrl(v.source?.url))errors.push(`${label}.${v.id}: nguồn mẫu phải là HTTPS của cơ quan nhà nước.`);
    required(v.source?.label,`${label}.${v.id}.source.label`);required(v.readingTip,`${label}.${v.id}.readingTip`);

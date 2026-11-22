@@ -5,9 +5,39 @@ import {freshRecord,restoreRecord,resumePoint,pruneProgress,setPreparationStatus
 import {setAnswer,matches} from '../dist/rules.js';
 import {tutorialPosition,renderTutorial} from '../dist/tutorials.js';
 import {questionHelp,tabHelp} from '../dist/novice.js';
+import {isComplete,checklistFor,searchProcedures} from '../dist/rules.js';
+import {renderVisuals} from '../dist/visuals.js';
 const read=async name=>JSON.parse(await readFile(new URL(`../dist/data/${name}.json`,import.meta.url),'utf8'));
 const birth=await read('khai-sinh'),death=await read('khai-tu'),common=await read('huong-dan-chung');
+const certification=await read('chung-thuc-ban-sao');
 const birthAnswers={registered:'no',role:'parent',birthPaper:'yes',residence:'mother',nationality:'no',identity:'no'};
+
+test('Chứng thực bản sao tìm được bằng mã/từ thông dụng và không dẫn sai thủ tục',()=>{
+ const answers={purpose:'copy',original:'yes',issuer:'domestic',format:'paper'};
+ assert.equal(isComplete(certification,answers),true);
+ for(const purpose of ['signature','translation','unsure'])assert.equal(isComplete(certification,{...answers,purpose}),false);
+ assert.equal(checklistFor(certification,answers).some(i=>i.id==='foreign-paper'),false);
+ assert.equal(checklistFor(certification,{...answers,issuer:'foreign'}).some(i=>i.id==='foreign-paper'),true);
+ for(const term of ['sao y','chung thuc','2.000815'])assert.equal(searchProcedures([birth,death,certification],term)[0].id,certification.id);
+ const visible=certification.resultItems.filter(i=>matches(i.when,answers));
+ assert.equal(visible.length,1);assert.match(visible[0].text,/Bản giấy/);
+});
+test('Hướng dẫn nộp nhớ thao tác, giữ khi đổi nhánh và không tự đánh dấu đã nộp',()=>{
+ const saved={...freshRecord(certification),answers:{purpose:'copy',original:'yes',issuer:'foreign',format:'both'},lastStep:3,tutorials:{submission:{path:0,steps:{0:8}}}};
+ const r=restoreRecord(certification,saved);
+ assert.deepEqual(resumePoint(certification,r),{step:3,item:'',question:0});
+ r.answers=setAnswer(certification,r.answers,'issuer','domestic');pruneProgress(certification,r);
+ assert.equal(r.tutorials.submission.steps[0],8);assert.deepEqual(r.checked,[]);assert.equal(Object.hasOwn(r,'submitted'),false);
+ assert.equal(restoreRecord(birth,{...freshRecord(birth),tutorials:saved.tutorials}).tutorials.submission,undefined);
+ const html=renderTutorial(certification.submissionGuide,'submission',common,r.tutorials,certification.visuals);
+ assert.match(html,/data-step="8" >/);assert.match(html,/data-step="7" hidden/);assert.match(html,/ct-kiem-tra-tep.jpg/);
+ assert.match(html,/Sau thao tác cuối, kiểm tra trên cổng/);assert.doesNotMatch(html,/Kiểm tra trước khi đánh dấu đã chuẩn bị|data-prep-status/);
+});
+test('Ảnh thao tác được ghi đúng nguồn, không gọi là mẫu trống hoặc sơ đồ',()=>{
+ const html=renderVisuals(certification,'nop-ho-so');
+ assert.match(html,/Ảnh thao tác trên cổng/);assert.doesNotMatch(html,/Mẫu trống từ văn bản chính thức|Sơ đồ minh họa/);
+ assert.doesNotMatch(html,/download|\.pdf#page=/);
+});
 
 test('Nâng dữ liệu cũ giữ câu trả lời và checklist; tiếp tục tới chuẩn bị',()=>{
  const r=restoreRecord(birth,{version:1,answers:birthAnswers,checked:['login','birth-paper','fake']});

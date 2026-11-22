@@ -1,4 +1,17 @@
 [
-  { "id": "khai-sinh", "file": "khai-sinh.json", "published": true },
-  { "id": "khai-tu", "file": "khai-tu.json", "published": true }
+  {
+    "id": "khai-sinh",
+    "file": "khai-sinh.json",
+    "published": true
+  },
+  {
+    "id": "khai-tu",
+    "file": "khai-tu.json",
+    "published": true
+  },
+  {
+    "id": "chung-thuc-ban-sao",
+    "file": "chung-thuc-ban-sao.json",
+    "published": true
+  }
 ]

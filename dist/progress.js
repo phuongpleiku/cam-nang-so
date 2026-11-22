@@ -16,7 +16,8 @@ export function restoreRecord(p,saved) {
   r.lastStep=Number.isInteger(saved.lastStep)&&saved.lastStep>=0&&saved.lastStep<=4?saved.lastStep:(isComplete(p,r.answers)?1:0);
   r.item=ids.includes(saved.item)?saved.item:'';
   for(const [key,value] of Object.entries(saved.tutorials||{}).slice(0,80)){
-    if(!/^prep-[a-z0-9-]+$/.test(key)||!value||typeof value!=='object')continue;
+    if(!(key==='submission'&&p.submissionGuide)&&!/^prep-[a-z0-9-]+$/.test(key))continue;
+    if(!value||typeof value!=='object')continue;
     const steps={};
     for(const [path,step] of Object.entries(value.steps||{}).slice(0,20))if(/^\d{1,2}$/.test(path)&&Number.isInteger(step)&&step>=0&&step<100)steps[path]=step;
     r.tutorials[key]={path:Number.isInteger(value.path)&&value.path>=0&&value.path<20?value.path:0,steps};
@@ -40,7 +41,7 @@ export function pruneProgress(p,r) {
   r.checked=r.checked.filter(id=>ids.includes(id));
   r.needsHelp=r.needsHelp.filter(id=>ids.includes(id)&&!r.checked.includes(id));
   if(!ids.includes(r.item))r.item='';
-  for(const key of Object.keys(r.tutorials))if(!ids.some(id=>key===`prep-${id}`||key.startsWith(`prep-${id}-`)))delete r.tutorials[key];
+  for(const key of Object.keys(r.tutorials))if(!(key==='submission'&&p.submissionGuide)&&!ids.some(id=>key===`prep-${id}`||key.startsWith(`prep-${id}-`)))delete r.tutorials[key];
 }
 
 export function setPreparationStatus(r,id,status) {

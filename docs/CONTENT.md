@@ -16,6 +16,7 @@ Mỗi thủ tục là một tệp JSON, không chứa HTML hay mã JavaScript. V
 | `checklist` | Các mục cần chuẩn bị; phân biệt giấy tờ và thông tin chỉ để kê khai |
 | `fields` | Hướng dẫn từng mục tờ khai, có thể thêm `example` |
 | `submission`, `connectionRef` | Các bước nộp và mã cấu hình nơi nộp trong `connections.json` |
+| `submissionGuide` | Tùy chọn: hướng dẫn nộp từng thao tác có ảnh, lưu điểm dừng; xem ví dụ chứng thực bản sao |
 | `duration`, `fees` | Thời gian và phí đã đối chiếu nguồn |
 | `results`, `followUp` | Những kết quả tương ứng và cách theo dõi |
 | `visuals` | Hình minh họa tùy chọn, có mô tả và bước hiển thị |
@@ -54,7 +55,15 @@ Bản nháp do `npm run procedure:add -- ma-thu-tuc "Tên thủ tục"` tạo c�
 }
 ```
 
-`stage` nhận `chuan-bi` hoặc `cach-dien`. Hỗ trợ SVG, PNG, WebP, JPG, JPEG. Mỗi hình có nút phóng to, thu về vừa màn hình, cuộn ngang trên điện thoại và đóng bằng Escape. `npm run check` kiểm tra hình tồn tại và các trường mô tả.
+`stage` nhận `chuan-bi`, `cach-dien` hoặc `nop-ho-so`. Hỗ trợ SVG, PNG, WebP, JPG, JPEG. Mỗi hình có nút phóng to, thu về vừa màn hình, cuộn ngang trên điện thoại và đóng bằng Escape. `npm run check` kiểm tra hình tồn tại và các trường mô tả.
+
+### Ảnh thao tác và hướng dẫn nộp từng bước
+
+Dùng `dist/data/chung-thuc-ban-sao.json` làm ví dụ. Khai báo `submissionGuide` gồm `intro`, `steps`, `ready`, và tùy chọn `readyLabel`, `troubleshooting`. Mỗi thao tác có `title`, `action`, `expected`; thêm `visualId` trỏ tới một hình trong `visuals` có `stage: "nop-ho-so"`. Giao diện tự hiển thị từng thao tác, cho xem tất cả và nhớ điểm dừng. Việc đọc tới cuối không đánh dấu hồ sơ đã gửi.
+
+Ảnh chụp cổng thật dùng `kind: "portal-screenshot"`, kèm `src`, `width`, `height`, `title`, `alt`, `caption`, `readingTip`, `reviewedAt` và `source: {"label": "Tên cổng", "url": "https://…gov.vn/"}`. Không yêu cầu `originalPdf` và không hiển thị nút tải PDF. Chọn ảnh không có thông tin cá nhân; kiểm tra cả thanh tài khoản, số hồ sơ, tên tệp và siêu dữ liệu. Không đưa ảnh gốc có thông tin cá nhân vào Git. Ghi nguồn và mã SHA-256 của các ảnh đã chọn trong tài liệu biên soạn như `docs/certification-image-sources.json`.
+
+Ghi rõ ảnh do người biên soạn cung cấp hay đã kiểm tra trực tiếp. Không suy đoán giao diện ở bước thiếu ảnh, không dùng đường dẫn hồ sơ đang làm làm liên kết chung, và không coi số tiền tạm hiển thị 0 đồng là miễn phí.
 
 Hình tự dựng cần ghi rõ minh họa, không giả làm mẫu chính thức. Khi dùng ảnh chụp thao tác thật, cần che toàn bộ thông tin cá nhân, ghi rõ nguồn/ngày kiểm tra và mô tả đúng giao diện. Chỉ dùng SVG tin cậy do đơn vị biên soạn; hình không được chứa mã thực thi hoặc dữ liệu riêng tư.
 

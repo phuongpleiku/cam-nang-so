@@ -7,6 +7,17 @@ import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {localPdfPath,officialSourceUrl,visualPages,renderVisuals} from '../dist/visuals.js';
 
+test('Ảnh chứng thực chỉ dùng danh sách đã rà soát và giữ nguyên tệp gốc',async()=>{
+ const p=JSON.parse(await readFile(new URL('../dist/data/chung-thuc-ban-sao.json',import.meta.url),'utf8'));
+ const manifest=JSON.parse(await readFile(new URL('../docs/certification-image-sources.json',import.meta.url),'utf8'));
+ assert.equal(manifest.length,7);assert.deepEqual(p.visuals.map(v=>v.src),manifest.map(m=>m.asset));
+ for(const m of manifest){const bytes=await readFile(new URL('../dist/'+m.asset,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),m.sha256);assert.equal(bytes.readUInt16BE(0),0xffd8);}
+ const registry=JSON.parse(await readFile(new URL('../dist/data/connections.json',import.meta.url),'utf8'));
+ const c=registry.connections[p.connectionRef];assert.equal(c.mode,'portal-link');assert.equal(c.selectedLocality,undefined);
+ assert.equal(new URL(c.tracking.url).hostname,'dichvucongnganhtuphap.moj.gov.vn');
+ assert.doesNotMatch(c.entryUrl,/\/nop-ho-so\/|MaCoQuanThucHien|token|state=/);
+});
+
 test('Mẫu chính thức giữ nguyên PDF, đủ trang và đúng kích thước ảnh',async()=>{
  const sources=JSON.parse(await readFile(new URL('../docs/form-sources.json',import.meta.url),'utf8'));
  for(const source of sources){

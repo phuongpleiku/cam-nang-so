@@ -63,6 +63,17 @@ Cập nhật hình minh họa: 4 tệp SVG được kiểm tra cú pháp XML và
 - `npm run check` đạt 25/25: xác minh PDF nguyên gốc, đủ trang ảnh, kích thước PNG, đường dẫn/nguồn hợp lệ, kết xuất an toàn, cú pháp và UTF-8, cùng các kiểm thử luồng có trước.
 - Chưa kiểm tra trực tiếp tương tác hộp xem mẫu và bố cục mới trong trình duyệt. Hạn chế xét duyệt trình duyệt ghi ở trên chưa được giải quyết; không đổi công cụ để vượt bước đã bị chặn. Cần thử trên desktop/mobile thực tế trước khi coi là đã nghiệm thu giao diện.
 
-## Trạng thái xuất bản (giữ nguyên)
+## Trạng thái xuất bản tại đợt tháng 9/2026
 
 Người dùng đã chọn chỉ chạy trên máy, chưa xuất bản. Không gửi mã nguồn hoặc triển khai phiên bản lên Sites. Trước lựa chọn này đã đăng ký định danh Site riêng tư, nhưng chưa có phiên bản hay nội dung dự án được tải lên. Bản trên máy vẫn hoạt động.
+
+## Chứng thực bản sao — 22/11/2026
+
+- Thêm bộ hướng dẫn thứ ba, mã 2.000815: câu hỏi phân loại, danh sách chuẩn bị theo nhánh, hướng dẫn điền, 12 thao tác nộp và theo dõi. Bảy ảnh chụp thực tế được chọn không chứa thông tin cá nhân; xác minh SHA-256 khớp tệp gốc, không có EXIF. Không lưu năm ảnh có thông tin cá nhân vào dự án.
+- `npm run check`: 29/29 đạt, gồm các nhánh chứng thực, lưu/khôi phục thao tác, liên kết hình, kết xuất, dữ liệu, cú pháp và UTF-8. `git diff --check` không phát hiện lỗi khoảng trắng.
+- Trình duyệt: tìm `sao y` ra đúng thủ tục; chọn chữ ký/hợp đồng được chuyển sang hướng dẫn hỏi đúng thủ tục. Nhánh bản chính trong nước/bản giấy có năm mục chuẩn bị. Mở ảnh, phóng to và đóng bằng Escape hoạt động; tải lại trang giữ thao tác đang xem. Chế độ xem tất cả hiển thị đủ 12 thao tác.
+- Kiểm tra chuyển qua phần đính kèm, nhận kết quả, phí và thao tác cuối; chỉ kết thúc hướng dẫn, không tự đánh dấu hồ sơ đã nộp. Không ghi nhận lỗi JavaScript trong lượt kiểm tra cuối.
+- Bố cục desktop và màn hình hẹp được kiểm tra. Ở khung nhìn 360 CSS pixel, chiều rộng tài liệu và vùng nội dung cùng 341 pixel (phần còn lại là thanh cuộn), không tràn ngang toàn trang. Ảnh phóng to cuộn trong hộp riêng. Đã khôi phục kích thước trình duyệt mặc định.
+- Ảnh kiểm tra toàn trang lưu trong `qa-output/` (không đưa vào Git). Công cụ chụp phần đang xem tạo ảnh bị cắt/đệm trống nên dùng ảnh toàn trang kết hợp đo bố cục và thao tác thực tế. Chưa thử điện thoại vật lý hoặc thử với người dân.
+- Đối chiếu danh mục công khai của phường và nguồn thủ tục; các màn hình sau đăng nhập dựa trên ảnh người biên soạn cung cấp. Chưa xác minh trực tiếp màn hình “Kê khai thông tin” bị thiếu ảnh, chưa đăng nhập hoặc gửi hồ sơ thật. Không coi URL chuyển cổng là tích hợp API.
+- Bản cập nhật này được thực hiện trên máy; chưa commit hoặc push lên GitHub trong đợt bổ sung này. Lựa chọn GitHub Pages ở các lượt sau tháng 9 thay thế trạng thái chỉ chạy tại máy của đợt ban đầu; không dùng Sites.

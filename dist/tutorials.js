@@ -1,3 +1,4 @@
+import {renderVisuals} from './visuals.js';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const external = item => {
   try {
@@ -15,24 +16,25 @@ export function tutorialPosition(guide,saved={}) {
   return {path,steps};
 }
 
-function stepsMarkup(guide,position) {
+function stepsMarkup(guide,position,visuals) {
   return (guide.intro?'<p class="tutorial-intro">'+esc(guide.intro)+'</p>':'')+
     '<div class="tutorial-step-count" role="status">Thao tác <span data-step-count>'+(position+1)+'</span> / '+guide.steps.length+'</div>'+
     '<ol class="tutorial-steps">'+guide.steps.map((step,index)=>'<li class="tutorial-step" data-step="'+index+'" '+(index!==position?'hidden':'')+'>'+
       '<span class="tutorial-number" aria-hidden="true">'+(index+1)+'</span><div><h4 tabindex="-1">'+esc(step.title)+'</h4><p>'+esc(step.action)+'</p>'+
       (step.links?'<div class="tutorial-links">'+step.links.map(external).join('')+'</div>':'')+
-      (step.expected?'<p class="tutorial-expected"><strong>Bạn sẽ thấy:</strong> '+esc(step.expected)+'</p>':'')+'</div></li>').join('')+'</ol>'+
+      (step.expected?'<p class="tutorial-expected"><strong>Bạn sẽ thấy:</strong> '+esc(step.expected)+'</p>':'')+
+      (step.visualId?visuals.filter(v=>v.id===step.visualId).map(v=>renderVisuals({visuals:[v]},v.stage)).join(''):'')+'</div></li>').join('')+'</ol>'+
     '<div class="tutorial-navigation"><button class="secondary-button" type="button" data-step-move="-1" '+(position===0?'disabled':'')+'>Thao tác trước</button><button class="primary-button" type="button" data-step-move="1" '+(position===guide.steps.length-1?'hidden':'')+'>Thao tác tiếp theo →</button><span data-step-end '+(position!==guide.steps.length-1?'hidden':'')+'>Đã đến cuối hướng dẫn.</span></div>'+
-    '<div class="tutorial-ready" data-ready '+(position!==guide.steps.length-1?'hidden':'')+'><strong>Kiểm tra trước khi đánh dấu đã chuẩn bị</strong><p>'+esc(guide.ready)+'</p></div>'+
+    '<div class="tutorial-ready" data-ready '+(position!==guide.steps.length-1?'hidden':'')+'><strong>'+esc(guide.readyLabel||'Kiểm tra trước khi đánh dấu đã chuẩn bị')+'</strong><p>'+esc(guide.ready)+'</p></div>'+
     '<button class="text-button" data-show-all type="button" aria-expanded="false">Xem tất cả thao tác</button>';
 }
 
-export function renderTutorial(guide,key,common={},saved={}) {
+export function renderTutorial(guide,key,common={},saved={},visuals=[]) {
   if(!guide)return '';
   const position=tutorialPosition(guide,saved[key]);
   return '<div class="tutorial" data-tutorial="'+esc(key)+'">'+
     (guide.paths?'<p class="tutorial-path-label">Chọn cách phù hợp với bạn:</p><div class="tutorial-paths" role="group" aria-label="Cách thực hiện">'+guide.paths.map((path,i)=>'<button type="button" data-path="'+i+'" aria-pressed="'+(i===position.path)+'" aria-controls="'+esc(key)+'-path-'+i+'">'+esc(path.label)+'</button>').join('')+'</div>':'')+
-    (guide.paths||[guide]).map((path,i)=>'<section class="tutorial-path" data-path-index="'+i+'" data-current-step="'+position.steps[i]+'" id="'+esc(key)+'-path-'+i+'" aria-label="'+esc(path.label||'Hướng dẫn từng thao tác')+'" '+(i!==position.path?'hidden':'')+'>'+stepsMarkup(path,position.steps[i])+'</section>').join('')+
+    (guide.paths||[guide]).map((path,i)=>'<section class="tutorial-path" data-path-index="'+i+'" data-current-step="'+position.steps[i]+'" id="'+esc(key)+'-path-'+i+'" aria-label="'+esc(path.label||'Hướng dẫn từng thao tác')+'" '+(i!==position.path?'hidden':'')+'>'+stepsMarkup(path,position.steps[i],visuals)+'</section>').join('')+
     (guide.relatedGuide&&common[guide.relatedGuide]?'<details class="tutorial-related" '+(saved[key+'-photo']?'open':'')+'><summary>Chụp và đính kèm giấy tờ như thế nào?</summary>'+renderTutorial(common[guide.relatedGuide],key+'-photo',common,saved)+'</details>':'')+
     (guide.troubleshooting?.length?'<details class="tutorial-troubles"><summary>Tôi đang vướng — xem cách xử lý</summary>'+guide.troubleshooting.map(t=>'<details><summary>'+esc(t.problem)+'</summary><p>'+esc(t.solution)+'</p></details>').join('')+'</details>':'')+
     (guide.sources?.length?'<details class="tutorial-sources"><summary>Nguồn đối chiếu hướng dẫn</summary><p>Đối chiếu ngày '+esc(guide.reviewedAt.split('-').reverse().join('/'))+'. Tên nút có thể thay đổi khi cổng cập nhật.</p>'+guide.sources.map(external).join('')+'</details>':'')+'</div>';
