@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "assets/guides/hn-thanh-phan.jpg",
+    "originalFilename": "1795235393419_4822416144931993999_4822416144931993999_cc2c7a2c66fba3d76bf2858302b685b1.jpg",
+    "sha256": "df208d1c739caf2c5031a78856fe0a130cae0964966d9aa11bf68a226f3b737b",
+    "width": 1366,
+    "height": 725,
+    "reviewedAt": "2026-11-22",
+    "privacyReview": "Ảnh chỉ thể hiện điều kiện hồ sơ và nút thao tác; không thấy tên tài khoản, số căn cước, ngày sinh, địa chỉ cá nhân hoặc mã hồ sơ đã nộp. URL trong ảnh không dùng làm đường dẫn nộp chung."
+  },
+  {
+    "asset": "assets/guides/hn-luu-va-nop.jpg",
+    "originalFilename": "1795235393423_4822416144931993999_4822416144931993999_0e667e40ab55e02cd343721e501de2f4.jpg",
+    "sha256": "9c112b6419431a87c1c58ec2291dc28c1be83353a9c4ab367d266028ef1ab1dd",
+    "width": 1366,
+    "height": 728,
+    "reviewedAt": "2026-11-22",
+    "privacyReview": "Ảnh chỉ thể hiện điều kiện hồ sơ và nút thao tác; không thấy tên tài khoản, số căn cước, ngày sinh, địa chỉ cá nhân hoặc mã hồ sơ đã nộp. URL trong ảnh không dùng làm đường dẫn nộp chung."
+  }
+]

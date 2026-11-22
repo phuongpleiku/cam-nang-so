@@ -204,5 +204,163 @@
         "solution": "Chờ biểu tượng đang tải kết thúc. Kiểm tra tên tệp hoặc ảnh xem trước ở đúng dòng giấy tờ và đọc thông báo lỗi nếu có. Nếu có Xem trước, mở để đối chiếu. Chọn ảnh/tải xong vẫn chưa phải gửi hồ sơ."
       }
     ]
+  },
+  "dang-nhap-quoc-gia": {
+    "reviewedAt": "2026-11-22",
+    "sources": [
+      {
+        "label": "Hướng dẫn vào cổng quốc gia, tìm mã 1.004873",
+        "url": "https://thangan.danang.gov.vn/chi-tiet-tin/group/156/nid/18636/huong-dan-nop-ho-so-truc-tuyen-thu-tuc-cap-giay-xac-nhan-tinh-trang-hon-nhan"
+      },
+      {
+        "label": "Bộ Công an · sử dụng tài khoản định danh trên dịch vụ công",
+        "url": "https://dhannd.bocongan.gov.vn/dien-dan-trao-doi/huong-dan-su-dung-tai-khoan-dinh-danh-dien-tu-tren-cong-dich-vu-cong-quoc-gia-va-cong-dich-vu-cong-cua-dia-phuong-bo-nganh-a-2540"
+      },
+      {
+        "label": "Bộ Công an · đăng ký và kích hoạt VNeID",
+        "url": "https://bocongan.gov.vn/phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so/thong-tin-huong-dan-nguoi-dan-su-dung-ung-dung-vneid-hieu-qua-d131-t33342.html"
+      },
+      {
+        "label": "Bộ Công an · cấp tài khoản định danh mức độ 2",
+        "url": "https://bocongan.gov.vn/bai-viet/nghi-dinh-quy-dinh-ve-dinh-danh-va-xac-thuc-dien-tu-d1-t1418"
+      }
+    ],
+    "paths": [
+      {
+        "label": "Nhập tài khoản · điện thoại hoặc máy tính",
+        "intro": "Để điện thoại có mạng và tài khoản VNeID của người đứng tên làm thủ tục sẵn sàng. Bạn chỉ nhập thông tin đăng nhập trên cổng chính thức. Trang hướng dẫn này sẽ được giữ lại ở tab hiện tại.",
+        "steps": [
+          {
+            "title": "Mở Cổng Dịch vụ công Quốc gia",
+            "action": "Bấm liên kết dưới đây để mở tab mới. Kiểm tra thanh địa chỉ là dichvucong.gov.vn.",
+            "expected": "Trang Cổng Dịch vụ công Quốc gia, có tìm kiếm và khu vực tài khoản.",
+            "links": [
+              {
+                "label": "Mở Cổng Dịch vụ công Quốc gia",
+                "url": "https://dichvucong.gov.vn/"
+              }
+            ]
+          },
+          {
+            "title": "Chọn đăng nhập bằng VNeID",
+            "action": "Chọn Đăng nhập; nếu có lựa chọn loại tài khoản, chọn tài khoản định danh điện tử VNeID. Nếu đã đăng nhập, kiểm tra đúng tài khoản rồi tìm mã thủ tục theo hướng dẫn.",
+            "expected": "Màn hình đăng nhập VNeID hoặc trang cổng đã vào đúng tài khoản."
+          },
+          {
+            "title": "Điền tài khoản của người làm thủ tục",
+            "action": "Nhập số định danh và mật khẩu VNeID của người nộp vào đúng ô trên trang đăng nhập chính thức, rồi bấm Đăng nhập. Không nhập thông tin của người được làm thay vào tài khoản của mình; phần người được cấp giấy được kê khai riêng trên tờ khai.",
+            "expected": "Cổng chuyển sang bước xác thực hoặc thông báo chỗ cần sửa. Mật khẩu hiện thành dấu chấm là bình thường."
+          },
+          {
+            "title": "Thực hiện xác thực nếu được yêu cầu",
+            "action": "Đọc thông báo trên màn hình để biết nhận mã ở đâu. Nếu yêu cầu OTP gửi SMS, mở Tin nhắn trên điện thoại đăng ký VNeID, xem mã mới nhất rồi trở lại tab đăng nhập để nhập mã. Nếu yêu cầu xác nhận trong VNeID, mở ứng dụng và làm theo yêu cầu đang hiển thị. Giữ riêng mật khẩu và mã xác thực.",
+            "expected": "Xác thực thành công và trình duyệt trở lại cổng dịch vụ công."
+          },
+          {
+            "title": "Kiểm tra đã vào đúng tài khoản",
+            "action": "Đối chiếu tên tài khoản hoặc phần thông tin người yêu cầu trên cổng với người đứng tên làm thủ tục. Đến được tờ khai chưa có nghĩa đã gửi hồ sơ. Nếu sai tài khoản, đăng xuất trên cổng rồi đăng nhập lại bằng đúng tài khoản.",
+            "expected": "Trang hiển thị đúng tài khoản và cho tìm/mở dịch vụ; đăng nhập chưa phải gửi hồ sơ."
+          },
+          {
+            "title": "Quay lại danh sách chuẩn bị",
+            "action": "Mở danh sách tab của trình duyệt (biểu tượng các ô hoặc ô có số), chọn tab “Cẩm Nang Số”. Giữ tab cổng để tiếp tục sau khi chuẩn bị xong.",
+            "expected": "Bạn vẫn thấy danh sách giấy tờ và tiến độ đã đánh dấu ở đây."
+          }
+        ],
+        "ready": "Bạn đã vào được cổng bằng đúng tài khoản và biết cách trở lại tab hướng dẫn. Đăng nhập thành công không đồng nghĩa hồ sơ đã được gửi."
+      },
+      {
+        "label": "Quét QR · cần hai thiết bị",
+        "intro": "Dùng điện thoại đã đăng nhập VNeID để quét mã trên máy tính. Nếu chỉ có một thiết bị hoặc không dùng QR, chọn “Nhập tài khoản”.",
+        "steps": [
+          {
+            "title": "Mở đăng nhập trên máy tính",
+            "action": "Mở Cổng Dịch vụ công Quốc gia, chọn Đăng nhập bằng VNeID. Nếu màn hình có mã QR, dùng điện thoại có VNeID để quét; nếu không có, dùng cách nhập tài khoản.",
+            "expected": "Mã QR đăng nhập khi phương thức này được cổng cung cấp.",
+            "links": [
+              {
+                "label": "Mở Cổng Dịch vụ công Quốc gia",
+                "url": "https://dichvucong.gov.vn/"
+              }
+            ]
+          },
+          {
+            "title": "Mở VNeID trên điện thoại",
+            "action": "Đăng nhập ứng dụng bằng tài khoản của người đứng tên yêu cầu. Chọn chức năng quét mã QR trong ứng dụng VNeID; hướng camera vào mã QR đang hiển thị trên màn hình máy tính.",
+            "expected": "VNeID nhận mã và hiện yêu cầu xác nhận đăng nhập. Đây là quét bằng VNeID, không phải bằng ứng dụng Camera thông thường."
+          },
+          {
+            "title": "Xác nhận yêu cầu vừa tạo",
+            "action": "Đọc thông tin yêu cầu trong VNeID. Chỉ xác nhận yêu cầu đăng nhập bạn vừa tạo trên máy tính; thực hiện bước xác thực ứng dụng yêu cầu. Nếu mã trên máy tính hết hạn, tải lại trang đăng nhập rồi quét mã mới.",
+            "expected": "Màn hình máy tính chuyển trở lại cổng dịch vụ công sau khi xác thực thành công."
+          },
+          {
+            "title": "Kiểm tra tên và trở lại hướng dẫn",
+            "action": "Kiểm tra đúng tên người đứng tên làm thủ tục ở tài khoản hoặc phần người yêu cầu. Bấm tab “Cẩm Nang Số” trên thanh tab của trình duyệt để tiếp tục chuẩn bị. Chưa bấm gửi hồ sơ ở bước này.",
+            "expected": "Bạn có hai tab: cổng để kê khai và Cẩm Nang Số để xem hướng dẫn."
+          }
+        ],
+        "ready": "Cổng đã cho mở tờ khai bằng đúng tài khoản. Bạn giữ được tab hướng dẫn bên cạnh tab cổng."
+      },
+      {
+        "label": "Chưa có / chưa kích hoạt VNeID",
+        "intro": "Cài ứng dụng và có tài khoản định danh là hai việc khác nhau. Trước hết hãy kiểm tra mình đã được cấp, kích hoạt tài khoản hay chưa.",
+        "steps": [
+          {
+            "title": "Kiểm tra điện thoại đã có VNeID chưa",
+            "action": "Tìm biểu tượng VNeID trên điện thoại và mở ứng dụng. Nếu chưa cài, chọn đúng kho ứng dụng của điện thoại qua các liên kết do trang đăng nhập VNeID công bố dưới đây.",
+            "links": [
+              {
+                "label": "VNeID cho iPhone · App Store",
+                "url": "https://apps.apple.com/vn/app/vneid/id1582750372?l=vi"
+              },
+              {
+                "label": "VNeID cho Android · Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.vnid"
+              }
+            ],
+            "expected": "Bạn mở được ứng dụng VNeID."
+          },
+          {
+            "title": "Nếu đã được cấp tài khoản nhưng chưa kích hoạt",
+            "action": "Trên ứng dụng, tìm “Kích hoạt” hoặc “Kích hoạt tài khoản định danh điện tử”. Nhập số định danh và số điện thoại đã đăng ký; gửi yêu cầu, nhập mã xác thực khi ứng dụng yêu cầu rồi tự thiết lập mật khẩu và thông tin bảo vệ tài khoản theo màn hình. Nếu ứng dụng báo chưa được cấp tài khoản định danh, chuyển sang bước tiếp theo.",
+            "expected": "Sau khi hoàn tất các bước kích hoạt, bạn đăng nhập được ứng dụng."
+          },
+          {
+            "title": "Nếu chưa được cấp mức 2 hoặc không rõ tình trạng",
+            "action": "Liên hệ Công an phường hoặc điểm cấp căn cước để hỏi việc cấp/kích hoạt tài khoản định danh mức 2. Chuẩn bị căn cước còn giá trị và điện thoại dùng số đã đăng ký; xác nhận nơi, thời gian tiếp nhận trước khi đến. Có thể nói: “Tôi cần dùng VNeID để nộp hồ sơ dịch vụ công, nhờ kiểm tra tài khoản và hướng dẫn kích hoạt”.",
+            "expected": "Cán bộ xác định việc cần làm theo tình trạng tài khoản của bạn; cài ứng dụng riêng lẻ chưa xác nhận đã có mức 2."
+          },
+          {
+            "title": "Thử đăng nhập cổng sau khi hoàn tất",
+            "action": "Khi đăng nhập được VNeID và tài khoản đáp ứng yêu cầu của cổng, trở lại đây, chọn “Nhập tài khoản” hoặc “Quét QR” và làm từ bước 1.",
+            "expected": "Bạn mở được tờ khai trên cổng bằng tài khoản của người đứng tên yêu cầu."
+          }
+        ],
+        "ready": "Bạn đã thử đăng nhập cổng thành công. Chỉ cài ứng dụng hoặc đặt lịch hỗ trợ thì chưa đánh dấu mục này."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Tôi quên mật khẩu VNeID",
+        "solution": "Mở ứng dụng VNeID, tại màn hình đăng nhập chọn “Quên mật khẩu” nếu có. Làm theo các bước khôi phục mà ứng dụng hiển thị và tự đặt lại mật khẩu. Sau đó quay lại cổng để đăng nhập. Nếu không khôi phục được hoặc đã đổi số điện thoại, liên hệ hỗ trợ VNeID 1900 0368 hoặc Công an phường; không thử đoán liên tục."
+      },
+      {
+        "problem": "Mã OTP chưa về hoặc đã hết hạn",
+        "solution": "Kiểm tra đúng điện thoại gắn với tài khoản và nơi nhận mã được ghi trên màn hình. Đợi hết thời gian đếm ngược rồi dùng nút gửi lại nếu có; chỉ nhập mã mới nhất. Nếu đang dùng máy tính và VNeID trên điện thoại đã đăng nhập, chuyển sang cách quét QR. Chưa nhận được mã thì không thể coi là đăng nhập xong."
+      },
+      {
+        "problem": "Tôi chỉ có một điện thoại, không quét được QR trên chính nó",
+        "solution": "Dùng các ô số định danh và mật khẩu trên trang đăng nhập thay cho QR. Xem mục “Nhập tài khoản”. QR là cách tiện dùng khi mã nằm trên một màn hình khác."
+      },
+      {
+        "problem": "Cổng báo sai tài khoản, mật khẩu hoặc yêu cầu mức 2",
+        "solution": "Kiểm tra ô số định danh có đúng 12 số của người làm thủ tục, không có khoảng trắng. Mật khẩu là mật khẩu đăng nhập VNeID, khác mã khóa điện thoại hoặc mã passcode trong ứng dụng. Nếu cổng yêu cầu mức 2, xem nhánh “Chưa có / chưa kích hoạt VNeID” để được hướng dẫn kiểm tra."
+      },
+      {
+        "problem": "Bấm vào nhưng trang trắng hoặc quay lại đăng nhập",
+        "solution": "Kiểm tra mạng rồi tải lại trang. Trên máy tính có thể dùng Ctrl + F5 theo hướng dẫn của trang đăng nhập. Nếu vẫn lỗi, ghi lại nội dung thông báo và thời điểm gặp lỗi để hỏi hỗ trợ 1900 0368. Không cần gửi mật khẩu, OTP hoặc ảnh đầy đủ thông tin cá nhân khi hỏi lỗi thao tác."
+      }
+    ]
   }
 }

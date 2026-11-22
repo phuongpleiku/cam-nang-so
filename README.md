@@ -30,7 +30,7 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 ## Cấu trúc
 
 - `dist/data/index.json`: đăng ký và bật/tắt thủ tục; bản nháp không được nạp vào giao diện.
-- `dist/data/khai-sinh.json`, `dist/data/khai-tu.json`, `dist/data/chung-thuc-ban-sao.json`: nội dung ba bộ thủ tục; mỗi thủ tục mới có tệp riêng.
+- `dist/data/khai-sinh.json`, `dist/data/khai-tu.json`, `dist/data/chung-thuc-ban-sao.json`, `dist/data/tinh-trang-hon-nhan.json`: nội dung bốn bộ thủ tục; mỗi thủ tục mới có tệp riêng.
 - `dist/data/connections.json`: hệ thống, nơi nộp, hướng dẫn chuyển sang cổng, tra cứu và đường dự phòng; tham chiếu bằng `connectionRef`.
 - `dist/data/huong-dan-chung.json`: hướng dẫn đăng nhập và chụp/đính kèm giấy tờ dùng lại.
 - `dist/connections.js`, `dist/connections.css`: kiểm tra và hiển thị nơi nộp dùng chung.
@@ -49,8 +49,9 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 
 ## Phạm vi hiện tại
 
-- Ba bộ hướng dẫn: khai sinh và khai tử liên thông (đối chiếu 23/09/2026); chứng thực bản sao từ bản chính, mã 2.000815 (đối chiếu 22/11/2026).
+- Bốn bộ hướng dẫn: khai sinh và khai tử liên thông (đối chiếu 23/09/2026); chứng thực bản sao từ bản chính, mã 2.000815 và cấp Giấy xác nhận tình trạng hôn nhân, mã 1.004873 (đối chiếu 22/11/2026).
 - Chứng thực bản sao có 12 thao tác nộp hồ sơ và 7 ảnh chụp cổng thật đã chọn để không đưa thông tin cá nhân lên website. Xem `docs/CHUNG-THUC-BAN-SAO.md` về nguồn, giới hạn và cách bảo trì.
+- Xác nhận tình trạng hôn nhân có 13 thao tác, hai ảnh thật, checklist theo trường hợp và giải thích mục đích, số bản, lưu nháp/gửi hồ sơ. Xem `docs/TINH-TRANG-HON-NHAN.md`.
 - Tìm kiếm có dấu/không dấu, lọc nhóm, hỏi từng câu, danh sách đánh dấu, in/lưu PDF, hướng dẫn điền, liên kết nộp và tra cứu.
 - Nơi nộp của từng thủ tục có các bước bắt đầu, liên kết dự phòng và nguồn/ngày kiểm chứng. Lối mở nhanh Đăng ký kết hôn đã chọn Gia Lai/phường Pleiku; chưa có bộ hướng dẫn hồ sơ đầy đủ cho thủ tục này.
 - Bốn mẫu giấy/tờ khai từ văn bản chính thức, tại bước chuẩn bị và hướng dẫn điền. Có phóng to/thu nhỏ, chọn trang, nguồn đối chiếu và tải PDF gốc. Thêm mẫu qua `visuals` trong tệp thủ tục; xem `docs/CONTENT.md` và `docs/FORM-SOURCES.md`.

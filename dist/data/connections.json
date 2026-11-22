@@ -176,6 +176,44 @@
       },
       "verifiedAt": "2026-11-22",
       "evidenceUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-8e22-77ef-819f-e49460350904"
+    },
+    "tinh-trang-hon-nhan-pleiku": {
+      "systemId": "quoc-gia",
+      "mode": "portal-link",
+      "title": "Cấp Giấy xác nhận tình trạng hôn nhân",
+      "procedureCode": "1.004873",
+      "destinationLabel": "Xác nhận tình trạng hôn nhân · chọn phường Pleiku",
+      "entryUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9",
+      "buttonLabel": "Mở cổng để chọn nơi nộp",
+      "localityNote": "Đây là trang chi tiết công khai trong ảnh hướng dẫn, chưa chọn sẵn địa bàn. Kiểm tra thẩm quyền, chọn Gia Lai / Phường Pleiku rồi mở Nộp trực tuyến tại đúng cơ quan. Chưa kiểm chứng trực tiếp phần sau đăng nhập.",
+      "nextSteps": [
+        {
+          "title": "Tìm đúng mã và chọn địa bàn",
+          "text": "Kiểm tra mã 1.004873, chọn Gia Lai / Phường Pleiku nếu đúng thẩm quyền rồi bấm Nộp hồ sơ."
+        },
+        {
+          "title": "Chọn dịch vụ của UBND phường Pleiku",
+          "text": "Tại Danh sách dịch vụ công, kiểm tra cơ quan; bấm Đồng ý nếu cần áp dụng địa bàn rồi Nộp trực tuyến."
+        },
+        {
+          "title": "Làm theo từng thao tác bên dưới",
+          "text": "So thông tin, mục đích và giấy tờ theo trường hợp. Lưu hồ sơ chỉ là bản nháp; gửi bằng Lưu và nộp hồ sơ rồi kiểm tra phản hồi."
+        }
+      ],
+      "fallback": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Mở trang chủ để tìm mã 1.004873",
+        "instruction": "Nhập 1.004873 vào ô tìm kiếm; chọn đúng tên thủ tục và cơ quan. Nếu trang chi tiết đổi đường dẫn, dùng cách tìm mã này; nếu không thấy cơ quan phù hợp thì hỏi đầu mối phường."
+      },
+      "tracking": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Mở Cổng Dịch vụ công Quốc gia để tra cứu",
+        "instruction": "Đăng nhập tài khoản đã nộp, tìm danh sách hồ sơ/dịch vụ công của tôi hoặc Tra cứu hồ sơ. Dùng mã hồ sơ của mình; phân biệt hồ sơ nháp, đã gửi và đã tiếp nhận."
+      },
+      "verifiedAt": "2026-11-22",
+      "evidenceUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9"
     }
   }
 }

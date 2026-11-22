@@ -13,5 +13,10 @@
     "id": "chung-thuc-ban-sao",
     "file": "chung-thuc-ban-sao.json",
     "published": true
+  },
+  {
+    "id": "tinh-trang-hon-nhan",
+    "file": "tinh-trang-hon-nhan.json",
+    "published": true
   }
 ]

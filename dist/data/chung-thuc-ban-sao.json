@@ -313,7 +313,7 @@
       "kind": "Tài khoản dùng trên cổng chính thức",
       "help": "Dùng tài khoản của người thực hiện phù hợp với hồ sơ. Bạn chưa cần đăng nhập để đọc hướng dẫn này.",
       "missing": "Mở hướng dẫn đăng nhập; nếu chưa có hoặc chưa kích hoạt VNeID, xem nhánh tương ứng.",
-      "guideRef": "dang-nhap"
+      "guideRef": "dang-nhap-quoc-gia"
     },
     {
       "id": "original",

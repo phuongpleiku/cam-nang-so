@@ -1,5 +1,14 @@
 # Kiểm tra bản đầu — 23/09/2026
 
+## Bổ sung tình trạng hôn nhân — 22/11/2026
+
+- Thêm thủ tục 1.004873: sáu câu hỏi, checklist theo trường hợp, hướng dẫn từng ô, 13 thao tác và hai ảnh chụp thật. Sáu ảnh có thông tin cá nhân hoặc ví dụ điền dễ gây hiểu nhầm không được đưa vào dự án.
+- Có nhánh lần đầu/cấp lại/mất giấy cũ, tự làm/ủy quyền, ly hôn/khai tử, mục đích kết hôn/khác và kiểm tra nơi nộp. Không yêu cầu đồng loạt mọi dòng giấy tờ trên cổng; dữ liệu khai thác được không phải tự tải lại.
+- Tách hướng dẫn đăng nhập Cổng Dịch vụ công Quốc gia khỏi hướng dẫn liên thông; chứng thực bản sao và tình trạng hôn nhân dùng đúng hướng dẫn quốc gia. Giữ nguyên số nhánh/số thao tác của hướng dẫn đăng nhập để điểm dừng không lệch do thay đường vào.
+- `npm run check`: 33/33 đạt. Kiểm tra các nhánh, đổi câu trả lời bỏ giấy không áp dụng, phân biệt mục đích kết hôn, không đánh dấu đã gửi khi xem hướng dẫn, đăng nhập đúng cổng, SHA-256 hai ảnh và UTF-8. `git diff --check` đạt.
+- Công cụ trình duyệt báo “Local browser access is unavailable for this chat” ở lần mở trang và lần kiểm tra kết nối. Vì vậy không có kiểm thử trực tiếp desktop/mobile cho bộ nội dung mới trong lượt này; không dùng công cụ khác để thay thế kiểm thử trình duyệt. Bộ hướng dẫn dùng giao diện chung đã kiểm tra cho chứng thực, nhưng điều đó không được tính là nghiệm thu UI mới.
+- Không đăng nhập hoặc gửi hồ sơ hành chính thật. Chưa xác nhận mức phí cuối cùng cho hồ sơ cụ thể; hướng dẫn xem biểu phí đúng địa bàn và điều kiện miễn hiện hành. Chi tiết nguồn và giới hạn ở `TINH-TRANG-HON-NHAN.md`.
+
 ## Đã đạt
 
 - `npm run check`: 9 kiểm thử đạt; kiểm tra cú pháp, dữ liệu, tham chiếu điều kiện, tài nguyên và UTF-8 đạt.

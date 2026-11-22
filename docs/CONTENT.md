@@ -114,7 +114,7 @@ Không biến giấy tờ tham khảo thành thành phần hồ sơ bắt buộc
 
 Mỗi mục chuẩn bị đang hiển thị phải có `guide` hoặc `guideRef`. Nội dung cũ `help`/`missing` vẫn giữ làm tóm tắt và dự phòng. Bộ kiểm tra ngăn bật một thủ tục thiếu phần hướng dẫn chi tiết.
 
-Để dùng hướng dẫn đăng nhập chung, thêm `"guideRef": "dang-nhap"` vào mục tài khoản. Hướng dẫn chung nằm ở `dist/data/huong-dan-chung.json`: sửa một lần áp dụng cho mọi thủ tục tham chiếu. Cần kiểm tra hướng dẫn đó phù hợp cổng của thủ tục mới; bản hiện tại hướng dẫn cổng liên thông khai sinh/khai tử.
+Để dùng hướng dẫn đăng nhập chung, thêm `"guideRef": "dang-nhap"` cho cổng liên thông khai sinh/khai tử hoặc `"guideRef": "dang-nhap-quoc-gia"` cho Cổng Dịch vụ công Quốc gia (chứng thực, tình trạng hôn nhân). Hướng dẫn chung nằm ở `dist/data/huong-dan-chung.json`: sửa một lần áp dụng cho mọi thủ tục tham chiếu. Luôn kiểm tra đúng cổng thay vì sao chép tham chiếu từ thủ tục khác.
 
 Các giấy tờ riêng dùng cấu trúc sau ngay trong mục checklist, không sửa giao diện:
 

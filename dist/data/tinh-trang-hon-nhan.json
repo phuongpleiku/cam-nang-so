@@ -1,0 +1,749 @@
+{
+  "id": "tinh-trang-hon-nhan",
+  "version": 1,
+  "title": "Cấp Giấy xác nhận tình trạng hôn nhân",
+  "shortTitle": "Xác nhận tình trạng hôn nhân",
+  "description": "Hướng dẫn xin giấy thường gọi là giấy độc thân: chọn đúng mục đích, điền thông tin và nộp tại phường Pleiku.",
+  "category": "Hộ tịch & gia đình",
+  "icon": "document",
+  "keywords": [
+    "độc thân",
+    "giấy độc thân",
+    "tình trạng hôn nhân",
+    "xác nhận hôn nhân",
+    "kết hôn",
+    "xin lại giấy",
+    "1.004873"
+  ],
+  "officialName": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+  "procedureCode": "1.004873",
+  "intro": "Trả lời vài câu để biết phần nào cần chuẩn bị. Không nhập họ tên, số căn cước hay tải giấy tờ cá nhân lên Cẩm Nang Số.",
+  "reviewedAt": "2026-11-22",
+  "connectionRef": "tinh-trang-hon-nhan-pleiku",
+  "sources": [
+    {
+      "label": "Phường Pleiku · danh mục thủ tục 1.004873, trực tuyến toàn trình",
+      "url": "https://pleiku.gialai.gov.vn/danh-muc-phai-tren/danh-muc-tthc"
+    },
+    {
+      "label": "Trang thủ tục công khai trong ảnh người biên soạn cung cấp",
+      "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9"
+    },
+    {
+      "label": "Cổng Dịch vụ công Quốc gia · thành phần hồ sơ khai thác từ dữ liệu",
+      "url": "https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=108428"
+    },
+    {
+      "label": "Cổng dịch vụ công Lào Cai · đối chiếu quy trình chung, không dùng mức phí địa phương này",
+      "url": "https://dichvucong.laocai.gov.vn/trang-chu/tra-cuu/chi-tiet-thu-tuc?ma-thu-tuc=84541"
+    },
+    {
+      "label": "Bộ Tư pháp · mục đích và thời hạn sử dụng giấy xác nhận",
+      "url": "https://tcdcpl.moj.gov.vn/UserControls/News/pFormPrint.aspx?ItemID=874&ListId=&OptionLogo=0&SiteId=&SiteRootID=&UrlListProcess=%2Fqt%2Ftintuc%2FLists%2FThiHanhPhapLuat"
+    },
+    {
+      "label": "Gia Lai · thông tin thay đổi phí và điều kiện miễn năm 2026",
+      "url": "https://quynhondong.gialai.gov.vn/tin-tuc2/tin-van-hoa-xa-hoi/ubnd-phuong-quy-nhon-dong-thong-tin-ve-muc-thu-va-dieu-kien-mien-phi-le-phi-doi-voi-mot-so-thu-tuc-ho-tich.html"
+    }
+  ],
+  "questions": [
+    {
+      "id": "purpose",
+      "title": "Bạn cần giấy này để làm gì?",
+      "hint": "Mục đích quyết định nội dung giấy. Giấy cấp cho mục đích khác không dùng để đăng ký kết hôn.",
+      "options": [
+        {
+          "value": "marriage",
+          "label": "Đăng ký kết hôn"
+        },
+        {
+          "value": "other",
+          "label": "Mục đích khác: vay vốn, nhà đất…"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ nơi nhận yêu cầu gì"
+        }
+      ]
+    },
+    {
+      "id": "role",
+      "title": "Bạn làm cho mình hay làm thay?",
+      "hint": "Người nộp và người được cấp giấy có thể là hai người khác nhau.",
+      "options": [
+        {
+          "value": "self",
+          "label": "Cho bản thân"
+        },
+        {
+          "value": "family",
+          "label": "Được người thân ủy quyền"
+        },
+        {
+          "value": "other",
+          "label": "Được người khác ủy quyền"
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "title": "Tình trạng hôn nhân hiện tại của người cần giấy?",
+      "hint": "Đã ly hôn hoặc vợ/chồng đã mất không chọn “chưa từng đăng ký kết hôn”.",
+      "options": [
+        {
+          "value": "never",
+          "label": "Chưa từng đăng ký kết hôn"
+        },
+        {
+          "value": "married",
+          "label": "Đang có vợ hoặc chồng"
+        },
+        {
+          "value": "divorced",
+          "label": "Đã ly hôn tại Việt Nam"
+        },
+        {
+          "value": "widowed",
+          "label": "Vợ hoặc chồng đã mất"
+        },
+        {
+          "value": "foreign",
+          "label": "Ly hôn / hủy kết hôn ở nước ngoài"
+        },
+        {
+          "value": "unsure",
+          "label": "Chưa rõ hoặc dữ liệu đang sai"
+        }
+      ]
+    },
+    {
+      "id": "previous",
+      "title": "Trước đây đã được cấp giấy này chưa?",
+      "hint": "Cấp lại, mất giấy cũ và xin lần đầu cần xử lý khác nhau.",
+      "options": [
+        {
+          "value": "first",
+          "label": "Chưa từng được cấp"
+        },
+        {
+          "value": "reissue",
+          "label": "Đã được cấp, còn giữ giấy cũ"
+        },
+        {
+          "value": "lost",
+          "label": "Đã được cấp nhưng không còn giấy cũ"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa rõ"
+        }
+      ]
+    },
+    {
+      "id": "residence",
+      "title": "Nơi cư trú của người cần giấy thuộc trường hợp nào?",
+      "hint": "Chọn nơi của người được cấp giấy, không phải nơi người làm thay đang ở.",
+      "options": [
+        {
+          "value": "pleiku",
+          "label": "Thường trú tại phường Pleiku"
+        },
+        {
+          "value": "temporary",
+          "label": "Không có nơi thường trú, đã đăng ký tạm trú tại Pleiku"
+        },
+        {
+          "value": "other",
+          "label": "Thường trú nơi khác / chỉ đang ở Pleiku"
+        },
+        {
+          "value": "abroad",
+          "label": "Đang cư trú ở nước ngoài"
+        },
+        {
+          "value": "unsure",
+          "label": "Chưa rõ nơi có thẩm quyền"
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "title": "Đã từng thường trú ở nơi khác chưa?",
+      "hint": "Thông tin nơi ở trước đây giúp cơ quan tra cứu; không mặc định phải tự xin giấy ở từng nơi.",
+      "options": [
+        {
+          "value": "single",
+          "label": "Chỉ thường trú tại một nơi"
+        },
+        {
+          "value": "multiple",
+          "label": "Đã thường trú ở nhiều nơi trong nước"
+        },
+        {
+          "value": "abroad",
+          "label": "Có thời gian cư trú ở nước ngoài"
+        },
+        {
+          "value": "unsure",
+          "label": "Tôi chưa nhớ rõ"
+        }
+      ]
+    }
+  ],
+  "notices": [
+    {
+      "title": "Hỏi đúng nơi tiếp nhận trước khi nộp",
+      "text": "Nếu thường trú nơi khác, đang ở nước ngoài hoặc chưa rõ thẩm quyền, hãy cung cấp tình huống cư trú cho Trung tâm phục vụ hành chính công để được chỉ đúng cơ quan. Không chọn Pleiku chỉ vì hướng dẫn minh họa địa bàn này.",
+      "blocking": true,
+      "when": {
+        "question": "residence",
+        "values": [
+          "other",
+          "abroad",
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Không cần lúc nào cũng xin giấy riêng để kết hôn",
+      "text": "Trước khi xin giấy cho đăng ký kết hôn trong nước, hỏi nơi đăng ký có khai thác được dữ liệu tình trạng hôn nhân hay không. Nếu họ xác nhận không cần nộp giấy riêng thì làm theo hướng dẫn đó.",
+      "when": {
+        "question": "purpose",
+        "values": [
+          "marriage"
+        ]
+      }
+    },
+    {
+      "title": "Đừng chọn mục đích khác rồi ghi đăng ký kết hôn",
+      "text": "Nếu dùng để kết hôn, chọn đúng mục đích kết hôn và kê khai người dự định kết hôn, nơi đăng ký khi cổng yêu cầu. Giấy cho mục đích này chỉ cấp 01 bản; không chép số 5 trong ảnh ví dụ.",
+      "when": {
+        "question": "purpose",
+        "values": [
+          "marriage"
+        ]
+      }
+    },
+    {
+      "title": "Hỏi nơi yêu cầu giấy về mục đích cụ thể",
+      "text": "Hỏi tên việc cần làm và nơi nhận giấy trước khi gửi. Không chọn đại “mục đích khác” để vượt qua ô bắt buộc.",
+      "when": {
+        "question": "purpose",
+        "values": [
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Khai đúng tình trạng, kể cả đang có vợ/chồng",
+      "text": "Giấy xác nhận không chỉ dành cho người độc thân. Nếu đang có vợ/chồng, phải khai đúng; nếu muốn đăng ký kết hôn mới, hỏi cơ quan hộ tịch về điều kiện trước khi nộp.",
+      "when": {
+        "question": "status",
+        "values": [
+          "married"
+        ]
+      }
+    },
+    {
+      "title": "Làm rõ dữ liệu trước khi gửi",
+      "text": "Nếu dữ liệu tự điền không đúng, liên hệ nơi tiếp nhận để được hướng dẫn kiểm tra/cập nhật; không chọn một tình trạng khác chỉ để nộp được.",
+      "when": {
+        "question": "status",
+        "values": [
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Giấy tờ chỉ nộp theo trường hợp",
+      "text": "Các dòng về giấy cũ, ly hôn/khai tử và ủy quyền trên cổng không có nghĩa mọi người phải nộp đủ cả ba. Dữ liệu cơ quan đã khai thác được không phải tự tải lại; thực hiện yêu cầu bổ sung cụ thể nếu có."
+    }
+  ],
+  "checklist": [
+    {
+      "id": "login",
+      "title": "Tài khoản VNeID của người nộp",
+      "kind": "Tài khoản trên cổng chính thức",
+      "help": "Chuẩn bị điện thoại và tài khoản phù hợp người thực hiện. Chưa cần đăng nhập để đọc hướng dẫn này.",
+      "missing": "Mở hướng dẫn đăng nhập, chọn cách dùng tài khoản, QR hoặc hỗ trợ kích hoạt.",
+      "guideRef": "dang-nhap-quoc-gia"
+    },
+    {
+      "id": "identity",
+      "title": "Thông tin của người nộp và người được cấp giấy",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "So giấy tờ định danh, số điện thoại và thông tin cư trú của đúng người.",
+      "summary": "So giấy tờ định danh, số điện thoại và thông tin cư trú của đúng người.",
+      "missing": "Nếu dữ liệu tự điền sai hoặc ô bị khóa, hỏi nơi tiếp nhận trước khi gửi.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Chuẩn bị thông tin để so",
+            "action": "Để sẵn giấy tờ định danh còn giá trị hoặc thông tin định danh hợp lệ. Đọc đúng số, ngày cấp, nơi cấp; không chép dữ liệu người trong ảnh."
+          },
+          {
+            "title": "Tách hai người nếu làm thay",
+            "action": "Ghi nhớ ai là người nộp, ai là người cần giấy. Khi cổng hỏi quan hệ, chọn Bản thân hoặc Khác đúng thực tế."
+          },
+          {
+            "title": "Kiểm tra liên hệ",
+            "action": "Chuẩn bị số điện thoại đang dùng để nhận thông báo. Chỉ tải giấy định danh nếu cổng/cơ quan cần do chưa khai thác được dữ liệu."
+          }
+        ],
+        "ready": "Bạn biết thông tin cần kiểm tra và số điện thoại có thể liên hệ."
+      }
+    },
+    {
+      "id": "purpose",
+      "title": "Mục đích dùng giấy và nơi nhận",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Hỏi nơi yêu cầu giấy chính xác dùng để làm việc gì.",
+      "summary": "Hỏi nơi yêu cầu giấy chính xác dùng để làm việc gì.",
+      "missing": "Chưa rõ mục đích thì hỏi nơi yêu cầu giấy; đừng đoán.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Hỏi việc cần làm",
+            "action": "Hỏi: “Tôi dùng giấy xác nhận cho việc gì, nộp ở đâu, cần nội dung nào?”."
+          },
+          {
+            "title": "So lựa chọn với nội dung nhập",
+            "action": "Đăng ký kết hôn phải chọn mục đích kết hôn. Việc khác thì nêu cụ thể, ví dụ bổ sung hồ sơ vay vốn tại đơn vị tiếp nhận."
+          },
+          {
+            "title": "Phân biệt số bản",
+            "action": "Ô Số lượng bản sao không tự đồng nghĩa số bản chính được cấp. Không chép số lượng của ảnh. Nếu không cần bản sao và ô ghi “điền 0 nếu không cần”, nhập 0; hỏi nơi tiếp nhận nếu chưa rõ."
+          }
+        ],
+        "ready": "Bạn biết mục đích, nơi dùng và nhu cầu bản sao của mình."
+      }
+    },
+    {
+      "id": "residence",
+      "title": "Thông tin nơi cư trú và thời gian cần xác nhận",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Kiểm tra địa bàn và lịch sử cư trú để cơ quan tra cứu.",
+      "summary": "Kiểm tra địa bàn và lịch sử cư trú để cơ quan tra cứu.",
+      "missing": "Không nhớ thời gian thì kiểm tra tài liệu sẵn có hoặc hỏi cơ quan quản lý; không tự đặt ngày.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Kiểm tra nơi hiện tại",
+            "action": "Đối chiếu thường trú/tạm trú theo dữ liệu cư trú hợp lệ của người cần giấy. Không mặc định có mặt ở Pleiku là thuộc thẩm quyền Pleiku."
+          },
+          {
+            "title": "Liệt kê nơi từng ở",
+            "action": "Nếu từng thường trú nhiều nơi, ghi địa chỉ và các khoảng thời gian nhớ được, kiểm tra bằng tài liệu đang có. Có thời gian ở nước ngoài thì nói rõ."
+          },
+          {
+            "title": "Để cơ quan hướng dẫn xác minh",
+            "action": "Cung cấp thông tin để cơ quan tra cứu. Không tự đi xin xác nhận ở mọi địa phương trước khi có hướng dẫn. Giấy chứng minh cư trú chỉ bổ sung khi dữ liệu không khai thác được và được yêu cầu."
+          }
+        ],
+        "ready": "Bạn kiểm tra được nơi cư trú và biết phần lịch sử nào cần hỏi thêm."
+      }
+    },
+    {
+      "id": "files",
+      "title": "Tệp đính kèm đúng trường hợp",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Chụp rõ, đủ trang những giấy thực sự cần nộp; không tải hồ sơ thật vào Cẩm Nang Số.",
+      "summary": "Chụp rõ, đủ trang những giấy thực sự cần nộp; không tải hồ sơ thật vào Cẩm Nang Số.",
+      "missing": "Mở tệp thử trên thiết bị; nếu cổng báo lỗi, đọc định dạng và dung lượng được chấp nhận.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Chọn giấy áp dụng cho mình",
+            "action": "Đọc điều kiện từng dòng: cấp lại, đã ly hôn/vợ chồng mất, hay làm theo ủy quyền. Không tạo giấy hoặc đính kèm tệp trống ở dòng không áp dụng."
+          },
+          {
+            "title": "Chụp và kiểm tra",
+            "action": "Chụp trọn giấy, rõ chữ và dấu, đủ các mặt/trang. Giữ nguyên nội dung; đặt tên dễ tìm, tránh thêm số căn cước vào tên tệp."
+          },
+          {
+            "title": "Nhớ thư mục lưu",
+            "action": "Mở Ảnh/Tệp/Tải xuống trên điện thoại hoặc thư mục máy tính để chắc chắn tìm lại được. Chỉ tải tệp lên cổng chính thức."
+          }
+        ],
+        "ready": "Bạn tìm được đúng tệp và đọc rõ nội dung.",
+        "relatedGuide": "chup-tai-giay-to"
+      }
+    },
+    {
+      "id": "partner",
+      "title": "Thông tin người dự định kết hôn",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Chuẩn bị thông tin đối phương và nơi dự định đăng ký khi xin giấy để kết hôn.",
+      "summary": "Chuẩn bị thông tin đối phương và nơi dự định đăng ký khi xin giấy để kết hôn.",
+      "missing": "Chưa đủ thông tin thì hỏi người dự định kết hôn và nơi đăng ký.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Hỏi thông tin chính xác",
+            "action": "Chuẩn bị họ tên, ngày sinh, quốc tịch, thông tin giấy tờ tùy thân của người dự định kết hôn theo trường cổng yêu cầu."
+          },
+          {
+            "title": "Xác định nơi đăng ký",
+            "action": "Ghi đúng tên cơ quan và địa điểm dự định đăng ký. Có yếu tố nước ngoài thì hỏi trước yêu cầu của nơi nhận."
+          },
+          {
+            "title": "So mục đích",
+            "action": "Phần chọn và phần diễn giải đều phải là đăng ký kết hôn. Không dùng giấy ghi mục đích khác để đăng ký kết hôn."
+          }
+        ],
+        "ready": "Bạn có thông tin đối phương và nơi đăng ký để kê khai."
+      },
+      "when": {
+        "question": "purpose",
+        "values": [
+          "marriage"
+        ]
+      }
+    },
+    {
+      "id": "authorization",
+      "title": "Văn bản ủy quyền nếu làm thay",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Làm thay vẫn phải có căn cứ ủy quyền; thân nhân không đồng nghĩa được bỏ văn bản.",
+      "summary": "Làm thay vẫn phải có căn cứ ủy quyền; thân nhân không đồng nghĩa được bỏ văn bản.",
+      "missing": "Hỏi nơi tiếp nhận cách lập, chứng thực văn bản theo quan hệ thực tế.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Xác định người ủy quyền",
+            "action": "Người cần giấy ủy quyền cho người đi nộp; ghi đúng thông tin hai bên và việc được ủy quyền."
+          },
+          {
+            "title": "Kiểm tra yêu cầu chứng thực",
+            "action": "Nếu là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực. Trường hợp khác hỏi việc chứng thực theo quy định; không tự coi mọi người thân là được miễn."
+          },
+          {
+            "title": "Chuẩn bị tệp và giấy để đối chiếu",
+            "action": "Đọc lại, ký/lập đúng yêu cầu, chụp đủ trang và gắn vào dòng ủy quyền khi cổng yêu cầu."
+          }
+        ],
+        "ready": "Bạn có văn bản ủy quyền phù hợp và đã rõ yêu cầu chứng thực."
+      },
+      "when": {
+        "question": "role",
+        "values": [
+          "family",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "old-certificate",
+      "title": "Giấy xác nhận đã cấp trước đây",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Xin cấp lại do hết hạn/đổi mục đích cần xử lý giấy cũ, không chọn đăng ký lần đầu.",
+      "summary": "Xin cấp lại do hết hạn/đổi mục đích cần xử lý giấy cũ, không chọn đăng ký lần đầu.",
+      "missing": "Nếu không còn giấy, dùng mục hướng dẫn không nộp lại được giấy cũ.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Tìm giấy đã cấp",
+            "action": "Kiểm tra số, ngày cấp, nơi cấp, mục đích và tình trạng sử dụng của giấy cũ."
+          },
+          {
+            "title": "Nêu lý do xin lại",
+            "action": "Nói rõ hết hạn, đổi mục đích hoặc lý do khác; chọn loại đăng ký thực tế cổng cung cấp phù hợp."
+          },
+          {
+            "title": "Chuẩn bị nộp lại",
+            "action": "Giữ giấy cũ, chuẩn bị bản chụp và thực hiện nộp lại theo hướng dẫn tiếp nhận; tải ảnh không tự thay thế nghĩa vụ nộp lại bản giấy nếu được yêu cầu."
+          }
+        ],
+        "ready": "Bạn tìm được giấy cũ và biết lý do xin cấp lại."
+      },
+      "when": {
+        "question": "previous",
+        "values": [
+          "reissue"
+        ]
+      }
+    },
+    {
+      "id": "missing-old",
+      "title": "Thông tin giấy cũ nếu không còn giữ",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Không có giấy cũ thì khai rõ, không chuyển thành xin lần đầu để bỏ qua.",
+      "summary": "Không có giấy cũ thì khai rõ, không chuyển thành xin lần đầu để bỏ qua.",
+      "missing": "Liên hệ cơ quan từng cấp nếu không nhớ số hoặc ngày.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Tìm thông tin còn lưu",
+            "action": "Tìm thông báo, ảnh chụp, mã hồ sơ hoặc ghi chú số/ngày/nơi cấp; không tự đoán thông tin thiếu."
+          },
+          {
+            "title": "Trình bày lý do",
+            "action": "Nói rõ vì sao không nộp lại được giấy đã cấp và giấy trước đây dùng vào việc gì."
+          },
+          {
+            "title": "Làm theo yêu cầu xác minh",
+            "action": "Cơ quan có thể cần xác minh. Chỉ lập cam đoan khi được hướng dẫn, không tự dùng cam đoan thay mọi giấy tờ."
+          }
+        ],
+        "ready": "Bạn có thông tin và lời giải thích trung thực để cơ quan hướng dẫn."
+      },
+      "when": {
+        "question": "previous",
+        "values": [
+          "lost",
+          "unsure"
+        ]
+      }
+    },
+    {
+      "id": "marital-evidence",
+      "title": "Thông tin ly hôn hoặc khai tử liên quan",
+      "kind": "Thông tin / giấy tờ theo trường hợp",
+      "help": "Chuẩn bị số, ngày và cơ quan ban hành/đăng ký để cơ quan tra cứu dữ liệu.",
+      "summary": "Chuẩn bị số, ngày và cơ quan ban hành/đăng ký để cơ quan tra cứu dữ liệu.",
+      "missing": "Thiếu thông tin hoặc dữ liệu không khớp thì hỏi nơi ban hành/đăng ký và nơi tiếp nhận.",
+      "guide": {
+        "steps": [
+          {
+            "title": "Tìm đúng thông tin sự kiện",
+            "action": "Ly hôn: kiểm tra bản án/quyết định đã có hiệu lực. Vợ/chồng mất: kiểm tra thông tin đăng ký khai tử. Ly hôn/hủy kết hôn ở nước ngoài: hỏi về việc ghi chú và Trích lục ghi chú ly hôn."
+          },
+          {
+            "title": "Ghi thông tin tra cứu",
+            "action": "Chuẩn bị số, ngày, cơ quan ban hành/đăng ký tương ứng; dùng giấy đang có để đối chiếu."
+          },
+          {
+            "title": "Chỉ bổ sung theo yêu cầu",
+            "action": "Cơ quan khai thác dữ liệu theo quy định. Nếu chưa khai thác được và yêu cầu giấy/tệp bổ sung, nộp đúng nội dung được hướng dẫn; không khai “chưa đăng ký kết hôn” thay cho “đã ly hôn”."
+          }
+        ],
+        "ready": "Bạn biết thông tin cần tra cứu và giấy/tệp nào được yêu cầu thêm."
+      },
+      "when": {
+        "question": "status",
+        "values": [
+          "divorced",
+          "widowed",
+          "foreign",
+          "unsure"
+        ]
+      }
+    }
+  ],
+  "fields": [
+    {
+      "title": "Kính gửi và thông tin người nộp",
+      "body": "Kiểm tra Kính gửi là UBND phường Pleiku khi đúng thẩm quyền. So thông tin tự điền; điền số điện thoại thật đang dùng. Ô xám bị khóa mà sai thì hỏi nơi tiếp nhận, không sửa bằng thông tin người khác.",
+      "source": "Dữ liệu định danh và liên hệ của người nộp.",
+      "check": "Đúng người nộp, đúng cơ quan và các ô có dấu *."
+    },
+    {
+      "title": "Quan hệ và người được cấp giấy",
+      "body": "Tự làm chọn Bản thân. Làm thay chọn Khác và kiểm tra toàn bộ thông tin người cần giấy; đừng để dữ liệu của người nộp ở cả hai phần.",
+      "source": "Giấy tờ của người cần giấy và văn bản ủy quyền nếu có.",
+      "check": "Họ tên, ngày sinh, số định danh, quốc tịch, dân tộc, giấy tờ đúng từng người."
+    },
+    {
+      "title": "Loại đăng ký, loại cư trú và địa chỉ",
+      "body": "Chưa từng được cấp mới chọn đăng ký lần đầu. Đã có giấy thì chọn phương án cấp lại phù hợp đang có trên cổng. Khai thường trú/tạm trú và địa chỉ thực tế theo dữ liệu cư trú.",
+      "source": "Lịch sử cấp giấy và dữ liệu cư trú.",
+      "check": "Không giữ mặc định lần đầu hoặc địa chỉ trong ảnh nếu không đúng."
+    },
+    {
+      "title": "Tình trạng hôn nhân",
+      "body": "Chọn tình trạng đúng hiện tại và kê khai khoảng thời gian cần xác nhận nếu cổng yêu cầu. Đã ly hôn/vợ chồng mất không chọn chưa từng kết hôn. Nếu ô xám sai, yêu cầu kiểm tra dữ liệu trước khi nộp.",
+      "source": "Dữ liệu hộ tịch và giấy tờ sự kiện tương ứng.",
+      "check": "Không suy ra tình trạng của mình từ ảnh hướng dẫn."
+    },
+    {
+      "title": "Mục đích: đăng ký kết hôn",
+      "body": "Chọn mục đích kết hôn. Điền thông tin người dự định kết hôn và nơi đăng ký theo các ô xuất hiện. Không chọn Sử dụng vào mục đích khác rồi ghi đăng ký kết hôn ở ô dưới.",
+      "source": "Thông tin đã thống nhất với người dự định kết hôn và nơi đăng ký.",
+      "check": "Giấy dùng để kết hôn chỉ cấp 01 bản; số lượng bản sao là ô khác, không chép số 5.",
+      "when": {
+        "question": "purpose",
+        "values": [
+          "marriage"
+        ]
+      }
+    },
+    {
+      "title": "Mục đích khác hoặc chưa rõ",
+      "body": "Chọn mục đích khác chỉ khi thực sự không dùng để đăng ký kết hôn. Nêu rõ công việc và nơi nhận giấy. Chưa rõ thì hỏi nơi yêu cầu giấy trước khi gửi.",
+      "source": "Yêu cầu cụ thể của nơi nhận.",
+      "check": "Giấy cho mục đích khác không dùng để đăng ký kết hôn.",
+      "when": {
+        "question": "purpose",
+        "values": [
+          "other",
+          "unsure"
+        ]
+      }
+    },
+    {
+      "title": "Số lượng bản sao, nơi và ngày lập",
+      "body": "Nếu không cần bản sao và ô hướng dẫn điền 0, nhập 0. Nếu cần, hỏi rõ loại bản và phí. Điền nơi/ngày thực tế lập tờ khai, không chép ngày 13/11/2026 trong ảnh.",
+      "source": "Nhu cầu bản sao của mình và ngày lập thực tế.",
+      "check": "Không lấy số lượng hoặc ngày trên ảnh làm giá trị mặc định."
+    },
+    {
+      "title": "Hình thức nhận kết quả và thành phần hồ sơ",
+      "body": "Chọn cách nhận mà cổng hỗ trợ, kiểm tra địa chỉ nếu gửi bưu chính. Đọc điều kiện từng dòng trước khi đính kèm; mở lại tệp để kiểm tra đúng giấy và đủ trang.",
+      "source": "Giấy tờ phù hợp trường hợp, dữ liệu cơ quan khai thác và yêu cầu bổ sung nếu có.",
+      "check": "Không phải mọi hồ sơ đều cần giấy cũ, ly hôn/khai tử và ủy quyền."
+    },
+    {
+      "title": "Lưu hồ sơ và Lưu và nộp hồ sơ",
+      "body": "Lưu hồ sơ là giữ bản nháp, chưa gửi. Khi đã kiểm tra, chọn Lưu và nộp hồ sơ trên cổng; hoàn tất xác nhận/thanh toán nếu cổng yêu cầu và kiểm tra thông báo/mã hồ sơ.",
+      "source": "Hai nút được thấy trong ảnh do người biên soạn cung cấp.",
+      "check": "Chưa có thông báo gửi thành công thì vào danh sách hồ sơ kiểm tra trước khi gửi lại."
+    }
+  ],
+  "submissionGuide": {
+    "intro": "Làm trên cổng chính thức và giữ tab Cẩm Nang Số để đối chiếu. Các nhãn dưới đây dựa trên ảnh người biên soạn cung cấp ngày đối chiếu 22/11/2026; giao diện có thể thay đổi.",
+    "steps": [
+      {
+        "title": "Đăng nhập Cổng Dịch vụ công Quốc gia",
+        "action": "Mở dichvucong.gov.vn. Chọn Đăng nhập và tài khoản VNeID khi cổng yêu cầu; làm theo hướng dẫn đăng nhập ở mục chuẩn bị.",
+        "expected": "Tên tài khoản đúng người nộp; Cẩm Nang Số không hỏi mật khẩu hoặc OTP."
+      },
+      {
+        "title": "Tìm đúng mã 1.004873",
+        "action": "Tại ô tìm kiếm, nhập 1.004873. Chọn kết quả Thủ tục cấp Giấy xác nhận tình trạng hôn nhân.",
+        "expected": "Tên thủ tục và mã trùng khớp, không phải đăng ký kết hôn."
+      },
+      {
+        "title": "Chọn tỉnh và phường đúng nơi giải quyết",
+        "action": "Trong Chọn cơ quan thực hiện, chọn Tỉnh Gia Lai và Phường Pleiku khi đúng thẩm quyền, rồi bấm Nộp hồ sơ.",
+        "expected": "Cổng có thể chuyển tới Danh sách dịch vụ công trước khi mở tờ khai."
+      },
+      {
+        "title": "Mở dịch vụ trực tuyến của phường",
+        "action": "Ở Danh sách dịch vụ công, kiểm tra Cơ quan thực hiện là UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; chọn Nộp trực tuyến tại đúng dòng.",
+        "expected": "Tờ khai có tiêu đề cấp giấy xác nhận và Kính gửi UBND phường Pleiku."
+      },
+      {
+        "title": "So phần Thông tin người nộp",
+        "action": "Kiểm tra số định danh, họ tên, ngày sinh, giấy tờ, ngày cấp, nơi cấp và loại cư trú. Điền số điện thoại đang dùng. Ô khóa mà sai thì hỏi nơi tiếp nhận trước khi gửi.",
+        "expected": "Thông tin là của người đang nộp, không lấy thông tin người trong ảnh."
+      },
+      {
+        "title": "Chọn Bản thân hoặc Khác",
+        "action": "Tại Quan hệ với người được cấp giấy, chọn Bản thân nếu tự xin. Nếu được ủy quyền chọn Khác và so lại phần Thông tin về người được cấp giấy.",
+        "expected": "Hai phần thể hiện đúng từng người; làm thay có văn bản ủy quyền theo trường hợp."
+      },
+      {
+        "title": "Kiểm tra loại đăng ký và nơi cư trú",
+        "action": "Chọn lần đầu/cấp lại phù hợp lịch sử cấp giấy theo lựa chọn thực tế trên cổng. So địa chỉ, quốc gia, tỉnh, xã/phường, loại cư trú.",
+        "expected": "Không để mặc định đăng ký lần đầu nếu đang xin lại giấy cũ."
+      },
+      {
+        "title": "Chọn đúng tình trạng và mục đích",
+        "action": "Khai đúng tình trạng hôn nhân. Dùng để kết hôn thì chọn mục đích kết hôn, điền đối phương và nơi đăng ký theo cổng. Không chọn mục đích khác rồi nhập đăng ký kết hôn.",
+        "expected": "Phần chọn và phần diễn giải thống nhất; tình trạng không bị chép theo ảnh."
+      },
+      {
+        "title": "Kiểm tra số bản, ngày lập và cách nhận",
+        "action": "Ô Số lượng bản sao ghi điền 0 nếu không cần: nhập 0 khi không yêu cầu; nếu cần hỏi rõ loại bản. Không chép số 5. Chọn nơi/ngày lập thực tế và hình thức nhận cổng hỗ trợ.",
+        "expected": "Xin giấy để kết hôn chỉ cấp 01 bản; ô bản sao không tự thay đổi quy định này."
+      },
+      {
+        "title": "Đọc từng dòng Thành phần hồ sơ",
+        "action": "Dòng giấy cũ áp dụng khi cấp lại theo điều kiện; dòng ly hôn/khai tử áp dụng theo lịch sử; dòng ủy quyền áp dụng khi làm thay. Dữ liệu cơ quan khai thác được không phải tự tải lại. Nếu cổng bắt tệp không đúng trường hợp, hỏi cán bộ, không tải tệp trống.",
+        "expected": "Bạn xác định được dòng nào áp dụng cho mình.",
+        "visualId": "hn-thanh-phan"
+      },
+      {
+        "title": "Gắn tệp đúng dòng và mở kiểm tra",
+        "action": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác.",
+        "expected": "Tệp được gắn đúng dòng, rõ và đủ trang; chưa phải đã gửi hồ sơ."
+      },
+      {
+        "title": "Phân biệt Lưu hồ sơ với Lưu và nộp hồ sơ",
+        "action": "Muốn làm sau, chọn Lưu hồ sơ và kiểm tra bản nháp được lưu. Đã so đủ thông tin và tệp thì chọn Lưu và nộp hồ sơ trên cổng. Đọc các yêu cầu xác nhận hoặc thanh toán tiếp theo nếu có.",
+        "expected": "Chỉ lưu bản nháp chưa phải gửi. Không bấm lặp lại liên tục khi cổng đang xử lý.",
+        "visualId": "hn-luu-va-nop"
+      },
+      {
+        "title": "Kiểm tra đã gửi và theo dõi phản hồi",
+        "action": "Chờ thông báo gửi thành công; lưu mã hồ sơ của mình. Mở danh sách hồ sơ trong tài khoản hoặc Tra cứu hồ sơ để xem tiếp nhận, bổ sung, phí và lịch hẹn. Nếu chưa có mã, kiểm tra hồ sơ đã lưu/đã gửi trước khi thử lại.",
+        "expected": "Bộ ảnh chưa có màn hình gửi thành công; không dùng ảnh nút Lưu và nộp làm bằng chứng hồ sơ đã gửi."
+      }
+    ],
+    "readyLabel": "Sau thao tác cuối, kiểm tra trên cổng",
+    "ready": "Cần có phản hồi của cổng và mã hồ sơ để theo dõi. Xem hết hướng dẫn ở đây không xác nhận hồ sơ đã nộp hoặc giấy đã được cấp.",
+    "troubleshooting": [
+      {
+        "problem": "Tôi lỡ chọn mục đích khác nhưng cần đăng ký kết hôn",
+        "solution": "Nếu còn nháp, sửa lại mục đích và nội dung trước khi gửi. Nếu đã gửi, liên hệ cơ quan ghi trên hồ sơ để xin hướng dẫn sửa; nếu giấy đã cấp, hỏi thủ tục cấp lại đúng mục đích, không tự sửa giấy."
+      },
+      {
+        "problem": "Cổng bắt giấy ly hôn hoặc ủy quyền nhưng tôi không thuộc trường hợp đó",
+        "solution": "So lại quan hệ người nộp, tình trạng hôn nhân và loại đăng ký. Nếu đã đúng mà vẫn báo bắt buộc, ghi nội dung lỗi và hỏi nơi tiếp nhận; không đính kèm giấy của người khác hay tệp trống."
+      },
+      {
+        "problem": "Tôi đã Lưu hồ sơ mà chưa thấy tiếp nhận",
+        "solution": "Lưu chỉ là bản nháp. Mở lại nháp trong tài khoản, kiểm tra đủ thông tin rồi dùng Lưu và nộp hồ sơ và hoàn tất các bước cổng yêu cầu."
+      },
+      {
+        "problem": "Thông tin tự điền bị sai hoặc không sửa được",
+        "solution": "Đừng dùng dữ liệu khác để vượt qua. Ghi rõ ô sai và liên hệ nơi tiếp nhận/đơn vị quản lý dữ liệu để được chỉ cách kiểm tra, cập nhật."
+      },
+      {
+        "problem": "Tôi không nộp lại được giấy cũ",
+        "solution": "Khai rõ lý do, thông tin giấy trước và tình trạng sử dụng. Hỏi cán bộ hướng dẫn việc xác minh hoặc cam đoan khi đủ điều kiện; không tự chọn đăng ký lần đầu."
+      }
+    ]
+  },
+  "submission": [
+    "Đăng nhập Cổng Dịch vụ công Quốc gia, tìm 1.004873 và chọn đúng cơ quan có thẩm quyền.",
+    "So người nộp và người được cấp giấy; kiểm tra loại đăng ký, cư trú, tình trạng và mục đích.",
+    "Điền ngày thực tế, nhu cầu bản sao và hình thức nhận; đính kèm đúng trường hợp.",
+    "Lưu và nộp hồ sơ trên cổng, hoàn tất bước xác nhận/thanh toán nếu được yêu cầu.",
+    "Lưu mã hồ sơ, theo dõi tiếp nhận và yêu cầu kiểm tra thông tin trước khi nhận kết quả."
+  ],
+  "duration": "Thời hạn công bố trong quy trình chung: 03 ngày làm việc; nếu phải xác minh thì không quá 23 ngày. Xem thời hạn áp dụng tại nơi tiếp nhận và phiếu hẹn của hồ sơ; lưu nháp chưa bắt đầu thời hạn giải quyết.",
+  "fees": "Lệ phí theo quy định hiện hành của Gia Lai và điều kiện miễn/giảm của từng hồ sơ. Trước khi gửi, xem Xem Phí/Lệ phí tại đúng dịch vụ của phường Pleiku và thông báo thanh toán. Không mặc định trực tuyến luôn miễn phí; hỏi riêng phí bản sao và bưu chính nếu yêu cầu. Hướng dẫn này chưa xác nhận mức tiền cuối cùng cho hồ sơ cụ thể.",
+  "results": [
+    "Giấy xác nhận tình trạng hôn nhân được cấp theo mục đích đã yêu cầu và hình thức trả kết quả của hồ sơ.",
+    "Kiểm tra họ tên, khoảng thời gian/tình trạng được xác nhận, mục đích, ngày cấp và thông tin người dự định kết hôn nếu có.",
+    "Giấy có giá trị đến khi thay đổi tình trạng hôn nhân hoặc 06 tháng kể từ ngày cấp, tùy thời điểm đến trước; chỉ sử dụng đúng mục đích ghi trên giấy."
+  ],
+  "followUp": "Theo dõi thông báo qua tài khoản, điện thoại hoặc thư điện tử đã kê khai. Khi được gửi biểu mẫu điện tử để kiểm tra, phản hồi theo thời hạn thông báo (quy trình chung yêu cầu kiểm tra/xác nhận tối đa một ngày). Nếu sai, báo ngay trước khi cấp. Gửi thành công chưa đồng nghĩa đã tiếp nhận hợp lệ hay đã cấp giấy; khi được yêu cầu bổ sung, đọc rõ nội dung và hạn. Lưu tệp điện tử gốc nếu được trả, không chỉ lưu ảnh chụp màn hình.",
+  "visuals": [
+    {
+      "id": "hn-thanh-phan",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/hn-thanh-phan.jpg",
+      "width": 1366,
+      "height": 725,
+      "title": "Đọc điều kiện từng dòng hồ sơ",
+      "alt": "Đọc điều kiện từng dòng hồ sơ. Các dòng giấy cũ và giấy tờ về tình trạng hôn nhân áp dụng theo trường hợp; không phải danh sách bắt buộc cho mọi người.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; dùng để nhận biết vị trí, không thể bấm nút nộp trong ảnh.",
+      "readingTip": "Các dòng giấy cũ và giấy tờ về tình trạng hôn nhân áp dụng theo trường hợp; không phải danh sách bắt buộc cho mọi người.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia · ảnh người biên soạn cung cấp",
+        "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9"
+      }
+    },
+    {
+      "id": "hn-luu-va-nop",
+      "kind": "portal-screenshot",
+      "stage": "nop-ho-so",
+      "src": "assets/guides/hn-luu-va-nop.jpg",
+      "width": 1366,
+      "height": 728,
+      "title": "Hai nút lưu và gửi hồ sơ",
+      "alt": "Hai nút lưu và gửi hồ sơ. Nhìn cuối trang: Lưu hồ sơ giữ bản nháp; Lưu và nộp hồ sơ bắt đầu gửi và có thể còn bước xác nhận tiếp theo.",
+      "caption": "Ảnh thao tác thật do người biên soạn cung cấp; dùng để nhận biết vị trí, không thể bấm nút nộp trong ảnh.",
+      "readingTip": "Nhìn cuối trang: Lưu hồ sơ giữ bản nháp; Lưu và nộp hồ sơ bắt đầu gửi và có thể còn bước xác nhận tiếp theo.",
+      "reviewedAt": "2026-11-22",
+      "source": {
+        "label": "Cổng Dịch vụ công Quốc gia · ảnh người biên soạn cung cấp",
+        "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9"
+      }
+    }
+  ]
+}
