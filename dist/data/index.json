@@ -18,5 +18,10 @@
     "id": "tinh-trang-hon-nhan",
     "file": "tinh-trang-hon-nhan.json",
     "published": true
+  },
+  {
+    "id": "ban-sao-ho-tich",
+    "file": "ban-sao-ho-tich.json",
+    "published": true
   }
 ]

@@ -7,6 +7,18 @@ import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {localPdfPath,officialSourceUrl,visualPages,renderVisuals} from '../dist/visuals.js';
 
+test('Ảnh bản sao hộ tịch đúng tệp đã rà soát; đường vào không mang phiên hồ sơ',async()=>{
+ const p=JSON.parse(await readFile(new URL('../dist/data/ban-sao-ho-tich.json',import.meta.url),'utf8'));
+ const manifest=JSON.parse(await readFile(new URL('../docs/civil-record-image-sources.json',import.meta.url),'utf8'));
+ assert.equal(manifest.length,1);assert.deepEqual(p.visuals.map(v=>v.src),manifest.map(m=>m.asset));
+ for(const m of manifest){const bytes=await readFile(new URL('../dist/'+m.asset,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),m.sha256);assert.equal(bytes.readUInt16BE(0),0xffd8);}
+ const registry=JSON.parse(await readFile(new URL('../dist/data/connections.json',import.meta.url),'utf8'));
+ const c=registry.connections[p.connectionRef];assert.equal(c.mode,'portal-link');assert.equal(c.selectedLocality,undefined);
+ assert.equal(new URL(c.entryUrl).hostname,'dichvucong.gov.vn');
+ assert.doesNotMatch(JSON.stringify(p)+JSON.stringify(c),/formalityCaseId|\/nop-ho-so\?/);
+ const html=renderVisuals(p,'nop-ho-so');assert.match(html,/Ảnh thao tác trên cổng/);assert.doesNotMatch(html,/Mẫu trống từ văn bản chính thức|Sơ đồ minh họa/);
+});
+
 test('Ảnh hôn nhân đúng danh sách đã rà soát; liên kết không dùng URL hồ sơ đang điền',async()=>{
  const p=JSON.parse(await readFile(new URL('../dist/data/tinh-trang-hon-nhan.json',import.meta.url),'utf8'));
  const manifest=JSON.parse(await readFile(new URL('../docs/marital-status-image-sources.json',import.meta.url),'utf8'));

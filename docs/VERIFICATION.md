@@ -1,5 +1,13 @@
 # Kiểm tra bản đầu — 23/09/2026
 
+## Bổ sung bản sao hộ tịch — 22/11/2026
+
+- Thêm thủ tục 2.000635: bốn câu hỏi, checklist theo vai trò, hướng dẫn từng ô, 13 thao tác và một ảnh chụp thật. Sáu ảnh có tài khoản hoặc dữ liệu cá nhân/đăng ký cụ thể không được đưa vào dự án.
+- Phân biệt cấp bản sao với đăng ký mới và chứng thực photocopy; mất giấy không tự đồng nghĩa chưa đăng ký. Tách giấy ủy quyền khỏi căn cứ đại diện theo pháp luật, không yêu cầu tự xin phải nộp ủy quyền.
+- `npm run check`: 36/36 đạt. Kiểm tra nhánh, tìm kiếm theo mã/từ không dấu, thay đổi vai trò bỏ checklist không phù hợp, khôi phục thao tác, không tự đánh dấu đã nộp, nguồn/ảnh SHA-256 và UTF-8. Tìm kiếm chung có thể trả nhiều thủ tục, không có cơ chế xếp hạng; mã 2.000635 trả đúng bộ mới.
+- Công cụ trình duyệt tiếp tục báo “Local browser access is unavailable for this chat”. Chưa kiểm thử trực tiếp desktop/mobile cho phần nội dung mới; kiểm thử hàm render và dùng lại giao diện chung không thay thế kiểm thử trình duyệt.
+- Không đăng nhập hoặc nộp hồ sơ hành chính thật. Đường chi tiết theo ảnh có đường dự phòng tìm mã; không dùng URL phiên biểu mẫu. Nguồn, giới hạn và quyết định nội dung ở `BAN-SAO-HO-TICH.md`.
+
 ## Bổ sung tình trạng hôn nhân — 22/11/2026
 
 - Thêm thủ tục 1.004873: sáu câu hỏi, checklist theo trường hợp, hướng dẫn từng ô, 13 thao tác và hai ảnh chụp thật. Sáu ảnh có thông tin cá nhân hoặc ví dụ điền dễ gây hiểu nhầm không được đưa vào dự án.

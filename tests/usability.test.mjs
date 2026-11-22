@@ -11,6 +11,38 @@ const read=async name=>JSON.parse(await readFile(new URL(`../dist/data/${name}.j
 const birth=await read('khai-sinh'),death=await read('khai-tu'),common=await read('huong-dan-chung');
 const certification=await read('chung-thuc-ban-sao');
 const marital=await read('tinh-trang-hon-nhan');
+const civil=await read('ban-sao-ho-tich');
+const civilAnswers={need:'birth',registered:'yes',role:'self',details:'paper'};
+
+test('Xin bản sao hộ tịch phân biệt đăng ký mới, chứng thực và giấy tờ khi làm thay',()=>{
+ assert.equal(isComplete(civil,civilAnswers),true);
+ for(const need of ['new','certify','unsure'])assert.equal(isComplete(civil,{...civilAnswers,need}),false);
+ for(const registered of ['no','unsure'])assert.equal(isComplete(civil,{...civilAnswers,registered}),false);
+ assert.equal(isComplete(civil,{...civilAnswers,role:'organization'}),false);
+ assert.equal(isComplete(civil,{...civilAnswers,details:'missing'}),true,'Mất giấy hoặc thiếu số đăng ký không tự đồng nghĩa chưa đăng ký');
+ const ids=role=>checklistFor(civil,{...civilAnswers,role}).map(i=>i.id);
+ assert.ok(!ids('self').includes('authorization'));assert.ok(!ids('self').includes('representation'));
+ for(const role of ['family','other']){assert.ok(ids(role).includes('authorization'));assert.ok(!ids(role).includes('representation'));}
+ assert.ok(ids('representative').includes('representation'));assert.ok(!ids('representative').includes('authorization'));
+ for(const term of ['ban sao khai sinh','trich luc'])assert.ok(searchProcedures([birth,death,certification,marital,civil],term).some(p=>p.id===civil.id));
+ assert.deepEqual(searchProcedures([birth,death,certification,marital,civil],'2.000635').map(p=>p.id),[civil.id]);
+ const results=need=>civil.resultItems.filter(i=>i.when&&matches(i.when,{...civilAnswers,need})).map(i=>i.text);
+ assert.equal(results('birth').length,1);assert.match(results('birth')[0],/Giấy khai sinh/);
+ assert.equal(results('extract').length,1);assert.match(results('extract')[0],/Trích lục hộ tịch/);
+});
+
+test('Đổi cách làm bản sao bỏ giấy ủy quyền và giữ đúng thao tác đang xem',()=>{
+ const r={...freshRecord(civil),answers:{...civilAnswers,role:'other'},checked:['authorization','old-record'],tutorials:{submission:{path:0,steps:{0:10}}},lastStep:3};
+ r.answers=setAnswer(civil,r.answers,'role','self');pruneProgress(civil,r);
+ assert.deepEqual(r.checked,['old-record']);assert.equal(r.tutorials.submission.steps[0],10);
+ const restored=restoreRecord(civil,r);assert.equal(resumePoint(civil,restored).step,3);assert.equal(Object.hasOwn(restored,'submitted'),false);
+ const html=renderTutorial(civil.submissionGuide,'submission',common,restored.tutorials,civil.visuals);
+ assert.match(html,/data-step="10" >/);assert.match(html,/ht-uy-quyen-va-nop.jpg/);
+ assert.match(html,/không xác nhận hồ sơ đã nộp/);
+ const login=common[civil.checklist.find(i=>i.id==='login').guideRef];
+ assert.ok(JSON.stringify(login).includes('https://dichvucong.gov.vn/'));
+ assert.ok(!JSON.stringify(login).includes('lienthong.dichvucong.gov.vn'));
+});
 const maritalAnswers={purpose:'other',role:'self',status:'never',previous:'first',residence:'pleiku',history:'single'};
 
 test('Tình trạng hôn nhân chỉ yêu cầu giấy đúng trường hợp và kiểm tra nơi nộp',()=>{

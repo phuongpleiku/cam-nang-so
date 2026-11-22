@@ -214,6 +214,44 @@
       },
       "verifiedAt": "2026-11-22",
       "evidenceUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9"
+    },
+    "ban-sao-ho-tich-pleiku": {
+      "systemId": "quoc-gia",
+      "mode": "portal-link",
+      "title": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "procedureCode": "2.000635",
+      "destinationLabel": "Bản sao hộ tịch · chọn phường Pleiku",
+      "entryUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-867c-72db-b6a7-dcbd8c763807",
+      "buttonLabel": "Mở cổng để chọn nơi nộp",
+      "localityNote": "Trang chi tiết công khai theo ảnh hướng dẫn; chưa chọn sẵn địa bàn. Kiểm tra đúng cơ quan, chọn Gia Lai / Phường Pleiku nếu phù hợp rồi mở Nộp trực tuyến. Chưa kiểm chứng trực tiếp phần sau đăng nhập.",
+      "nextSteps": [
+        {
+          "title": "Tìm mã 2.000635 và chọn cơ quan",
+          "text": "Đọc đúng tên thủ tục xin bản sao, chọn Gia Lai / Phường Pleiku nếu đúng nơi nộp rồi bấm Nộp hồ sơ."
+        },
+        {
+          "title": "Mở dịch vụ của đúng cơ quan",
+          "text": "Kiểm tra cơ quan tại danh sách dịch vụ; bấm Đồng ý nếu cần áp dụng địa bàn, rồi Nộp trực tuyến."
+        },
+        {
+          "title": "Điền thông tin đăng ký cũ",
+          "text": "Tách người nộp và người cần giấy; điền loại bản sao, thông tin lần đăng ký, số bản và giấy tờ theo trường hợp. Làm theo từng thao tác bên dưới."
+        }
+      ],
+      "fallback": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Mở trang chủ để tìm mã 2.000635",
+        "instruction": "Nhập 2.000635 vào ô tìm kiếm, chọn đúng tên và cơ quan thực hiện. Nếu không thấy địa bàn phù hợp, hỏi Trung tâm phục vụ hành chính công về nơi nộp."
+      },
+      "tracking": {
+        "systemId": "quoc-gia",
+        "url": "https://dichvucong.gov.vn/",
+        "label": "Mở Cổng Dịch vụ công Quốc gia để tra cứu",
+        "instruction": "Đăng nhập tài khoản đã nộp, tìm danh sách hồ sơ/dịch vụ công của tôi hoặc Tra cứu hồ sơ. Dùng mã hồ sơ của mình; phân biệt hồ sơ nháp, đã gửi và đã tiếp nhận."
+      },
+      "verifiedAt": "2026-11-22",
+      "evidenceUrl": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-867c-72db-b6a7-dcbd8c763807"
     }
   }
 }
