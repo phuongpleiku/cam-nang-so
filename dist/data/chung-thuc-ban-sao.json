@@ -620,5 +620,10 @@
         "solution": "Liên hệ Trung tâm phục vụ hành chính công phường để được hướng dẫn trường hợp thiếu giấy hoặc hỗ trợ thực hiện. Mang giấy tờ đang có để cán bộ xác định cách xử lý."
       }
     ]
+  },
+  "home": {
+    "title": "Chứng thực bản sao giấy tờ",
+    "description": "Thường gọi là “sao y”: chứng thực bản sao từ bản chính bạn đang có.",
+    "icon": "copy"
   }
 }

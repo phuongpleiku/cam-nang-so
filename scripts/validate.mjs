@@ -34,6 +34,7 @@ for(const entry of entries){
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*\.json$/.test(entry.file)){errors.push('Tên tệp không hợp lệ');continue;}
   const p=await json(`dist/data/${entry.file}`),label=entry.file;
  if(p.id!==entry.id)errors.push(`${label}: id không khớp danh mục.`);
+ if(p.home){for(const key of ['title','description'])required(p.home[key],`${label}.home.${key}`);}
  if(!Number.isInteger(p.version)||p.version<1)errors.push(`${label}: version phải là số nguyên dương.`);
  for(const key of ['title','shortTitle','description','category','officialName','intro','reviewedAt','duration','fees','followUp'])required(p[key],`${label}.${key}`);
  if(!/^\d{4}-\d{2}-\d{2}$/.test(p.reviewedAt)||Number.isNaN(Date.parse(p.reviewedAt)))errors.push(`${label}: ngày kiểm tra nguồn không hợp lệ.`);

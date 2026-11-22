@@ -610,5 +610,9 @@
         ]
       }
     }
-  ]
+  ],
+  "home": {
+    "title": "Làm giấy tờ cho con mới sinh",
+    "description": "Khai sinh, thường trú và bảo hiểm y tế cho bé; căn cước nếu có nhu cầu."
+  }
 }

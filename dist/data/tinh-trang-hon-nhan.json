@@ -745,5 +745,10 @@
         "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-6eb3-7019-bf3f-fc58c9ee44b9"
       }
     }
-  ]
+  ],
+  "home": {
+    "title": "Xin giấy xác nhận tình trạng hôn nhân",
+    "description": "Thường gọi là “giấy độc thân”. Chọn đúng mục đích sử dụng và trường hợp của bạn.",
+    "icon": "heart"
+  }
 }

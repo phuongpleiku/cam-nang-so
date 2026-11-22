@@ -35,6 +35,7 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 - `dist/data/huong-dan-chung.json`: hướng dẫn đăng nhập và chụp/đính kèm giấy tờ dùng lại.
 - `dist/connections.js`, `dist/connections.css`: kiểm tra và hiển thị nơi nộp dùng chung.
 - `dist/app.js`: giao diện và điều hướng dùng chung.
+- `dist/home.js`, `dist/home.css`: trang chủ theo nhu cầu, thẻ bấm toàn bộ, tìm kiếm tên gần gũi và tiếp tục đúng điểm đang xem. Nội dung ngắn tùy chỉnh qua `home` trong JSON thủ tục.
 - `dist/rules.js`: điều kiện xuất hiện câu hỏi, hồ sơ và thông báo.
 - `dist/progress.js`: khôi phục điểm dừng và trạng thái chuẩn bị theo từng thủ tục.
 - `dist/tutorials.js`: hướng dẫn từng thao tác, ghi nhớ nhánh và cách xem toàn bộ.

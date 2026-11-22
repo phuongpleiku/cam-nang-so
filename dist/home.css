@@ -1,0 +1,86 @@
+/* Trang chủ: tên việc dễ hiểu, mỗi thẻ có một vùng bấm, không đổi giao diện hướng dẫn. */
+.home-page{padding-top:32px;--home-text:#42594f}
+.home-page p{color:var(--home-text)}
+.home-hero{position:relative;padding:32px 36px;background:#eaf3ed;border:1px solid #d4e4d9;border-radius:20px;margin-bottom:30px}
+.home-hero .eyebrow{letter-spacing:.04em;font-size:.8125rem}
+.home-hero h1{font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.25;letter-spacing:-.035em;margin:12px 0}
+.home-hero>p{margin:0 0 20px;max-width:660px;font-size:1rem}
+.home-search-label{display:block;font-weight:600;color:var(--dark);margin-bottom:7px}
+.home-page .search-box{max-width:none;margin:0;padding:6px 7px 6px 16px;gap:10px;border-color:#9fb9aa;box-shadow:none}
+.home-page .search-box input{font-size:1rem;height:48px}
+.home-page .search-box input::placeholder{color:#596e62}
+.home-page .search-box button{min-height:48px;flex-shrink:0}
+.home-search-note{font-size:.875rem;margin:8px 0 0!important}
+.home-search-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;margin-top:8px}
+.home-search-tools a,.home-search-tools button{display:inline-flex;align-items:center;min-height:44px;font-size:.9375rem;gap:7px}
+.home-search-tools button{border:0;padding:0;background:none;color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.home-search-tools [hidden]{display:none}
+.home-catalog-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:4px}
+.home-catalog-heading h2{font-size:1.5rem;margin:0}
+.home-page .result-count{font-size:.9375rem;white-space:normal}
+.home-catalog-note{font-size:.9375rem;margin:0 0 14px}
+.home-page .catalog-toolbar{margin:0 0 16px}
+.home-page .filter-list{gap:6px}
+.home-page .filter{border:1px solid #d4ded7;background:white;font-size:.875rem;min-height:44px;padding:7px 13px}
+.home-page .filter.active{background:var(--green);color:white;border-color:var(--green)}
+.home-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.home-card{min-width:0;border:1px solid #d4dfd8;background:white;border-radius:14px;overflow:hidden}
+.home-card-link{display:flex;flex-direction:column;height:100%;padding:24px;color:var(--dark);text-decoration:none;gap:14px}
+.home-card-link:hover{background:#f1f7f3}
+.home-card-link:focus-visible{outline:3px solid #916700;outline-offset:-4px}
+.home-card-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#eaf3ed;color:var(--green);flex-shrink:0}
+.home-card-icon .icon{width:26px;height:26px}
+.home-card h3{font-size:1.2rem;line-height:1.5;letter-spacing:-.015em;margin:0 0 8px;overflow-wrap:anywhere}
+.home-card p{font-size:.9375rem;line-height:1.7;margin:0}
+.home-card-bottom{margin-top:auto;display:grid;gap:8px;padding-top:4px}
+.home-card-action{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--green);font-weight:600;min-height:44px;border-top:1px solid #e0e8e2;padding-top:10px;font-size:.9375rem}
+.home-card-action>span{font-size:1.3rem}
+.home-progress{font-size:.8125rem;color:#435b4e}
+.home-help-card{padding:24px;background:#f2f0e7;border-color:#dedbc9;display:flex;flex-direction:column;gap:12px}
+.home-help-card .home-card-icon{background:#fff;color:#76561e}
+.home-help-card h3{margin:0}
+.home-help-card a{min-height:44px;display:inline-flex;align-items:center;gap:8px;font-size:.9375rem}
+.home-help-card .phone-link{font-size:1.125rem;letter-spacing:0}
+.home-help-card small{font-size:.8125rem;color:var(--home-text)}
+.home-page .empty-state{background:white;padding:28px 20px}
+.home-page .empty-state p{max-width:560px;margin:12px auto}
+.home-empty-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.home-other-services{margin-top:20px;border-bottom:1px solid var(--line)}
+.home-other-services>summary{cursor:pointer;min-height:48px;padding:12px 0;font-size:1rem;font-weight:600;color:var(--green)}
+.home-other-services .service-shortcuts{margin:8px 0 20px}
+.home-how{margin-top:32px;border-top:1px solid var(--line);padding-top:24px}
+.home-how h2{font-size:1.25rem;margin-bottom:18px}
+.home-how ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0;gap:24px;counter-reset:home-how}
+.home-how li{counter-increment:home-how;display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:start}
+.home-how li:before{content:counter(home-how);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e3eee7;color:var(--green);font-weight:600}
+.home-how h3{font-size:1rem;margin:0 0 6px}
+.home-how p{font-size:.9375rem;margin:0}
+.home-page .trust-note{justify-content:flex-start;background:white;border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:24px;align-items:flex-start;gap:10px}
+.home-page .trust-note p{font-size:.875rem}
+.home-page .trust-note .icon{width:20px;height:20px;margin-top:3px}
+.home-page .service-shortcut{overflow-wrap:anywhere}
+.home-page .service-shortcut>span:first-child{min-width:0}
+@media(max-width:960px){.home-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.home-hero{padding:28px}}
+@media(max-width:600px){
+ .home-page{padding:20px 16px 32px}
+ .home-hero{padding:22px 18px;border-radius:14px;margin-bottom:24px}
+ .home-hero .eyebrow{font-size:.75rem}
+ .home-hero h1{font-size:1.85rem}
+ .home-search-note{font-size:.8125rem}
+ .home-page .search-box{padding:5px 6px 5px 10px;gap:6px}
+ .home-page .search-box>.icon{display:none}
+ .home-page .search-box .primary-button{padding:10px 13px;gap:0}
+ .home-catalog-heading{display:block}
+ .home-catalog-heading h2{font-size:1.35rem}
+ .home-page .result-count{display:block;margin:5px 0}
+ .home-cards{grid-template-columns:minmax(0,1fr);gap:12px}
+ .home-card-link{padding:18px;display:grid;grid-template-columns:40px minmax(0,1fr);gap:10px 12px}
+ .home-card-icon{width:40px;height:40px;border-radius:10px}
+ .home-card h3{font-size:1.125rem}
+ .home-card-bottom{grid-column:2;min-width:0}
+ .home-help-card{padding:20px}
+ .home-how ol{grid-template-columns:minmax(0,1fr);gap:18px}
+ .home-page .filter{font-size:.8125rem;padding:8px 11px}
+ .home-page .empty-state h3{font-size:1.2rem}
+}
+@media(prefers-reduced-motion:reduce){.home-page a,.home-page button{transition:none}}

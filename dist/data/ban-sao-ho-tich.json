@@ -560,5 +560,10 @@
         "url": "https://dichvucong.gov.vn/thu-tuc-hanh-chinh/019d2bfd-867c-72db-b6a7-dcbd8c763807"
       }
     }
-  ]
+  ],
+  "home": {
+    "title": "Xin bản sao khai sinh, trích lục hộ tịch",
+    "description": "Xin bản sao từ thông tin đã đăng ký, kể cả khi không còn giữ giấy cũ.",
+    "icon": "folder"
+  }
 }

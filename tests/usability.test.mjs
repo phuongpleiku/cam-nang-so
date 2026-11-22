@@ -7,12 +7,36 @@ import {tutorialPosition,renderTutorial} from '../dist/tutorials.js';
 import {questionHelp,tabHelp} from '../dist/novice.js';
 import {isComplete,checklistFor,searchProcedures} from '../dist/rules.js';
 import {renderVisuals} from '../dist/visuals.js';
+import {homeCopy,searchHomeProcedures,renderHomeCard} from '../dist/home.js';
 const read=async name=>JSON.parse(await readFile(new URL(`../dist/data/${name}.json`,import.meta.url),'utf8'));
 const birth=await read('khai-sinh'),death=await read('khai-tu'),common=await read('huong-dan-chung');
 const certification=await read('chung-thuc-ban-sao');
 const marital=await read('tinh-trang-hon-nhan');
 const civil=await read('ban-sao-ho-tich');
 const civilAnswers={need:'birth',registered:'yes',role:'self',details:'paper'};
+
+test('Trang chủ tìm được bằng tên đời thường, mã và giữ đúng bộ lọc',()=>{
+ const procedures=[birth,death,certification,marital,civil];
+ assert.ok(searchHomeProcedures(procedures,'sao y').some(p=>p.id===certification.id));
+ assert.ok(searchHomeProcedures(procedures,'giay doc than').some(p=>p.id===marital.id));
+ assert.deepEqual(searchHomeProcedures(procedures,'2.000635').map(p=>p.id),[civil.id]);
+ assert.equal(searchHomeProcedures(procedures,'2.000635','nhóm không tồn tại').length,0);
+ assert.equal(searchHomeProcedures(procedures,'thủ tục chưa có xyz').length,0);
+ const future={...civil,id:'thu-tuc-moi',home:undefined,shortTitle:'Thủ tục mới',description:'Mô tả mới',keywords:[]};
+ assert.equal(homeCopy(future).title,'Thủ tục mới');
+ assert.equal(searchHomeProcedures([future],'thu tuc moi')[0],future,'Thủ tục mới dùng dữ liệu sẵn có, không cần sửa giao diện');
+});
+
+test('Thẻ trang chủ mở đúng điểm dừng, có tên rõ và thoát nội dung HTML',()=>{
+ const html=renderHomeCard(civil,{href:'#thu-tuc/ban-sao-ho-tich/chuan-bi/old-record',progressLabel:'Chuẩn bị giấy tờ'});
+ assert.match(html,/href="#thu-tuc\/ban-sao-ho-tich\/chuan-bi\/old-record"/);
+ assert.match(html,/Tiếp tục hướng dẫn/);assert.match(html,/Đang xem: Chuẩn bị giấy tờ/);
+ assert.equal((html.match(/<a /g)||[]).length,1,'Mỗi ô là một liên kết, không có liên kết lồng nhau');
+ assert.match(html,/aria-labelledby="home-title-ban-sao-ho-tich home-action-ban-sao-ho-tich"/);
+ const unsafe=renderHomeCard({...civil,home:{title:'<img src=x onerror=alert(1)>',description:'<script>x</script>'}},{href:'javascript:alert(1)'});
+ assert.doesNotMatch(unsafe,/<script>|<img |href="javascript:/);assert.match(unsafe,/&lt;script&gt;/);
+ assert.match(unsafe,/Xem từng bước/);assert.doesNotMatch(unsafe,/Tiếp tục hướng dẫn/);
+});
 
 test('Xin bản sao hộ tịch phân biệt đăng ký mới, chứng thực và giấy tờ khi làm thay',()=>{
  assert.equal(isComplete(civil,civilAnswers),true);

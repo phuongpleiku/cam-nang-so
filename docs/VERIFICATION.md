@@ -1,5 +1,14 @@
 # Kiểm tra bản đầu — 23/09/2026
 
+## Thiết kế lại trang chủ — 22/11/2026
+
+- Bố cục mới có lời dẫn ngắn, tìm kiếm với nhãn hiển thị, nút Tìm, xóa tìm kiếm/bộ lọc; thẻ theo việc cần làm và ô hỗ trợ cùng danh sách. Các thẻ có một liên kết duy nhất bấm được toàn bộ và tên truy cập phân biệt từng thủ tục.
+- Trang chủ đọc tên/mô tả ngắn từ `home` trong JSON, có dự phòng cho thủ tục mới chưa khai báo. Tên chính thức và luồng thủ tục giữ nguyên. Tìm kiếm hỗ trợ tên gần gũi, mã và không dấu; có đường quay lại và nhờ hỗ trợ khi không có kết quả.
+- Hiển thị bước đang xem, dùng lại `resumePoint` để tiếp tục đúng mục; không đổi phiên bản dữ liệu và không đánh dấu hồ sơ đã nộp. Dịch vụ chưa có hướng dẫn đặt trong phần mở rộng có nhãn rõ, tự mở khi khớp tìm kiếm.
+- `npm run check`: 38/38 đạt, gồm hai kiểm thử mới về tìm kiếm/tên dự phòng và thẻ có liên kết/nhãn/điểm dừng đúng, thoát nội dung HTML. Kiểm tra cấu trúc, tài nguyên, cú pháp và UTF-8 đạt.
+- CSS khai báo ba cột desktop, hai cột ở chiều rộng trung bình, một cột tới 600px; nút chính cao tối thiểu 48px, nút lọc và liên hệ tối thiểu 44px. Chưa kiểm chứng hình học, bàn phím và hiển thị thực tế trong trình duyệt: Browser tiếp tục báo “Local browser access is unavailable for this chat”. Không tuyên bố đạt chuẩn WCAG hoặc đã thử với người dân.
+- Cơ sở nghiên cứu và việc cần đánh giá với người dùng ở `HOME-DESIGN.md`.
+
 ## Bổ sung bản sao hộ tịch — 22/11/2026
 
 - Thêm thủ tục 2.000635: bốn câu hỏi, checklist theo vai trò, hướng dẫn từng ô, 13 thao tác và một ảnh chụp thật. Sáu ảnh có tài khoản hoặc dữ liệu cá nhân/đăng ký cụ thể không được đưa vào dự án.

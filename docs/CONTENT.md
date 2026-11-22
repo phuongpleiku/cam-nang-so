@@ -8,6 +8,7 @@ Mỗi thủ tục là một tệp JSON, không chứa HTML hay mã JavaScript. V
 | `version` | Số phiên bản; tăng khi đổi câu hỏi hoặc điều kiện để bỏ tiến độ cũ |
 | `title`, `shortTitle` | Tên dễ hiểu đầy đủ và tên ngắn |
 | `description`, `category`, `keywords` | Mô tả thẻ, nhóm tự động và từ khóa tìm kiếm |
+| `home` | Tùy chọn: `{ "title": "Tên việc gần gũi", "description": "Mô tả ngắn", "icon": "copy" }`. Trang chủ dùng tên/mô tả này và tìm kiếm được cả nội dung này. Bỏ `home` thì dùng `shortTitle`/`title` và `description`; thêm thủ tục không cần sửa giao diện. `icon` có thể dùng `baby`, `document`, `copy`, `heart`, `folder`; mã không có biểu tượng sẽ dùng biểu tượng thủ tục hoặc giấy tờ. Không đổi `version` chỉ vì sửa lời giới thiệu trang chủ. |
 | `icon` | `baby` hoặc `document`; mã khác dùng biểu tượng giấy tờ |
 | `officialName` | Tên thủ tục chính thức để đối chiếu |
 | `reviewedAt`, `sources` | Ngày kiểm tra `YYYY-MM-DD` và các nguồn HTTPS chính thức |
