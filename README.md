@@ -39,7 +39,8 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 - `dist/rules.js`: điều kiện xuất hiện câu hỏi, hồ sơ và thông báo.
 - `dist/progress.js`: khôi phục điểm dừng và trạng thái chuẩn bị theo từng thủ tục.
 - `dist/tutorials.js`: hướng dẫn từng thao tác, ghi nhớ nhánh và cách xem toàn bộ.
-- `dist/novice.js`, `dist/novice.css`: trợ giúp câu hỏi, sơ đồ chuyển trang và bố cục cho người ít kinh nghiệm.
+- `dist/novice.js`, `dist/novice.css`: trợ giúp câu hỏi, cách chuyển trang và bố cục cho người ít kinh nghiệm.
+- `dist/reading.js`, `dist/reading.css`: tăng cỡ chữ, đọc từng thao tác khi có giọng tiếng Việt và bố cục dễ đọc.
 - `dist/styles.css`, `dist/components.css`: giao diện, responsive và bản in.
 - `scripts/`: tạo bản nháp, kiểm tra và mở máy chủ xem trước.
 - `tests/`: kiểm tra các nhánh quan trọng để tránh hướng dẫn sai.
@@ -51,14 +52,15 @@ Danh sách trang chủ, nhóm thủ tục, tìm kiếm và toàn bộ 5 bước 
 ## Phạm vi hiện tại
 
 - Năm bộ hướng dẫn: khai sinh và khai tử liên thông (đối chiếu 23/09/2026); chứng thực bản sao từ bản chính, mã 2.000815; cấp Giấy xác nhận tình trạng hôn nhân, mã 1.004873; cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh, mã 2.000635 (đối chiếu 22/11/2026).
-- Chứng thực bản sao có 12 thao tác nộp hồ sơ và 7 ảnh chụp cổng thật đã chọn để không đưa thông tin cá nhân lên website. Xem `docs/CHUNG-THUC-BAN-SAO.md` về nguồn, giới hạn và cách bảo trì.
-- Xác nhận tình trạng hôn nhân có 13 thao tác, hai ảnh thật, checklist theo trường hợp và giải thích mục đích, số bản, lưu nháp/gửi hồ sơ. Xem `docs/TINH-TRANG-HON-NHAN.md`.
-- Bản sao hộ tịch có 13 thao tác và một ảnh thật, phân biệt người nộp/người cần giấy, số/ngày đăng ký cũ, ủy quyền/đại diện và xử lý khi mất giấy cũ. Xem `docs/BAN-SAO-HO-TICH.md`.
+- Chứng thực bản sao có hướng dẫn nộp hồ sơ từng thao tác và 7 ảnh chụp cổng thật đã chọn để không đưa thông tin cá nhân lên website. Xem `docs/CHUNG-THUC-BAN-SAO.md` về nguồn, giới hạn và cách bảo trì.
+- Xác nhận tình trạng hôn nhân có hướng dẫn từng thao tác, hai ảnh thật, checklist theo trường hợp và giải thích mục đích, số bản, lưu nháp/gửi hồ sơ. Xem `docs/TINH-TRANG-HON-NHAN.md`.
+- Bản sao hộ tịch có hướng dẫn từng thao tác và một ảnh thật, phân biệt người nộp/người cần giấy, số/ngày đăng ký cũ, ủy quyền/đại diện và xử lý khi mất giấy cũ. Xem `docs/BAN-SAO-HO-TICH.md`.
 - Tìm kiếm có dấu/không dấu, lọc nhóm, hỏi từng câu, danh sách đánh dấu, in/lưu PDF, hướng dẫn điền, liên kết nộp và tra cứu.
 - Nơi nộp của từng thủ tục có các bước bắt đầu, liên kết dự phòng và nguồn/ngày kiểm chứng. Lối mở nhanh Đăng ký kết hôn đã chọn Gia Lai/phường Pleiku; chưa có bộ hướng dẫn hồ sơ đầy đủ cho thủ tục này.
 - Bốn mẫu giấy/tờ khai từ văn bản chính thức, tại bước chuẩn bị và hướng dẫn điền. Có phóng to/thu nhỏ, chọn trang, nguồn đối chiếu và tải PDF gốc. Thêm mẫu qua `visuals` trong tệp thủ tục; xem `docs/CONTENT.md` và `docs/FORM-SOURCES.md`.
 - Tiến độ chỉ lưu trong localStorage của trình duyệt; không chứa họ tên, số định danh, hồ sơ, tài khoản hoặc OTP. Có nút xóa và bắt đầu lại cho từng thủ tục.
 - Tiếp tục về đúng bước/mục đang xem; nhớ nhánh và thao tác trong hướng dẫn. Danh sách chuẩn bị hiển thị ngắn trước, có trạng thái Cần hỏi thêm và trợ giúp đúng chỗ vướng. Dấu trên thanh bước chỉ thể hiện Đang xem, không suy đoán hồ sơ đã nộp.
+- Hướng dẫn đăng nhập tách một điện thoại/máy tính kèm điện thoại; chuẩn bị ảnh và nộp hồ sơ chia thành việc nhỏ. Có trợ giúp từng thao tác, nút bỏ qua phần đính kèm khi không áp dụng và cỡ chữ lớn. `revision` của hướng dẫn cho phép đổi thứ tự thao tác mà vẫn giữ câu trả lời/checklist; xem `docs/CONTENT.md`.
 - Chưa kết nối dữ liệu trạng thái hồ sơ nhà nước; không tự điền hoặc nộp hồ sơ thay người dân.
 - Chưa có tài khoản quản trị hay CMS trực tuyến. Biên tập qua các tệp nội dung và công cụ tạo bản nháp. Có thể nối CMS sau này mà giữ nguyên giao diện và định dạng dữ liệu.
 - Địa chỉ 81 Hùng Vương và điện thoại 0269 3828 313 là thông tin công khai của UBND phường, không khẳng định địa chỉ quầy tiếp nhận. Cần xác nhận địa điểm, giờ làm việc, phí và các trường hợp đặc thù trước khi hướng dẫn người dân tới trực tiếp.

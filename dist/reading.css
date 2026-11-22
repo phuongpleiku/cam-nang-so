@@ -1,0 +1,32 @@
+html{font-size:18px}body{font-size:1rem}html.large-text{font-size:22px}
+.reading-tools{max-width:1136px;margin:0 auto;display:flex;justify-content:flex-end;padding:6px 0;gap:12px}
+.reading-tools button{min-height:48px;padding:8px 14px;border:1px solid #aec7b9;border-radius:8px;color:var(--dark);background:#fff;font-size:1rem}
+.reading-tools button[aria-pressed=true]{background:var(--soft);border-color:var(--green)}
+.device-options{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.device-options button{min-height:48px;padding:12px 16px;border:2px solid #bbd0c2;border-radius:10px;background:#fff;color:var(--dark);font-size:1rem}
+.device-options button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
+.step-help{margin:18px 0 0;border:1px solid #d7e3da;border-radius:10px;padding:0 14px;background:#f4f8f5}
+.step-help summary{font-weight:600;line-height:1.6}
+.step-help .tutorial-link{font-size:1rem}
+.step-skip{margin-top:16px;min-height:48px;font-size:1rem;white-space:normal;text-align:left}
+.step-action{font-size:1.1rem!important;color:#203a33}
+.tutorial-navigation .primary-button,.tutorial-navigation .secondary-button{font-size:1rem;min-height:52px}
+.return-guide{padding:18px;border:1px solid #cbded1;border-radius:12px;background:#f2f7f3;margin:18px 0}
+.return-guide h3{font-size:1.1rem;margin:0 0 8px}.return-guide>p{margin-bottom:10px}
+.return-guide details{border-top:1px solid #d7e3da}.return-guide summary{min-height:48px;padding:12px 0;cursor:pointer;font-weight:600}
+.return-guide li{margin-bottom:12px}.return-guide ol{padding-left:24px}
+.search-guidance{border-left:4px solid var(--green);padding:14px 18px;background:#edf5f0;margin:12px 0 20px}
+.search-guidance[hidden]{display:none}
+.step-navigation>summary{min-height:48px;cursor:pointer;padding:12px;background:var(--soft);border-radius:8px;font-weight:600}
+.tutorial-paths button{font-size:1rem}
+.guide-sidebar .save-note{font-size:.875rem}
+.help-current-step{border-left:4px solid var(--green);padding:14px;background:var(--soft);margin-bottom:20px}
+@media(max-width:1200px){.reading-tools{padding:8px 20px}}
+@media(max-width:700px){
+ .step-navigation .steps{flex-direction:column;overflow:visible}.step-navigation .step{min-width:0;white-space:normal}
+ .device-options button{flex:1;min-width:130px}
+ .guide-heading h1{overflow-wrap:anywhere}.header-inner{gap:10px}.header-help{min-height:44px;display:flex;align-items:center}
+ .reading-tools{justify-content:flex-start}.tutorial-navigation{align-items:stretch}.tutorial-navigation button{flex-basis:100%}
+ .guide-sidebar .save-note{margin-top:10px}.step-action{font-size:1rem!important}
+}
+@media print{.reading-tools,.device-options,.step-help,[data-read-step]{display:none!important}}

@@ -21,6 +21,8 @@ export function restoreRecord(p,saved) {
     const steps={};
     for(const [path,step] of Object.entries(value.steps||{}).slice(0,20))if(/^\d{1,2}$/.test(path)&&Number.isInteger(step)&&step>=0&&step<100)steps[path]=step;
     r.tutorials[key]={path:Number.isInteger(value.path)&&value.path>=0&&value.path<20?value.path:0,steps};
+    if(Number.isInteger(value.revision)&&value.revision>0)r.tutorials[key].revision=value.revision;
+    if(['phone','computer'].includes(value.device))r.tutorials[key].device=value.device;
   }
   return r;
 }

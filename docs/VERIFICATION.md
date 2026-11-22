@@ -1,5 +1,16 @@
 # Kiểm tra bản đầu — 23/09/2026
 
+## Hướng dẫn dễ theo dõi cho người lớn tuổi — 22/11/2026
+
+- Tăng cỡ chữ mặc định, thêm nút tăng/giảm chữ có nhớ lựa chọn; thu gọn danh sách năm bước. Đọc từng thao tác bằng Speech Synthesis chỉ hiện khi máy có giọng tiếng Việt; dừng khi chuyển bước/trang, không đọc dữ liệu hồ sơ cá nhân.
+- Đăng nhập tách một điện thoại và máy tính kèm điện thoại. Làm rõ chuyển qua Tin nhắn/VNeID rồi quay lại trình duyệt; có lối đi tiếp khi cổng đã đăng nhập. Chụp/chọn tệp và năm bộ hướng dẫn nộp được tách thành việc nhỏ, có dấu hiệu nhận biết và trợ giúp tại chỗ. Nội dung chi tiết cũ được giữ trong phần trợ giúp để không mất điều kiện cần lưu ý.
+- Cần hỏi thêm mở ngay trang hỗ trợ, kèm tên thao tác đang xem. Phần đính kèm có lối bỏ qua khi không áp dụng; chứng thực bản sao không có lối bỏ qua giấy cần chứng thực. Không tự coi đã nộp khi đọc hết.
+- Tìm bằng cụm đời thường như “chứng tử”, “khai sinh cho cháu”, “công chứng căn cước”; tránh ghép các từ rời sang thủ tục khác. Có nhắc phân biệt khai sinh lần đầu/bản sao và chứng thực bản sao/công chứng hợp đồng.
+- Tăng `revision` của các hướng dẫn đã thay thứ tự. Tiến độ thao tác cũ bắt đầu lại trong phần đó; câu trả lời và checklist giữ nguyên. Hướng dẫn hiện tại tiếp tục nhớ đúng vị trí.
+- `npm run check`: 44/44 kiểm thử đạt; xác nhận tìm kiếm, khôi phục phiên bản, lựa chọn thiết bị, điều hướng bỏ qua/quay lại, trợ giúp, cỡ chữ và vòng đời đọc tiếng Việt bằng môi trường giả lập tối thiểu. Kiểm tra cấu trúc, liên kết, ảnh gốc, cú pháp và UTF-8 đạt.
+- Giới hạn: công cụ Browser báo “Local browser access is unavailable for this chat”. Chưa kiểm tra trực quan bản mới trên desktop/mobile, bàn phím hoặc giọng đọc trên thiết bị thật; kiểm thử hàm và sự kiện không thay thế kiểm thử trình duyệt. Chưa thử với người lớn tuổi thực tế, không tuyên bố đạt WCAG. Không đăng nhập/nộp hồ sơ thật. Khai sinh/khai tử chưa được đối chiếu toàn bộ màn hình sau đăng nhập; nội dung ghi rõ giới hạn này, không tạo ảnh giả.
+- Tham khảo cách chia thao tác: [W3C — Separate Each Instruction](https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p09-separated-instructions/). Đối chiếu cách đăng nhập theo [hướng dẫn công khai của Bộ Công an](https://dichvucong.bocongan.gov.vn/bocongan/tintuc/chitiet?matin=221). Ảnh cổng sử dụng lại các tệp đã rà soát ở những lần bổ sung thủ tục trước.
+
 ## Thiết kế lại trang chủ — 22/11/2026
 
 - Bố cục mới có lời dẫn ngắn, tìm kiếm với nhãn hiển thị, nút Tìm, xóa tìm kiếm/bộ lọc; thẻ theo việc cần làm và ô hỗ trợ cùng danh sách. Các thẻ có một liên kết duy nhất bấm được toàn bộ và tên truy cập phân biệt từng thủ tục.

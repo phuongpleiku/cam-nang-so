@@ -1,6 +1,6 @@
 {
   "dang-nhap": {
-    "reviewedAt": "2026-09-23",
+    "reviewedAt": "2026-11-22",
     "sources": [
       {
         "label": "Cổng liên thông · màn hình đăng nhập VNeID và mục xem hướng dẫn",
@@ -21,47 +21,98 @@
     ],
     "paths": [
       {
-        "label": "Nhập tài khoản · điện thoại hoặc máy tính",
-        "intro": "Để điện thoại có mạng và tài khoản VNeID của người đứng tên làm thủ tục sẵn sàng. Bạn chỉ nhập thông tin đăng nhập trên cổng chính thức. Trang hướng dẫn này sẽ được giữ lại ở tab hiện tại.",
+        "label": "Nhập tài khoản trên điện thoại",
+        "device": "phone",
+        "intro": "Mỗi lần làm một việc. Bạn có thể quay lại đọc bước này bất cứ lúc nào.",
         "steps": [
           {
-            "title": "Mở cổng liên thông",
-            "action": "Bấm liên kết dưới đây. Trình duyệt mở một tab mới; kiểm tra thanh địa chỉ có lienthong.dichvucong.gov.vn.",
+            "title": "Mở trang dịch vụ công",
+            "action": "Bấm Mở cổng chính thức bên dưới. Giữ lại trang Cẩm Nang Số này.",
+            "expected": "Trang dịch vụ công mở ra.",
+            "help": "Chưa biết quay lại? Xem khung Cách quay lại hướng dẫn ở phía trên.",
             "links": [
               {
-                "label": "Mở cổng liên thông",
+                "label": "Mở cổng chính thức",
                 "url": "https://lienthong.dichvucong.gov.vn/"
               }
-            ],
-            "expected": "Trang có hai nhóm thủ tục: khai sinh và khai tử."
+            ]
           },
           {
-            "title": "Chọn đúng nhóm thủ tục",
-            "action": "Làm giấy tờ cho bé: bấm ô có chữ “đăng ký khai sinh”. Làm thủ tục cho người đã mất: bấm ô có chữ “đăng ký khai tử”. Nếu chưa đăng nhập, cổng chuyển sang VNeID.",
-            "expected": "Màn hình “Đăng nhập VNeID”, có ô số định danh và mật khẩu. Nếu đã vào tờ khai, bạn có thể bỏ qua bước đăng nhập."
+            "title": "Tìm nút Đăng nhập",
+            "action": "Trên cổng chính thức, bấm Đăng nhập.",
+            "expected": "Khu vực chọn cách đăng nhập hoặc trang đăng nhập.",
+            "help": "Nếu đã hiện tên tài khoản, kiểm tra đúng người nộp; không cần nhập lại."
           },
           {
-            "title": "Điền tài khoản của người làm thủ tục",
-            "action": "Chạm ô “Số định danh cá nhân” và nhập 12 số trên căn cước của người đứng tên yêu cầu. Chạm ô “Mật khẩu”, nhập mật khẩu đăng nhập VNeID của người đó. Không điền số điện thoại, số của bé hoặc số của người đã mất vào ô số định danh. Bấm “Đăng nhập”.",
-            "expected": "Cổng chuyển sang bước xác thực hoặc thông báo chỗ cần sửa. Mật khẩu hiện thành dấu chấm là bình thường."
+            "title": "Chọn tài khoản VNeID",
+            "action": "Nếu được hỏi loại tài khoản, chọn tài khoản định danh điện tử VNeID.",
+            "expected": "Trang đăng nhập VNeID.",
+            "help": "Nếu đã ở trang này, tiếp tục. Không dùng ô tìm kiếm thủ tục để nhập tài khoản."
           },
           {
-            "title": "Thực hiện xác thực nếu được yêu cầu",
-            "action": "Đọc thông báo trên màn hình để biết nhận mã ở đâu. Nếu yêu cầu OTP gửi SMS, mở Tin nhắn trên điện thoại đăng ký VNeID, xem mã mới nhất rồi trở lại tab đăng nhập để nhập mã. Nếu yêu cầu xác nhận trong VNeID, mở ứng dụng và làm theo yêu cầu đang hiển thị. Giữ riêng mật khẩu và mã xác thực.",
-            "expected": "Xác thực thành công và trình duyệt trở lại cổng liên thông."
+            "title": "Nhập số định danh",
+            "action": "Chạm ô số định danh trên trang đăng nhập và nhập số của người nộp.",
+            "expected": "Số vừa nhập xuất hiện trong ô.",
+            "help": "So lại số với thông tin định danh. Không dùng thông tin người được làm thay để đăng nhập tài khoản của mình."
           },
           {
-            "title": "Kiểm tra đã vào đúng tài khoản",
-            "action": "Đối chiếu tên tài khoản hoặc phần thông tin người yêu cầu trên cổng với người đứng tên làm thủ tục. Đến được tờ khai chưa có nghĩa đã gửi hồ sơ. Nếu sai tài khoản, đăng xuất trên cổng rồi đăng nhập lại bằng đúng tài khoản.",
-            "expected": "Cổng cho mở tờ khai của nhóm bạn đã chọn, không tiếp tục yêu cầu đăng nhập."
+            "title": "Nhập mật khẩu",
+            "action": "Chạm ô mật khẩu và nhập mật khẩu đăng nhập VNeID.",
+            "expected": "Mật khẩu thường hiện thành dấu chấm.",
+            "help": "Đây không phải mã khóa điện thoại. Quên mật khẩu thì mở mục xử lý lỗi bên dưới; đừng thử đoán liên tục."
           },
           {
-            "title": "Quay lại danh sách chuẩn bị",
-            "action": "Mở danh sách tab của trình duyệt (biểu tượng các ô hoặc ô có số), chọn tab “Cẩm Nang Số”. Giữ tab cổng để tiếp tục sau khi chuẩn bị xong.",
-            "expected": "Bạn vẫn thấy danh sách giấy tờ và tiến độ đã đánh dấu ở đây."
+            "title": "Bấm Đăng nhập",
+            "action": "Bấm nút Đăng nhập trên trang VNeID một lần.",
+            "expected": "Thông báo xác thực, trang đã đăng nhập hoặc thông báo lỗi.",
+            "help": "Nếu báo lỗi, đọc dòng lỗi trước khi thử lại. Không gửi mật khẩu cho người hỗ trợ."
+          },
+          {
+            "title": "Xem nơi nhận yêu cầu xác thực",
+            "action": "Đọc màn hình để biết cần mã trong Tin nhắn hay xác nhận trong ứng dụng VNeID.",
+            "expected": "Tên cách xác thực cổng đang yêu cầu.",
+            "help": "Không mặc định mã luôn gửi qua Tin nhắn. Nếu đã đăng nhập thành công, bỏ qua các thao tác xác thực tiếp theo.",
+            "skipTo": 11,
+            "skipLabel": "Cổng đã đăng nhập → kiểm tra tài khoản"
+          },
+          {
+            "title": "Mở nơi nhận mã hoặc yêu cầu",
+            "action": "Nếu cổng yêu cầu mã SMS, mở Tin nhắn. Nếu yêu cầu VNeID, mở ứng dụng VNeID.",
+            "expected": "Tin nhắn mới hoặc yêu cầu xác nhận.",
+            "help": "Bấm nút về màn hình chính hoặc vuốt về màn hình chính theo cách điện thoại của bạn. Giữ nguyên trang cổng trong trình duyệt."
+          },
+          {
+            "title": "Đọc mã hoặc xác nhận đúng yêu cầu",
+            "action": "Với SMS: ghi nhớ mã mới nhất. Với VNeID: kiểm tra và xác nhận yêu cầu đăng nhập bạn vừa tạo.",
+            "expected": "Bạn có mã để nhập, hoặc đã xác nhận trong VNeID.",
+            "help": "Chỉ xác nhận yêu cầu vừa tạo. Không đọc mã hoặc mật khẩu cho người khác."
+          },
+          {
+            "title": "Trở lại trang đăng nhập",
+            "action": "Mở lại ứng dụng trình duyệt vừa dùng, ví dụ Chrome hoặc Safari.",
+            "expected": "Trang cổng hoặc danh sách các trang đang mở.",
+            "help": "Nếu ở danh sách trang, chọn trang dịch vụ công. Nếu đang đọc hướng dẫn này, chọn trang đăng nhập bên cạnh."
+          },
+          {
+            "title": "Hoàn tất xác thực",
+            "action": "Nếu cổng đang chờ mã, nhập mã mới nhất vào ô mã xác thực và xác nhận theo nút trên màn hình.",
+            "expected": "Cổng báo đăng nhập thành công hoặc chỉ rõ lỗi.",
+            "help": "Nếu đã xác nhận trong VNeID và cổng tự chuyển trang, không cần nhập thêm mã. Mã hết hạn thì làm theo nút gửi lại khi được phép."
+          },
+          {
+            "title": "Kiểm tra tài khoản",
+            "action": "Đọc tên tài khoản trên cổng và kiểm tra đúng người nộp.",
+            "expected": "Tên đúng tài khoản của bạn.",
+            "help": "Sai tài khoản thì đăng xuất và đăng nhập lại. Đăng nhập xong chưa phải gửi hồ sơ."
+          },
+          {
+            "title": "Quay lại Cẩm Nang Số",
+            "action": "Mở danh sách trang trong trình duyệt rồi chọn Cẩm Nang Số.",
+            "expected": "Hướng dẫn vẫn ở bước đang xem.",
+            "help": "Nút danh sách trang thường là ô có số hoặc hai ô chồng nhau. Đừng đóng trang dịch vụ công; lát nữa sẽ quay lại đó."
           }
         ],
-        "ready": "Bạn đã vào được cổng bằng đúng tài khoản và biết cách trở lại tab hướng dẫn. Đăng nhập thành công không đồng nghĩa hồ sơ đã được gửi."
+        "ready": "Bạn đã đăng nhập được cổng bằng đúng tài khoản và biết quay lại hướng dẫn. Đăng nhập chưa phải gửi hồ sơ."
       },
       {
         "label": "Quét QR · cần hai thiết bị",
@@ -94,7 +145,8 @@
             "expected": "Bạn có hai tab: cổng để kê khai và Cẩm Nang Số để xem hướng dẫn."
           }
         ],
-        "ready": "Cổng đã cho mở tờ khai bằng đúng tài khoản. Bạn giữ được tab hướng dẫn bên cạnh tab cổng."
+        "ready": "Cổng đã cho mở tờ khai bằng đúng tài khoản. Bạn giữ được tab hướng dẫn bên cạnh tab cổng.",
+        "device": "computer"
       },
       {
         "label": "Chưa có / chưa kích hoạt VNeID",
@@ -132,6 +184,100 @@
           }
         ],
         "ready": "Bạn đã thử đăng nhập cổng thành công. Chỉ cài ứng dụng hoặc đặt lịch hỗ trợ thì chưa đánh dấu mục này."
+      },
+      {
+        "label": "Nhập tài khoản trên máy tính",
+        "device": "computer",
+        "intro": "Mỗi lần làm một việc. Bạn có thể quay lại đọc bước này bất cứ lúc nào.",
+        "steps": [
+          {
+            "title": "Mở trang dịch vụ công",
+            "action": "Bấm Mở cổng chính thức bên dưới. Giữ lại trang Cẩm Nang Số này.",
+            "expected": "Trang dịch vụ công mở ra.",
+            "help": "Chưa biết quay lại? Xem khung Cách quay lại hướng dẫn ở phía trên.",
+            "links": [
+              {
+                "label": "Mở cổng chính thức",
+                "url": "https://lienthong.dichvucong.gov.vn/"
+              }
+            ]
+          },
+          {
+            "title": "Tìm nút Đăng nhập",
+            "action": "Trên cổng chính thức, bấm Đăng nhập.",
+            "expected": "Khu vực chọn cách đăng nhập hoặc trang đăng nhập.",
+            "help": "Nếu đã hiện tên tài khoản, kiểm tra đúng người nộp; không cần nhập lại."
+          },
+          {
+            "title": "Chọn tài khoản VNeID",
+            "action": "Nếu được hỏi loại tài khoản, chọn tài khoản định danh điện tử VNeID.",
+            "expected": "Trang đăng nhập VNeID.",
+            "help": "Nếu đã ở trang này, tiếp tục. Không dùng ô tìm kiếm thủ tục để nhập tài khoản."
+          },
+          {
+            "title": "Nhập số định danh",
+            "action": "Chạm ô số định danh trên trang đăng nhập và nhập số của người nộp.",
+            "expected": "Số vừa nhập xuất hiện trong ô.",
+            "help": "So lại số với thông tin định danh. Không dùng thông tin người được làm thay để đăng nhập tài khoản của mình."
+          },
+          {
+            "title": "Nhập mật khẩu",
+            "action": "Chạm ô mật khẩu và nhập mật khẩu đăng nhập VNeID.",
+            "expected": "Mật khẩu thường hiện thành dấu chấm.",
+            "help": "Đây không phải mã khóa điện thoại. Quên mật khẩu thì mở mục xử lý lỗi bên dưới; đừng thử đoán liên tục."
+          },
+          {
+            "title": "Bấm Đăng nhập",
+            "action": "Bấm nút Đăng nhập trên trang VNeID một lần.",
+            "expected": "Thông báo xác thực, trang đã đăng nhập hoặc thông báo lỗi.",
+            "help": "Nếu báo lỗi, đọc dòng lỗi trước khi thử lại. Không gửi mật khẩu cho người hỗ trợ."
+          },
+          {
+            "title": "Xem nơi nhận yêu cầu xác thực",
+            "action": "Đọc màn hình để biết cần mã trong Tin nhắn hay xác nhận trong ứng dụng VNeID.",
+            "expected": "Tên cách xác thực cổng đang yêu cầu.",
+            "help": "Không mặc định mã luôn gửi qua Tin nhắn. Nếu đã đăng nhập thành công, bỏ qua các thao tác xác thực tiếp theo.",
+            "skipTo": 11,
+            "skipLabel": "Cổng đã đăng nhập → kiểm tra tài khoản"
+          },
+          {
+            "title": "Mở nơi nhận mã hoặc yêu cầu",
+            "action": "Giữ trang đăng nhập trên máy tính. Trên điện thoại, mở Tin nhắn hoặc VNeID theo cách cổng yêu cầu.",
+            "expected": "Tin nhắn mới hoặc yêu cầu xác nhận.",
+            "help": "Bấm nút về màn hình chính hoặc vuốt về màn hình chính theo cách điện thoại của bạn. Giữ nguyên trang cổng trong trình duyệt."
+          },
+          {
+            "title": "Đọc mã hoặc xác nhận đúng yêu cầu",
+            "action": "Với SMS: ghi nhớ mã mới nhất. Với VNeID: kiểm tra và xác nhận yêu cầu đăng nhập bạn vừa tạo.",
+            "expected": "Bạn có mã để nhập, hoặc đã xác nhận trong VNeID.",
+            "help": "Chỉ xác nhận yêu cầu vừa tạo. Không đọc mã hoặc mật khẩu cho người khác."
+          },
+          {
+            "title": "Trở lại trang đăng nhập",
+            "action": "Nhìn lại trang đăng nhập đang mở trên máy tính.",
+            "expected": "Trang cổng hoặc danh sách các trang đang mở.",
+            "help": "Nếu ở danh sách trang, chọn trang dịch vụ công. Nếu đang đọc hướng dẫn này, chọn trang đăng nhập bên cạnh."
+          },
+          {
+            "title": "Hoàn tất xác thực",
+            "action": "Nếu cổng đang chờ mã, nhập mã mới nhất vào ô mã xác thực và xác nhận theo nút trên màn hình.",
+            "expected": "Cổng báo đăng nhập thành công hoặc chỉ rõ lỗi.",
+            "help": "Nếu đã xác nhận trong VNeID và cổng tự chuyển trang, không cần nhập thêm mã. Mã hết hạn thì làm theo nút gửi lại khi được phép."
+          },
+          {
+            "title": "Kiểm tra tài khoản",
+            "action": "Đọc tên tài khoản trên cổng và kiểm tra đúng người nộp.",
+            "expected": "Tên đúng tài khoản của bạn.",
+            "help": "Sai tài khoản thì đăng xuất và đăng nhập lại. Đăng nhập xong chưa phải gửi hồ sơ."
+          },
+          {
+            "title": "Quay lại Cẩm Nang Số",
+            "action": "Bấm tên trang Cẩm Nang Số ở hàng trang phía trên cửa sổ trình duyệt máy tính.",
+            "expected": "Hướng dẫn vẫn ở bước đang xem.",
+            "help": "Nút danh sách trang thường là ô có số hoặc hai ô chồng nhau. Đừng đóng trang dịch vụ công; lát nữa sẽ quay lại đó."
+          }
+        ],
+        "ready": "Bạn đã đăng nhập được cổng bằng đúng tài khoản và biết quay lại hướng dẫn. Đăng nhập chưa phải gửi hồ sơ."
       }
     ],
     "troubleshooting": [
@@ -155,32 +301,74 @@
         "problem": "Bấm vào nhưng trang trắng hoặc quay lại đăng nhập",
         "solution": "Kiểm tra mạng rồi tải lại trang. Trên máy tính có thể dùng Ctrl + F5 theo hướng dẫn của trang đăng nhập. Nếu vẫn lỗi, ghi lại nội dung thông báo và thời điểm gặp lỗi để hỏi hỗ trợ 1900 0368. Không cần gửi mật khẩu, OTP hoặc ảnh đầy đủ thông tin cá nhân khi hỏi lỗi thao tác."
       }
-    ]
+    ],
+    "revision": 2,
+    "devices": true
   },
   "chup-tai-giay-to": {
     "intro": "Chỉ làm phần đính kèm nếu cổng yêu cầu. Giấy tờ đã được cổng khai thác từ dữ liệu điện tử thì làm theo thông báo tại đó. Đây là hướng dẫn thao tác chụp và chọn tệp, không bổ sung thành phần hồ sơ.",
     "steps": [
       {
-        "title": "Đặt giấy và chụp từng trang",
-        "action": "Đặt giấy phẳng ở nơi đủ sáng. Mở Camera, giữ điện thoại song song với mặt giấy, chụp đủ bốn góc, tránh bóng tay và ánh đèn lóa. Chụp từng trang/mặt có nội dung mà cổng yêu cầu.",
-        "expected": "Ảnh có trọn trang, không mất số giấy, chữ ký hoặc dấu đang có trên bản gốc."
+        "title": "Đặt giấy ở chỗ đủ sáng",
+        "action": "Đặt giấy phẳng, để thấy đủ bốn góc và tránh ánh đèn phản chiếu.",
+        "expected": "Giấy không bị gấp che chữ, không có bóng tay trên nội dung."
       },
       {
-        "title": "Mở ảnh để kiểm tra chữ",
-        "action": "Mở Ảnh/Thư viện, phóng to và đọc thử họ tên, ngày tháng, số giấy. Nếu nhòe hoặc lóa, chụp lại. Giữ nguyên nội dung; không dùng bộ lọc hoặc sửa chữ trên giấy.",
-        "expected": "Bạn đọc được rõ các thông tin cần kê khai."
+        "title": "Mở máy ảnh",
+        "action": "Trên điện thoại, mở ứng dụng Camera hoặc Máy ảnh.",
+        "expected": "Màn hình hiện hình ảnh trước ống kính.",
+        "help": "Chưa biết tìm ứng dụng thì nhờ người hướng dẫn trên điện thoại của bạn."
       },
       {
-        "title": "Chọn tệp ở đúng dòng giấy tờ trên cổng",
-        "action": "Tại mục tài liệu cần đính kèm trên cổng, bấm nút chọn/tải tệp theo tên hiển thị. Điện thoại: chọn Ảnh/Thư viện hoặc Tệp rồi chọn ảnh đã chụp. Máy tính: chọn tệp đã lưu trong thư mục của bạn, bấm Mở/Open. Đọc định dạng và giới hạn dung lượng ngay cạnh ô đính kèm trước khi chọn.",
-        "expected": "Tên tệp hoặc ảnh xem trước xuất hiện ở đúng dòng giấy tờ, tải xong và không có thông báo lỗi."
+        "title": "Chụp trang giấy",
+        "action": "Hướng máy song song với giấy, giữ đủ bốn góc trong khung rồi bấm nút chụp.",
+        "expected": "Một ảnh mới được lưu trên điện thoại.",
+        "help": "Chụp lại nếu bị rung, lóa hoặc mất góc. Lặp lại với từng trang/mặt có nội dung mà cổng yêu cầu."
       },
       {
-        "title": "Mở lại tệp đã đính kèm",
-        "action": "Nếu cổng có nút xem trước, mở tệp để kiểm tra đúng người, đúng giấy và đủ trang. Nếu chọn nhầm, dùng nút xóa/thay tệp tại dòng đó rồi chọn lại. Tệp quá lớn hoặc sai định dạng: dùng cách lưu/quét thành định dạng cổng chấp nhận; kiểm tra lại độ rõ trước khi tải.",
-        "expected": "Tệp đúng nội dung đã gắn vào hồ sơ. Tải tệp thành công vẫn chưa phải là gửi hồ sơ."
+        "title": "Mở ảnh vừa chụp",
+        "action": "Mở ứng dụng Ảnh hoặc Thư viện và chọn ảnh giấy vừa chụp.",
+        "expected": "Ảnh giấy hiện trên màn hình.",
+        "help": "Tìm ảnh mới nhất. Nếu ảnh ở điện thoại nhưng đang nộp bằng máy tính, cần chuyển ảnh sang máy tính bằng cách bạn tin cậy hoặc nhờ hướng dẫn."
+      },
+      {
+        "title": "Kiểm tra chữ trong ảnh",
+        "action": "Phóng to ảnh và đọc thử họ tên, ngày tháng, số giấy.",
+        "expected": "Chữ rõ, đủ trang; không mất chữ ký hoặc dấu trên bản gốc.",
+        "help": "Ảnh mờ thì chụp lại. Giữ nguyên nội dung, không sửa chữ hoặc dùng bộ lọc."
+      },
+      {
+        "title": "Đọc yêu cầu về tệp",
+        "action": "Trên cổng, xem loại tệp và dung lượng cho phép cạnh dòng giấy cần đính kèm.",
+        "expected": "Bạn biết cổng chấp nhận ảnh hay PDF và giới hạn dung lượng.",
+        "help": "Chỉ đổi đuôi tên không đổi được loại tệp. Chưa biết tạo loại tệp phù hợp thì xem phần xử lý lỗi bên dưới hoặc nhờ hỗ trợ."
+      },
+      {
+        "title": "Mở chỗ chọn tệp",
+        "action": "Tại đúng dòng giấy cần nộp, bấm nút chọn hoặc tải tệp của cổng.",
+        "expected": "Cửa sổ chọn tệp hoặc kho giấy tờ mở ra.",
+        "help": "Nếu hiện kho giấy tờ mà tệp còn trên điện thoại/máy tính, tìm chức năng Tải lên từ thiết bị nếu có."
+      },
+      {
+        "title": "Chọn ảnh hoặc tài liệu",
+        "action": "Trong cửa sổ vừa mở, chọn đúng tệp đã chuẩn bị trên thiết bị.",
+        "expected": "Tên tệp được chọn.",
+        "help": "Điện thoại thường cho chọn Ảnh/Thư viện hoặc Tệp. Trên máy tính, chọn tệp trong thư mục rồi bấm Mở/Open. Tên nút tùy thiết bị."
+      },
+      {
+        "title": "Chờ tải xong",
+        "action": "Đợi đến khi tên tệp hoặc ảnh xem trước xuất hiện tại đúng dòng hồ sơ.",
+        "expected": "Không còn biểu tượng đang tải và không có thông báo lỗi.",
+        "help": "Nếu cổng yêu cầu xác nhận đính kèm từ kho giấy tờ, làm theo nút trên màn hình. Chọn tệp trong kho chưa chắc đã gắn vào hồ sơ."
+      },
+      {
+        "title": "Xem lại tệp đã gắn",
+        "action": "Nếu có nút xem trước, mở tệp đã gắn để kiểm tra đúng giấy và đủ trang.",
+        "expected": "Tệp đọc rõ, đúng người và đúng giấy. Tải tệp xong chưa phải gửi hồ sơ.",
+        "help": "Chọn nhầm thì dùng nút xóa/thay tệp tại dòng đó và chọn lại. Không tải giấy tờ cá nhân lên Cẩm Nang Số."
       }
     ],
+    "readyLabel": "Kiểm tra ảnh hoặc tệp đã chuẩn bị",
     "ready": "Đã có ảnh/tệp đọc rõ để dùng khi cổng yêu cầu. Không cần tải giấy tờ lên Cẩm Nang Số.",
     "troubleshooting": [
       {
@@ -203,7 +391,8 @@
         "problem": "Tôi đã chọn ảnh nhưng chưa biết tải xong chưa",
         "solution": "Chờ biểu tượng đang tải kết thúc. Kiểm tra tên tệp hoặc ảnh xem trước ở đúng dòng giấy tờ và đọc thông báo lỗi nếu có. Nếu có Xem trước, mở để đối chiếu. Chọn ảnh/tải xong vẫn chưa phải gửi hồ sơ."
       }
-    ]
+    ],
+    "revision": 2
   },
   "dang-nhap-quoc-gia": {
     "reviewedAt": "2026-11-22",
@@ -227,47 +416,98 @@
     ],
     "paths": [
       {
-        "label": "Nhập tài khoản · điện thoại hoặc máy tính",
-        "intro": "Để điện thoại có mạng và tài khoản VNeID của người đứng tên làm thủ tục sẵn sàng. Bạn chỉ nhập thông tin đăng nhập trên cổng chính thức. Trang hướng dẫn này sẽ được giữ lại ở tab hiện tại.",
+        "label": "Nhập tài khoản trên điện thoại",
+        "device": "phone",
+        "intro": "Mỗi lần làm một việc. Bạn có thể quay lại đọc bước này bất cứ lúc nào.",
         "steps": [
           {
-            "title": "Mở Cổng Dịch vụ công Quốc gia",
-            "action": "Bấm liên kết dưới đây để mở tab mới. Kiểm tra thanh địa chỉ là dichvucong.gov.vn.",
-            "expected": "Trang Cổng Dịch vụ công Quốc gia, có tìm kiếm và khu vực tài khoản.",
+            "title": "Mở trang dịch vụ công",
+            "action": "Bấm Mở cổng chính thức bên dưới. Giữ lại trang Cẩm Nang Số này.",
+            "expected": "Trang dịch vụ công mở ra.",
+            "help": "Chưa biết quay lại? Xem khung Cách quay lại hướng dẫn ở phía trên.",
             "links": [
               {
-                "label": "Mở Cổng Dịch vụ công Quốc gia",
+                "label": "Mở cổng chính thức",
                 "url": "https://dichvucong.gov.vn/"
               }
             ]
           },
           {
-            "title": "Chọn đăng nhập bằng VNeID",
-            "action": "Chọn Đăng nhập; nếu có lựa chọn loại tài khoản, chọn tài khoản định danh điện tử VNeID. Nếu đã đăng nhập, kiểm tra đúng tài khoản rồi tìm mã thủ tục theo hướng dẫn.",
-            "expected": "Màn hình đăng nhập VNeID hoặc trang cổng đã vào đúng tài khoản."
+            "title": "Tìm nút Đăng nhập",
+            "action": "Trên cổng chính thức, bấm Đăng nhập.",
+            "expected": "Khu vực chọn cách đăng nhập hoặc trang đăng nhập.",
+            "help": "Nếu đã hiện tên tài khoản, kiểm tra đúng người nộp; không cần nhập lại."
           },
           {
-            "title": "Điền tài khoản của người làm thủ tục",
-            "action": "Nhập số định danh và mật khẩu VNeID của người nộp vào đúng ô trên trang đăng nhập chính thức, rồi bấm Đăng nhập. Không nhập thông tin của người được làm thay vào tài khoản của mình; phần người được cấp giấy được kê khai riêng trên tờ khai.",
-            "expected": "Cổng chuyển sang bước xác thực hoặc thông báo chỗ cần sửa. Mật khẩu hiện thành dấu chấm là bình thường."
+            "title": "Chọn tài khoản VNeID",
+            "action": "Nếu được hỏi loại tài khoản, chọn tài khoản định danh điện tử VNeID.",
+            "expected": "Trang đăng nhập VNeID.",
+            "help": "Nếu đã ở trang này, tiếp tục. Không dùng ô tìm kiếm thủ tục để nhập tài khoản."
           },
           {
-            "title": "Thực hiện xác thực nếu được yêu cầu",
-            "action": "Đọc thông báo trên màn hình để biết nhận mã ở đâu. Nếu yêu cầu OTP gửi SMS, mở Tin nhắn trên điện thoại đăng ký VNeID, xem mã mới nhất rồi trở lại tab đăng nhập để nhập mã. Nếu yêu cầu xác nhận trong VNeID, mở ứng dụng và làm theo yêu cầu đang hiển thị. Giữ riêng mật khẩu và mã xác thực.",
-            "expected": "Xác thực thành công và trình duyệt trở lại cổng dịch vụ công."
+            "title": "Nhập số định danh",
+            "action": "Chạm ô số định danh trên trang đăng nhập và nhập số của người nộp.",
+            "expected": "Số vừa nhập xuất hiện trong ô.",
+            "help": "So lại số với thông tin định danh. Không dùng thông tin người được làm thay để đăng nhập tài khoản của mình."
           },
           {
-            "title": "Kiểm tra đã vào đúng tài khoản",
-            "action": "Đối chiếu tên tài khoản hoặc phần thông tin người yêu cầu trên cổng với người đứng tên làm thủ tục. Đến được tờ khai chưa có nghĩa đã gửi hồ sơ. Nếu sai tài khoản, đăng xuất trên cổng rồi đăng nhập lại bằng đúng tài khoản.",
-            "expected": "Trang hiển thị đúng tài khoản và cho tìm/mở dịch vụ; đăng nhập chưa phải gửi hồ sơ."
+            "title": "Nhập mật khẩu",
+            "action": "Chạm ô mật khẩu và nhập mật khẩu đăng nhập VNeID.",
+            "expected": "Mật khẩu thường hiện thành dấu chấm.",
+            "help": "Đây không phải mã khóa điện thoại. Quên mật khẩu thì mở mục xử lý lỗi bên dưới; đừng thử đoán liên tục."
           },
           {
-            "title": "Quay lại danh sách chuẩn bị",
-            "action": "Mở danh sách tab của trình duyệt (biểu tượng các ô hoặc ô có số), chọn tab “Cẩm Nang Số”. Giữ tab cổng để tiếp tục sau khi chuẩn bị xong.",
-            "expected": "Bạn vẫn thấy danh sách giấy tờ và tiến độ đã đánh dấu ở đây."
+            "title": "Bấm Đăng nhập",
+            "action": "Bấm nút Đăng nhập trên trang VNeID một lần.",
+            "expected": "Thông báo xác thực, trang đã đăng nhập hoặc thông báo lỗi.",
+            "help": "Nếu báo lỗi, đọc dòng lỗi trước khi thử lại. Không gửi mật khẩu cho người hỗ trợ."
+          },
+          {
+            "title": "Xem nơi nhận yêu cầu xác thực",
+            "action": "Đọc màn hình để biết cần mã trong Tin nhắn hay xác nhận trong ứng dụng VNeID.",
+            "expected": "Tên cách xác thực cổng đang yêu cầu.",
+            "help": "Không mặc định mã luôn gửi qua Tin nhắn. Nếu đã đăng nhập thành công, bỏ qua các thao tác xác thực tiếp theo.",
+            "skipTo": 11,
+            "skipLabel": "Cổng đã đăng nhập → kiểm tra tài khoản"
+          },
+          {
+            "title": "Mở nơi nhận mã hoặc yêu cầu",
+            "action": "Nếu cổng yêu cầu mã SMS, mở Tin nhắn. Nếu yêu cầu VNeID, mở ứng dụng VNeID.",
+            "expected": "Tin nhắn mới hoặc yêu cầu xác nhận.",
+            "help": "Bấm nút về màn hình chính hoặc vuốt về màn hình chính theo cách điện thoại của bạn. Giữ nguyên trang cổng trong trình duyệt."
+          },
+          {
+            "title": "Đọc mã hoặc xác nhận đúng yêu cầu",
+            "action": "Với SMS: ghi nhớ mã mới nhất. Với VNeID: kiểm tra và xác nhận yêu cầu đăng nhập bạn vừa tạo.",
+            "expected": "Bạn có mã để nhập, hoặc đã xác nhận trong VNeID.",
+            "help": "Chỉ xác nhận yêu cầu vừa tạo. Không đọc mã hoặc mật khẩu cho người khác."
+          },
+          {
+            "title": "Trở lại trang đăng nhập",
+            "action": "Mở lại ứng dụng trình duyệt vừa dùng, ví dụ Chrome hoặc Safari.",
+            "expected": "Trang cổng hoặc danh sách các trang đang mở.",
+            "help": "Nếu ở danh sách trang, chọn trang dịch vụ công. Nếu đang đọc hướng dẫn này, chọn trang đăng nhập bên cạnh."
+          },
+          {
+            "title": "Hoàn tất xác thực",
+            "action": "Nếu cổng đang chờ mã, nhập mã mới nhất vào ô mã xác thực và xác nhận theo nút trên màn hình.",
+            "expected": "Cổng báo đăng nhập thành công hoặc chỉ rõ lỗi.",
+            "help": "Nếu đã xác nhận trong VNeID và cổng tự chuyển trang, không cần nhập thêm mã. Mã hết hạn thì làm theo nút gửi lại khi được phép."
+          },
+          {
+            "title": "Kiểm tra tài khoản",
+            "action": "Đọc tên tài khoản trên cổng và kiểm tra đúng người nộp.",
+            "expected": "Tên đúng tài khoản của bạn.",
+            "help": "Sai tài khoản thì đăng xuất và đăng nhập lại. Đăng nhập xong chưa phải gửi hồ sơ."
+          },
+          {
+            "title": "Quay lại Cẩm Nang Số",
+            "action": "Mở danh sách trang trong trình duyệt rồi chọn Cẩm Nang Số.",
+            "expected": "Hướng dẫn vẫn ở bước đang xem.",
+            "help": "Nút danh sách trang thường là ô có số hoặc hai ô chồng nhau. Đừng đóng trang dịch vụ công; lát nữa sẽ quay lại đó."
           }
         ],
-        "ready": "Bạn đã vào được cổng bằng đúng tài khoản và biết cách trở lại tab hướng dẫn. Đăng nhập thành công không đồng nghĩa hồ sơ đã được gửi."
+        "ready": "Bạn đã đăng nhập được cổng bằng đúng tài khoản và biết quay lại hướng dẫn. Đăng nhập chưa phải gửi hồ sơ."
       },
       {
         "label": "Quét QR · cần hai thiết bị",
@@ -300,7 +540,8 @@
             "expected": "Bạn có hai tab: cổng để kê khai và Cẩm Nang Số để xem hướng dẫn."
           }
         ],
-        "ready": "Cổng đã cho mở tờ khai bằng đúng tài khoản. Bạn giữ được tab hướng dẫn bên cạnh tab cổng."
+        "ready": "Cổng đã cho mở tờ khai bằng đúng tài khoản. Bạn giữ được tab hướng dẫn bên cạnh tab cổng.",
+        "device": "computer"
       },
       {
         "label": "Chưa có / chưa kích hoạt VNeID",
@@ -338,6 +579,100 @@
           }
         ],
         "ready": "Bạn đã thử đăng nhập cổng thành công. Chỉ cài ứng dụng hoặc đặt lịch hỗ trợ thì chưa đánh dấu mục này."
+      },
+      {
+        "label": "Nhập tài khoản trên máy tính",
+        "device": "computer",
+        "intro": "Mỗi lần làm một việc. Bạn có thể quay lại đọc bước này bất cứ lúc nào.",
+        "steps": [
+          {
+            "title": "Mở trang dịch vụ công",
+            "action": "Bấm Mở cổng chính thức bên dưới. Giữ lại trang Cẩm Nang Số này.",
+            "expected": "Trang dịch vụ công mở ra.",
+            "help": "Chưa biết quay lại? Xem khung Cách quay lại hướng dẫn ở phía trên.",
+            "links": [
+              {
+                "label": "Mở cổng chính thức",
+                "url": "https://dichvucong.gov.vn/"
+              }
+            ]
+          },
+          {
+            "title": "Tìm nút Đăng nhập",
+            "action": "Trên cổng chính thức, bấm Đăng nhập.",
+            "expected": "Khu vực chọn cách đăng nhập hoặc trang đăng nhập.",
+            "help": "Nếu đã hiện tên tài khoản, kiểm tra đúng người nộp; không cần nhập lại."
+          },
+          {
+            "title": "Chọn tài khoản VNeID",
+            "action": "Nếu được hỏi loại tài khoản, chọn tài khoản định danh điện tử VNeID.",
+            "expected": "Trang đăng nhập VNeID.",
+            "help": "Nếu đã ở trang này, tiếp tục. Không dùng ô tìm kiếm thủ tục để nhập tài khoản."
+          },
+          {
+            "title": "Nhập số định danh",
+            "action": "Chạm ô số định danh trên trang đăng nhập và nhập số của người nộp.",
+            "expected": "Số vừa nhập xuất hiện trong ô.",
+            "help": "So lại số với thông tin định danh. Không dùng thông tin người được làm thay để đăng nhập tài khoản của mình."
+          },
+          {
+            "title": "Nhập mật khẩu",
+            "action": "Chạm ô mật khẩu và nhập mật khẩu đăng nhập VNeID.",
+            "expected": "Mật khẩu thường hiện thành dấu chấm.",
+            "help": "Đây không phải mã khóa điện thoại. Quên mật khẩu thì mở mục xử lý lỗi bên dưới; đừng thử đoán liên tục."
+          },
+          {
+            "title": "Bấm Đăng nhập",
+            "action": "Bấm nút Đăng nhập trên trang VNeID một lần.",
+            "expected": "Thông báo xác thực, trang đã đăng nhập hoặc thông báo lỗi.",
+            "help": "Nếu báo lỗi, đọc dòng lỗi trước khi thử lại. Không gửi mật khẩu cho người hỗ trợ."
+          },
+          {
+            "title": "Xem nơi nhận yêu cầu xác thực",
+            "action": "Đọc màn hình để biết cần mã trong Tin nhắn hay xác nhận trong ứng dụng VNeID.",
+            "expected": "Tên cách xác thực cổng đang yêu cầu.",
+            "help": "Không mặc định mã luôn gửi qua Tin nhắn. Nếu đã đăng nhập thành công, bỏ qua các thao tác xác thực tiếp theo.",
+            "skipTo": 11,
+            "skipLabel": "Cổng đã đăng nhập → kiểm tra tài khoản"
+          },
+          {
+            "title": "Mở nơi nhận mã hoặc yêu cầu",
+            "action": "Giữ trang đăng nhập trên máy tính. Trên điện thoại, mở Tin nhắn hoặc VNeID theo cách cổng yêu cầu.",
+            "expected": "Tin nhắn mới hoặc yêu cầu xác nhận.",
+            "help": "Bấm nút về màn hình chính hoặc vuốt về màn hình chính theo cách điện thoại của bạn. Giữ nguyên trang cổng trong trình duyệt."
+          },
+          {
+            "title": "Đọc mã hoặc xác nhận đúng yêu cầu",
+            "action": "Với SMS: ghi nhớ mã mới nhất. Với VNeID: kiểm tra và xác nhận yêu cầu đăng nhập bạn vừa tạo.",
+            "expected": "Bạn có mã để nhập, hoặc đã xác nhận trong VNeID.",
+            "help": "Chỉ xác nhận yêu cầu vừa tạo. Không đọc mã hoặc mật khẩu cho người khác."
+          },
+          {
+            "title": "Trở lại trang đăng nhập",
+            "action": "Nhìn lại trang đăng nhập đang mở trên máy tính.",
+            "expected": "Trang cổng hoặc danh sách các trang đang mở.",
+            "help": "Nếu ở danh sách trang, chọn trang dịch vụ công. Nếu đang đọc hướng dẫn này, chọn trang đăng nhập bên cạnh."
+          },
+          {
+            "title": "Hoàn tất xác thực",
+            "action": "Nếu cổng đang chờ mã, nhập mã mới nhất vào ô mã xác thực và xác nhận theo nút trên màn hình.",
+            "expected": "Cổng báo đăng nhập thành công hoặc chỉ rõ lỗi.",
+            "help": "Nếu đã xác nhận trong VNeID và cổng tự chuyển trang, không cần nhập thêm mã. Mã hết hạn thì làm theo nút gửi lại khi được phép."
+          },
+          {
+            "title": "Kiểm tra tài khoản",
+            "action": "Đọc tên tài khoản trên cổng và kiểm tra đúng người nộp.",
+            "expected": "Tên đúng tài khoản của bạn.",
+            "help": "Sai tài khoản thì đăng xuất và đăng nhập lại. Đăng nhập xong chưa phải gửi hồ sơ."
+          },
+          {
+            "title": "Quay lại Cẩm Nang Số",
+            "action": "Bấm tên trang Cẩm Nang Số ở hàng trang phía trên cửa sổ trình duyệt máy tính.",
+            "expected": "Hướng dẫn vẫn ở bước đang xem.",
+            "help": "Nút danh sách trang thường là ô có số hoặc hai ô chồng nhau. Đừng đóng trang dịch vụ công; lát nữa sẽ quay lại đó."
+          }
+        ],
+        "ready": "Bạn đã đăng nhập được cổng bằng đúng tài khoản và biết quay lại hướng dẫn. Đăng nhập chưa phải gửi hồ sơ."
       }
     ],
     "troubleshooting": [
@@ -361,6 +696,8 @@
         "problem": "Bấm vào nhưng trang trắng hoặc quay lại đăng nhập",
         "solution": "Kiểm tra mạng rồi tải lại trang. Trên máy tính có thể dùng Ctrl + F5 theo hướng dẫn của trang đăng nhập. Nếu vẫn lỗi, ghi lại nội dung thông báo và thời điểm gặp lỗi để hỏi hỗ trợ 1900 0368. Không cần gửi mật khẩu, OTP hoặc ảnh đầy đủ thông tin cá nhân khi hỏi lỗi thao tác."
       }
-    ]
+    ],
+    "revision": 2,
+    "devices": true
   }
 }

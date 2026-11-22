@@ -67,8 +67,8 @@
     },
     {
       "id": "registered",
-      "title": "Sự kiện này đã được đăng ký hộ tịch chưa?",
-      "hint": "Mất giấy đang giữ không có nghĩa là chưa từng đăng ký.",
+      "title": "Việc khai sinh, kết hôn hoặc khai tử này đã được đăng ký trước đây chưa?",
+      "hint": "“Đã đăng ký” là đã làm thủ tục tại cơ quan nhà nước. Bị mất tờ giấy đã cấp vẫn là đã đăng ký.",
       "options": [
         {
           "value": "yes",
@@ -87,7 +87,7 @@
     {
       "id": "role",
       "title": "Bạn xin cho ai?",
-      "hint": "Phân biệt người nộp hồ sơ với người có tên trong giấy hộ tịch.",
+      "hint": "Ví dụ: cha/mẹ xin cho con nhỏ là trường hợp đại diện. Được người khác nhờ làm theo văn bản là ủy quyền; chưa rõ thì dùng nút hỗ trợ.",
       "options": [
         {
           "value": "self",
@@ -417,73 +417,199 @@
     "Kiểm tra tệp theo trường hợp, số bản, cách nhận và phí; gửi rồi lưu mã hồ sơ của mình."
   ],
   "submissionGuide": {
-    "intro": "Mở cổng chính thức ở tab mới, giữ Cẩm Nang Số để đối chiếu từng thao tác. Ảnh là minh họa vị trí; các nút trong ảnh không gửi hồ sơ.",
+    "intro": "Mỗi màn hình hướng dẫn một việc chính. Làm trên cổng rồi quay lại đọc bước tiếp. Chưa làm được thì mở trợ giúp ngay dưới bước đó.",
     "steps": [
       {
-        "title": "Mở cổng và đăng nhập",
-        "action": "Bấm Mở cổng để chọn nơi nộp. Nếu được yêu cầu, chọn đăng nhập bằng VNeID. Chưa biết làm thì quay lại Chuẩn bị → Tài khoản VNeID → Xem cách chuẩn bị. Chỉ nhập mật khẩu/OTP trên trang đăng nhập chính thức.",
-        "expected": "Bạn vào được cổng bằng tài khoản của người nộp."
+        "title": "Đăng nhập cổng",
+        "action": "Nếu chưa đăng nhập, mở hướng dẫn đăng nhập phía trên và làm lần lượt.",
+        "expected": "Cổng mở bằng đúng tài khoản người nộp.",
+        "help": "Bấm Mở cổng để chọn nơi nộp. Nếu được yêu cầu, chọn đăng nhập bằng VNeID. Chưa biết làm thì quay lại Chuẩn bị → Tài khoản VNeID → Xem cách chuẩn bị. Chỉ nhập mật khẩu/OTP trên trang đăng nhập chính thức."
       },
       {
-        "title": "Tìm thủ tục bằng mã",
-        "action": "Nếu chưa ở trang chi tiết, mở trang chủ Cổng Dịch vụ công Quốc gia. Chạm ô tìm kiếm, gõ 2.000635 rồi chọn Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh.",
-        "expected": "Tên và mã đúng thủ tục xin bản sao."
+        "title": "Tìm thủ tục",
+        "action": "Nhập 2.000635 vào ô tìm kiếm của Cổng Dịch vụ công Quốc gia.",
+        "expected": "Kết quả có mã 2.000635.",
+        "help": "Nếu chưa ở trang chi tiết, mở trang chủ Cổng Dịch vụ công Quốc gia. Chạm ô tìm kiếm, gõ 2.000635 rồi chọn Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh."
       },
       {
-        "title": "Chọn cơ quan thực hiện",
-        "action": "Ở khung Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku nếu đây là nơi phù hợp hồ sơ. Bấm Nộp hồ sơ. Chưa rõ nơi nộp thì hỏi hỗ trợ trước.",
-        "expected": "Mở danh sách dịch vụ của địa bàn đã chọn."
+        "title": "Mở trang thủ tục",
+        "action": "Chọn Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh.",
+        "expected": "Trang thủ tục cấp bản sao, không phải khai sinh lần đầu.",
+        "help": "Nếu chưa ở trang chi tiết, mở trang chủ Cổng Dịch vụ công Quốc gia. Chạm ô tìm kiếm, gõ 2.000635 rồi chọn Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh."
       },
       {
-        "title": "Mở Nộp trực tuyến",
-        "action": "Ở Danh sách dịch vụ công, kiểm tra dòng Cơ quan thực hiện: UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; sau đó bấm Nộp trực tuyến tại đúng dòng thủ tục.",
-        "expected": "Biểu mẫu hiện đúng tên thủ tục và cơ quan trong Kính gửi."
+        "title": "Chọn tỉnh",
+        "action": "Chọn Tỉnh Gia Lai trong phần cơ quan thực hiện nếu phù hợp hồ sơ.",
+        "expected": "Tỉnh đã chọn được hiển thị.",
+        "help": "Ở khung Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku nếu đây là nơi phù hợp hồ sơ. Bấm Nộp hồ sơ. Chưa rõ nơi nộp thì hỏi hỗ trợ trước."
       },
       {
-        "title": "So phần Thông tin người nộp",
-        "action": "Đọc lại số định danh, họ tên, ngày sinh, giấy tờ và nơi cư trú được điền sẵn. Nhập số điện thoại đang dùng. Cuộn xuống xem đủ các ô; ô bắt buộc có dấu *. Dữ liệu khóa bị sai thì dừng gửi để hỏi hỗ trợ.",
-        "expected": "Thông tin thuộc người nộp và số điện thoại liên hệ đúng."
+        "title": "Chọn phường",
+        "action": "Chọn Phường Pleiku nếu đúng nơi tiếp nhận.",
+        "expected": "Tên phường phù hợp; chưa rõ thì hỏi hỗ trợ trước.",
+        "help": "Ở khung Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku nếu đây là nơi phù hợp hồ sơ. Bấm Nộp hồ sơ. Chưa rõ nơi nộp thì hỏi hỗ trợ trước."
       },
       {
-        "title": "Chọn quan hệ và điền người cần giấy",
-        "action": "Tìm Quan hệ với người được cấp bản sao Giấy khai sinh, Trích lục hộ tịch. Chọn đúng quan hệ. Ở phần Thông tin người được cấp giấy tờ hộ tịch, nhập thông tin của người có tên trong giấy; không chép cả phần người nộp nếu làm thay.",
-        "expected": "Hai phần thông tin được phân biệt đúng."
+        "title": "Mở danh sách dịch vụ",
+        "action": "Bấm Nộp hồ sơ.",
+        "expected": "Danh sách dịch vụ hoặc biểu mẫu nộp.",
+        "help": "Ở khung Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku nếu đây là nơi phù hợp hồ sơ. Bấm Nộp hồ sơ. Chưa rõ nơi nộp thì hỏi hỗ trợ trước."
+      },
+      {
+        "title": "Áp dụng địa bàn nếu cần",
+        "action": "Nếu vừa đổi địa bàn ở danh sách dịch vụ, bấm Đồng ý.",
+        "expected": "Dịch vụ của đúng cơ quan.",
+        "help": "Ở Danh sách dịch vụ công, kiểm tra dòng Cơ quan thực hiện: UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; sau đó bấm Nộp trực tuyến tại đúng dòng thủ tục."
+      },
+      {
+        "title": "Mở biểu mẫu trực tuyến",
+        "action": "Bấm Nộp trực tuyến tại đúng dòng thủ tục và cơ quan.",
+        "expected": "Biểu mẫu có Kính gửi đúng cơ quan.",
+        "help": "Ở Danh sách dịch vụ công, kiểm tra dòng Cơ quan thực hiện: UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; sau đó bấm Nộp trực tuyến tại đúng dòng thủ tục."
+      },
+      {
+        "title": "Kiểm tra người nộp",
+        "action": "So thông tin người nộp được cổng điền sẵn.",
+        "expected": "Thông tin đúng người nộp; ô khóa sai thì hỏi hỗ trợ.",
+        "help": "Đọc lại số định danh, họ tên, ngày sinh, giấy tờ và nơi cư trú được điền sẵn. Nhập số điện thoại đang dùng. Cuộn xuống xem đủ các ô; ô bắt buộc có dấu *. Dữ liệu khóa bị sai thì dừng gửi để hỏi hỗ trợ."
+      },
+      {
+        "title": "Điền số điện thoại",
+        "action": "Điền số điện thoại liên hệ đang dùng.",
+        "expected": "Số điện thoại đúng để nhận thông báo.",
+        "help": "Đọc lại số định danh, họ tên, ngày sinh, giấy tờ và nơi cư trú được điền sẵn. Nhập số điện thoại đang dùng. Cuộn xuống xem đủ các ô; ô bắt buộc có dấu *. Dữ liệu khóa bị sai thì dừng gửi để hỏi hỗ trợ."
+      },
+      {
+        "title": "Chọn quan hệ",
+        "action": "Chọn quan hệ của bạn với người cần bản sao.",
+        "expected": "Bản thân, quan hệ đại diện hoặc làm thay đúng thực tế.",
+        "help": "Tìm Quan hệ với người được cấp bản sao Giấy khai sinh, Trích lục hộ tịch. Chọn đúng quan hệ. Ở phần Thông tin người được cấp giấy tờ hộ tịch, nhập thông tin của người có tên trong giấy; không chép cả phần người nộp nếu làm thay."
+      },
+      {
+        "title": "Điền người cần bản sao",
+        "action": "Điền phần Người được cấp giấy tờ hộ tịch bằng thông tin người có tên trên giấy.",
+        "expected": "Không lấy thông tin người nộp điền thay khi làm cho người khác.",
+        "help": "Tìm Quan hệ với người được cấp bản sao Giấy khai sinh, Trích lục hộ tịch. Chọn đúng quan hệ. Ở phần Thông tin người được cấp giấy tờ hộ tịch, nhập thông tin của người có tên trong giấy; không chép cả phần người nộp nếu làm thay."
       },
       {
         "title": "Chọn loại bản sao",
-        "action": "Cuộn tới Thông tin về giấy tờ hộ tịch đã đăng ký. Mở Loại trích lục bản sao cần cấp và chọn đúng giấy cần xin. Xin giấy khai sinh thì chọn mục khai sinh; trích lục khác phải chọn đúng sự kiện.",
-        "expected": "Loại đã chọn khớp giấy nơi nhận yêu cầu."
+        "action": "Chọn loại bản sao khai sinh hoặc trích lục đúng sự kiện cần xin.",
+        "expected": "Loại giấy khớp yêu cầu của nơi nhận.",
+        "help": "Cuộn tới Thông tin về giấy tờ hộ tịch đã đăng ký. Mở Loại trích lục bản sao cần cấp và chọn đúng giấy cần xin. Xin giấy khai sinh thì chọn mục khai sinh; trích lục khác phải chọn đúng sự kiện."
       },
       {
-        "title": "Nhập thông tin lần đăng ký cũ",
-        "action": "Điền cơ quan đã đăng ký trước đây; so tên giấy, số đăng ký, quyển số và ngày đăng ký với thông tin đang có. Không lấy ngày sinh hoặc số căn cước điền vào số/ngày đăng ký. Chưa rõ ô bắt buộc thì lưu nháp và hỏi nơi tiếp nhận.",
-        "expected": "Không có số hoặc ngày nào do đoán hoặc chép từ ảnh."
+        "title": "Ghi cơ quan đăng ký cũ",
+        "action": "Nhập tên cơ quan đã đăng ký sự kiện trước đây.",
+        "expected": "Tên theo giấy/dữ liệu cũ, không tự thay bằng cơ quan đang nhận hồ sơ.",
+        "help": "Điền cơ quan đã đăng ký trước đây; so tên giấy, số đăng ký, quyển số và ngày đăng ký với thông tin đang có. Không lấy ngày sinh hoặc số căn cước điền vào số/ngày đăng ký. Chưa rõ ô bắt buộc thì lưu nháp và hỏi nơi tiếp nhận."
       },
       {
-        "title": "Chọn số bản và ngày kê khai",
-        "action": "Nhập Số lượng bản sao theo nhu cầu, kiểm tra phần Địa điểm, ngày lập tờ khai bằng ngày thực tế. Không giữ ngày ví dụ trong ảnh và không mặc định xin 5 bản.",
-        "expected": "Số bản và ngày lập tờ khai đúng nhu cầu hiện tại."
+        "title": "Ghi số và quyển đăng ký",
+        "action": "Điền số đăng ký, quyển số nếu có thông tin chính xác.",
+        "expected": "Không dùng số căn cước thay số đăng ký.",
+        "help": "Điền cơ quan đã đăng ký trước đây; so tên giấy, số đăng ký, quyển số và ngày đăng ký với thông tin đang có. Không lấy ngày sinh hoặc số căn cước điền vào số/ngày đăng ký. Chưa rõ ô bắt buộc thì lưu nháp và hỏi nơi tiếp nhận."
       },
       {
-        "title": "Chọn cách nhận kết quả",
-        "action": "Mở Hình thức nhận kết quả; chọn cách dịch vụ đang hỗ trợ. Nếu nhận trực tiếp, xem nơi nhận. Nếu có chuyển phát, kiểm tra địa chỉ/điện thoại và cước. Xem thông tin phí trước khi gửi.",
-        "expected": "Bạn biết cách nhận, nơi nhận và khoản phí cần kiểm tra."
+        "title": "Ghi ngày đăng ký",
+        "action": "Điền ngày đăng ký hộ tịch từ dữ liệu hoặc giấy tờ cũ.",
+        "expected": "Đây không phải ngày sinh hoặc ngày đang nộp hồ sơ.",
+        "help": "Điền cơ quan đã đăng ký trước đây; so tên giấy, số đăng ký, quyển số và ngày đăng ký với thông tin đang có. Không lấy ngày sinh hoặc số căn cước điền vào số/ngày đăng ký. Chưa rõ ô bắt buộc thì lưu nháp và hỏi nơi tiếp nhận."
       },
       {
-        "title": "Đính kèm giấy tờ áp dụng",
-        "action": "Ở Thành phần hồ sơ, đọc điều kiện dòng ủy quyền. Nếu thuộc trường hợp cần nộp, chọn biểu tượng tải lên ở dòng đó → chọn tệp trên thiết bị → chờ tải xong → mở xem lại đúng tệp. Tự xin cho mình không tự tạo giấy ủy quyền. Nếu cổng buộc giấy không áp dụng, hỏi hỗ trợ.",
-        "expected": "Tệp cần nộp đã đúng dòng; không có tệp trống hoặc giấy không liên quan.",
-        "visualId": "ht-uy-quyen-va-nop"
+        "title": "Chọn số bản",
+        "action": "Nhập số bản thực sự cần dùng.",
+        "expected": "Số bản theo nhu cầu, không sao chép số 5 trong ảnh.",
+        "help": "Nhập Số lượng bản sao theo nhu cầu, kiểm tra phần Địa điểm, ngày lập tờ khai bằng ngày thực tế. Không giữ ngày ví dụ trong ảnh và không mặc định xin 5 bản."
       },
       {
-        "title": "Phân biệt lưu nháp và gửi hồ sơ",
-        "action": "Chưa xong thì bấm Lưu hồ sơ. Khi đã so lại toàn bộ thông tin, chọn Lưu và nộp hồ sơ; làm tiếp các bước xác nhận hoặc thanh toán nếu cổng yêu cầu. Nếu báo thiếu, đọc ô lỗi, sửa rồi thử lại; không bấm gửi liên tục.",
-        "expected": "Lưu nháp chưa gửi. Sau khi gửi cần đọc phản hồi của cổng."
+        "title": "Kiểm tra ngày kê khai",
+        "action": "Điền địa điểm và ngày lập tờ khai thực tế.",
+        "expected": "Ngày hiện tại lúc kê khai, khác ngày đăng ký cũ.",
+        "help": "Nhập Số lượng bản sao theo nhu cầu, kiểm tra phần Địa điểm, ngày lập tờ khai bằng ngày thực tế. Không giữ ngày ví dụ trong ảnh và không mặc định xin 5 bản."
       },
       {
-        "title": "Lưu mã và theo dõi",
-        "action": "Chỉ khi cổng báo đã gửi thành công, ghi lại mã hồ sơ của bạn. Vào tài khoản/danh sách hồ sơ hoặc Tra cứu hồ sơ để kiểm tra. Nếu chưa có thông báo, xem hồ sơ đã tồn tại chưa trước khi gửi lại; cần thì hỏi hỗ trợ.",
-        "expected": "Phân biệt bản nháp, đã gửi, đã tiếp nhận và đã có kết quả."
+        "title": "Chọn cách nhận",
+        "action": "Chọn hình thức nhận kết quả mà dịch vụ hỗ trợ.",
+        "expected": "Nơi nhận hoặc địa chỉ trả theo lựa chọn của bạn.",
+        "help": "Mở Hình thức nhận kết quả; chọn cách dịch vụ đang hỗ trợ. Nếu nhận trực tiếp, xem nơi nhận. Nếu có chuyển phát, kiểm tra địa chỉ/điện thoại và cước. Xem thông tin phí trước khi gửi."
+      },
+      {
+        "title": "Kiểm tra phí",
+        "action": "Xem phí của hồ sơ và cước chuyển phát nếu chọn bưu chính.",
+        "expected": "Khoản tiền hoặc thông báo cần liên hệ xác định phí.",
+        "help": "Mở Hình thức nhận kết quả; chọn cách dịch vụ đang hỗ trợ. Nếu nhận trực tiếp, xem nơi nhận. Nếu có chuyển phát, kiểm tra địa chỉ/điện thoại và cước. Xem thông tin phí trước khi gửi."
+      },
+      {
+        "title": "Tìm dòng giấy cần đính kèm",
+        "action": "Ở Thành phần hồ sơ, đọc điều kiện để biết giấy nào áp dụng cho trường hợp của bạn.",
+        "expected": "Có giấy cần tải thì làm tiếp. Không có giấy cần đính kèm thì dùng nút bỏ qua bên dưới.",
+        "help": "Ở Thành phần hồ sơ, đọc điều kiện dòng ủy quyền. Nếu thuộc trường hợp cần nộp, chọn biểu tượng tải lên ở dòng đó → chọn tệp trên thiết bị → chờ tải xong → mở xem lại đúng tệp. Tự xin cho mình không tự tạo giấy ủy quyền. Nếu cổng buộc giấy không áp dụng, hỏi hỗ trợ.",
+        "visualId": "ht-uy-quyen-va-nop",
+        "skipTo": 25,
+        "skipLabel": "Không có giấy cần đính kèm → bỏ qua tải tệp"
+      },
+      {
+        "title": "Mở chỗ chọn tệp",
+        "action": "Bấm chức năng tải tệp tại dòng giấy đó.",
+        "expected": "Cửa sổ chọn tệp hoặc kho giấy tờ của cổng.",
+        "help": "Ở Thành phần hồ sơ, đọc điều kiện dòng ủy quyền. Nếu thuộc trường hợp cần nộp, chọn biểu tượng tải lên ở dòng đó → chọn tệp trên thiết bị → chờ tải xong → mở xem lại đúng tệp. Tự xin cho mình không tự tạo giấy ủy quyền. Nếu cổng buộc giấy không áp dụng, hỏi hỗ trợ."
+      },
+      {
+        "title": "Chọn tệp đã chuẩn bị",
+        "action": "Trong cửa sổ chọn tệp, tìm ảnh hoặc tài liệu đã lưu rồi chọn tệp đó.",
+        "expected": "Tên tệp được chọn. Chưa phải đã gửi hồ sơ.",
+        "help": "Ở Thành phần hồ sơ, đọc điều kiện dòng ủy quyền. Nếu thuộc trường hợp cần nộp, chọn biểu tượng tải lên ở dòng đó → chọn tệp trên thiết bị → chờ tải xong → mở xem lại đúng tệp. Tự xin cho mình không tự tạo giấy ủy quyền. Nếu cổng buộc giấy không áp dụng, hỏi hỗ trợ."
+      },
+      {
+        "title": "Kiểm tra tệp đã gắn",
+        "action": "Chờ tải xong rồi kiểm tra tên tệp đã hiện đúng dòng hồ sơ.",
+        "expected": "Tệp nằm ở dòng giấy cần nộp.",
+        "help": "Ở Thành phần hồ sơ, đọc điều kiện dòng ủy quyền. Nếu thuộc trường hợp cần nộp, chọn biểu tượng tải lên ở dòng đó → chọn tệp trên thiết bị → chờ tải xong → mở xem lại đúng tệp. Tự xin cho mình không tự tạo giấy ủy quyền. Nếu cổng buộc giấy không áp dụng, hỏi hỗ trợ."
+      },
+      {
+        "title": "Mở tệp xem lại",
+        "action": "Dùng nút xem tệp của cổng để kiểm tra đúng giấy, rõ chữ và đủ trang.",
+        "expected": "Bạn đọc được nội dung của đúng giấy cần nộp.",
+        "help": "Ở Thành phần hồ sơ, đọc điều kiện dòng ủy quyền. Nếu thuộc trường hợp cần nộp, chọn biểu tượng tải lên ở dòng đó → chọn tệp trên thiết bị → chờ tải xong → mở xem lại đúng tệp. Tự xin cho mình không tự tạo giấy ủy quyền. Nếu cổng buộc giấy không áp dụng, hỏi hỗ trợ."
+      },
+      {
+        "title": "Lưu nháp nếu muốn làm sau",
+        "action": "Nếu chưa sẵn sàng, chọn nút lưu bản nháp nếu cổng có. Nếu đã sẵn sàng gửi, tiếp tục hướng dẫn.",
+        "expected": "Bản nháp chưa phải hồ sơ đã gửi.",
+        "help": "Chưa xong thì bấm Lưu hồ sơ. Khi đã so lại toàn bộ thông tin, chọn Lưu và nộp hồ sơ; làm tiếp các bước xác nhận hoặc thanh toán nếu cổng yêu cầu. Nếu báo thiếu, đọc ô lỗi, sửa rồi thử lại; không bấm gửi liên tục."
+      },
+      {
+        "title": "Rà lại trước khi gửi",
+        "action": "Đọc lại người nộp, người cần giấy, tệp đã gắn và cách nhận.",
+        "expected": "Các thông tin đúng với yêu cầu của bạn."
+      },
+      {
+        "title": "Gửi yêu cầu trên cổng",
+        "action": "Khi đã so đúng thông tin, bấm Lưu và nộp hồ sơ trên cổng một lần.",
+        "expected": "Cổng đang xử lý hoặc yêu cầu xác nhận tiếp."
+      },
+      {
+        "title": "Làm theo yêu cầu tiếp theo",
+        "action": "Nếu cổng yêu cầu xác nhận hoặc thanh toán, đọc kỹ rồi thực hiện trên cổng chính thức.",
+        "expected": "Thông báo phản hồi sau bước xác nhận.",
+        "help": "Không tự hiểu 0 đồng hoặc chưa xác định là được miễn phí. Nếu có lỗi, đọc thông báo; đừng gửi liên tục."
+      },
+      {
+        "title": "Kiểm tra thông báo đã gửi",
+        "action": "Chờ và đọc phản hồi của cổng. Chỉ coi đã gửi khi cổng xác nhận.",
+        "expected": "Thông báo thành công và mã hồ sơ nếu đã gửi.",
+        "help": "Chưa có phản hồi thì kiểm tra danh sách hồ sơ trước khi thử gửi lại."
+      },
+      {
+        "title": "Lưu mã hồ sơ",
+        "action": "Ghi lại hoặc chụp thông báo có mã hồ sơ của bạn.",
+        "expected": "Bạn có mã để hỏi và tra cứu sau này."
+      },
+      {
+        "title": "Theo dõi hồ sơ",
+        "action": "Mở danh sách hồ sơ trong tài khoản hoặc mục tra cứu trên cổng.",
+        "expected": "Trạng thái tiếp nhận, yêu cầu bổ sung hoặc hẹn trả kết quả.",
+        "help": "Đã gửi, đã tiếp nhận và đã có kết quả là các trạng thái khác nhau."
       }
     ],
     "readyLabel": "Sau thao tác cuối, kiểm tra trên cổng",
@@ -509,7 +635,9 @@
         "problem": "Đã lưu mà không thấy mã hồ sơ",
         "solution": "Lưu hồ sơ có thể mới là bản nháp. Mở lại hồ sơ để kiểm tra; dùng Lưu và nộp hồ sơ khi đã đủ thông tin rồi chờ phản hồi."
       }
-    ]
+    ],
+    "revision": 2,
+    "relatedGuide": "chup-tai-giay-to"
   },
   "duration": "Thời hạn công bố: trong ngày tiếp nhận; nhận sau 15 giờ mà chưa xử lý được thì ngày làm việc kế tiếp. Theo dõi phiếu hẹn và thông báo của cơ quan nếu cần kiểm tra, bổ sung; lưu nháp chưa bắt đầu giải quyết.",
   "fees": "Mức công bố trên Cổng Dịch vụ công Quốc gia: 8.000 đồng cho một bản sao của một sự kiện đã đăng ký. Kiểm tra mức áp dụng, điều kiện miễn/giảm và thông báo thanh toán của hồ sơ tại nơi nộp; cước bưu chính nếu chọn là khoản riêng. Không mặc định trực tuyến luôn miễn phí hoặc số tiền 0 đồng là đã miễn toàn bộ.",
@@ -564,6 +692,12 @@
   "home": {
     "title": "Xin bản sao khai sinh, trích lục hộ tịch",
     "description": "Xin bản sao từ thông tin đã đăng ký, kể cả khi không còn giữ giấy cũ.",
-    "icon": "folder"
+    "icon": "folder",
+    "searchAliases": [
+      "xin lại giấy khai sinh",
+      "mất khai sinh",
+      "mất giấy khai sinh",
+      "bản sao khai sinh cho cháu"
+    ]
   }
 }

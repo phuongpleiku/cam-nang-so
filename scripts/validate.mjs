@@ -16,12 +16,16 @@ if(connections.version!==1||!Object.keys(connections.connections||{}).length)err
 const tutorials=await json('dist/data/huong-dan-chung.json');
 function tutorial(g,label,trail=[]){
  if(!g||typeof g!=='object'){errors.push(`${label}: thiếu hướng dẫn từng bước.`);return;}
+ if(g.revision!==undefined&&(!Number.isInteger(g.revision)||g.revision<1))errors.push(`${label}: revision phải là số nguyên dương.`);
+ if(g.devices!==undefined&&(g.devices!==true||!Array.isArray(g.paths)))errors.push(`${label}: devices chỉ dùng với danh sách nhánh hướng dẫn.`);
+ if(g.device!==undefined&&!['phone','computer'].includes(g.device))errors.push(`${label}: thiết bị không hợp lệ.`);
  if(g.paths){
   if(!Array.isArray(g.paths)||!g.paths.length){errors.push(`${label}: cần danh sách cách thực hiện.`);return;}
   for(const path of g.paths){required(path.label,`${label}.path.label`);tutorial(path,`${label}.${path.label}`,trail);}
  }else{
   if(!Array.isArray(g.steps)||!g.steps.length)errors.push(`${label}: cần ít nhất một bước.`);
   for(const s of g.steps||[]){required(s.title,`${label}.step.title`);required(s.action,`${label}.step.action`);for(const l of s.links||[]){required(l.label,`${label}.link.label`);url(l.url,`${label}.link.url`);}}
+  (g.steps||[]).forEach((s,i)=>{if(s.help!==undefined)required(s.help,`${label}.step.help`);if(s.skipTo!==undefined){if(!Number.isInteger(s.skipTo)||s.skipTo<=i||s.skipTo>=g.steps.length)errors.push(`${label}: đích bỏ qua phải là thao tác phía sau trong cùng nhánh.`);required(s.skipLabel,`${label}.step.skipLabel`);}});
   required(g.ready,`${label}.ready`);
  }
  for(const t of g.troubleshooting||[]){required(t.problem,`${label}.problem`);required(t.solution,`${label}.solution`);}
@@ -35,6 +39,7 @@ for(const entry of entries){
   const p=await json(`dist/data/${entry.file}`),label=entry.file;
  if(p.id!==entry.id)errors.push(`${label}: id không khớp danh mục.`);
  if(p.home){for(const key of ['title','description'])required(p.home[key],`${label}.home.${key}`);}
+ if(p.home?.searchAliases!==undefined){if(!Array.isArray(p.home.searchAliases))errors.push(`${label}: searchAliases cần là danh sách.`);else for(const alias of p.home.searchAliases)required(alias,`${label}.searchAliases`);}
  if(!Number.isInteger(p.version)||p.version<1)errors.push(`${label}: version phải là số nguyên dương.`);
  for(const key of ['title','shortTitle','description','category','officialName','intro','reviewedAt','duration','fees','followUp'])required(p[key],`${label}.${key}`);
  if(!/^\d{4}-\d{2}-\d{2}$/.test(p.reviewedAt)||Number.isNaN(Date.parse(p.reviewedAt)))errors.push(`${label}: ngày kiểm tra nguồn không hợp lệ.`);

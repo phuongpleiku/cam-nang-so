@@ -600,74 +600,208 @@
     }
   ],
   "submissionGuide": {
-    "intro": "Làm trên cổng chính thức và giữ tab Cẩm Nang Số để đối chiếu. Các nhãn dưới đây dựa trên ảnh người biên soạn cung cấp ngày đối chiếu 22/11/2026; giao diện có thể thay đổi.",
+    "intro": "Mỗi màn hình hướng dẫn một việc chính. Làm trên cổng rồi quay lại đọc bước tiếp. Chưa làm được thì mở trợ giúp ngay dưới bước đó.",
     "steps": [
       {
-        "title": "Đăng nhập Cổng Dịch vụ công Quốc gia",
-        "action": "Mở dichvucong.gov.vn. Chọn Đăng nhập và tài khoản VNeID khi cổng yêu cầu; làm theo hướng dẫn đăng nhập ở mục chuẩn bị.",
-        "expected": "Tên tài khoản đúng người nộp; Cẩm Nang Số không hỏi mật khẩu hoặc OTP."
+        "title": "Đăng nhập cổng",
+        "action": "Nếu chưa đăng nhập, mở hướng dẫn đăng nhập phía trên và làm lần lượt.",
+        "expected": "Cổng vào đúng tài khoản của người nộp.",
+        "help": "Mở dichvucong.gov.vn. Chọn Đăng nhập và tài khoản VNeID khi cổng yêu cầu; làm theo hướng dẫn đăng nhập ở mục chuẩn bị."
       },
       {
-        "title": "Tìm đúng mã 1.004873",
-        "action": "Tại ô tìm kiếm, nhập 1.004873. Chọn kết quả Thủ tục cấp Giấy xác nhận tình trạng hôn nhân.",
-        "expected": "Tên thủ tục và mã trùng khớp, không phải đăng ký kết hôn."
+        "title": "Tìm thủ tục",
+        "action": "Nhập 1.004873 vào ô tìm kiếm trên Cổng Dịch vụ công Quốc gia.",
+        "expected": "Kết quả có mã 1.004873.",
+        "help": "Tại ô tìm kiếm, nhập 1.004873. Chọn kết quả Thủ tục cấp Giấy xác nhận tình trạng hôn nhân."
       },
       {
-        "title": "Chọn tỉnh và phường đúng nơi giải quyết",
-        "action": "Trong Chọn cơ quan thực hiện, chọn Tỉnh Gia Lai và Phường Pleiku khi đúng thẩm quyền, rồi bấm Nộp hồ sơ.",
-        "expected": "Cổng có thể chuyển tới Danh sách dịch vụ công trước khi mở tờ khai."
+        "title": "Mở trang thủ tục",
+        "action": "Chọn Thủ tục cấp Giấy xác nhận tình trạng hôn nhân.",
+        "expected": "Trang chi tiết đúng tên thủ tục.",
+        "help": "Tại ô tìm kiếm, nhập 1.004873. Chọn kết quả Thủ tục cấp Giấy xác nhận tình trạng hôn nhân."
       },
       {
-        "title": "Mở dịch vụ trực tuyến của phường",
-        "action": "Ở Danh sách dịch vụ công, kiểm tra Cơ quan thực hiện là UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; chọn Nộp trực tuyến tại đúng dòng.",
-        "expected": "Tờ khai có tiêu đề cấp giấy xác nhận và Kính gửi UBND phường Pleiku."
+        "title": "Chọn tỉnh",
+        "action": "Ở phần chọn cơ quan, chọn Tỉnh Gia Lai khi phù hợp hồ sơ.",
+        "expected": "Tên tỉnh đã chọn.",
+        "help": "Trong Chọn cơ quan thực hiện, chọn Tỉnh Gia Lai và Phường Pleiku khi đúng thẩm quyền, rồi bấm Nộp hồ sơ."
       },
       {
-        "title": "So phần Thông tin người nộp",
-        "action": "Kiểm tra số định danh, họ tên, ngày sinh, giấy tờ, ngày cấp, nơi cấp và loại cư trú. Điền số điện thoại đang dùng. Ô khóa mà sai thì hỏi nơi tiếp nhận trước khi gửi.",
-        "expected": "Thông tin là của người đang nộp, không lấy thông tin người trong ảnh."
+        "title": "Chọn phường",
+        "action": "Chọn Phường Pleiku nếu đúng nơi có thẩm quyền.",
+        "expected": "Tên cơ quan phù hợp; chưa rõ thì hỏi hỗ trợ trước.",
+        "help": "Trong Chọn cơ quan thực hiện, chọn Tỉnh Gia Lai và Phường Pleiku khi đúng thẩm quyền, rồi bấm Nộp hồ sơ."
       },
       {
-        "title": "Chọn Bản thân hoặc Khác",
-        "action": "Tại Quan hệ với người được cấp giấy, chọn Bản thân nếu tự xin. Nếu được ủy quyền chọn Khác và so lại phần Thông tin về người được cấp giấy.",
-        "expected": "Hai phần thể hiện đúng từng người; làm thay có văn bản ủy quyền theo trường hợp."
+        "title": "Mở danh sách dịch vụ",
+        "action": "Bấm Nộp hồ sơ.",
+        "expected": "Danh sách dịch vụ công hoặc biểu mẫu của thủ tục.",
+        "help": "Trong Chọn cơ quan thực hiện, chọn Tỉnh Gia Lai và Phường Pleiku khi đúng thẩm quyền, rồi bấm Nộp hồ sơ."
       },
       {
-        "title": "Kiểm tra loại đăng ký và nơi cư trú",
-        "action": "Chọn lần đầu/cấp lại phù hợp lịch sử cấp giấy theo lựa chọn thực tế trên cổng. So địa chỉ, quốc gia, tỉnh, xã/phường, loại cư trú.",
-        "expected": "Không để mặc định đăng ký lần đầu nếu đang xin lại giấy cũ."
+        "title": "Áp dụng địa bàn nếu cần",
+        "action": "Nếu vừa thay đổi địa bàn ở danh sách dịch vụ, bấm Đồng ý.",
+        "expected": "Dịch vụ của đúng cơ quan đã chọn.",
+        "help": "Ở Danh sách dịch vụ công, kiểm tra Cơ quan thực hiện là UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; chọn Nộp trực tuyến tại đúng dòng."
       },
       {
-        "title": "Chọn đúng tình trạng và mục đích",
-        "action": "Khai đúng tình trạng hôn nhân. Dùng để kết hôn thì chọn mục đích kết hôn, điền đối phương và nơi đăng ký theo cổng. Không chọn mục đích khác rồi nhập đăng ký kết hôn.",
-        "expected": "Phần chọn và phần diễn giải thống nhất; tình trạng không bị chép theo ảnh."
+        "title": "Mở biểu mẫu trực tuyến",
+        "action": "Bấm Nộp trực tuyến tại dòng của đúng cơ quan.",
+        "expected": "Tờ khai có tên thủ tục và Kính gửi đúng nơi giải quyết.",
+        "help": "Ở Danh sách dịch vụ công, kiểm tra Cơ quan thực hiện là UBND phường Pleiku. Nếu vừa đổi địa bàn, bấm Đồng ý để áp dụng; chọn Nộp trực tuyến tại đúng dòng."
       },
       {
-        "title": "Kiểm tra số bản, ngày lập và cách nhận",
-        "action": "Ô Số lượng bản sao ghi điền 0 nếu không cần: nhập 0 khi không yêu cầu; nếu cần hỏi rõ loại bản. Không chép số 5. Chọn nơi/ngày lập thực tế và hình thức nhận cổng hỗ trợ.",
-        "expected": "Xin giấy để kết hôn chỉ cấp 01 bản; ô bản sao không tự thay đổi quy định này."
+        "title": "So thông tin người nộp",
+        "action": "Đọc và đối chiếu các ô thông tin người nộp được điền sẵn.",
+        "expected": "Thông tin thuộc người đang nộp.",
+        "help": "Kiểm tra số định danh, họ tên, ngày sinh, giấy tờ, ngày cấp, nơi cấp và loại cư trú. Điền số điện thoại đang dùng. Ô khóa mà sai thì hỏi nơi tiếp nhận trước khi gửi."
       },
       {
-        "title": "Đọc từng dòng Thành phần hồ sơ",
-        "action": "Dòng giấy cũ áp dụng khi cấp lại theo điều kiện; dòng ly hôn/khai tử áp dụng theo lịch sử; dòng ủy quyền áp dụng khi làm thay. Dữ liệu cơ quan khai thác được không phải tự tải lại. Nếu cổng bắt tệp không đúng trường hợp, hỏi cán bộ, không tải tệp trống.",
-        "expected": "Bạn xác định được dòng nào áp dụng cho mình.",
+        "title": "Điền số điện thoại",
+        "action": "Điền số điện thoại đang dùng vào ô liên hệ.",
+        "expected": "Số điện thoại đúng để nhận thông báo.",
+        "help": "Kiểm tra số định danh, họ tên, ngày sinh, giấy tờ, ngày cấp, nơi cấp và loại cư trú. Điền số điện thoại đang dùng. Ô khóa mà sai thì hỏi nơi tiếp nhận trước khi gửi."
+      },
+      {
+        "title": "Chọn quan hệ",
+        "action": "Chọn Bản thân nếu tự xin; chọn Khác nếu làm theo ủy quyền.",
+        "expected": "Quan hệ phù hợp với hồ sơ.",
+        "help": "Tại Quan hệ với người được cấp giấy, chọn Bản thân nếu tự xin. Nếu được ủy quyền chọn Khác và so lại phần Thông tin về người được cấp giấy."
+      },
+      {
+        "title": "Kiểm tra người được cấp giấy",
+        "action": "So phần người được cấp giấy; nếu làm thay, đây là thông tin của người ủy quyền.",
+        "expected": "Hai phần thuộc đúng từng người.",
+        "help": "Tại Quan hệ với người được cấp giấy, chọn Bản thân nếu tự xin. Nếu được ủy quyền chọn Khác và so lại phần Thông tin về người được cấp giấy."
+      },
+      {
+        "title": "Chọn lần đầu hoặc cấp lại",
+        "action": "Chọn loại đăng ký đúng với việc trước đây đã từng được cấp giấy hay chưa.",
+        "expected": "Không để lần đầu nếu đang xin lại giấy.",
+        "help": "Chọn lần đầu/cấp lại phù hợp lịch sử cấp giấy theo lựa chọn thực tế trên cổng. So địa chỉ, quốc gia, tỉnh, xã/phường, loại cư trú."
+      },
+      {
+        "title": "So nơi cư trú",
+        "action": "Kiểm tra địa chỉ và loại cư trú của người cần giấy.",
+        "expected": "Nơi cư trú đúng dữ liệu hợp lệ.",
+        "help": "Chọn lần đầu/cấp lại phù hợp lịch sử cấp giấy theo lựa chọn thực tế trên cổng. So địa chỉ, quốc gia, tỉnh, xã/phường, loại cư trú."
+      },
+      {
+        "title": "Chọn tình trạng hôn nhân",
+        "action": "Chọn tình trạng thực tế của người cần giấy.",
+        "expected": "Đúng trường hợp chưa kết hôn, đang có vợ/chồng, đã ly hôn hoặc vợ/chồng đã mất.",
+        "help": "Khai đúng tình trạng hôn nhân. Dùng để kết hôn thì chọn mục đích kết hôn, điền đối phương và nơi đăng ký theo cổng. Không chọn mục đích khác rồi nhập đăng ký kết hôn."
+      },
+      {
+        "title": "Chọn mục đích dùng giấy",
+        "action": "Chọn đúng mục đích kết hôn hoặc mục đích khác.",
+        "expected": "Mục đích phù hợp việc bạn cần làm.",
+        "help": "Khai đúng tình trạng hôn nhân. Dùng để kết hôn thì chọn mục đích kết hôn, điền đối phương và nơi đăng ký theo cổng. Không chọn mục đích khác rồi nhập đăng ký kết hôn."
+      },
+      {
+        "title": "Điền nội dung theo mục đích",
+        "action": "Nếu kết hôn, điền thông tin đối phương và nơi dự định đăng ký theo cổng; mục đích khác thì ghi việc cụ thể.",
+        "expected": "Nội dung nhập khớp mục đích đã chọn.",
+        "help": "Khai đúng tình trạng hôn nhân. Dùng để kết hôn thì chọn mục đích kết hôn, điền đối phương và nơi đăng ký theo cổng. Không chọn mục đích khác rồi nhập đăng ký kết hôn."
+      },
+      {
+        "title": "Kiểm tra số bản",
+        "action": "Điền số bản sao theo nhu cầu và chỉ dẫn của ô; không cần thì nhập 0 khi ô hướng dẫn như vậy.",
+        "expected": "Không chép số 5 trong ảnh. Xin giấy để kết hôn chỉ cấp 01 bản.",
+        "help": "Ô Số lượng bản sao ghi điền 0 nếu không cần: nhập 0 khi không yêu cầu; nếu cần hỏi rõ loại bản. Không chép số 5. Chọn nơi/ngày lập thực tế và hình thức nhận cổng hỗ trợ."
+      },
+      {
+        "title": "Kiểm tra ngày lập",
+        "action": "Điền địa điểm và ngày lập tờ khai thực tế.",
+        "expected": "Không giữ ngày minh họa trong ảnh.",
+        "help": "Ô Số lượng bản sao ghi điền 0 nếu không cần: nhập 0 khi không yêu cầu; nếu cần hỏi rõ loại bản. Không chép số 5. Chọn nơi/ngày lập thực tế và hình thức nhận cổng hỗ trợ."
+      },
+      {
+        "title": "Chọn cách nhận",
+        "action": "Chọn hình thức nhận được cổng hỗ trợ.",
+        "expected": "Bạn biết nhận tại đâu hoặc địa chỉ chuyển phát nếu có.",
+        "help": "Ô Số lượng bản sao ghi điền 0 nếu không cần: nhập 0 khi không yêu cầu; nếu cần hỏi rõ loại bản. Không chép số 5. Chọn nơi/ngày lập thực tế và hình thức nhận cổng hỗ trợ."
+      },
+      {
+        "title": "Xác định giấy cần nộp",
+        "action": "Đọc điều kiện từng dòng giấy tờ để biết dòng nào áp dụng cho mình.",
+        "expected": "Giấy cũ, giấy về ly hôn/khai tử và ủy quyền áp dụng theo trường hợp.",
+        "help": "Dòng giấy cũ áp dụng khi cấp lại theo điều kiện; dòng ly hôn/khai tử áp dụng theo lịch sử; dòng ủy quyền áp dụng khi làm thay. Dữ liệu cơ quan khai thác được không phải tự tải lại. Nếu cổng bắt tệp không đúng trường hợp, hỏi cán bộ, không tải tệp trống.",
         "visualId": "hn-thanh-phan"
       },
       {
-        "title": "Gắn tệp đúng dòng và mở kiểm tra",
-        "action": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác.",
-        "expected": "Tệp được gắn đúng dòng, rõ và đủ trang; chưa phải đã gửi hồ sơ."
+        "title": "Tìm dòng giấy cần đính kèm",
+        "action": "Ở Thành phần hồ sơ, đọc điều kiện để biết giấy nào áp dụng cho trường hợp của bạn.",
+        "expected": "Có giấy cần tải thì làm tiếp. Không có giấy cần đính kèm thì dùng nút bỏ qua bên dưới.",
+        "help": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác.",
+        "visualId": "hn-thanh-phan",
+        "skipTo": 26,
+        "skipLabel": "Không có giấy cần đính kèm → bỏ qua tải tệp"
       },
       {
-        "title": "Phân biệt Lưu hồ sơ với Lưu và nộp hồ sơ",
-        "action": "Muốn làm sau, chọn Lưu hồ sơ và kiểm tra bản nháp được lưu. Đã so đủ thông tin và tệp thì chọn Lưu và nộp hồ sơ trên cổng. Đọc các yêu cầu xác nhận hoặc thanh toán tiếp theo nếu có.",
-        "expected": "Chỉ lưu bản nháp chưa phải gửi. Không bấm lặp lại liên tục khi cổng đang xử lý.",
+        "title": "Mở chỗ chọn tệp",
+        "action": "Bấm chức năng tải tệp tại dòng giấy đó.",
+        "expected": "Cửa sổ chọn tệp hoặc kho giấy tờ của cổng.",
+        "help": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác."
+      },
+      {
+        "title": "Chọn tệp đã chuẩn bị",
+        "action": "Trong cửa sổ chọn tệp, tìm ảnh hoặc tài liệu đã lưu rồi chọn tệp đó.",
+        "expected": "Tên tệp được chọn. Chưa phải đã gửi hồ sơ.",
+        "help": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác."
+      },
+      {
+        "title": "Kiểm tra tệp đã gắn",
+        "action": "Chờ tải xong rồi kiểm tra tên tệp đã hiện đúng dòng hồ sơ.",
+        "expected": "Tệp nằm ở dòng giấy cần nộp.",
+        "help": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác."
+      },
+      {
+        "title": "Mở tệp xem lại",
+        "action": "Dùng nút xem tệp của cổng để kiểm tra đúng giấy, rõ chữ và đủ trang.",
+        "expected": "Bạn đọc được nội dung của đúng giấy cần nộp.",
+        "help": "Tại cột Tài liệu đính kèm, xem nhãn khi chạm/rê chuột vào biểu tượng để tìm chức năng tải hoặc lấy giấy từ kho nếu được hỗ trợ. Chọn tệp rồi kiểm tra tên tệp hiển thị và mở xem. Ảnh không cho thấy hộp chọn tệp nên tên nút bên trong có thể khác."
+      },
+      {
+        "title": "Lưu nháp nếu muốn làm sau",
+        "action": "Nếu chưa sẵn sàng, chọn nút lưu bản nháp nếu cổng có. Nếu đã sẵn sàng gửi, tiếp tục hướng dẫn.",
+        "expected": "Bản nháp chưa phải hồ sơ đã gửi.",
+        "help": "Muốn làm sau, chọn Lưu hồ sơ và kiểm tra bản nháp được lưu. Đã so đủ thông tin và tệp thì chọn Lưu và nộp hồ sơ trên cổng. Đọc các yêu cầu xác nhận hoặc thanh toán tiếp theo nếu có.",
         "visualId": "hn-luu-va-nop"
       },
       {
-        "title": "Kiểm tra đã gửi và theo dõi phản hồi",
-        "action": "Chờ thông báo gửi thành công; lưu mã hồ sơ của mình. Mở danh sách hồ sơ trong tài khoản hoặc Tra cứu hồ sơ để xem tiếp nhận, bổ sung, phí và lịch hẹn. Nếu chưa có mã, kiểm tra hồ sơ đã lưu/đã gửi trước khi thử lại.",
-        "expected": "Bộ ảnh chưa có màn hình gửi thành công; không dùng ảnh nút Lưu và nộp làm bằng chứng hồ sơ đã gửi."
+        "title": "Rà lại trước khi gửi",
+        "action": "Đọc lại người nộp, người cần giấy, tệp đã gắn và cách nhận.",
+        "expected": "Các thông tin đúng với yêu cầu của bạn."
+      },
+      {
+        "title": "Gửi yêu cầu trên cổng",
+        "action": "Khi đã so đúng thông tin, bấm Lưu và nộp hồ sơ trên cổng một lần.",
+        "expected": "Cổng đang xử lý hoặc yêu cầu xác nhận tiếp.",
+        "visualId": "hn-luu-va-nop"
+      },
+      {
+        "title": "Làm theo yêu cầu tiếp theo",
+        "action": "Nếu cổng yêu cầu xác nhận hoặc thanh toán, đọc kỹ rồi thực hiện trên cổng chính thức.",
+        "expected": "Thông báo phản hồi sau bước xác nhận.",
+        "help": "Không tự hiểu 0 đồng hoặc chưa xác định là được miễn phí. Nếu có lỗi, đọc thông báo; đừng gửi liên tục."
+      },
+      {
+        "title": "Kiểm tra thông báo đã gửi",
+        "action": "Chờ và đọc phản hồi của cổng. Chỉ coi đã gửi khi cổng xác nhận.",
+        "expected": "Thông báo thành công và mã hồ sơ nếu đã gửi.",
+        "help": "Chưa có phản hồi thì kiểm tra danh sách hồ sơ trước khi thử gửi lại."
+      },
+      {
+        "title": "Lưu mã hồ sơ",
+        "action": "Ghi lại hoặc chụp thông báo có mã hồ sơ của bạn.",
+        "expected": "Bạn có mã để hỏi và tra cứu sau này."
+      },
+      {
+        "title": "Theo dõi hồ sơ",
+        "action": "Mở danh sách hồ sơ trong tài khoản hoặc mục tra cứu trên cổng.",
+        "expected": "Trạng thái tiếp nhận, yêu cầu bổ sung hoặc hẹn trả kết quả.",
+        "help": "Đã gửi, đã tiếp nhận và đã có kết quả là các trạng thái khác nhau."
       }
     ],
     "readyLabel": "Sau thao tác cuối, kiểm tra trên cổng",
@@ -693,7 +827,9 @@
         "problem": "Tôi không nộp lại được giấy cũ",
         "solution": "Khai rõ lý do, thông tin giấy trước và tình trạng sử dụng. Hỏi cán bộ hướng dẫn việc xác minh hoặc cam đoan khi đủ điều kiện; không tự chọn đăng ký lần đầu."
       }
-    ]
+    ],
+    "revision": 2,
+    "relatedGuide": "chup-tai-giay-to"
   },
   "submission": [
     "Đăng nhập Cổng Dịch vụ công Quốc gia, tìm 1.004873 và chọn đúng cơ quan có thẩm quyền.",
@@ -749,6 +885,10 @@
   "home": {
     "title": "Xin giấy xác nhận tình trạng hôn nhân",
     "description": "Thường gọi là “giấy độc thân”. Chọn đúng mục đích sử dụng và trường hợp của bạn.",
-    "icon": "heart"
+    "icon": "heart",
+    "searchAliases": [
+      "xin giấy độc thân",
+      "giấy xác nhận độc thân"
+    ]
   }
 }

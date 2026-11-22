@@ -528,76 +528,207 @@
   "submissionGuide": {
     "steps": [
       {
-        "title": "Đăng nhập và tìm đúng mã thủ tục",
-        "action": "Mở Cổng Dịch vụ công Quốc gia. Nếu chưa đăng nhập, dùng VNeID theo hướng dẫn ở mục Chuẩn bị. Nhập 2.000815 vào ô tìm kiếm rồi chọn thủ tục Chứng thực bản sao từ bản chính.",
-        "expected": "Tên thủ tục và mã 2.000815. Nếu không tìm thấy, tìm bằng cụm “Chứng thực bản sao từ bản chính”."
+        "title": "Đăng nhập cổng",
+        "action": "Nếu chưa đăng nhập, mở hướng dẫn đăng nhập phía trên và làm lần lượt.",
+        "expected": "Cổng mở bằng tài khoản đúng người nộp.",
+        "help": "Mở Cổng Dịch vụ công Quốc gia. Nếu chưa đăng nhập, dùng VNeID theo hướng dẫn ở mục Chuẩn bị. Nhập 2.000815 vào ô tìm kiếm rồi chọn thủ tục Chứng thực bản sao từ bản chính."
       },
       {
-        "title": "Chọn Gia Lai và phường Pleiku",
-        "action": "Tại Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku. Bấm Nộp hồ sơ. Trên điện thoại, phần chọn cơ quan có thể nằm dưới nội dung thủ tục.",
-        "expected": "Cổng chuyển sang hệ thống ngành Tư pháp; kiểm tra tên miền dichvucongnganhtuphap.moj.gov.vn.",
+        "title": "Tìm thủ tục",
+        "action": "Nhập 2.000815 vào ô tìm kiếm của Cổng Dịch vụ công Quốc gia.",
+        "expected": "Kết quả tìm kiếm có mã 2.000815.",
+        "help": "Mở Cổng Dịch vụ công Quốc gia. Nếu chưa đăng nhập, dùng VNeID theo hướng dẫn ở mục Chuẩn bị. Nhập 2.000815 vào ô tìm kiếm rồi chọn thủ tục Chứng thực bản sao từ bản chính."
+      },
+      {
+        "title": "Mở kết quả phù hợp",
+        "action": "Chọn Chứng thực bản sao từ bản chính trong kết quả tìm kiếm.",
+        "expected": "Trang chi tiết thủ tục chứng thực bản sao.",
+        "help": "Mở Cổng Dịch vụ công Quốc gia. Nếu chưa đăng nhập, dùng VNeID theo hướng dẫn ở mục Chuẩn bị. Nhập 2.000815 vào ô tìm kiếm rồi chọn thủ tục Chứng thực bản sao từ bản chính."
+      },
+      {
+        "title": "Chọn tỉnh",
+        "action": "Trong Chọn cơ quan thực hiện, chọn Tỉnh Gia Lai.",
+        "expected": "Tên tỉnh đã chọn.",
+        "help": "Tại Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku. Bấm Nộp hồ sơ. Trên điện thoại, phần chọn cơ quan có thể nằm dưới nội dung thủ tục.",
         "visualId": "ct-chon-thu-tuc"
       },
       {
-        "title": "Xác nhận nơi tiếp nhận và người thực hiện",
-        "action": "Trong hộp chọn, kiểm tra Cấp Xã, Tỉnh Gia Lai, đúng tên thủ tục, UBND phường Pleiku, Tỉnh Gia Lai và đơn vị Trung tâm phục vụ hành chính công UBND phường Pleiku, Tỉnh Gia Lai. Chọn đúng Đối tượng thực hiện; nếu làm cho mình thì chọn Làm thủ tục cho bản thân. Sau đó bấm Xác nhận.",
-        "expected": "Mở biểu mẫu nộp hồ sơ. Nếu cổng yêu cầu đăng nhập thêm, hoàn tất trên trang chính thức rồi kiểm tra lại cơ quan."
+        "title": "Chọn phường",
+        "action": "Tại Phường/Xã, chọn Phường Pleiku.",
+        "expected": "Tên phường đã chọn.",
+        "help": "Tại Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku. Bấm Nộp hồ sơ. Trên điện thoại, phần chọn cơ quan có thể nằm dưới nội dung thủ tục.",
+        "visualId": "ct-chon-thu-tuc"
       },
       {
-        "title": "Kiểm tra Thông tin chủ hồ sơ",
-        "action": "Đọc lại các thông tin được điền sẵn. Bổ sung Ngày cấp, Nơi cấp, Số điện thoại, Địa chỉ chi tiết theo dữ liệu của chính người làm thủ tục. Email: chỉ nhập nếu có và cổng yêu cầu. Bấm Bước tiếp theo khi thông tin đúng.",
-        "expected": "Các ô bắt buộc không còn báo thiếu. Nếu dữ liệu tự điền sai và không sửa được, dừng để hỏi nơi tiếp nhận."
+        "title": "Mở nơi nộp",
+        "action": "Bấm Nộp hồ sơ trên trang chi tiết.",
+        "expected": "Cổng ngành Tư pháp; kiểm tra tên miền dichvucongnganhtuphap.moj.gov.vn.",
+        "help": "Tại Chọn cơ quan thực hiện, chọn Tỉnh/Thành phố → Tỉnh Gia Lai; chọn Phường/Xã → Phường Pleiku. Bấm Nộp hồ sơ. Trên điện thoại, phần chọn cơ quan có thể nằm dưới nội dung thủ tục.",
+        "visualId": "ct-chon-thu-tuc"
       },
       {
-        "title": "Điền bước Kê khai thông tin",
-        "action": "Làm theo các ô thực tế trên cổng; dùng giấy tờ gốc và nhu cầu chứng thực của bạn. Bộ ảnh không có nội dung chi tiết của bước này, nên không sao chép giá trị giả định. Đọc lỗi ngay dưới ô nếu cổng chưa cho tiếp tục.",
-        "expected": "Khi hoàn thành, cổng chuyển sang Thành phần hồ sơ."
+        "title": "Kiểm tra nơi tiếp nhận",
+        "action": "Trong hộp chọn cơ quan, kiểm tra cơ quan và đơn vị tiếp nhận của phường Pleiku.",
+        "expected": "Đúng nơi tiếp nhận bạn muốn chọn.",
+        "help": "Trong hộp chọn, kiểm tra Cấp Xã, Tỉnh Gia Lai, đúng tên thủ tục, UBND phường Pleiku, Tỉnh Gia Lai và đơn vị Trung tâm phục vụ hành chính công UBND phường Pleiku, Tỉnh Gia Lai. Chọn đúng Đối tượng thực hiện; nếu làm cho mình thì chọn Làm thủ tục cho bản thân. Sau đó bấm Xác nhận."
       },
       {
-        "title": "Bấm Chọn tệp đính kèm",
-        "action": "Tại Thành phần hồ sơ, tìm dòng bản chính giấy tờ và bản sao cần chứng thực. Bấm Chọn tệp đính kèm. Nếu nút nằm ngoài màn hình điện thoại, cuộn trong bảng hoặc phóng to trang để tìm.",
-        "expected": "Cửa sổ Danh sách tài liệu điện tử.",
+        "title": "Chọn người thực hiện",
+        "action": "Chọn Đối tượng thực hiện phù hợp; tự làm thì chọn Làm thủ tục cho bản thân.",
+        "expected": "Đối tượng thực hiện đúng trường hợp.",
+        "help": "Trong hộp chọn, kiểm tra Cấp Xã, Tỉnh Gia Lai, đúng tên thủ tục, UBND phường Pleiku, Tỉnh Gia Lai và đơn vị Trung tâm phục vụ hành chính công UBND phường Pleiku, Tỉnh Gia Lai. Chọn đúng Đối tượng thực hiện; nếu làm cho mình thì chọn Làm thủ tục cho bản thân. Sau đó bấm Xác nhận."
+      },
+      {
+        "title": "Xác nhận lựa chọn",
+        "action": "Bấm Xác nhận sau khi cơ quan và đối tượng đã đúng.",
+        "expected": "Biểu mẫu nộp hồ sơ hoặc yêu cầu đăng nhập của cổng.",
+        "help": "Trong hộp chọn, kiểm tra Cấp Xã, Tỉnh Gia Lai, đúng tên thủ tục, UBND phường Pleiku, Tỉnh Gia Lai và đơn vị Trung tâm phục vụ hành chính công UBND phường Pleiku, Tỉnh Gia Lai. Chọn đúng Đối tượng thực hiện; nếu làm cho mình thì chọn Làm thủ tục cho bản thân. Sau đó bấm Xác nhận."
+      },
+      {
+        "title": "Kiểm tra thông tin có sẵn",
+        "action": "So các ô thông tin chủ hồ sơ với giấy tờ của người nộp.",
+        "expected": "Thông tin đúng; nếu ô bị khóa mà sai thì nhờ hỗ trợ.",
+        "help": "Đọc lại các thông tin được điền sẵn. Bổ sung Ngày cấp, Nơi cấp, Số điện thoại, Địa chỉ chi tiết theo dữ liệu của chính người làm thủ tục. Email: chỉ nhập nếu có và cổng yêu cầu. Bấm Bước tiếp theo khi thông tin đúng."
+      },
+      {
+        "title": "Bổ sung thông tin còn thiếu",
+        "action": "Điền ngày cấp, nơi cấp, số điện thoại và địa chỉ vào các ô còn thiếu theo giấy tờ của bạn.",
+        "expected": "Các ô bắt buộc đã có thông tin. Email chỉ nhập khi có và được yêu cầu.",
+        "help": "Đọc lại các thông tin được điền sẵn. Bổ sung Ngày cấp, Nơi cấp, Số điện thoại, Địa chỉ chi tiết theo dữ liệu của chính người làm thủ tục. Email: chỉ nhập nếu có và cổng yêu cầu. Bấm Bước tiếp theo khi thông tin đúng."
+      },
+      {
+        "title": "Chuyển sang kê khai",
+        "action": "Bấm Bước tiếp theo sau khi kiểm tra thông tin chủ hồ sơ.",
+        "expected": "Phần Kê khai thông tin.",
+        "help": "Đọc lại các thông tin được điền sẵn. Bổ sung Ngày cấp, Nơi cấp, Số điện thoại, Địa chỉ chi tiết theo dữ liệu của chính người làm thủ tục. Email: chỉ nhập nếu có và cổng yêu cầu. Bấm Bước tiếp theo khi thông tin đúng."
+      },
+      {
+        "title": "Điền phần kê khai",
+        "action": "Điền từng ô đang hiển thị theo giấy tờ và nhu cầu chứng thực của bạn.",
+        "expected": "Phần kê khai của hồ sơ. Bộ ảnh hiện có chưa thể hiện chi tiết màn hình này.",
+        "help": "Làm theo các ô thực tế trên cổng; dùng giấy tờ gốc và nhu cầu chứng thực của bạn. Bộ ảnh không có nội dung chi tiết của bước này, nên không sao chép giá trị giả định. Đọc lỗi ngay dưới ô nếu cổng chưa cho tiếp tục."
+      },
+      {
+        "title": "Chuyển sang giấy tờ",
+        "action": "Dùng nút chuyển tiếp của cổng khi đã kê khai đúng.",
+        "expected": "Phần Thành phần hồ sơ; nếu báo thiếu, đọc ô lỗi trước.",
+        "help": "Làm theo các ô thực tế trên cổng; dùng giấy tờ gốc và nhu cầu chứng thực của bạn. Bộ ảnh không có nội dung chi tiết của bước này, nên không sao chép giá trị giả định. Đọc lỗi ngay dưới ô nếu cổng chưa cho tiếp tục."
+      },
+      {
+        "title": "Mở dòng đính kèm",
+        "action": "Ở dòng bản chính và bản sao cần chứng thực, bấm Chọn tệp đính kèm.",
+        "expected": "Danh sách tài liệu điện tử.",
+        "help": "Tại Thành phần hồ sơ, tìm dòng bản chính giấy tờ và bản sao cần chứng thực. Bấm Chọn tệp đính kèm. Nếu nút nằm ngoài màn hình điện thoại, cuộn trong bảng hoặc phóng to trang để tìm.",
         "visualId": "ct-thanh-phan"
       },
       {
-        "title": "Mở chỗ tải giấy tờ từ thiết bị",
-        "action": "Trong Ví cá nhân → Tài liệu tải lên, bấm Tải lên từ thiết bị. Nếu đã có đúng tài liệu trong ví, kiểm tra nội dung và chọn theo nút cổng hiển thị. Ví trống không có nghĩa hồ sơ bị lỗi.",
-        "expected": "Cổng mở chỗ chọn tệp hoặc màn hình lựa chọn tải lên.",
+        "title": "Mở chỗ tải từ thiết bị",
+        "action": "Trong Tài liệu tải lên, bấm Tải lên từ thiết bị nếu giấy chưa có trong ví.",
+        "expected": "Chỗ chọn hoặc tải tệp.",
+        "help": "Trong Ví cá nhân → Tài liệu tải lên, bấm Tải lên từ thiết bị. Nếu đã có đúng tài liệu trong ví, kiểm tra nội dung và chọn theo nút cổng hiển thị. Ví trống không có nghĩa hồ sơ bị lỗi.",
         "visualId": "ct-vi-tai-lieu"
       },
       {
-        "title": "Chọn đúng tệp hoặc tạo tệp từ nhiều ảnh",
-        "action": "Nếu có sẵn PDF/ảnh phù hợp, chọn Tải lên từ thiết bị và tìm tệp đã chuẩn bị. Nếu cổng hiển thị Tạo tệp đính kèm từ nhiều hình ảnh, có thể dùng để ghép đủ các trang theo đúng thứ tự. Làm theo nút xác nhận thực tế; đọc giới hạn định dạng/dung lượng trên cổng.",
-        "expected": "Chọn xong phải trở lại hồ sơ để kiểm tra tệp đã được gắn. Tải vào ví chưa chắc đã gắn vào hồ sơ.",
+        "title": "Chọn tệp đã chuẩn bị",
+        "action": "Chọn tệp ảnh/PDF đã lưu trên thiết bị theo định dạng cổng chấp nhận.",
+        "expected": "Tên tệp được chọn.",
+        "help": "Nếu có sẵn PDF/ảnh phù hợp, chọn Tải lên từ thiết bị và tìm tệp đã chuẩn bị. Nếu cổng hiển thị Tạo tệp đính kèm từ nhiều hình ảnh, có thể dùng để ghép đủ các trang theo đúng thứ tự. Làm theo nút xác nhận thực tế; đọc giới hạn định dạng/dung lượng trên cổng.",
         "visualId": "ct-tai-tu-thiet-bi"
       },
       {
-        "title": "So tệp và loại chứng thực trước khi đi tiếp",
-        "action": "Kiểm tra tên tệp hiện ở đúng dòng. Bấm biểu tượng con mắt để xem lại đủ trang, rõ chữ và đúng giấy; nếu sai, dùng nút xóa cạnh tệp rồi chọn lại. Chọn Loại chứng thực theo nhu cầu. Ghi chú là nội dung bổ sung, không thay tệp. Chỉ thêm thành phần khi có nhu cầu/yêu cầu phù hợp. Bấm Bước tiếp theo.",
-        "expected": "Tệp vẫn hiển thị ở dòng hồ sơ và chuyển sang Thông tin nhận kết quả.",
+        "title": "Gắn tệp vào hồ sơ",
+        "action": "Làm theo nút xác nhận của cửa sổ chọn tài liệu để gắn tệp vào hồ sơ.",
+        "expected": "Tên tệp hiện ở dòng giấy tờ. Chỉ tải vào ví chưa chắc đã gắn vào hồ sơ.",
+        "help": "Nếu có sẵn PDF/ảnh phù hợp, chọn Tải lên từ thiết bị và tìm tệp đã chuẩn bị. Nếu cổng hiển thị Tạo tệp đính kèm từ nhiều hình ảnh, có thể dùng để ghép đủ các trang theo đúng thứ tự. Làm theo nút xác nhận thực tế; đọc giới hạn định dạng/dung lượng trên cổng.",
+        "visualId": "ct-tai-tu-thiet-bi"
+      },
+      {
+        "title": "Xem lại tệp",
+        "action": "Bấm biểu tượng con mắt để xem tệp vừa gắn.",
+        "expected": "Đúng giấy, rõ chữ, đủ trang.",
+        "help": "Kiểm tra tên tệp hiện ở đúng dòng. Bấm biểu tượng con mắt để xem lại đủ trang, rõ chữ và đúng giấy; nếu sai, dùng nút xóa cạnh tệp rồi chọn lại. Chọn Loại chứng thực theo nhu cầu. Ghi chú là nội dung bổ sung, không thay tệp. Chỉ thêm thành phần khi có nhu cầu/yêu cầu phù hợp. Bấm Bước tiếp theo.",
         "visualId": "ct-kiem-tra-tep"
       },
       {
-        "title": "Chọn nơi và hình thức nhận kết quả",
-        "action": "Kiểm tra nơi nhận tại Trung tâm phục vụ hành chính công của phường. Bật bản giấy, trực tuyến hoặc các hình thức cần thiết mà cổng cho phép. Nếu chọn bưu chính, kiểm tra địa chỉ, điều kiện áp dụng và chi phí; không mặc định công tắc này luôn dùng được.",
-        "expected": "Lựa chọn nhận kết quả phù hợp nhu cầu, khớp loại chứng thực đã chọn.",
+        "title": "Chọn loại chứng thực",
+        "action": "Chọn Loại chứng thực theo nhu cầu bản giấy, điện tử hoặc cả hai mà cổng hỗ trợ.",
+        "expected": "Loại chứng thực phù hợp yêu cầu của bạn.",
+        "help": "Kiểm tra tên tệp hiện ở đúng dòng. Bấm biểu tượng con mắt để xem lại đủ trang, rõ chữ và đúng giấy; nếu sai, dùng nút xóa cạnh tệp rồi chọn lại. Chọn Loại chứng thực theo nhu cầu. Ghi chú là nội dung bổ sung, không thay tệp. Chỉ thêm thành phần khi có nhu cầu/yêu cầu phù hợp. Bấm Bước tiếp theo.",
+        "visualId": "ct-kiem-tra-tep"
+      },
+      {
+        "title": "Chuyển sang nhận kết quả",
+        "action": "Bấm Bước tiếp theo khi tệp và loại chứng thực đã đúng.",
+        "expected": "Phần Thông tin nhận kết quả.",
+        "help": "Kiểm tra tên tệp hiện ở đúng dòng. Bấm biểu tượng con mắt để xem lại đủ trang, rõ chữ và đúng giấy; nếu sai, dùng nút xóa cạnh tệp rồi chọn lại. Chọn Loại chứng thực theo nhu cầu. Ghi chú là nội dung bổ sung, không thay tệp. Chỉ thêm thành phần khi có nhu cầu/yêu cầu phù hợp. Bấm Bước tiếp theo.",
+        "visualId": "ct-kiem-tra-tep"
+      },
+      {
+        "title": "Chọn cách nhận",
+        "action": "Chọn cách nhận cổng cho phép và phù hợp nhu cầu của bạn.",
+        "expected": "Lựa chọn bản giấy, trực tuyến hoặc bưu chính theo hồ sơ.",
+        "help": "Kiểm tra nơi nhận tại Trung tâm phục vụ hành chính công của phường. Bật bản giấy, trực tuyến hoặc các hình thức cần thiết mà cổng cho phép. Nếu chọn bưu chính, kiểm tra địa chỉ, điều kiện áp dụng và chi phí; không mặc định công tắc này luôn dùng được.",
         "visualId": "ct-nhan-ket-qua"
       },
       {
-        "title": "Đọc phí và kiểm tra trước khi gửi",
-        "action": "Đọc cả thông báo phía dưới số tiền. Nếu ghi 0 VNĐ và phí chưa xác định, chờ cán bộ thông báo số tiền; không hiểu là miễn phí. Ô Số lượng phiếu sao trích lục không mặc nhiên là số bản chứng thực bạn cần; nếu không rõ, hỏi nơi tiếp nhận. So lại cơ quan, người nộp, tệp và cách nhận rồi tự bấm Gửi hồ sơ một lần.",
-        "expected": "Chờ cổng phản hồi. Nếu lỗi hoặc quay vòng lâu, kiểm tra Hồ sơ của tôi trước khi gửi lại để tránh trùng hồ sơ.",
+        "title": "Kiểm tra nơi trả",
+        "action": "Kiểm tra nơi nhận; nếu chọn chuyển phát, kiểm tra địa chỉ trả của bạn.",
+        "expected": "Nơi nhận đúng và cước bưu chính nếu có.",
+        "help": "Kiểm tra nơi nhận tại Trung tâm phục vụ hành chính công của phường. Bật bản giấy, trực tuyến hoặc các hình thức cần thiết mà cổng cho phép. Nếu chọn bưu chính, kiểm tra địa chỉ, điều kiện áp dụng và chi phí; không mặc định công tắc này luôn dùng được.",
+        "visualId": "ct-nhan-ket-qua"
+      },
+      {
+        "title": "Đọc khoản phí",
+        "action": "Đọc số tiền và cả thông báo phí phía dưới.",
+        "expected": "Mức phí hoặc thông báo chưa xác định. 0 đồng chưa chắc là miễn phí.",
+        "help": "Đọc cả thông báo phía dưới số tiền. Nếu ghi 0 VNĐ và phí chưa xác định, chờ cán bộ thông báo số tiền; không hiểu là miễn phí. Ô Số lượng phiếu sao trích lục không mặc nhiên là số bản chứng thực bạn cần; nếu không rõ, hỏi nơi tiếp nhận. So lại cơ quan, người nộp, tệp và cách nhận rồi tự bấm Gửi hồ sơ một lần.",
         "visualId": "ct-phi-va-gui"
       },
       {
-        "title": "Lưu mã hồ sơ và theo dõi",
-        "action": "Khi trang chính thức báo Gửi hồ sơ thành công, chụp/lưu thông báo và mã hồ sơ của bạn. Chọn Hồ sơ của tôi để xem tình trạng. Không sao chép mã trong ảnh của người khác. Nếu còn phí chưa xác định, theo dõi thông báo tiếp theo.",
-        "expected": "Có mã để tra cứu. Sau đó còn việc tiếp nhận, đối chiếu bản chính, bổ sung hoặc thanh toán nếu có và nhận kết quả."
+        "title": "Lưu nháp nếu muốn làm sau",
+        "action": "Nếu chưa sẵn sàng, chọn nút lưu bản nháp nếu cổng có. Nếu đã sẵn sàng gửi, tiếp tục hướng dẫn.",
+        "expected": "Bản nháp chưa phải hồ sơ đã gửi.",
+        "help": "Đọc cả thông báo phía dưới số tiền. Nếu ghi 0 VNĐ và phí chưa xác định, chờ cán bộ thông báo số tiền; không hiểu là miễn phí. Ô Số lượng phiếu sao trích lục không mặc nhiên là số bản chứng thực bạn cần; nếu không rõ, hỏi nơi tiếp nhận. So lại cơ quan, người nộp, tệp và cách nhận rồi tự bấm Gửi hồ sơ một lần.",
+        "visualId": "ct-phi-va-gui"
+      },
+      {
+        "title": "Rà lại trước khi gửi",
+        "action": "Đọc lại người nộp, người cần giấy, tệp đã gắn và cách nhận.",
+        "expected": "Các thông tin đúng với yêu cầu của bạn."
+      },
+      {
+        "title": "Gửi yêu cầu trên cổng",
+        "action": "Khi đã so đúng thông tin, bấm Gửi hồ sơ trên cổng một lần.",
+        "expected": "Cổng đang xử lý hoặc yêu cầu xác nhận tiếp.",
+        "visualId": "ct-phi-va-gui"
+      },
+      {
+        "title": "Làm theo yêu cầu tiếp theo",
+        "action": "Nếu cổng yêu cầu xác nhận hoặc thanh toán, đọc kỹ rồi thực hiện trên cổng chính thức.",
+        "expected": "Thông báo phản hồi sau bước xác nhận.",
+        "help": "Không tự hiểu 0 đồng hoặc chưa xác định là được miễn phí. Nếu có lỗi, đọc thông báo; đừng gửi liên tục."
+      },
+      {
+        "title": "Kiểm tra thông báo đã gửi",
+        "action": "Chờ và đọc phản hồi của cổng. Chỉ coi đã gửi khi cổng xác nhận.",
+        "expected": "Thông báo thành công và mã hồ sơ nếu đã gửi.",
+        "help": "Chưa có phản hồi thì kiểm tra danh sách hồ sơ trước khi thử gửi lại."
+      },
+      {
+        "title": "Lưu mã hồ sơ",
+        "action": "Ghi lại hoặc chụp thông báo có mã hồ sơ của bạn.",
+        "expected": "Bạn có mã để hỏi và tra cứu sau này."
+      },
+      {
+        "title": "Theo dõi hồ sơ",
+        "action": "Mở danh sách hồ sơ trong tài khoản hoặc mục tra cứu trên cổng.",
+        "expected": "Trạng thái tiếp nhận, yêu cầu bổ sung hoặc hẹn trả kết quả.",
+        "help": "Đã gửi, đã tiếp nhận và đã có kết quả là các trạng thái khác nhau."
       }
     ],
     "ready": "Bạn đã biết cách tự kiểm tra thông báo và mã hồ sơ trên cổng. Cẩm Nang Số không tự xác nhận hồ sơ đã nộp hoặc đã được giải quyết.",
     "readyLabel": "Sau thao tác cuối, kiểm tra trên cổng",
-    "intro": "Mỗi lần xem một thao tác. Chỉ bấm các nút nộp thật trên cổng chính thức; ảnh ở đây dùng để đối chiếu vị trí. Ảnh do người biên soạn cung cấp, đối chiếu ngày 22/11/2026.",
+    "intro": "Mỗi màn hình hướng dẫn một việc chính. Làm trên cổng rồi quay lại đọc bước tiếp. Chưa làm được thì mở trợ giúp ngay dưới bước đó.",
     "troubleshooting": [
       {
         "problem": "Không thấy UBND phường Pleiku",
@@ -619,11 +750,19 @@
         "problem": "Tôi chưa có bản chính hoặc không dùng được điện thoại",
         "solution": "Liên hệ Trung tâm phục vụ hành chính công phường để được hướng dẫn trường hợp thiếu giấy hoặc hỗ trợ thực hiện. Mang giấy tờ đang có để cán bộ xác định cách xử lý."
       }
-    ]
+    ],
+    "revision": 2,
+    "relatedGuide": "chup-tai-giay-to"
   },
   "home": {
     "title": "Chứng thực bản sao giấy tờ",
     "description": "Thường gọi là “sao y”: chứng thực bản sao từ bản chính bạn đang có.",
-    "icon": "copy"
+    "icon": "copy",
+    "searchAliases": [
+      "công chứng căn cước",
+      "công chứng giấy tờ",
+      "photo công chứng",
+      "sao y căn cước"
+    ]
   }
 }

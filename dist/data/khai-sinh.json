@@ -613,6 +613,143 @@
   ],
   "home": {
     "title": "Làm giấy tờ cho con mới sinh",
-    "description": "Khai sinh, thường trú và bảo hiểm y tế cho bé; căn cước nếu có nhu cầu."
+    "description": "Khai sinh, thường trú và bảo hiểm y tế cho bé; căn cước nếu có nhu cầu.",
+    "searchAliases": [
+      "khai sinh cho cháu",
+      "làm khai sinh cho cháu",
+      "khai sinh cho con",
+      "đăng ký khai sinh cho bé"
+    ]
+  },
+  "submissionGuide": {
+    "revision": 2,
+    "intro": "Hướng dẫn theo từng phần việc. Tên và vị trí nút có thể thay đổi; chưa đối chiếu trực tiếp toàn bộ màn hình sau đăng nhập. Nếu màn hình khác, mở trợ giúp tại bước đang xem.",
+    "steps": [
+      {
+        "title": "Đăng nhập trước khi điền",
+        "action": "Mở hướng dẫn đăng nhập ở phía trên nếu bạn chưa vào được cổng.",
+        "expected": "Bạn vào được cổng liên thông bằng đúng tài khoản.",
+        "help": "Chọn Một điện thoại nếu không dùng máy tính. Không cần quét mã trên chính điện thoại của mình."
+      },
+      {
+        "title": "Chọn đúng nhóm thủ tục",
+        "action": "Trên cổng liên thông, chọn nhóm có chữ đăng ký khai sinh.",
+        "expected": "Tên nhóm đúng việc gia đình cần làm."
+      },
+      {
+        "title": "Chọn tỉnh",
+        "action": "Ở phần chọn nơi thực hiện, chọn tỉnh phù hợp hồ sơ; hướng dẫn này dành cho Gia Lai.",
+        "expected": "Tỉnh đã chọn được hiển thị.",
+        "help": "Nếu không thấy phần này, đọc hướng dẫn của cổng hoặc nhờ hỗ trợ; không chọn đại một cơ quan."
+      },
+      {
+        "title": "Kiểm tra cơ quan tiếp nhận",
+        "action": "Chọn hoặc kiểm tra cơ quan giải quyết theo trường hợp đã xác định ở bước chuẩn bị.",
+        "expected": "Đúng cơ quan của hồ sơ.",
+        "help": "Không mặc định phường Pleiku phù hợp mọi trường hợp. Chưa rõ thẩm quyền thì hỏi đầu mối phường."
+      },
+      {
+        "title": "Kiểm tra người nộp",
+        "action": "Đọc phần thông tin người yêu cầu và so với giấy tờ của người đang làm thủ tục.",
+        "expected": "Đúng họ tên và thông tin định danh.",
+        "help": "Dữ liệu tự điền mà sai hoặc bị khóa thì hỏi cơ quan; không dùng thông tin người khác để đi tiếp."
+      },
+      {
+        "title": "Điền thông tin của bé",
+        "action": "Điền phần thông tin của bé theo giấy chứng sinh hoặc giấy tờ phù hợp.",
+        "expected": "Các ô của đúng người đã được kê khai.",
+        "help": "Chưa biết lấy thông tin ở đâu, quay lại Hướng dẫn điền. Chỉ điền những thông tin có căn cứ."
+      },
+      {
+        "title": "Điền phần cha, mẹ",
+        "action": "Điền phần cha, mẹ theo giấy tờ và các ô đang hiển thị.",
+        "expected": "Thông tin thuộc đúng từng người."
+      },
+      {
+        "title": "Kiểm tra phần cư trú",
+        "action": "Đối chiếu phần đăng ký thường trú cho bé với địa chỉ đã chuẩn bị.",
+        "expected": "Đúng người và địa chỉ cần giải quyết."
+      },
+      {
+        "title": "Kiểm tra phần thủ tục đi kèm",
+        "action": "Chỉ kê khai các phần bảo hiểm y tế và căn cước theo nhu cầu, điều kiện của hồ sơ.",
+        "expected": "Các phần lựa chọn đúng nhu cầu.",
+        "help": "Các phần này có điều kiện riêng. Xem lại câu trả lời và hướng dẫn chuẩn bị; không chọn hết chỉ vì cổng hiển thị."
+      },
+      {
+        "title": "Tìm dòng giấy cần đính kèm",
+        "action": "Ở Thành phần hồ sơ, đọc điều kiện để biết giấy nào áp dụng cho trường hợp của bạn.",
+        "expected": "Có giấy cần tải thì làm tiếp. Không có giấy cần đính kèm thì dùng nút bỏ qua bên dưới.",
+        "help": "Chỉ đính kèm giấy áp dụng cho hồ sơ của mình. Chụp rõ đủ trang. Nếu không biết chọn tệp từ điện thoại, mở hướng dẫn Chụp và đính kèm bên dưới. Không tải tệp trống để vượt ô bắt buộc.",
+        "skipTo": 14,
+        "skipLabel": "Không có giấy cần đính kèm → bỏ qua tải tệp"
+      },
+      {
+        "title": "Mở chỗ chọn tệp",
+        "action": "Bấm chức năng tải tệp tại dòng giấy đó.",
+        "expected": "Cửa sổ chọn tệp hoặc kho giấy tờ của cổng.",
+        "help": "Chỉ đính kèm giấy áp dụng cho hồ sơ của mình. Chụp rõ đủ trang. Nếu không biết chọn tệp từ điện thoại, mở hướng dẫn Chụp và đính kèm bên dưới. Không tải tệp trống để vượt ô bắt buộc."
+      },
+      {
+        "title": "Chọn tệp đã chuẩn bị",
+        "action": "Trong cửa sổ chọn tệp, tìm ảnh hoặc tài liệu đã lưu rồi chọn tệp đó.",
+        "expected": "Tên tệp được chọn. Chưa phải đã gửi hồ sơ.",
+        "help": "Chỉ đính kèm giấy áp dụng cho hồ sơ của mình. Chụp rõ đủ trang. Nếu không biết chọn tệp từ điện thoại, mở hướng dẫn Chụp và đính kèm bên dưới. Không tải tệp trống để vượt ô bắt buộc."
+      },
+      {
+        "title": "Kiểm tra tệp đã gắn",
+        "action": "Chờ tải xong rồi kiểm tra tên tệp đã hiện đúng dòng hồ sơ.",
+        "expected": "Tệp nằm ở dòng giấy cần nộp.",
+        "help": "Chỉ đính kèm giấy áp dụng cho hồ sơ của mình. Chụp rõ đủ trang. Nếu không biết chọn tệp từ điện thoại, mở hướng dẫn Chụp và đính kèm bên dưới. Không tải tệp trống để vượt ô bắt buộc."
+      },
+      {
+        "title": "Mở tệp xem lại",
+        "action": "Dùng nút xem tệp của cổng để kiểm tra đúng giấy, rõ chữ và đủ trang.",
+        "expected": "Bạn đọc được nội dung của đúng giấy cần nộp.",
+        "help": "Chỉ đính kèm giấy áp dụng cho hồ sơ của mình. Chụp rõ đủ trang. Nếu không biết chọn tệp từ điện thoại, mở hướng dẫn Chụp và đính kèm bên dưới. Không tải tệp trống để vượt ô bắt buộc."
+      },
+      {
+        "title": "Chọn cách nhận",
+        "action": "Chọn hình thức nhận được cổng cung cấp và phù hợp với bạn.",
+        "expected": "Nơi hoặc địa chỉ trả kết quả đúng.",
+        "help": "Nếu có bưu chính, kiểm tra địa chỉ và cước. Không phải mọi cách nhận đều có ở mọi hồ sơ."
+      },
+      {
+        "title": "Rà lại trước khi gửi",
+        "action": "Đọc lại người nộp, người cần giấy, tệp đã gắn và cách nhận.",
+        "expected": "Các thông tin đúng với yêu cầu của bạn."
+      },
+      {
+        "title": "Gửi yêu cầu trên cổng",
+        "action": "Khi đã sẵn sàng, bấm nút gửi trên cổng chính thức một lần.",
+        "expected": "Cổng đang xử lý hoặc yêu cầu xác nhận tiếp."
+      },
+      {
+        "title": "Làm theo yêu cầu tiếp theo",
+        "action": "Nếu cổng yêu cầu xác nhận hoặc thanh toán, đọc kỹ rồi thực hiện trên cổng chính thức.",
+        "expected": "Thông báo phản hồi sau bước xác nhận.",
+        "help": "Không tự hiểu 0 đồng hoặc chưa xác định là được miễn phí. Nếu có lỗi, đọc thông báo; đừng gửi liên tục."
+      },
+      {
+        "title": "Kiểm tra thông báo đã gửi",
+        "action": "Chờ và đọc phản hồi của cổng. Chỉ coi đã gửi khi cổng xác nhận.",
+        "expected": "Thông báo thành công và mã hồ sơ nếu đã gửi.",
+        "help": "Chưa có phản hồi thì kiểm tra danh sách hồ sơ trước khi thử gửi lại."
+      },
+      {
+        "title": "Lưu mã hồ sơ",
+        "action": "Ghi lại hoặc chụp thông báo có mã hồ sơ của bạn.",
+        "expected": "Bạn có mã để hỏi và tra cứu sau này."
+      },
+      {
+        "title": "Theo dõi hồ sơ",
+        "action": "Mở danh sách hồ sơ trong tài khoản hoặc mục tra cứu trên cổng.",
+        "expected": "Trạng thái tiếp nhận, yêu cầu bổ sung hoặc hẹn trả kết quả.",
+        "help": "Đã gửi, đã tiếp nhận và đã có kết quả là các trạng thái khác nhau."
+      }
+    ],
+    "readyLabel": "Kiểm tra kết quả trên cổng chính thức",
+    "ready": "Cẩm Nang Số không xác nhận hồ sơ đã nộp. Hãy kiểm tra thông báo và mã hồ sơ trên cổng.",
+    "relatedGuide": "chup-tai-giay-to"
   }
 }

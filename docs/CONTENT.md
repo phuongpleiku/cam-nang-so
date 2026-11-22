@@ -139,6 +139,10 @@ Các giấy tờ riêng dùng cấu trúc sau ngay trong mục checklist, không
 
 `expected`, `links`, `relatedGuide` là tùy chọn. `relatedGuide` mở thêm hướng dẫn dùng chung, hiện có `chup-tai-giay-to`; không tạo vòng tham chiếu. `visualId` trên mục checklist đưa hình đã khai báo trong `visuals` vào đúng mục giấy tờ. Hình chưa gắn với mục nào vẫn hiển thị ở cuối danh sách.
 
+Mỗi thao tác nên có một việc chính trong `action`, dấu hiệu nhận biết trong `expected`, và giải thích/lỗi thường gặp trong `help`. Nội dung `help` nằm ngay dưới thao tác trong mục “Tôi chưa làm được”. Với đoạn chỉ áp dụng có điều kiện, có thể thêm `skipTo` (chỉ số bắt đầu từ 0 của thao tác phía sau, cùng nhánh) và `skipLabel` ghi rõ điều kiện bỏ qua. Ví dụ ở đầu phần đính kèm: “Không có giấy cần đính kèm → bỏ qua tải tệp”. Đây là lựa chọn của người đọc, không tự xác định họ được miễn giấy tờ. Phải cập nhật `skipTo` khi đổi thứ tự thao tác; không dùng để bỏ qua yêu cầu bắt buộc.
+
+Hướng dẫn đăng nhập có thể đặt `devices: true`; mỗi nhánh gắn `device: "phone"` hoặc `"computer"`, bỏ `device` nếu dùng chung. Không đưa nhánh quét QR trên máy tính vào lựa chọn một điện thoại. Nút nghe chỉ hiện khi trình duyệt có giọng tiếng Việt; nội dung đọc gồm tiêu đề, việc cần làm và dấu hiệu nhận biết, không bao gồm toàn bộ phần trợ giúp mở rộng.
+
 Để có nhiều cách thực hiện, dùng `guide.paths` thay `guide.steps`; mỗi nhánh có `label`, `intro` tùy chọn, `steps`, `ready`. Giao diện chỉ hiện nhánh đang chọn để dễ đọc trên điện thoại. `troubleshooting`, `sources` và `reviewedAt` có thể đặt ở cấp guide dùng chung cho các nhánh. Bản in in nhánh đang chọn và mở các mục trợ giúp; không đánh dấu hoàn thành tự động khi mở hướng dẫn.
 
 Ưu tiên động từ cụ thể và nhãn đã đối chiếu từ cổng thật. Ghi rõ bước chỉ chuẩn bị, bước nào thực hiện trên cổng; không biến hướng dẫn thành cam kết đủ điều kiện hoặc tiếp nhận hồ sơ. Không thêm ô nhập mật khẩu, OTP, căn cước hoặc tải giấy tờ thật vào Cẩm Nang Số.
@@ -148,12 +152,13 @@ Các giấy tờ riêng dùng cấu trúc sau ngay trong mục checklist, không
 - Checklist hiện tóm tắt trước. `summary` là mô tả ngắn cho từng giấy tờ/thông tin; nếu thiếu dùng `help`. Nút hướng dẫn mở riêng mục đó tại `#thu-tuc/<id>/chuan-bi/<item-id>`.
 - Hướng dẫn mặc định hiện một thao tác. Có Thao tác trước/tiếp theo và Xem tất cả; xem hết không tự đánh dấu đã chuẩn bị. Người dùng chọn Đã chuẩn bị/Cần hỏi thêm/Chưa chuẩn bị riêng.
 - Mỗi thủ tục lưu bước đang xem, mục chuẩn bị và vị trí từng nhánh hướng dẫn trên trình duyệt. Dữ liệu cũ cùng phiên bản giữ câu trả lời/checklist; không phải trả lời lại từ đầu. Đổi điều kiện sẽ bỏ tiến độ của mục không còn áp dụng.
-- Không đổi thứ tự các nhánh/thao tác một cách tùy tiện sau khi triển khai: vị trí hiện lưu theo chỉ số. Khi thay đổi ý nghĩa hoặc thứ tự lớn, tăng `version` của thủ tục tham chiếu để tránh khôi phục sai vị trí. Chỉnh câu chữ không làm đổi ý nghĩa không cần tăng phiên bản.
+- Không đổi thứ tự các nhánh/thao tác một cách tùy tiện sau khi triển khai: vị trí hiện lưu theo chỉ số. Khi chỉ thay cấu trúc hướng dẫn thao tác, tăng `revision` ở cấp `guide`/hướng dẫn chung/`submissionGuide`: phần đó bắt đầu lại ở thao tác đầu, vẫn giữ câu trả lời và checklist. Khi thay đổi ý nghĩa câu hỏi hoặc điều kiện hồ sơ, tăng `version` của thủ tục như trước. Chỉnh câu chữ không làm đổi ý nghĩa không cần tăng phiên bản.
 - Câu hỏi có thể thêm `help: {"title":"Tôi chưa hiểu…","text":"Giải thích ngắn…","visualId":"ma-hinh"}`. `visualId` tùy chọn, phải tham chiếu hình trong `visuals`. Phần trợ giúp vẫn xuất hiện ở nhánh cần cán bộ kiểm tra.
 - Mục hướng dẫn điền có thể thêm `source` (lấy thông tin ở đâu) và `check` (so lại điều gì). Chỉ ghi nhãn/vị trí nút chính xác khi đã đối chiếu cổng thật; ví dụ luôn dùng dữ liệu giả.
 - `resultItems` tùy chọn là danh sách `{text, when}`. `when` cùng cấu trúc điều kiện đang dùng; giúp phần kết quả chỉ hiện đúng phạm vi lựa chọn. Giữ `results` làm nội dung dự phòng cho dữ liệu cũ.
 - In từ danh sách cho bản tóm tắt và cách xử lý giấy còn thiếu. In từ trang hướng dẫn một mục cho toàn bộ thao tác của nhánh đang chọn; nhánh khác vẫn ẩn.
 - Trang hỗ trợ có thể dùng `#ho-tro/<id>/<step>/<item-id>` để giữ tên thủ tục, chỗ vướng và đường trở lại. Chỉ mang theo mã nội dung có sẵn, không đưa thông tin cá nhân vào URL.
+- `home.searchAliases` là danh sách cụm từ người dân hay dùng (ví dụ “chứng tử”, “khai sinh cho cháu”). Khi khớp toàn bộ cụm sau chuẩn hóa dấu, tìm kiếm chỉ trả các thủ tục được gắn cụm đó; các từ rời không lấn sang nhu cầu khác. Không dùng từ “công chứng” chung để đồng nhất công chứng hợp đồng với chứng thực bản sao.
 
 ## Bật và gỡ khỏi danh sách
 
